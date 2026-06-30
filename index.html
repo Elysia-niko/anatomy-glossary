@@ -1,0 +1,148 @@
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>系统解剖学词库</title>
+    <link rel="stylesheet" href="assets/styles.css" />
+  </head>
+  <body>
+    <header class="topbar">
+      <div class="brand">
+        <span class="brand-mark">SA</span>
+        <div>
+          <h1>系统解剖学词库</h1>
+          <p id="metaLine">加载中</p>
+        </div>
+      </div>
+      <div class="top-actions">
+        <button id="reviewButton" class="ghost-button" type="button">复习</button>
+        <button id="randomButton" class="primary-button" type="button">随机</button>
+      </div>
+    </header>
+
+    <main class="workspace">
+      <aside class="sidebar" aria-label="词条列表">
+        <div class="search-panel">
+          <input id="searchInput" type="search" placeholder="搜索中文、English、图号、页码" autocomplete="off" />
+          <div class="filters">
+            <select id="chapterFilter" aria-label="章节"></select>
+            <select id="categoryFilter" aria-label="分类"></select>
+            <select id="confidenceFilter" aria-label="置信度">
+              <option value="">全部置信度</option>
+              <option value="高">高</option>
+              <option value="中">中</option>
+              <option value="需复核">需复核</option>
+            </select>
+            <label class="toggle-line">
+              <input id="figureOnly" type="checkbox" />
+              <span>有图</span>
+            </label>
+            <label class="toggle-line">
+              <input id="starOnly" type="checkbox" />
+              <span>收藏</span>
+            </label>
+          </div>
+        </div>
+
+        <div class="list-meta">
+          <span id="resultCount">0 个词条</span>
+          <button id="clearButton" type="button">清空</button>
+        </div>
+
+        <div id="termList" class="term-list"></div>
+      </aside>
+
+      <section class="detail" aria-live="polite">
+        <div id="emptyState" class="empty-state">
+          <h2>正在生成词库视图</h2>
+          <p>如果长时间停在这里，请刷新页面或检查 data/glossary.js 是否已随网页一起上传。</p>
+        </div>
+
+        <article id="termDetail" class="term-detail hidden">
+          <div class="detail-header">
+            <div>
+              <div class="eyebrow" id="detailChapter"></div>
+              <h2 id="detailZh"></h2>
+              <p id="detailEn"></p>
+            </div>
+            <button id="starButton" class="icon-button" type="button" title="收藏">☆</button>
+          </div>
+
+          <div class="quick-grid">
+            <div>
+              <span>分类</span>
+              <strong id="detailCategory"></strong>
+            </div>
+            <div>
+              <span>书页</span>
+              <strong id="detailPages"></strong>
+            </div>
+            <div>
+              <span>出现</span>
+              <strong id="detailOccurrences"></strong>
+            </div>
+            <div>
+              <span>置信度</span>
+              <strong id="detailConfidence"></strong>
+            </div>
+          </div>
+
+          <div id="reviewPanel" class="review-panel hidden">
+            <div>
+              <span>熟悉度</span>
+              <strong id="reviewScore">0</strong>
+            </div>
+            <button id="againButton" type="button">再来</button>
+            <button id="knownButton" type="button">记住</button>
+            <button id="revealButton" type="button">显示答案</button>
+          </div>
+
+          <section class="detail-section">
+            <h3>解释</h3>
+            <p id="detailDefinition"></p>
+          </section>
+
+          <section class="detail-section split-section">
+            <div>
+              <h3>位置</h3>
+              <p id="detailLocation"></p>
+            </div>
+            <div>
+              <h3>功能</h3>
+              <p id="detailFunction"></p>
+            </div>
+          </section>
+
+          <section class="detail-section">
+            <h3>记忆补充</h3>
+            <p id="detailStudyNote"></p>
+          </section>
+
+          <section class="detail-section">
+            <div class="section-title-row">
+              <h3>关联图页</h3>
+              <a id="pdfLink" class="text-link" target="_blank" rel="noreferrer">打开页图</a>
+            </div>
+            <div id="figureList" class="figure-list"></div>
+            <div id="pageImages" class="page-images"></div>
+          </section>
+
+          <section class="detail-section">
+            <h3>教材上下文</h3>
+            <div id="contextList" class="context-list"></div>
+          </section>
+        </article>
+      </section>
+    </main>
+
+    <dialog id="imageDialog" class="image-dialog">
+      <button id="closeDialog" class="icon-button dialog-close" type="button" title="关闭">×</button>
+      <img id="dialogImage" alt="教材页图" />
+    </dialog>
+
+    <noscript>需要启用 JavaScript 才能使用词库。</noscript>
+    <script src="data/glossary.js"></script>
+    <script src="assets/app.js"></script>
+  </body>
+</html>
