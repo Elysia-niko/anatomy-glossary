@@ -1,9 +1,11 @@
-const data = window.ANATOMY_GLOSSARY;
+const rawData = window.MED_GLOSSARY || window.ANATOMY_GLOSSARY;
 
 const els = {
   metaLine: document.getElementById("metaLine"),
   menuButton: document.getElementById("menuButton"),
+  courseSelect: document.getElementById("courseSelect"),
   searchInput: document.getElementById("searchInput"),
+  partFilter: document.getElementById("partFilter"),
   chapterFilter: document.getElementById("chapterFilter"),
   categoryFilter: document.getElementById("categoryFilter"),
   confidenceFilter: document.getElementById("confidenceFilter"),
@@ -26,6 +28,7 @@ const els = {
   detailLocation: document.getElementById("detailLocation"),
   detailFunction: document.getElementById("detailFunction"),
   detailStudyNote: document.getElementById("detailStudyNote"),
+  relatedList: document.getElementById("relatedList"),
   figureList: document.getElementById("figureList"),
   pageImages: document.getElementById("pageImages"),
   contextList: document.getElementById("contextList"),
@@ -43,19 +46,61 @@ const els = {
   closeDialog: document.getElementById("closeDialog"),
 };
 
+const library = normalizeLibrary(rawData);
+
 const store = {
-  stars: readStore("anatomyStars", {}),
-  review: readStore("anatomyReview", {}),
+  stars: readStore("medGlossaryStars", {}),
+  review: readStore("medGlossaryReview", {}),
+  legacyStars: readStore("anatomyStars", {}),
+  legacyReview: readStore("anatomyReview", {}),
 };
+
+let data = library.courses[0] || { terms: [], chapters: [], figures: [], parts: [], meta: {} };
+let figuresByLabel = new Map();
+let termsById = new Map();
 
 let state = {
   filtered: [],
   selectedId: "",
+  selectedByCourse: {},
+  courseId: data.id || "",
   reviewMode: false,
   revealed: true,
 };
 
-const figuresByLabel = new Map((data?.figures || []).map((figure) => [figure.label, figure]));
+function normalizeLibrary(payload) {
+  if (payload?.courses?.length) return payload;
+  if (payload?.terms?.length) {
+    const terms = payload.terms.map((term) => ({
+      ...term,
+      part: term.part || "系统解剖学",
+      parts: term.parts || ["系统解剖学"],
+      structure: term.structure || term.location || "",
+      relatedTerms: term.relatedTerms || [],
+    }));
+    return {
+      schemaVersion: 1,
+      meta: {
+        totalCourses: 1,
+        totalTerms: terms.length,
+        totalFigures: payload.figures?.length || 0,
+      },
+      courses: [
+        {
+          id: "systematic-anatomy",
+          title: "系统解剖学",
+          shortTitle: "系统解剖学",
+          parts: [{ name: "系统解剖学", start: 1, end: payload.meta?.bodyPages || 0 }],
+          chapters: payload.chapters || [],
+          figures: payload.figures || [],
+          terms,
+          meta: payload.meta || {},
+        },
+      ],
+    };
+  }
+  return { schemaVersion: 2, meta: {}, courses: [] };
+}
 
 function readStore(key, fallback) {
   try {
@@ -89,24 +134,57 @@ function pageText(pages) {
 }
 
 function sourceLink(term) {
-  return term.pageImages?.[0] || `assets/pages/pdf-${String(term.firstPdfPage).padStart(3, "0")}.jpg`;
+  if (term.pageImages?.[0]) return term.pageImages[0];
+  if (term.firstPdfPage) return `assets/pages/pdf-${String(term.firstPdfPage).padStart(3, "0")}.jpg`;
+  return "#";
 }
 
 function setup() {
-  if (!data?.terms?.length) {
+  if (!library.courses.length) {
     els.metaLine.textContent = "未找到词库数据";
     return;
   }
 
-  els.metaLine.textContent = `${data.meta.totalTerms} 个词条 · ${data.meta.totalFigures} 个图号 · ${data.meta.bodyPages} 页正文`;
-  setupFilters();
+  setupCourseSelect();
   bindEvents();
+  setCourse(library.courses[0].id);
+}
+
+function setupCourseSelect() {
+  els.courseSelect.innerHTML = library.courses
+    .map((course) => `<option value="${escapeHtml(course.id)}">${escapeHtml(course.shortTitle || course.title)}</option>`)
+    .join("");
+}
+
+function setCourse(courseId) {
+  data = library.courses.find((course) => course.id === courseId) || library.courses[0];
+  state.courseId = data.id;
+  figuresByLabel = new Map((data.figures || []).map((figure) => [figure.label, figure]));
+  termsById = new Map((data.terms || []).map((term) => [term.id, term]));
+  els.courseSelect.value = data.id;
+  setupFilters();
+  updateMetaLine();
+  state.selectedId = state.selectedByCourse[data.id] || data.terms?.[0]?.id || "";
   applyFilters();
-  selectTerm(data.terms[0].id);
+}
+
+function updateMetaLine() {
+  const totalTerms = data.meta?.totalTerms || data.terms?.length || 0;
+  const totalFigures = data.meta?.totalFigures || data.figures?.length || 0;
+  const parts = (data.parts || []).map((part) => part.name).join(" / ");
+  els.metaLine.textContent = `${totalTerms} 个词条 · ${totalFigures} 个图号${parts ? ` · ${parts}` : ""}`;
 }
 
 function setupFilters() {
-  els.chapterFilter.innerHTML = `<option value="">全部章节</option>${data.chapters
+  const parts = data.parts?.length
+    ? data.parts.map((part) => part.name)
+    : [...new Set(data.terms.map((term) => term.part).filter(Boolean))];
+  els.partFilter.innerHTML = `<option value="">全部篇章</option>${parts
+    .map((part) => `<option value="${escapeHtml(part)}">${escapeHtml(part)}</option>`)
+    .join("")}`;
+  els.partFilter.classList.toggle("hidden-filter", parts.length <= 1);
+
+  els.chapterFilter.innerHTML = `<option value="">全部章节</option>${(data.chapters || [])
     .map((chapter) => `<option value="${escapeHtml(chapter.name)}">${escapeHtml(chapter.name)}</option>`)
     .join("")}`;
 
@@ -114,11 +192,22 @@ function setupFilters() {
   els.categoryFilter.innerHTML = `<option value="">全部分类</option>${categories
     .map((category) => `<option value="${escapeHtml(category)}">${escapeHtml(category)}</option>`)
     .join("")}`;
+
+  els.searchInput.value = "";
+  els.partFilter.value = "";
+  els.chapterFilter.value = "";
+  els.categoryFilter.value = "";
+  els.confidenceFilter.value = "";
+  els.figureOnly.checked = false;
+  els.starOnly.checked = false;
 }
 
 function bindEvents() {
+  els.courseSelect.addEventListener("change", () => setCourse(els.courseSelect.value));
+
   [
     els.searchInput,
+    els.partFilter,
     els.chapterFilter,
     els.categoryFilter,
     els.confidenceFilter,
@@ -128,6 +217,7 @@ function bindEvents() {
 
   els.clearButton.addEventListener("click", () => {
     els.searchInput.value = "";
+    els.partFilter.value = "";
     els.chapterFilter.value = "";
     els.categoryFilter.value = "";
     els.confidenceFilter.value = "";
@@ -142,6 +232,11 @@ function bindEvents() {
       selectTerm(button.dataset.termId);
       if (isMobileLayout()) setDrawerOpen(false);
     }
+  });
+
+  els.relatedList.addEventListener("click", (event) => {
+    const button = event.target.closest("[data-related-id]");
+    if (button) selectTerm(button.dataset.relatedId);
   });
 
   els.menuButton.addEventListener("click", () => setDrawerOpen(!document.body.classList.contains("drawer-open")));
@@ -159,11 +254,13 @@ function bindEvents() {
   });
 
   els.starButton.addEventListener("click", () => {
-    if (!state.selectedId) return;
-    store.stars[state.selectedId] = !store.stars[state.selectedId];
-    if (!store.stars[state.selectedId]) delete store.stars[state.selectedId];
-    writeStore("anatomyStars", store.stars);
-    renderDetail(currentTerm());
+    const term = currentTerm();
+    if (!term) return;
+    const key = termKey(term);
+    store.stars[key] = !isStarred(term);
+    if (!store.stars[key]) delete store.stars[key];
+    writeStore("medGlossaryStars", store.stars);
+    renderDetail(term);
     renderList();
   });
 
@@ -186,8 +283,26 @@ function setDrawerOpen(open) {
   els.menuButton.setAttribute("aria-expanded", String(open));
 }
 
+function termKey(term) {
+  return `${data.id}:${term.id}`;
+}
+
+function isStarred(term) {
+  const key = termKey(term);
+  return Boolean(store.stars[key] || (data.id === "systematic-anatomy" && store.legacyStars[term.id]));
+}
+
+function reviewScore(term) {
+  const key = termKey(term);
+  return store.review[key] ?? (data.id === "systematic-anatomy" ? store.legacyReview[term.id] || 0 : 0);
+}
+
 function currentTerm() {
-  return data.terms.find((term) => term.id === state.selectedId) || state.filtered[0] || data.terms[0];
+  return termsById.get(state.selectedId) || state.filtered[0] || data.terms[0];
+}
+
+function termParts(term) {
+  return term.parts?.length ? term.parts : term.part ? [term.part] : [];
 }
 
 function matchesQuery(term, query) {
@@ -196,6 +311,7 @@ function matchesQuery(term, query) {
     [
       term.zh,
       term.en,
+      term.part,
       term.category,
       term.chapters.join(" "),
       term.pages.join(" "),
@@ -203,8 +319,10 @@ function matchesQuery(term, query) {
       term.figures.join(" "),
       term.pageFigures.join(" "),
       term.definition,
+      term.structure,
       term.location,
       term.function,
+      term.studyNote,
     ].join(" ")
   );
   return query
@@ -215,24 +333,28 @@ function matchesQuery(term, query) {
 
 function applyFilters() {
   const query = normalize(els.searchInput.value);
+  const part = els.partFilter.value;
   const chapter = els.chapterFilter.value;
   const category = els.categoryFilter.value;
   const confidence = els.confidenceFilter.value;
 
   state.filtered = data.terms.filter((term) => {
     if (!matchesQuery(term, query)) return false;
+    if (part && !termParts(term).includes(part)) return false;
     if (chapter && !term.chapters.includes(chapter)) return false;
     if (category && term.category !== category) return false;
     if (confidence && term.confidenceLabel !== confidence) return false;
     if (els.figureOnly.checked && !term.figures.length && !term.pageFigures.length) return false;
-    if (els.starOnly.checked && !store.stars[term.id]) return false;
+    if (els.starOnly.checked && !isStarred(term)) return false;
     return true;
   });
 
-  renderList();
   if (!state.filtered.some((term) => term.id === state.selectedId)) {
-    selectTerm(state.filtered[0]?.id || "");
+    state.selectedId = state.filtered[0]?.id || "";
   }
+  state.selectedByCourse[data.id] = state.selectedId;
+  renderList();
+  renderDetail(currentTerm());
 }
 
 function renderList() {
@@ -242,7 +364,7 @@ function renderList() {
     .map((term) => {
       const active = term.id === state.selectedId ? " active" : "";
       const confidenceClass = term.confidenceLabel === "需复核" ? " warn" : "";
-      const star = store.stars[term.id] ? "★ " : "";
+      const star = isStarred(term) ? "★ " : "";
       const hasFigure = term.figures.length || term.pageFigures.length;
       return `
         <button class="term-item${active}" type="button" data-term-id="${term.id}">
@@ -258,10 +380,15 @@ function renderList() {
       `;
     })
     .join("");
+
+  if (state.filtered.length > visible.length) {
+    els.termList.insertAdjacentHTML("beforeend", `<div class="list-limit">已显示前 ${visible.length} 条，继续缩小搜索可更快定位。</div>`);
+  }
 }
 
 function selectTerm(id) {
   state.selectedId = id;
+  state.selectedByCourse[data.id] = id;
   state.revealed = !state.reviewMode;
   renderList();
   renderDetail(currentTerm());
@@ -270,10 +397,7 @@ function selectTerm(id) {
 
 function selectRandom() {
   const source = state.filtered.length ? state.filtered : data.terms;
-  const weights = source.map((term) => {
-    const score = store.review[term.id] || 0;
-    return Math.max(1, 5 - score);
-  });
+  const weights = source.map((term) => Math.max(1, 5 - reviewScore(term)));
   const total = weights.reduce((sum, value) => sum + value, 0);
   let pick = Math.random() * total;
   for (let index = 0; index < source.length; index += 1) {
@@ -298,24 +422,46 @@ function renderDetail(term) {
   els.termDetail.classList.remove("hidden");
   els.reviewPanel.classList.toggle("hidden", !state.reviewMode);
 
-  els.detailChapter.textContent = term.chapters.join(" / ");
+  const chapterLine = [data.shortTitle || data.title, term.part, ...term.chapters].filter(Boolean);
+  els.detailChapter.textContent = [...new Set(chapterLine)].join(" / ");
   els.detailZh.textContent = term.zh;
-  els.detailEn.textContent = hiddenAnswer ? "••••••" : term.en;
+  els.detailEn.textContent = hiddenAnswer ? "......" : term.en;
   els.detailCategory.textContent = term.category;
   els.detailPages.textContent = pageText(term.pages);
   els.detailOccurrences.textContent = `${term.occurrences} 次`;
   els.detailConfidence.textContent = `${term.confidenceLabel} (${term.confidence})`;
-  els.detailDefinition.textContent = hiddenAnswer ? "••••••" : term.definition || "暂无自动解释";
-  els.detailLocation.textContent = hiddenAnswer ? "••••••" : term.location || "未在自动上下文中识别到明确位置";
-  els.detailFunction.textContent = hiddenAnswer ? "••••••" : term.function || "未在自动上下文中识别到明确功能";
-  els.detailStudyNote.textContent = hiddenAnswer ? "••••••" : term.studyNote;
-  els.reviewScore.textContent = store.review[term.id] || 0;
-  els.starButton.textContent = store.stars[term.id] ? "★" : "☆";
-  els.starButton.classList.toggle("active", Boolean(store.stars[term.id]));
+  els.detailDefinition.textContent = hiddenAnswer ? "......" : term.definition || "暂无自动解释";
+  els.detailLocation.textContent = hiddenAnswer ? "......" : term.structure || term.location || "未在自动上下文中识别到明确结构或分布";
+  els.detailFunction.textContent = hiddenAnswer ? "......" : term.function || "未在自动上下文中识别到明确功能或意义";
+  els.detailStudyNote.textContent = hiddenAnswer ? "......" : term.studyNote;
+  els.reviewScore.textContent = reviewScore(term);
+  els.starButton.textContent = isStarred(term) ? "★" : "☆";
+  els.starButton.classList.toggle("active", isStarred(term));
   els.pdfLink.href = sourceLink(term);
 
+  renderRelated(term, hiddenAnswer);
   renderFigures(term, hiddenAnswer);
   renderContexts(term, hiddenAnswer);
+}
+
+function renderRelated(term, hiddenAnswer) {
+  if (hiddenAnswer) {
+    els.relatedList.innerHTML = `<span class="figure-pill">......</span>`;
+    return;
+  }
+  const related = (term.relatedTerms || []).map((id) => termsById.get(id)).filter(Boolean).slice(0, 10);
+  els.relatedList.innerHTML = related.length
+    ? related
+        .map(
+          (item) => `
+            <button class="related-chip" type="button" data-related-id="${item.id}">
+              <strong>${escapeHtml(item.zh)}</strong>
+              <span>${escapeHtml(item.en)}</span>
+            </button>
+          `
+        )
+        .join("")
+    : `<span class="figure-pill">暂未识别到高相关词条</span>`;
 }
 
 function renderFigures(term, hiddenAnswer) {
@@ -324,7 +470,7 @@ function renderFigures(term, hiddenAnswer) {
   const figures = explicit.length ? explicit : fallback;
 
   if (hiddenAnswer) {
-    els.figureList.innerHTML = `<span class="figure-pill">••••••</span>`;
+    els.figureList.innerHTML = `<span class="figure-pill">......</span>`;
     els.pageImages.innerHTML = "";
     return;
   }
@@ -343,7 +489,7 @@ function renderFigures(term, hiddenAnswer) {
   els.pageImages.innerHTML = imageCandidates
     .map((path, index) => {
       const pdfPage = Number((path.match(/pdf-(\d+)\.jpg/) || [])[1]);
-      const bookPage = pdfPage ? pdfPage - data.meta.pageOffset : term.pages[index] || term.firstPage;
+      const bookPage = pdfPage ? pdfPage - (data.meta?.pageOffset || 0) : term.pages[index] || term.firstPage;
       return `
         <div class="page-thumb">
           <img src="${escapeHtml(path)}" alt="书页 ${bookPage}" loading="lazy" data-full-image="${escapeHtml(path)}" />
@@ -363,7 +509,7 @@ function renderFigures(term, hiddenAnswer) {
 
 function renderContexts(term, hiddenAnswer) {
   if (hiddenAnswer) {
-    els.contextList.innerHTML = `<div class="context-item">••••••</div>`;
+    els.contextList.innerHTML = `<div class="context-item">......</div>`;
     return;
   }
 
@@ -371,7 +517,7 @@ function renderContexts(term, hiddenAnswer) {
     .map(
       (context) => `
       <div class="context-item">
-        <span class="context-page">${escapeHtml(context.chapter)} · 书页 ${context.bookPage} · PDF ${context.pdfPage}</span>
+        <span class="context-page">${escapeHtml(context.part || term.part)} · ${escapeHtml(context.chapter)} · 书页 ${context.bookPage} · PDF ${context.pdfPage}</span>
         ${escapeHtml(context.text)}
       </div>
     `
@@ -390,10 +536,12 @@ function openImage(path) {
 }
 
 function updateReview(delta) {
-  if (!state.selectedId) return;
-  const current = store.review[state.selectedId] || 0;
-  store.review[state.selectedId] = Math.max(0, Math.min(5, current + delta));
-  writeStore("anatomyReview", store.review);
+  const term = currentTerm();
+  if (!term) return;
+  const key = termKey(term);
+  const current = reviewScore(term);
+  store.review[key] = Math.max(0, Math.min(5, current + delta));
+  writeStore("medGlossaryReview", store.review);
   selectRandom();
 }
 

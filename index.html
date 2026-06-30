@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>系统解剖学词库</title>
+    <title>医学课程词库</title>
     <link rel="stylesheet" href="assets/styles.css" />
   </head>
   <body>
@@ -15,7 +15,7 @@
       </button>
       <div class="brand">
         <div>
-          <h1>系统解剖学词库</h1>
+          <h1><select id="courseSelect" class="course-select" aria-label="课程"></select></h1>
           <p id="metaLine">加载中</p>
         </div>
       </div>
@@ -28,8 +28,9 @@
     <main class="workspace">
       <aside class="sidebar" aria-label="词条列表">
         <div class="search-panel">
-          <input id="searchInput" type="search" placeholder="搜索中文、English、图号、页码" autocomplete="off" />
+          <input id="searchInput" type="search" placeholder="搜索中文、English、图号、页码或知识点" autocomplete="off" />
           <div class="filters">
+            <select id="partFilter" aria-label="篇"></select>
             <select id="chapterFilter" aria-label="章节"></select>
             <select id="categoryFilter" aria-label="分类"></select>
             <select id="confidenceFilter" aria-label="置信度">
@@ -110,11 +111,11 @@
 
           <section class="detail-section split-section">
             <div>
-              <h3>位置</h3>
+              <h3>结构/分布</h3>
               <p id="detailLocation"></p>
             </div>
             <div>
-              <h3>功能</h3>
+              <h3>功能/意义</h3>
               <p id="detailFunction"></p>
             </div>
           </section>
@@ -122,6 +123,11 @@
           <section class="detail-section">
             <h3>记忆补充</h3>
             <p id="detailStudyNote"></p>
+          </section>
+
+          <section class="detail-section">
+            <h3>相关词条</h3>
+            <div id="relatedList" class="related-list"></div>
           </section>
 
           <section class="detail-section">

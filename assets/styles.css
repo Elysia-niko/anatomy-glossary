@@ -79,6 +79,24 @@ h1 {
   line-height: 1.2;
 }
 
+.course-select {
+  max-width: min(300px, 52vw);
+  height: 34px;
+  border: 0;
+  border-radius: 8px;
+  padding: 0 34px 0 0;
+  background: transparent;
+  color: var(--text);
+  font-weight: 800;
+  font-size: 20px;
+  line-height: 1.2;
+  outline: none;
+}
+
+.course-select:focus {
+  box-shadow: 0 0 0 3px rgba(15, 118, 110, 0.12);
+}
+
 #metaLine {
   margin-top: 4px;
   color: var(--muted);
@@ -227,6 +245,10 @@ select {
   padding: 0 10px;
   background: var(--surface);
   color: var(--text);
+}
+
+.hidden-filter {
+  display: none;
 }
 
 .toggle-line {
@@ -558,6 +580,44 @@ select {
   font-weight: 700;
 }
 
+.related-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(190px, 1fr));
+  gap: 10px;
+}
+
+.related-chip {
+  min-height: 62px;
+  padding: 10px 12px;
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  background: var(--surface);
+  text-align: left;
+}
+
+.related-chip:hover {
+  border-color: var(--accent);
+  background: #f0faf7;
+}
+
+.related-chip strong,
+.related-chip span {
+  display: block;
+  overflow-wrap: anywhere;
+}
+
+.related-chip strong {
+  color: var(--text);
+  font-size: 15px;
+}
+
+.related-chip span {
+  margin-top: 3px;
+  color: var(--muted);
+  font-size: 12px;
+  line-height: 1.35;
+}
+
 .image-dialog {
   width: min(960px, 94vw);
   max-height: 94vh;
@@ -659,6 +719,12 @@ select {
   }
 
   h1 {
+    font-size: 18px;
+  }
+
+  .course-select {
+    max-width: 100%;
+    height: 32px;
     font-size: 18px;
   }
 
