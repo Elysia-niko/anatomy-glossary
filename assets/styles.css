@@ -653,8 +653,20 @@ select {
 @media (max-width: 680px) {
   .topbar {
     height: auto;
-    align-items: flex-start;
+    display: grid;
+    grid-template-columns: 40px minmax(0, 1fr);
+    align-items: center;
+    gap: 10px;
     padding: 12px;
+  }
+
+  .brand {
+    min-width: 0;
+  }
+
+  #metaLine {
+    white-space: normal;
+    line-height: 1.35;
   }
 
   .brand-mark {
@@ -667,13 +679,18 @@ select {
   }
 
   .top-actions {
-    flex-direction: column;
-    gap: 6px;
+    grid-column: 1 / -1;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 8px;
+    margin-top: 2px;
   }
 
   .primary-button,
   .ghost-button {
-    min-width: 64px;
+    width: 100%;
+    min-width: 0;
+    min-height: 38px;
   }
 
   .filters,
