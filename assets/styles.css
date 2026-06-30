@@ -105,6 +105,25 @@ h1 {
   gap: 10px;
 }
 
+.menu-button {
+  display: none;
+  width: 40px;
+  height: 40px;
+  flex: 0 0 40px;
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  background: var(--surface);
+  padding: 9px;
+}
+
+.menu-button span {
+  display: block;
+  height: 2px;
+  margin: 4px 0;
+  border-radius: 999px;
+  background: var(--text);
+}
+
 .primary-button,
 .ghost-button,
 .icon-button,
@@ -176,6 +195,10 @@ h1 {
   display: flex;
   flex-direction: column;
   overflow: hidden;
+}
+
+.drawer-backdrop {
+  display: none;
 }
 
 .search-panel {
@@ -577,15 +600,47 @@ select {
 @media (max-width: 920px) {
   .workspace {
     grid-template-columns: 1fr;
-    grid-template-rows: minmax(260px, 46dvh) minmax(0, 1fr);
+    grid-template-rows: minmax(0, 1fr);
+  }
+
+  .menu-button {
+    display: inline-block;
   }
 
   .sidebar {
-    border-right: 0;
-    border-bottom: 1px solid var(--line);
-    height: 46dvh;
+    position: fixed;
+    inset: 0 auto 0 0;
+    z-index: 30;
+    width: min(88vw, 420px);
+    height: 100dvh;
     max-height: none;
+    padding-top: env(safe-area-inset-top);
+    border-right: 0;
     min-height: 0;
+    box-shadow: 18px 0 42px rgba(18, 25, 22, 0.18);
+    transform: translateX(-102%);
+    transition: transform 0.22s ease;
+  }
+
+  body.drawer-open .sidebar {
+    transform: translateX(0);
+  }
+
+  .drawer-backdrop {
+    position: fixed;
+    inset: 0;
+    z-index: 20;
+    display: block;
+    border: 0;
+    background: rgba(18, 25, 22, 0.32);
+    opacity: 0;
+    pointer-events: none;
+    transition: opacity 0.22s ease;
+  }
+
+  body.drawer-open .drawer-backdrop {
+    opacity: 1;
+    pointer-events: auto;
   }
 
   .detail {
@@ -629,11 +684,11 @@ select {
   }
 
   .workspace {
-    grid-template-rows: minmax(280px, 50dvh) minmax(0, 1fr);
+    grid-template-rows: minmax(0, 1fr);
   }
 
   .sidebar {
-    height: 50dvh;
+    width: min(90vw, 390px);
   }
 
   #detailZh {

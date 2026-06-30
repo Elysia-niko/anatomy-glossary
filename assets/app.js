@@ -2,6 +2,7 @@ const data = window.ANATOMY_GLOSSARY;
 
 const els = {
   metaLine: document.getElementById("metaLine"),
+  menuButton: document.getElementById("menuButton"),
   searchInput: document.getElementById("searchInput"),
   chapterFilter: document.getElementById("chapterFilter"),
   categoryFilter: document.getElementById("categoryFilter"),
@@ -10,6 +11,7 @@ const els = {
   starOnly: document.getElementById("starOnly"),
   resultCount: document.getElementById("resultCount"),
   clearButton: document.getElementById("clearButton"),
+  drawerBackdrop: document.getElementById("drawerBackdrop"),
   termList: document.getElementById("termList"),
   emptyState: document.getElementById("emptyState"),
   termDetail: document.getElementById("termDetail"),
@@ -136,7 +138,16 @@ function bindEvents() {
 
   els.termList.addEventListener("click", (event) => {
     const button = event.target.closest("[data-term-id]");
-    if (button) selectTerm(button.dataset.termId);
+    if (button) {
+      selectTerm(button.dataset.termId);
+      if (isMobileLayout()) setDrawerOpen(false);
+    }
+  });
+
+  els.menuButton.addEventListener("click", () => setDrawerOpen(!document.body.classList.contains("drawer-open")));
+  els.drawerBackdrop.addEventListener("click", () => setDrawerOpen(false));
+  window.addEventListener("keydown", (event) => {
+    if (event.key === "Escape") setDrawerOpen(false);
   });
 
   els.randomButton.addEventListener("click", selectRandom);
@@ -164,6 +175,15 @@ function bindEvents() {
   els.againButton.addEventListener("click", () => updateReview(-1));
   els.knownButton.addEventListener("click", () => updateReview(1));
   els.closeDialog.addEventListener("click", () => els.imageDialog.close());
+}
+
+function isMobileLayout() {
+  return window.matchMedia("(max-width: 920px)").matches;
+}
+
+function setDrawerOpen(open) {
+  document.body.classList.toggle("drawer-open", open);
+  els.menuButton.setAttribute("aria-expanded", String(open));
 }
 
 function currentTerm() {
