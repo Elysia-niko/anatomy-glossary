@@ -245,7 +245,7 @@ function selectTerm(id) {
   state.revealed = !state.reviewMode;
   renderList();
   renderDetail(currentTerm());
-  els.termDetail.scrollIntoView({ block: "start" });
+  document.querySelector(".detail")?.scrollTo({ top: 0, behavior: "smooth" });
 }
 
 function selectRandom() {
