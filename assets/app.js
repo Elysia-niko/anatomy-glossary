@@ -63,6 +63,7 @@ let state = {
   filtered: [],
   selectedId: "",
   selectedByCourse: {},
+  expandedGroups: {},
   courseId: data.id || "",
   reviewMode: false,
   revealed: true,
@@ -227,6 +228,12 @@ function bindEvents() {
   });
 
   els.termList.addEventListener("click", (event) => {
+    const groupButton = event.target.closest("[data-group-key]");
+    if (groupButton) {
+      toggleGroup(groupButton.dataset.groupKey);
+      return;
+    }
+
     const button = event.target.closest("[data-term-id]");
     if (button) {
       selectTerm(button.dataset.termId);
@@ -359,31 +366,95 @@ function applyFilters() {
 
 function renderList() {
   els.resultCount.textContent = `${state.filtered.length} 个词条`;
-  const visible = state.filtered.slice(0, 500);
-  els.termList.innerHTML = visible
-    .map((term) => {
-      const active = term.id === state.selectedId ? " active" : "";
-      const confidenceClass = term.confidenceLabel === "需复核" ? " warn" : "";
-      const star = isStarred(term) ? "★ " : "";
-      const hasFigure = term.figures.length || term.pageFigures.length;
+  if (state.filtered.length > 500) {
+    renderGroupedList();
+    return;
+  }
+
+  els.termList.innerHTML = state.filtered.map(termItemHtml).join("");
+}
+
+function termItemHtml(term) {
+  const active = term.id === state.selectedId ? " active" : "";
+  const confidenceClass = term.confidenceLabel === "需复核" ? " warn" : "";
+  const star = isStarred(term) ? "★ " : "";
+  const hasFigure = term.figures.length || term.pageFigures.length;
+  return `
+    <button class="term-item${active}" type="button" data-term-id="${term.id}">
+      <span class="term-main">
+        <span class="term-zh">${star}${escapeHtml(term.zh)}</span>
+        <span class="term-en">${escapeHtml(term.en)}</span>
+      </span>
+      <span class="term-side">
+        <span class="badge${confidenceClass}">${escapeHtml(term.confidenceLabel)}</span>
+        ${hasFigure ? `<span class="badge figure">图</span>` : ""}
+      </span>
+    </button>
+  `;
+}
+
+function renderGroupedList() {
+  const groups = groupFilteredTerms();
+  const selected = currentTerm();
+  const selectedGroupKey = selected ? groupKeyForTerm(selected) : groups[0]?.key;
+
+  els.termList.innerHTML = groups
+    .map((group) => {
+      const expanded = isGroupExpanded(group.key, group.key === selectedGroupKey);
       return `
-        <button class="term-item${active}" type="button" data-term-id="${term.id}">
-          <span class="term-main">
-            <span class="term-zh">${star}${escapeHtml(term.zh)}</span>
-            <span class="term-en">${escapeHtml(term.en)}</span>
-          </span>
-          <span class="term-side">
-            <span class="badge${confidenceClass}">${escapeHtml(term.confidenceLabel)}</span>
-            ${hasFigure ? `<span class="badge figure">图</span>` : ""}
-          </span>
-        </button>
+        <section class="chapter-group">
+          <button class="chapter-toggle" type="button" data-group-key="${escapeHtml(group.key)}" aria-expanded="${expanded}">
+            <span class="chapter-title">${escapeHtml(group.label)}</span>
+            <span class="chapter-count">${group.terms.length} 条</span>
+          </button>
+          ${
+            expanded
+              ? `<div class="chapter-items">${group.terms.map(termItemHtml).join("")}</div>`
+              : ""
+          }
+        </section>
       `;
     })
     .join("");
+}
 
-  if (state.filtered.length > visible.length) {
-    els.termList.insertAdjacentHTML("beforeend", `<div class="list-limit">已显示前 ${visible.length} 条，继续缩小搜索可更快定位。</div>`);
+function groupFilteredTerms() {
+  const groups = new Map();
+  state.filtered.forEach((term) => {
+    const key = groupKeyForTerm(term);
+    if (!groups.has(key)) {
+      groups.set(key, { key, label: groupLabelForTerm(term), terms: [] });
+    }
+    groups.get(key).terms.push(term);
+  });
+  return [...groups.values()];
+}
+
+function groupKeyForTerm(term) {
+  return term.chapters?.[0] || term.part || "未分章";
+}
+
+function groupLabelForTerm(term) {
+  const chapter = term.chapters?.[0] || "未分章";
+  if ((data.parts || []).length > 1 && term.part && !chapter.includes(term.part)) {
+    return `${term.part} / ${chapter}`;
   }
+  return chapter;
+}
+
+function groupStateKey(key) {
+  return `${data.id}:${key}`;
+}
+
+function isGroupExpanded(key, defaultValue = false) {
+  const stored = state.expandedGroups[groupStateKey(key)];
+  return stored ?? defaultValue;
+}
+
+function toggleGroup(key) {
+  const fullKey = groupStateKey(key);
+  state.expandedGroups[fullKey] = !isGroupExpanded(key);
+  renderList();
 }
 
 function selectTerm(id) {
