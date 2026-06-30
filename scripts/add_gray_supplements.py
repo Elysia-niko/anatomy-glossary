@@ -93,13 +93,26 @@ PASSAGE_FACTS = {
 
 
 TITLE_REPLACEMENTS = {
+    "M USCLES : A V IEW": "Muscles: anterior view",
+    "M USCLES : P V IEW": "Muscles: posterior view",
+    "S KELETON : A V IEW": "Skeleton: anterior view",
+    "S KELETON : P V IEW": "Skeleton: posterior view",
+    "V S YSTEM : A RTERIES": "Vascular system: arteries",
     "S KULL : L VIEW": "Skull: lateral view",
     "S KULL : I VIEW": "Skull: inferior view",
+    "S KULL : A V IEW": "Skull: anterior view",
     "S KULL : A C F OSSA": "Skull: anterior cranial fossa",
     "S KULL : M C F OSSA": "Skull: middle cranial fossa",
     "S KULL : P C F OSSA": "Skull: posterior cranial fossa",
     "C S INUS": "Cavernous sinus",
     "CRANIAL NERVES: FLOOR OF CRANIAL CA VITY": "Cranial nerves: floor of cranial cavity",
+    "O RBIT : B ONES": "Orbit: bones",
+    "O RBIT : S N ERVES": "Orbit: sensory nerves",
+    "P F OSSA": "Pterygopalatine fossa",
+    "P F OSSA : G ATEW A YS": "Pterygopalatine fossa: gateways",
+    "P F OSSA : N ERVES": "Pterygopalatine fossa: nerves",
+    "N C A VITY : L W ALL , B ONES": "Nasal cavity: lateral wall, bones",
+    "NASAL CA VITY : LATERAL W ALL, MUCOSA, AND OPENINGS": "Nasal cavity: lateral wall, mucosa, and openings",
 }
 
 
