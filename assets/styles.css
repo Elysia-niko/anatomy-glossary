@@ -585,6 +585,12 @@ select {
   overflow: hidden;
 }
 
+.page-image-wrap,
+.dialog-image-wrap {
+  position: relative;
+  overflow: hidden;
+}
+
 .page-thumb img {
   width: 100%;
   aspect-ratio: 575 / 794;
@@ -601,6 +607,21 @@ select {
   border-top: 1px solid var(--line);
   background: #fbfcf8;
   color: var(--text);
+}
+
+.highlight-layer {
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+}
+
+.highlight-box {
+  position: absolute;
+  display: block;
+  border-radius: 3px;
+  background: rgba(255, 235, 59, 0.42);
+  box-shadow: 0 0 0 1px rgba(245, 158, 11, 0.18), 0 0 10px rgba(245, 158, 11, 0.22);
+  mix-blend-mode: multiply;
 }
 
 .context-list {
@@ -680,6 +701,10 @@ select {
   max-height: 94vh;
   object-fit: contain;
   display: block;
+}
+
+.dialog-image-wrap {
+  width: 100%;
 }
 
 .dialog-close {

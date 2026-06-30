@@ -33,7 +33,9 @@
         "第四章 泌尿系统": 49,
         "第六章 内分泌系统": 15,
         "第七章 脉管系统": 275
-      }
+      },
+      "highlightedTerms": 2256,
+      "highlightBoxes": 4619
     },
     "histology-embryology": {
       "totalTerms": 1249,
@@ -92,7 +94,12 @@
         "第26章 神经系统的发生": 39,
         "第27章 眼与耳的发生": 18,
         "第28章 先天畸形概论": 10
-      }
+      },
+      "highlightedTerms": 1249,
+      "highlightBoxes": 2653
     }
-  }
+  },
+  "highlightGeneratedAt": "2026-07-01T01:13:47",
+  "highlightedTerms": 3505,
+  "highlightBoxes": 7272
 }
