@@ -43,7 +43,6 @@ const els = {
   revealButton: document.getElementById("revealButton"),
   imageDialog: document.getElementById("imageDialog"),
   dialogImage: document.getElementById("dialogImage"),
-  dialogHighlights: document.getElementById("dialogHighlights"),
   closeDialog: document.getElementById("closeDialog"),
 };
 
@@ -564,10 +563,7 @@ function renderFigures(term, hiddenAnswer) {
       const bookPage = pdfPage ? pdfPage - (data.meta?.pageOffset || 0) : term.pages[index] || term.firstPage;
       return `
         <div class="page-thumb">
-          <div class="page-image-wrap">
-            <img src="${escapeHtml(path)}" alt="书页 ${bookPage}" loading="lazy" data-full-image="${escapeHtml(path)}" />
-            ${highlightLayerHtml(term, pdfPage)}
-          </div>
+          <img src="${escapeHtml(path)}" alt="书页 ${bookPage}" loading="lazy" data-full-image="${escapeHtml(path)}" />
           <button type="button" data-full-image="${escapeHtml(path)}">书页 ${bookPage}</button>
         </div>
       `;
@@ -575,32 +571,11 @@ function renderFigures(term, hiddenAnswer) {
     .join("");
 
   els.pageImages.querySelectorAll("[data-full-image]").forEach((node) => {
-    node.addEventListener("click", () => openImage(node.dataset.fullImage, term));
+    node.addEventListener("click", () => openImage(node.dataset.fullImage));
     if (node.tagName === "IMG") {
       node.addEventListener("error", () => node.closest(".page-thumb")?.remove());
     }
   });
-}
-
-function highlightLayerHtml(term, pdfPage) {
-  const boxes = highlightBoxesForPage(term, pdfPage);
-  if (!boxes.length) return "";
-  return `
-    <div class="highlight-layer" aria-hidden="true">
-      ${boxes.map(highlightBoxHtml).join("")}
-    </div>
-  `;
-}
-
-function highlightBoxesForPage(term, pdfPage) {
-  if (!pdfPage) return [];
-  return (term.highlights || [])
-    .filter((item) => Number(item.pdfPage) === Number(pdfPage))
-    .flatMap((item) => item.boxes || []);
-}
-
-function highlightBoxHtml(box) {
-  return `<span class="highlight-box" style="left:${box.x}%; top:${box.y}%; width:${box.w}%; height:${box.h}%;"></span>`;
 }
 
 function renderContexts(term, hiddenAnswer) {
@@ -621,11 +596,9 @@ function renderContexts(term, hiddenAnswer) {
     .join("");
 }
 
-function openImage(path, term = currentTerm()) {
+function openImage(path) {
   if (!path) return;
   els.dialogImage.src = path;
-  const pdfPage = Number((path.match(/pdf-(\d+)\.jpg/) || [])[1]);
-  els.dialogHighlights.innerHTML = highlightBoxesForPage(term, pdfPage).map(highlightBoxHtml).join("");
   if (typeof els.imageDialog.showModal === "function") {
     els.imageDialog.showModal();
   } else {
