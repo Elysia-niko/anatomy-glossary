@@ -67,17 +67,6 @@ button {
   min-width: 0;
 }
 
-.brand-mark {
-  width: 42px;
-  height: 42px;
-  display: inline-grid;
-  place-items: center;
-  border-radius: 8px;
-  background: var(--accent);
-  color: #fff;
-  font-weight: 800;
-}
-
 h1,
 h2,
 h3,
@@ -667,11 +656,6 @@ select {
   #metaLine {
     white-space: normal;
     line-height: 1.35;
-  }
-
-  .brand-mark {
-    width: 36px;
-    height: 36px;
   }
 
   h1 {
