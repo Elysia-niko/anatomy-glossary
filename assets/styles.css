@@ -408,6 +408,11 @@ select {
   background: #fff0ef;
 }
 
+.badge.gray {
+  color: #6f4f08;
+  background: #f6edcf;
+}
+
 .detail {
   min-width: 0;
   min-height: 0;
@@ -554,6 +559,135 @@ select {
 
 .text-link:hover {
   text-decoration: underline;
+}
+
+.text-toggle {
+  border: 1px solid var(--line-strong);
+  border-radius: 8px;
+  padding: 6px 10px;
+  background: var(--surface);
+  color: var(--accent-dark);
+  font-size: 13px;
+  font-weight: 800;
+}
+
+.text-toggle:hover {
+  border-color: var(--accent);
+  background: #f0faf7;
+}
+
+.gray-section {
+  background: linear-gradient(180deg, rgba(246, 237, 207, 0.45), rgba(255, 255, 255, 0));
+}
+
+.gray-english {
+  margin-top: 10px;
+  padding: 10px 12px;
+  border-left: 3px solid var(--warm);
+  background: #fffaf0;
+}
+
+.gray-card-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 12px;
+  margin-top: 12px;
+}
+
+.gray-card {
+  display: grid;
+  gap: 10px;
+  align-content: start;
+  padding: 12px;
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  background: var(--surface);
+}
+
+.gray-card-head {
+  display: grid;
+  gap: 4px;
+}
+
+.gray-card-head strong {
+  font-size: 15px;
+  line-height: 1.35;
+  overflow-wrap: anywhere;
+}
+
+.gray-card-head span,
+.gray-card-label,
+.gray-clinic {
+  color: var(--muted);
+  font-size: 12px;
+  line-height: 1.45;
+}
+
+.gray-image-wrap {
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  overflow: hidden;
+  background: #f4f5ef;
+}
+
+.gray-image-wrap img {
+  display: block;
+  width: 100%;
+  aspect-ratio: 4 / 3;
+  object-fit: cover;
+  object-position: top;
+}
+
+.gray-image-wrap button {
+  width: 100%;
+  min-height: 34px;
+  border: 0;
+  border-top: 1px solid var(--line);
+  background: #fbfcf8;
+  color: var(--text);
+}
+
+.gray-card-block {
+  display: grid;
+  gap: 6px;
+}
+
+.gray-labels {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+}
+
+.gray-label {
+  display: inline-flex;
+  align-items: center;
+  max-width: 100%;
+  min-height: 28px;
+  border: 1px solid var(--line);
+  border-radius: 999px;
+  padding: 4px 8px;
+  background: #fbfcf8;
+  color: #33413a;
+  font-size: 12px;
+  line-height: 1.3;
+  text-align: left;
+  overflow-wrap: anywhere;
+}
+
+button.gray-label:hover {
+  border-color: var(--accent);
+  background: #f0faf7;
+}
+
+.gray-label.match {
+  border-color: #e6c15b;
+  background: #fff6d9;
+  color: #5d4306;
+  font-weight: 800;
+}
+
+.gray-label.muted {
+  color: var(--muted);
 }
 
 .figure-list {

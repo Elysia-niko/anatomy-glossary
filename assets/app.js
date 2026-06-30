@@ -28,6 +28,11 @@ const els = {
   detailLocation: document.getElementById("detailLocation"),
   detailFunction: document.getElementById("detailFunction"),
   detailStudyNote: document.getElementById("detailStudyNote"),
+  graySection: document.getElementById("graySection"),
+  grayZh: document.getElementById("grayZh"),
+  grayEnglish: document.getElementById("grayEnglish"),
+  grayEnglishToggle: document.getElementById("grayEnglishToggle"),
+  grayCards: document.getElementById("grayCards"),
   relatedList: document.getElementById("relatedList"),
   figureList: document.getElementById("figureList"),
   pageImages: document.getElementById("pageImages"),
@@ -58,6 +63,7 @@ const store = {
 let data = library.courses[0] || { terms: [], chapters: [], figures: [], parts: [], meta: {} };
 let figuresByLabel = new Map();
 let termsById = new Map();
+let termsByEnglish = new Map();
 
 let state = {
   filtered: [],
@@ -67,6 +73,7 @@ let state = {
   courseId: data.id || "",
   reviewMode: false,
   revealed: true,
+  showGrayEnglish: false,
 };
 
 function normalizeLibrary(payload) {
@@ -128,6 +135,13 @@ function normalize(value) {
   return String(value ?? "").trim().toLowerCase();
 }
 
+function englishKey(value) {
+  return String(value ?? "")
+    .toLowerCase()
+    .replace(/\([^)]*\)/g, " ")
+    .replace(/[^a-z0-9]+/g, "");
+}
+
 function pageText(pages) {
   if (!pages?.length) return "";
   if (pages.length <= 4) return pages.join(", ");
@@ -162,6 +176,13 @@ function setCourse(courseId) {
   state.courseId = data.id;
   figuresByLabel = new Map((data.figures || []).map((figure) => [figure.label, figure]));
   termsById = new Map((data.terms || []).map((term) => [term.id, term]));
+  termsByEnglish = new Map();
+  (data.terms || []).forEach((term) => {
+    [term.en, ...(term.aliases || [])].forEach((name) => {
+      const key = englishKey(name);
+      if (key && !termsByEnglish.has(key)) termsByEnglish.set(key, term);
+    });
+  });
   els.courseSelect.value = data.id;
   setupFilters();
   updateMetaLine();
@@ -244,6 +265,16 @@ function bindEvents() {
   els.relatedList.addEventListener("click", (event) => {
     const button = event.target.closest("[data-related-id]");
     if (button) selectTerm(button.dataset.relatedId);
+  });
+
+  els.grayEnglishToggle.addEventListener("click", () => {
+    state.showGrayEnglish = !state.showGrayEnglish;
+    renderGray(currentTerm(), state.reviewMode && !state.revealed);
+  });
+
+  els.grayCards.addEventListener("click", (event) => {
+    const button = event.target.closest("[data-gray-related-id]");
+    if (button) selectTerm(button.dataset.grayRelatedId);
   });
 
   els.menuButton.addEventListener("click", () => setDrawerOpen(!document.body.classList.contains("drawer-open")));
@@ -330,12 +361,42 @@ function matchesQuery(term, query) {
       term.location,
       term.function,
       term.studyNote,
+      term.gray?.zh,
+      term.gray?.en,
+      (term.gray?.cards || [])
+        .flatMap((card) => [
+          card.title,
+          card.source,
+          ...(card.matchedLabels || []).flatMap((label) => [label.zh, label.en]),
+          ...(card.relatedLabels || []).flatMap((label) => [label.zh, label.en]),
+          ...(card.clinicKeywords || []),
+        ])
+        .join(" "),
     ].join(" ")
   );
   return query
     .split(/\s+/)
     .filter(Boolean)
     .every((part) => haystack.includes(part));
+}
+
+function searchRank(term, query) {
+  if (!query) return 0;
+  const compactQuery = englishKey(query);
+  const zh = normalize(term.zh);
+  const en = normalize(term.en);
+  const enCompact = englishKey(term.en);
+  const grayText = normalize(`${term.gray?.zh || ""} ${term.gray?.en || ""}`);
+
+  let score = 0;
+  if (zh === query || en === query || (compactQuery && enCompact === compactQuery)) score += 1000;
+  if (zh.startsWith(query) || en.startsWith(query)) score += 700;
+  if (zh.includes(query) || en.includes(query) || (compactQuery && enCompact.includes(compactQuery))) score += 500;
+  if (normalize(term.definition).includes(query)) score += 120;
+  if (normalize(term.structure || term.location).includes(query)) score += 90;
+  if (normalize(term.function).includes(query)) score += 80;
+  if (grayText.includes(query)) score += 60;
+  return score;
 }
 
 function applyFilters() {
@@ -355,6 +416,10 @@ function applyFilters() {
     if (els.starOnly.checked && !isStarred(term)) return false;
     return true;
   });
+
+  if (query) {
+    state.filtered.sort((left, right) => searchRank(right, query) - searchRank(left, query));
+  }
 
   if (!state.filtered.some((term) => term.id === state.selectedId)) {
     state.selectedId = state.filtered[0]?.id || "";
@@ -379,6 +444,7 @@ function termItemHtml(term) {
   const confidenceClass = term.confidenceLabel === "需复核" ? " warn" : "";
   const star = isStarred(term) ? "★ " : "";
   const hasFigure = term.figures.length || term.pageFigures.length;
+  const hasGray = Boolean(term.gray);
   return `
     <button class="term-item${active}" type="button" data-term-id="${term.id}">
       <span class="term-main">
@@ -388,6 +454,7 @@ function termItemHtml(term) {
       <span class="term-side">
         <span class="badge${confidenceClass}">${escapeHtml(term.confidenceLabel)}</span>
         ${hasFigure ? `<span class="badge figure">图</span>` : ""}
+        ${hasGray ? `<span class="badge gray">Gray</span>` : ""}
       </span>
     </button>
   `;
@@ -510,9 +577,105 @@ function renderDetail(term) {
   els.starButton.classList.toggle("active", isStarred(term));
   els.pdfLink.href = sourceLink(term);
 
+  renderGray(term, hiddenAnswer);
   renderRelated(term, hiddenAnswer);
   renderFigures(term, hiddenAnswer);
   renderContexts(term, hiddenAnswer);
+}
+
+function renderGray(term, hiddenAnswer) {
+  const gray = term?.gray;
+  const hasGray = Boolean(gray?.zh || gray?.en || gray?.cards?.length);
+  els.graySection.classList.toggle("hidden", !hasGray);
+
+  if (!hasGray) {
+    els.grayZh.textContent = "";
+    els.grayEnglish.textContent = "";
+    els.grayCards.innerHTML = "";
+    return;
+  }
+
+  if (hiddenAnswer) {
+    els.grayZh.textContent = "......";
+    els.grayEnglish.textContent = "";
+    els.grayEnglish.classList.add("hidden");
+    els.grayEnglishToggle.classList.add("hidden");
+    els.grayCards.innerHTML = `<span class="figure-pill">......</span>`;
+    return;
+  }
+
+  els.grayZh.textContent = gray.zh || "暂无中文补充";
+  els.grayEnglish.textContent = gray.en || "";
+  els.grayEnglish.classList.toggle("hidden", !gray.en || !state.showGrayEnglish);
+  els.grayEnglishToggle.classList.toggle("hidden", !gray.en);
+  els.grayEnglishToggle.textContent = state.showGrayEnglish ? "隐藏英文" : "显示英文";
+  els.grayEnglishToggle.setAttribute("aria-expanded", String(state.showGrayEnglish));
+
+  const cards = gray.cards || [];
+  els.grayCards.innerHTML = cards.length
+    ? cards.slice(0, 3).map((card) => grayCardHtml(card, term)).join("")
+    : `<span class="figure-pill">暂无格氏图卡关联</span>`;
+
+  els.grayCards.querySelectorAll("[data-full-image]").forEach((node) => {
+    node.addEventListener("click", () => openImage(node.dataset.fullImage));
+    if (node.tagName === "IMG") {
+      node.addEventListener("error", () => node.closest(".gray-image-wrap")?.remove());
+    }
+  });
+}
+
+function grayCardHtml(card, term) {
+  const matched = card.matchedLabels?.length
+    ? card.matchedLabels.map((label) => grayLabelHtml(label, { currentId: term.id, mode: "match" })).join("")
+    : `<span class="gray-label muted">未定位具体编号</span>`;
+  const related = (card.relatedLabels || [])
+    .filter((label) => !(card.matchedLabels || []).some((matchedLabel) => matchedLabel.number === label.number))
+    .slice(0, 8);
+  const relatedHtml = related.length
+    ? related.map((label) => grayLabelHtml(label, { currentId: term.id, mode: "related" })).join("")
+    : `<span class="gray-label muted">暂无同图关联标签</span>`;
+  const clinic = card.clinicKeywords?.length
+    ? `<div class="gray-clinic">临床提示：${card.clinicKeywords.map(escapeHtml).join("、")}</div>`
+    : "";
+  const image = card.image
+    ? `
+      <div class="gray-image-wrap">
+        <img src="${escapeHtml(card.image)}" alt="${escapeHtml(card.title)}" loading="lazy" data-full-image="${escapeHtml(card.image)}" />
+        <button type="button" data-full-image="${escapeHtml(card.image)}">打开图卡页 PDF ${escapeHtml(card.imagePdfPage)}</button>
+      </div>
+    `
+    : "";
+
+  return `
+    <article class="gray-card">
+      <div class="gray-card-head">
+        <strong>${escapeHtml(card.title || "Gray's Anatomy")}</strong>
+        <span>${escapeHtml(card.source || "Gray's Anatomy for Students Flash Cards")}</span>
+      </div>
+      ${image}
+      <div class="gray-card-block">
+        <span class="gray-card-label">标出</span>
+        <div class="gray-labels">${matched}</div>
+      </div>
+      <div class="gray-card-block">
+        <span class="gray-card-label">同图关联</span>
+        <div class="gray-labels">${relatedHtml}</div>
+      </div>
+      ${clinic}
+    </article>
+  `;
+}
+
+function grayLabelHtml(label, options = {}) {
+  const target = termsByEnglish.get(englishKey(label.en));
+  const isCurrent = target?.id && target.id === options.currentId;
+  const text = `${label.number ? `${label.number}. ` : ""}${label.zh || label.en}${label.zh && label.en ? ` / ${label.en}` : ""}`;
+  const className = `gray-label ${options.mode === "match" ? "match" : ""}`.trim();
+
+  if (target && !isCurrent) {
+    return `<button class="${className}" type="button" data-gray-related-id="${escapeHtml(target.id)}">${escapeHtml(text)}</button>`;
+  }
+  return `<span class="${className}">${escapeHtml(text)}</span>`;
 }
 
 function renderRelated(term, hiddenAnswer) {
