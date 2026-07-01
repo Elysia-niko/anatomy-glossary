@@ -61,8 +61,31 @@
 
       <section class="detail" aria-live="polite">
         <div id="emptyState" class="empty-state">
-          <h2>正在生成词库视图</h2>
-          <p>如果长时间停在这里，请刷新页面或检查 data/glossary.js 是否已随网页一起上传。</p>
+          <div class="launch-panel">
+            <div class="launch-art" aria-hidden="true">
+              <span class="art-cell art-black"></span>
+              <span class="art-cell art-blue"></span>
+              <span class="art-cell art-red"></span>
+              <span class="art-cell art-gold"></span>
+              <span class="art-cell art-ivory"></span>
+              <span class="art-cell art-teal"></span>
+              <span class="art-line art-line-a"></span>
+              <span class="art-line art-line-b"></span>
+              <span class="art-line art-line-c"></span>
+            </div>
+            <div class="launch-copy">
+              <p id="launchKicker" class="launch-kicker"></p>
+              <h2 id="launchTitle">医学课程词库</h2>
+              <p id="launchSubtitle" class="launch-subtitle"></p>
+              <div class="launch-metrics" aria-label="课程统计">
+                <div><strong id="launchTermCount">0</strong><span>术语</span></div>
+                <div><strong id="launchFigureCount">0</strong><span>图页</span></div>
+                <div><strong id="launchChapterCount">0</strong><span>章节</span></div>
+                <div><strong id="launchGrayCount">0</strong><span>Gray</span></div>
+              </div>
+              <button class="primary-button launch-action" type="button" data-start-random>随机词条</button>
+            </div>
+          </div>
         </div>
 
         <article id="termDetail" class="term-detail hidden">

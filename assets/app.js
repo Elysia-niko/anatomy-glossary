@@ -16,6 +16,13 @@ const els = {
   drawerBackdrop: document.getElementById("drawerBackdrop"),
   termList: document.getElementById("termList"),
   emptyState: document.getElementById("emptyState"),
+  launchKicker: document.getElementById("launchKicker"),
+  launchTitle: document.getElementById("launchTitle"),
+  launchSubtitle: document.getElementById("launchSubtitle"),
+  launchTermCount: document.getElementById("launchTermCount"),
+  launchFigureCount: document.getElementById("launchFigureCount"),
+  launchChapterCount: document.getElementById("launchChapterCount"),
+  launchGrayCount: document.getElementById("launchGrayCount"),
   termDetail: document.getElementById("termDetail"),
   detailChapter: document.getElementById("detailChapter"),
   detailZh: document.getElementById("detailZh"),
@@ -188,7 +195,7 @@ function setCourse(courseId) {
   els.courseSelect.value = data.id;
   setupFilters();
   updateMetaLine();
-  state.selectedId = state.selectedByCourse[data.id] || data.terms?.[0]?.id || "";
+  state.selectedId = state.selectedByCourse[data.id] || "";
   applyFilters();
 }
 
@@ -197,6 +204,26 @@ function updateMetaLine() {
   const totalFigures = data.meta?.totalFigures || data.figures?.length || 0;
   const parts = (data.parts || []).map((part) => part.name).join(" / ");
   els.metaLine.textContent = `${totalTerms} 个词条 · ${totalFigures} 个图号${parts ? ` · ${parts}` : ""}`;
+  renderLaunch();
+}
+
+function renderLaunch() {
+  if (!els.launchTitle) return;
+
+  const totalTerms = data.meta?.totalTerms || data.terms?.length || 0;
+  const totalFigures = data.meta?.totalFigures || data.figures?.length || 0;
+  const chapterCount = data.chapters?.length || 0;
+  const grayCount = (data.terms || []).filter((term) => term.gray).length;
+  const parts = (data.parts || []).map((part) => part.name).filter(Boolean);
+  const title = data.shortTitle || data.title || "医学课程词库";
+
+  els.launchKicker.textContent = parts.length > 1 ? parts.join(" / ") : "医学课程词库";
+  els.launchTitle.textContent = title;
+  els.launchSubtitle.textContent = "结构化术语 · 教材图页 · Gray's Anatomy";
+  els.launchTermCount.textContent = totalTerms.toLocaleString("zh-CN");
+  els.launchFigureCount.textContent = totalFigures.toLocaleString("zh-CN");
+  els.launchChapterCount.textContent = chapterCount.toLocaleString("zh-CN");
+  els.launchGrayCount.textContent = grayCount.toLocaleString("zh-CN");
 }
 
 function setupFilters() {
@@ -297,6 +324,10 @@ function bindEvents() {
     if (event.key === "Escape") setDrawerOpen(false);
   });
 
+  els.emptyState.addEventListener("click", (event) => {
+    if (event.target.closest("[data-start-random]")) selectRandom();
+  });
+
   els.randomButton.addEventListener("click", selectRandom);
   els.reviewButton.addEventListener("click", () => {
     state.reviewMode = !state.reviewMode;
@@ -350,7 +381,7 @@ function reviewScore(term) {
 }
 
 function currentTerm() {
-  return termsById.get(state.selectedId) || state.filtered[0] || data.terms[0];
+  return termsById.get(state.selectedId) || null;
 }
 
 function termParts(term) {
@@ -438,10 +469,14 @@ function applyFilters() {
     state.filtered.sort((left, right) => searchRank(right, query) - searchRank(left, query));
   }
 
-  if (!state.filtered.some((term) => term.id === state.selectedId)) {
-    state.selectedId = state.filtered[0]?.id || "";
+  if (state.selectedId && !state.filtered.some((term) => term.id === state.selectedId)) {
+    state.selectedId = "";
   }
-  state.selectedByCourse[data.id] = state.selectedId;
+  if (state.selectedId) {
+    state.selectedByCourse[data.id] = state.selectedId;
+  } else {
+    delete state.selectedByCourse[data.id];
+  }
   renderList();
   renderDetail(currentTerm());
 }
@@ -567,6 +602,7 @@ function selectRandom() {
 
 function renderDetail(term) {
   if (!term) {
+    renderLaunch();
     els.emptyState.classList.remove("hidden");
     els.termDetail.classList.add("hidden");
     return;
