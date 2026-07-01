@@ -4,7 +4,7 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>医学课程词库</title>
-    <link rel="stylesheet" href="assets/styles.css?v=original-ui-fa5eb04" />
+    <link rel="stylesheet" href="assets/styles.css?v=topics-20260701" />
   </head>
   <body>
     <header class="topbar">
@@ -27,18 +27,20 @@
 
     <main class="workspace">
       <aside class="sidebar" aria-label="词条列表">
+        <div class="topic-panel">
+          <div class="topic-head">
+            <span>专题学习</span>
+            <button id="clearTopicButton" class="topic-clear hidden" type="button">全部词条</button>
+          </div>
+          <div id="topicList" class="topic-list"></div>
+        </div>
+
         <div class="search-panel">
           <input id="searchInput" type="search" placeholder="搜索中文、English、图号、页码或知识点" autocomplete="off" />
           <div class="filters">
             <select id="partFilter" aria-label="篇"></select>
             <select id="chapterFilter" aria-label="章节"></select>
             <select id="categoryFilter" aria-label="分类"></select>
-            <select id="confidenceFilter" aria-label="置信度">
-              <option value="">全部置信度</option>
-              <option value="高">高</option>
-              <option value="中">中</option>
-              <option value="需复核">需复核</option>
-            </select>
             <label class="toggle-line">
               <input id="figureOnly" type="checkbox" />
               <span>有图</span>
@@ -65,6 +67,19 @@
           <p>如果长时间停在这里，请刷新页面或检查 data/glossary.js 是否已随网页一起上传。</p>
         </div>
 
+        <article id="topicDetail" class="topic-detail hidden">
+          <div class="topic-detail-head">
+            <div>
+              <div id="topicDetailMeta" class="eyebrow"></div>
+              <h2 id="topicDetailTitle"></h2>
+              <p id="topicDetailSummary"></p>
+            </div>
+            <button id="topicDetailClose" class="ghost-button" type="button">全部词条</button>
+          </div>
+          <div id="topicDetailTags" class="topic-detail-tags"></div>
+          <div id="topicTermList" class="topic-term-list"></div>
+        </article>
+
         <article id="termDetail" class="term-detail hidden">
           <div class="detail-header">
             <div>
@@ -87,10 +102,6 @@
             <div>
               <span>出现</span>
               <strong id="detailOccurrences"></strong>
-            </div>
-            <div>
-              <span>置信度</span>
-              <strong id="detailConfidence"></strong>
             </div>
           </div>
 
@@ -165,6 +176,7 @@
 
     <noscript>需要启用 JavaScript 才能使用词库。</noscript>
     <script src="data/glossary.js"></script>
-    <script src="assets/app.js?v=original-ui-fa5eb04"></script>
+    <script src="data/topics.js?v=topics-20260701"></script>
+    <script src="assets/app.js?v=topics-20260701"></script>
   </body>
 </html>

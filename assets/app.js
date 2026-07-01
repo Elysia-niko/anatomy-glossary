@@ -1,4 +1,5 @@
 const rawData = window.MED_GLOSSARY || window.ANATOMY_GLOSSARY;
+const rawTopics = window.MED_GLOSSARY_TOPICS || [];
 
 const els = {
   metaLine: document.getElementById("metaLine"),
@@ -8,14 +9,22 @@ const els = {
   partFilter: document.getElementById("partFilter"),
   chapterFilter: document.getElementById("chapterFilter"),
   categoryFilter: document.getElementById("categoryFilter"),
-  confidenceFilter: document.getElementById("confidenceFilter"),
   figureOnly: document.getElementById("figureOnly"),
   starOnly: document.getElementById("starOnly"),
+  topicList: document.getElementById("topicList"),
+  clearTopicButton: document.getElementById("clearTopicButton"),
   resultCount: document.getElementById("resultCount"),
   clearButton: document.getElementById("clearButton"),
   drawerBackdrop: document.getElementById("drawerBackdrop"),
   termList: document.getElementById("termList"),
   emptyState: document.getElementById("emptyState"),
+  topicDetail: document.getElementById("topicDetail"),
+  topicDetailMeta: document.getElementById("topicDetailMeta"),
+  topicDetailTitle: document.getElementById("topicDetailTitle"),
+  topicDetailSummary: document.getElementById("topicDetailSummary"),
+  topicDetailTags: document.getElementById("topicDetailTags"),
+  topicTermList: document.getElementById("topicTermList"),
+  topicDetailClose: document.getElementById("topicDetailClose"),
   termDetail: document.getElementById("termDetail"),
   detailChapter: document.getElementById("detailChapter"),
   detailZh: document.getElementById("detailZh"),
@@ -23,7 +32,6 @@ const els = {
   detailCategory: document.getElementById("detailCategory"),
   detailPages: document.getElementById("detailPages"),
   detailOccurrences: document.getElementById("detailOccurrences"),
-  detailConfidence: document.getElementById("detailConfidence"),
   detailDefinition: document.getElementById("detailDefinition"),
   detailLocation: document.getElementById("detailLocation"),
   detailFunction: document.getElementById("detailFunction"),
@@ -53,6 +61,8 @@ const els = {
 };
 
 const library = normalizeLibrary(rawData);
+const topics = normalizeTopics(rawTopics);
+const topicsById = new Map(topics.map((topic) => [topic.id, topic]));
 
 const store = {
   stars: readStore("medGlossaryStars", {}),
@@ -72,6 +82,7 @@ let state = {
   selectedByCourse: {},
   expandedGroups: {},
   courseId: data.id || "",
+  activeTopicId: "",
   reviewMode: false,
   revealed: true,
   showGrayEnglish: false,
@@ -110,6 +121,17 @@ function normalizeLibrary(payload) {
     };
   }
   return { schemaVersion: 2, meta: {}, courses: [] };
+}
+
+function normalizeTopics(payload) {
+  if (!Array.isArray(payload)) return [];
+  return payload
+    .filter((topic) => topic?.id && topic?.courseId && Array.isArray(topic.termIds))
+    .map((topic) => ({
+      ...topic,
+      tags: Array.isArray(topic.tags) ? topic.tags : [],
+      termIds: [...new Set(topic.termIds.filter(Boolean))],
+    }));
 }
 
 function readStore(key, fallback) {
@@ -186,6 +208,8 @@ function setCourse(courseId) {
     });
   });
   els.courseSelect.value = data.id;
+  if (currentTopic()?.courseId !== data.id) state.activeTopicId = "";
+  renderTopics();
   setupFilters();
   updateMetaLine();
   state.selectedId = state.selectedByCourse[data.id] || data.terms?.[0]?.id || "";
@@ -197,6 +221,51 @@ function updateMetaLine() {
   const totalFigures = data.meta?.totalFigures || data.figures?.length || 0;
   const parts = (data.parts || []).map((part) => part.name).join(" / ");
   els.metaLine.textContent = `${totalTerms} 个词条 · ${totalFigures} 个图号${parts ? ` · ${parts}` : ""}`;
+}
+
+function courseTopics() {
+  return topics.filter((topic) => topic.courseId === data.id && topic.termIds.some((id) => termsById.has(id)));
+}
+
+function currentTopic() {
+  return topicsById.get(state.activeTopicId) || null;
+}
+
+function topicTerms(topic) {
+  if (!topic) return [];
+  return topic.termIds.map((id) => termsById.get(id)).filter(Boolean);
+}
+
+function renderTopics() {
+  const items = courseTopics();
+  els.topicList.closest(".topic-panel")?.classList.toggle("hidden", !items.length);
+  els.clearTopicButton.classList.toggle("hidden", !state.activeTopicId);
+  els.topicList.innerHTML = items
+    .map((topic) => {
+      const active = topic.id === state.activeTopicId ? " active" : "";
+      const count = topic.termIds.filter((id) => termsById.has(id)).length;
+      const tags = topic.tags.slice(0, 3).map((tag) => `<span>${escapeHtml(tag)}</span>`).join("");
+      return `
+        <button class="topic-item${active}" type="button" data-topic-id="${escapeHtml(topic.id)}">
+          <span class="topic-title">${escapeHtml(topic.title)}</span>
+          <span class="topic-summary">${escapeHtml(topic.summary)}</span>
+          <span class="topic-foot">
+            <span>${count} 个词条</span>
+            <span class="topic-mini-tags">${tags}</span>
+          </span>
+        </button>
+      `;
+    })
+    .join("");
+}
+
+function resetFilters() {
+  els.searchInput.value = "";
+  els.partFilter.value = "";
+  els.chapterFilter.value = "";
+  els.categoryFilter.value = "";
+  els.figureOnly.checked = false;
+  els.starOnly.checked = false;
 }
 
 function setupFilters() {
@@ -217,36 +286,38 @@ function setupFilters() {
     .map((category) => `<option value="${escapeHtml(category)}">${escapeHtml(category)}</option>`)
     .join("")}`;
 
-  els.searchInput.value = "";
-  els.partFilter.value = "";
-  els.chapterFilter.value = "";
-  els.categoryFilter.value = "";
-  els.confidenceFilter.value = "";
-  els.figureOnly.checked = false;
-  els.starOnly.checked = false;
+  resetFilters();
 }
 
 function bindEvents() {
   els.courseSelect.addEventListener("change", () => setCourse(els.courseSelect.value));
+
+  els.topicList.addEventListener("click", (event) => {
+    const button = event.target.closest("[data-topic-id]");
+    if (button) selectTopic(button.dataset.topicId);
+  });
+
+  els.clearTopicButton.addEventListener("click", clearTopic);
+  els.topicDetailClose.addEventListener("click", clearTopic);
+  els.topicTermList.addEventListener("click", (event) => {
+    const button = event.target.closest("[data-topic-term-id]");
+    if (button) selectTerm(button.dataset.topicTermId);
+  });
 
   [
     els.searchInput,
     els.partFilter,
     els.chapterFilter,
     els.categoryFilter,
-    els.confidenceFilter,
     els.figureOnly,
     els.starOnly,
   ].forEach((node) => node.addEventListener("input", applyFilters));
 
   els.clearButton.addEventListener("click", () => {
-    els.searchInput.value = "";
-    els.partFilter.value = "";
-    els.chapterFilter.value = "";
-    els.categoryFilter.value = "";
-    els.confidenceFilter.value = "";
-    els.figureOnly.checked = false;
-    els.starOnly.checked = false;
+    resetFilters();
+    state.activeTopicId = "";
+    state.selectedId = state.selectedByCourse[data.id] || "";
+    renderTopics();
     applyFilters();
   });
 
@@ -421,14 +492,15 @@ function applyFilters() {
   const part = els.partFilter.value;
   const chapter = els.chapterFilter.value;
   const category = els.categoryFilter.value;
-  const confidence = els.confidenceFilter.value;
+  const topic = currentTopic();
+  const topicIds = topic ? new Set(topic.termIds) : null;
 
   state.filtered = data.terms.filter((term) => {
+    if (topicIds && !topicIds.has(term.id)) return false;
     if (!matchesQuery(term, query)) return false;
     if (part && !termParts(term).includes(part)) return false;
     if (chapter && !term.chapters.includes(chapter)) return false;
     if (category && term.category !== category) return false;
-    if (confidence && term.confidenceLabel !== confidence) return false;
     if (els.figureOnly.checked && !term.figures.length && !term.pageFigures.length) return false;
     if (els.starOnly.checked && !isStarred(term)) return false;
     return true;
@@ -438,12 +510,22 @@ function applyFilters() {
     state.filtered.sort((left, right) => searchRank(right, query) - searchRank(left, query));
   }
 
-  if (!state.filtered.some((term) => term.id === state.selectedId)) {
+  const selectedVisible = state.filtered.some((term) => term.id === state.selectedId);
+  if (state.selectedId && !selectedVisible) {
+    state.selectedId = "";
+  }
+  if (!state.activeTopicId && !state.selectedId) {
     state.selectedId = state.filtered[0]?.id || "";
   }
-  state.selectedByCourse[data.id] = state.selectedId;
+  if (state.selectedId) {
+    state.selectedByCourse[data.id] = state.selectedId;
+  }
   renderList();
-  renderDetail(currentTerm());
+  if (state.activeTopicId && !state.selectedId) {
+    renderTopicDetail(topic);
+  } else {
+    renderDetail(currentTerm());
+  }
 }
 
 function renderList() {
@@ -458,21 +540,20 @@ function renderList() {
 
 function termItemHtml(term) {
   const active = term.id === state.selectedId ? " active" : "";
-  const confidenceClass = term.confidenceLabel === "需复核" ? " warn" : "";
   const star = isStarred(term) ? "★ " : "";
   const hasFigure = term.figures.length || term.pageFigures.length;
   const hasGray = Boolean(term.gray);
+  const badges = [
+    hasFigure ? `<span class="badge figure">图</span>` : "",
+    hasGray ? `<span class="badge gray">Gray</span>` : "",
+  ].join("");
   return `
     <button class="term-item${active}" type="button" data-term-id="${term.id}">
       <span class="term-main">
         <span class="term-zh">${star}${escapeHtml(term.zh)}</span>
         <span class="term-en">${escapeHtml(term.en)}</span>
       </span>
-      <span class="term-side">
-        <span class="badge${confidenceClass}">${escapeHtml(term.confidenceLabel)}</span>
-        ${hasFigure ? `<span class="badge figure">图</span>` : ""}
-        ${hasGray ? `<span class="badge gray">Gray</span>` : ""}
-      </span>
+      ${badges ? `<span class="term-side">${badges}</span>` : ""}
     </button>
   `;
 }
@@ -541,10 +622,34 @@ function toggleGroup(key) {
   renderList();
 }
 
+function selectTopic(id) {
+  const topic = topicsById.get(id);
+  if (!topic || topic.courseId !== data.id) return;
+  state.activeTopicId = id;
+  state.selectedId = "";
+  resetFilters();
+  renderTopics();
+  applyFilters();
+  if (isMobileLayout()) setDrawerOpen(false);
+  document.querySelector(".detail")?.scrollTo({ top: 0, behavior: "smooth" });
+}
+
+function clearTopic() {
+  state.activeTopicId = "";
+  state.selectedId = state.selectedByCourse[data.id] || "";
+  renderTopics();
+  applyFilters();
+}
+
 function selectTerm(id) {
+  const topic = currentTopic();
+  if (topic && !topic.termIds.includes(id)) {
+    state.activeTopicId = "";
+  }
   state.selectedId = id;
   state.selectedByCourse[data.id] = id;
   state.revealed = !state.reviewMode;
+  renderTopics();
   renderList();
   renderDetail(currentTerm());
   document.querySelector(".detail")?.scrollTo({ top: 0, behavior: "smooth" });
@@ -568,12 +673,14 @@ function selectRandom() {
 function renderDetail(term) {
   if (!term) {
     els.emptyState.classList.remove("hidden");
+    els.topicDetail.classList.add("hidden");
     els.termDetail.classList.add("hidden");
     return;
   }
 
   const hiddenAnswer = state.reviewMode && !state.revealed;
   els.emptyState.classList.add("hidden");
+  els.topicDetail.classList.add("hidden");
   els.termDetail.classList.remove("hidden");
   els.reviewPanel.classList.toggle("hidden", !state.reviewMode);
 
@@ -584,7 +691,6 @@ function renderDetail(term) {
   els.detailCategory.textContent = term.category;
   els.detailPages.textContent = pageText(term.pages);
   els.detailOccurrences.textContent = `${term.occurrences} 次`;
-  els.detailConfidence.textContent = `${term.confidenceLabel} (${term.confidence})`;
   els.detailDefinition.textContent = hiddenAnswer ? "......" : term.definition || "暂无自动解释";
   els.detailLocation.textContent = hiddenAnswer ? "......" : term.structure || term.location || "未在自动上下文中识别到明确结构或分布";
   els.detailFunction.textContent = hiddenAnswer ? "......" : term.function || "未在自动上下文中识别到明确功能或意义";
@@ -598,6 +704,39 @@ function renderDetail(term) {
   renderRelated(term, hiddenAnswer);
   renderFigures(term, hiddenAnswer);
   renderContexts(term, hiddenAnswer);
+}
+
+function renderTopicDetail(topic) {
+  if (!topic) {
+    els.emptyState.classList.remove("hidden");
+    els.topicDetail.classList.add("hidden");
+    els.termDetail.classList.add("hidden");
+    return;
+  }
+
+  const filteredIds = new Set(state.filtered.map((term) => term.id));
+  const terms = topicTerms(topic).filter((term) => filteredIds.has(term.id));
+
+  els.emptyState.classList.add("hidden");
+  els.termDetail.classList.add("hidden");
+  els.topicDetail.classList.remove("hidden");
+  els.topicDetailMeta.textContent = `${data.shortTitle || data.title} · ${terms.length} / ${topic.termIds.length} 个词条`;
+  els.topicDetailTitle.textContent = topic.title;
+  els.topicDetailSummary.textContent = topic.summary;
+  els.topicDetailTags.innerHTML = topic.tags.map((tag) => `<span>${escapeHtml(tag)}</span>`).join("");
+  els.topicTermList.innerHTML = terms.length
+    ? terms
+        .map(
+          (term) => `
+            <button class="topic-term-chip" type="button" data-topic-term-id="${escapeHtml(term.id)}">
+              <strong>${escapeHtml(term.zh)}</strong>
+              <span>${escapeHtml(term.en)}</span>
+              <small>${escapeHtml([term.category, term.chapters?.[0]].filter(Boolean).join(" · "))}</small>
+            </button>
+          `
+        )
+        .join("")
+    : `<div class="topic-empty">当前筛选下没有专题词条。</div>`;
 }
 
 function renderGray(term, hiddenAnswer) {
