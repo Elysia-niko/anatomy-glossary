@@ -33,6 +33,7 @@ const els = {
   grayEnglish: document.getElementById("grayEnglish"),
   grayEnglishToggle: document.getElementById("grayEnglishToggle"),
   grayCards: document.getElementById("grayCards"),
+  grayBookHits: document.getElementById("grayBookHits"),
   relatedList: document.getElementById("relatedList"),
   figureList: document.getElementById("figureList"),
   pageImages: document.getElementById("pageImages"),
@@ -372,6 +373,9 @@ function matchesQuery(term, query) {
           ...(card.clinicKeywords || []),
         ])
         .join(" "),
+      term.gray?.book?.zh,
+      term.gray?.book?.en,
+      (term.gray?.book?.hits || []).flatMap((hit) => [hit.matched, hit.line, hit.snippet]).join(" "),
     ].join(" ")
   );
   return query
@@ -585,13 +589,15 @@ function renderDetail(term) {
 
 function renderGray(term, hiddenAnswer) {
   const gray = term?.gray;
-  const hasGray = Boolean(gray?.zh || gray?.en || gray?.cards?.length);
+  const bookHits = gray?.book?.hits || [];
+  const hasGray = Boolean(gray?.zh || gray?.en || gray?.cards?.length || bookHits.length);
   els.graySection.classList.toggle("hidden", !hasGray);
 
   if (!hasGray) {
     els.grayZh.textContent = "";
     els.grayEnglish.textContent = "";
     els.grayCards.innerHTML = "";
+    els.grayBookHits.innerHTML = "";
     return;
   }
 
@@ -601,13 +607,14 @@ function renderGray(term, hiddenAnswer) {
     els.grayEnglish.classList.add("hidden");
     els.grayEnglishToggle.classList.add("hidden");
     els.grayCards.innerHTML = `<span class="figure-pill">......</span>`;
+    els.grayBookHits.innerHTML = "";
     return;
   }
 
-  els.grayZh.textContent = gray.zh || "暂无中文补充";
+  els.grayZh.textContent = gray.zh || gray.book?.zh || "暂无中文补充";
   els.grayEnglish.textContent = gray.en || "";
   els.grayEnglish.classList.toggle("hidden", !gray.en || !state.showGrayEnglish);
-  els.grayEnglishToggle.classList.toggle("hidden", !gray.en);
+  els.grayEnglishToggle.classList.toggle("hidden", !(gray.en || bookHits.length));
   els.grayEnglishToggle.textContent = state.showGrayEnglish ? "隐藏英文" : "显示英文";
   els.grayEnglishToggle.setAttribute("aria-expanded", String(state.showGrayEnglish));
 
@@ -615,6 +622,7 @@ function renderGray(term, hiddenAnswer) {
   els.grayCards.innerHTML = cards.length
     ? cards.slice(0, 3).map((card) => grayCardHtml(card, term)).join("")
     : `<span class="figure-pill">暂无格氏图卡关联</span>`;
+  els.grayBookHits.innerHTML = grayBookHtml(gray.book, term);
 
   els.grayCards.querySelectorAll("[data-full-image]").forEach((node) => {
     node.addEventListener("click", () => openImage(node.dataset.fullImage));
@@ -622,6 +630,39 @@ function renderGray(term, hiddenAnswer) {
       node.addEventListener("error", () => node.closest(".gray-image-wrap")?.remove());
     }
   });
+}
+
+function grayBookHtml(book, term) {
+  const hits = book?.hits || [];
+  if (!hits.length) return "";
+  const summary = book.zh && term.gray?.zh && book.zh !== term.gray.zh ? `<p class="gray-book-summary">${escapeHtml(book.zh)}</p>` : "";
+  return `
+    <div class="gray-book-head">
+      <strong>格氏正书 OCR 定位</strong>
+      <span>${hits.length} 处上下文</span>
+    </div>
+    ${summary}
+    <div class="gray-book-items">
+      ${hits.slice(0, 3).map((hit) => grayBookHitHtml(hit)).join("")}
+    </div>
+  `;
+}
+
+function grayBookHitHtml(hit) {
+  const page = hit.bookPage ? `正书 ${hit.bookPage} 页` : `PDF ${hit.pdfPage} 页`;
+  const source = `${page} · PDF ${hit.pdfPage}`;
+  const snippet = state.showGrayEnglish
+    ? `<p class="gray-book-snippet">${escapeHtml(hit.snippet || hit.line || "")}</p>`
+    : "";
+  return `
+    <article class="gray-book-hit">
+      <div>
+        <strong>${escapeHtml(hit.matched || "Gray OCR")}</strong>
+        <span>${escapeHtml(source)}</span>
+      </div>
+      ${snippet}
+    </article>
+  `;
 }
 
 function grayCardHtml(card, term) {

@@ -96,5 +96,8 @@
     }
   },
   "grayGeneratedAt": "2026-07-01T02:08:05",
-  "graySupplementTerms": 617
+  "graySupplementTerms": 617,
+  "grayBookOcrGeneratedAt": "2026-07-01T12:38:06",
+  "grayBookOcrTerms": 1093,
+  "grayBookOcrHits": 2935
 }

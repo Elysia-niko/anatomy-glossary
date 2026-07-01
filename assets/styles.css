@@ -690,6 +690,68 @@ button.gray-label:hover {
   color: var(--muted);
 }
 
+.gray-book-list {
+  display: grid;
+  gap: 10px;
+  margin-top: 12px;
+}
+
+.gray-book-head {
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+  gap: 12px;
+  padding-top: 4px;
+}
+
+.gray-book-head strong {
+  font-size: 15px;
+}
+
+.gray-book-head span,
+.gray-book-hit span {
+  color: var(--muted);
+  font-size: 12px;
+}
+
+.gray-book-summary {
+  padding: 8px 0 0;
+}
+
+.gray-book-items {
+  display: grid;
+  gap: 8px;
+}
+
+.gray-book-hit {
+  display: grid;
+  gap: 8px;
+  padding: 10px 12px;
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  background: #fbfcf8;
+}
+
+.gray-book-hit > div {
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+  gap: 12px;
+}
+
+.gray-book-hit strong {
+  font-size: 14px;
+  overflow-wrap: anywhere;
+}
+
+.gray-book-snippet {
+  border-left: 3px solid var(--line-strong);
+  padding-left: 10px;
+  color: #33413a;
+  font-size: 14px;
+  line-height: 1.7;
+}
+
 .figure-list {
   display: flex;
   flex-wrap: wrap;
