@@ -1,4 +1,5 @@
-const rawData = window.MED_GLOSSARY || window.ANATOMY_GLOSSARY;
+const DATA_VERSION = "split-20260701";
+const rawData = window.MED_GLOSSARY_INDEX || window.MED_GLOSSARY || window.ANATOMY_GLOSSARY;
 const rawTopics = window.MED_GLOSSARY_TOPICS || [];
 
 const els = {
@@ -63,6 +64,8 @@ const els = {
 const library = normalizeLibrary(rawData);
 const topics = normalizeTopics(rawTopics);
 const topicsById = new Map(topics.map((topic) => [topic.id, topic]));
+const courseDataCache = new Map();
+const courseScriptPromises = new Map();
 
 const store = {
   stars: readStore("medGlossaryStars", {}),
@@ -71,10 +74,11 @@ const store = {
   legacyReview: readStore("anatomyReview", {}),
 };
 
-let data = library.courses[0] || { terms: [], chapters: [], figures: [], parts: [], meta: {} };
+let data = emptyCourse(library.courses[0]);
 let figuresByLabel = new Map();
 let termsById = new Map();
 let termsByEnglish = new Map();
+let courseLoadToken = 0;
 
 let state = {
   filtered: [],
@@ -134,6 +138,17 @@ function normalizeTopics(payload) {
     }));
 }
 
+function emptyCourse(course = {}) {
+  return {
+    ...course,
+    terms: course.terms || [],
+    figures: course.figures || [],
+    chapters: course.chapters || [],
+    parts: course.parts || [],
+    meta: course.meta || {},
+  };
+}
+
 function readStore(key, fallback) {
   try {
     return JSON.parse(localStorage.getItem(key)) || fallback;
@@ -186,7 +201,7 @@ function setup() {
 
   setupCourseSelect();
   bindEvents();
-  setCourse(library.courses[0].id);
+  setCourse(library.courses[0].id).catch(showDataError);
 }
 
 function setupCourseSelect() {
@@ -195,8 +210,19 @@ function setupCourseSelect() {
     .join("");
 }
 
-function setCourse(courseId) {
-  data = library.courses.find((course) => course.id === courseId) || library.courses[0];
+async function setCourse(courseId) {
+  const loadToken = ++courseLoadToken;
+  const shell = library.courses.find((course) => course.id === courseId) || library.courses[0];
+  if (!shell) return;
+
+  state.courseId = shell.id;
+  els.courseSelect.value = shell.id;
+  els.metaLine.textContent = "加载中";
+
+  const course = await loadCourse(shell.id);
+  if (loadToken !== courseLoadToken) return;
+
+  data = emptyCourse(course);
   state.courseId = data.id;
   figuresByLabel = new Map((data.figures || []).map((figure) => [figure.label, figure]));
   termsById = new Map((data.terms || []).map((term) => [term.id, term]));
@@ -214,6 +240,48 @@ function setCourse(courseId) {
   updateMetaLine();
   state.selectedId = state.selectedByCourse[data.id] || data.terms?.[0]?.id || "";
   applyFilters();
+}
+
+async function loadCourse(courseId) {
+  const shell = library.courses.find((course) => course.id === courseId);
+  if (courseDataCache.has(courseId)) return courseDataCache.get(courseId);
+  if (shell?.terms?.length) {
+    courseDataCache.set(courseId, shell);
+    return shell;
+  }
+
+  const registered = window.MED_GLOSSARY_COURSES?.[courseId];
+  if (registered?.terms?.length) {
+    courseDataCache.set(courseId, registered);
+    return registered;
+  }
+
+  await loadCourseScript(courseId);
+  const loaded = window.MED_GLOSSARY_COURSES?.[courseId];
+  if (!loaded?.terms?.length) {
+    throw new Error(`Course data not found: ${courseId}`);
+  }
+  courseDataCache.set(courseId, loaded);
+  return loaded;
+}
+
+function loadCourseScript(courseId) {
+  if (courseScriptPromises.has(courseId)) return courseScriptPromises.get(courseId);
+  const promise = new Promise((resolve, reject) => {
+    const script = document.createElement("script");
+    script.src = `data/courses/${courseId}.js?v=${DATA_VERSION}`;
+    script.async = true;
+    script.onload = resolve;
+    script.onerror = () => reject(new Error(`Failed to load ${script.src}`));
+    document.head.appendChild(script);
+  });
+  courseScriptPromises.set(courseId, promise);
+  return promise;
+}
+
+function showDataError(error) {
+  console.error(error);
+  els.metaLine.textContent = "词库加载失败，请刷新页面";
 }
 
 function updateMetaLine() {
@@ -271,7 +339,7 @@ function resetFilters() {
 function setupFilters() {
   const parts = data.parts?.length
     ? data.parts.map((part) => part.name)
-    : [...new Set(data.terms.map((term) => term.part).filter(Boolean))];
+    : [...new Set((data.terms || []).map((term) => term.part).filter(Boolean))];
   els.partFilter.innerHTML = `<option value="">全部篇章</option>${parts
     .map((part) => `<option value="${escapeHtml(part)}">${escapeHtml(part)}</option>`)
     .join("")}`;
@@ -281,7 +349,7 @@ function setupFilters() {
     .map((chapter) => `<option value="${escapeHtml(chapter.name)}">${escapeHtml(chapter.name)}</option>`)
     .join("")}`;
 
-  const categories = [...new Set(data.terms.map((term) => term.category))].sort((a, b) => a.localeCompare(b, "zh-CN"));
+  const categories = [...new Set((data.terms || []).map((term) => term.category))].sort((a, b) => a.localeCompare(b, "zh-CN"));
   els.categoryFilter.innerHTML = `<option value="">全部分类</option>${categories
     .map((category) => `<option value="${escapeHtml(category)}">${escapeHtml(category)}</option>`)
     .join("")}`;
@@ -290,7 +358,7 @@ function setupFilters() {
 }
 
 function bindEvents() {
-  els.courseSelect.addEventListener("change", () => setCourse(els.courseSelect.value));
+  els.courseSelect.addEventListener("change", () => setCourse(els.courseSelect.value).catch(showDataError));
 
   els.topicList.addEventListener("click", (event) => {
     const button = event.target.closest("[data-topic-id]");
@@ -421,7 +489,7 @@ function reviewScore(term) {
 }
 
 function currentTerm() {
-  return termsById.get(state.selectedId) || state.filtered[0] || data.terms[0];
+  return termsById.get(state.selectedId) || state.filtered[0] || (data.terms || [])[0];
 }
 
 function termParts(term) {
@@ -494,8 +562,9 @@ function applyFilters() {
   const category = els.categoryFilter.value;
   const topic = currentTopic();
   const topicIds = topic ? new Set(topic.termIds) : null;
+  const terms = data.terms || [];
 
-  state.filtered = data.terms.filter((term) => {
+  state.filtered = terms.filter((term) => {
     if (topicIds && !topicIds.has(term.id)) return false;
     if (!matchesQuery(term, query)) return false;
     if (part && !termParts(term).includes(part)) return false;
@@ -656,7 +725,8 @@ function selectTerm(id) {
 }
 
 function selectRandom() {
-  const source = state.filtered.length ? state.filtered : data.terms;
+  const source = state.filtered.length ? state.filtered : data.terms || [];
+  if (!source.length) return;
   const weights = source.map((term) => Math.max(1, 5 - reviewScore(term)));
   const total = weights.reduce((sum, value) => sum + value, 0);
   let pick = Math.random() * total;
