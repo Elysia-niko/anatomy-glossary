@@ -698,10 +698,15 @@ button.gray-label:hover {
 
 .gray-book-head {
   display: flex;
-  align-items: baseline;
+  align-items: center;
   justify-content: space-between;
   gap: 12px;
   padding-top: 4px;
+}
+
+.gray-book-head > div {
+  display: grid;
+  gap: 3px;
 }
 
 .gray-book-head strong {
@@ -750,6 +755,33 @@ button.gray-label:hover {
   color: #33413a;
   font-size: 14px;
   line-height: 1.7;
+}
+
+.gray-book-toggle {
+  flex: 0 0 auto;
+}
+
+.gray-book-image-wrap {
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  overflow: hidden;
+  background: #f4f5ef;
+}
+
+.gray-book-image-wrap img {
+  display: block;
+  width: 100%;
+  height: auto;
+  background: #eef0ec;
+}
+
+.gray-book-image-wrap button {
+  width: 100%;
+  min-height: 34px;
+  border: 0;
+  border-top: 1px solid var(--line);
+  background: #fbfcf8;
+  color: var(--text);
 }
 
 .figure-list {

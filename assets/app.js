@@ -75,6 +75,7 @@ let state = {
   reviewMode: false,
   revealed: true,
   showGrayEnglish: false,
+  showGrayBookPages: false,
 };
 
 function normalizeLibrary(payload) {
@@ -276,6 +277,18 @@ function bindEvents() {
   els.grayCards.addEventListener("click", (event) => {
     const button = event.target.closest("[data-gray-related-id]");
     if (button) selectTerm(button.dataset.grayRelatedId);
+  });
+
+  els.grayBookHits.addEventListener("click", (event) => {
+    const toggle = event.target.closest("[data-gray-book-toggle]");
+    if (toggle) {
+      state.showGrayBookPages = !state.showGrayBookPages;
+      renderGray(currentTerm(), state.reviewMode && !state.revealed);
+      return;
+    }
+
+    const imageButton = event.target.closest("[data-full-image]");
+    if (imageButton) openImage(imageButton.dataset.fullImage);
   });
 
   els.menuButton.addEventListener("click", () => setDrawerOpen(!document.body.classList.contains("drawer-open")));
@@ -630,16 +643,27 @@ function renderGray(term, hiddenAnswer) {
       node.addEventListener("error", () => node.closest(".gray-image-wrap")?.remove());
     }
   });
+  els.grayBookHits.querySelectorAll("img[data-full-image]").forEach((node) => {
+    node.addEventListener("error", () => node.closest(".gray-book-image-wrap")?.remove());
+  });
 }
 
 function grayBookHtml(book, term) {
   const hits = book?.hits || [];
   if (!hits.length) return "";
   const summary = book.zh && term.gray?.zh && book.zh !== term.gray.zh ? `<p class="gray-book-summary">${escapeHtml(book.zh)}</p>` : "";
+  const pageToggle = `
+    <button class="text-toggle gray-book-toggle" type="button" data-gray-book-toggle aria-expanded="${state.showGrayBookPages}">
+      ${state.showGrayBookPages ? "隐藏正书页图" : "显示正书页图"}
+    </button>
+  `;
   return `
     <div class="gray-book-head">
-      <strong>格氏正书 OCR 定位</strong>
-      <span>${hits.length} 处上下文</span>
+      <div>
+        <strong>格氏正书 OCR 定位</strong>
+        <span>${hits.length} 处上下文</span>
+      </div>
+      ${pageToggle}
     </div>
     ${summary}
     <div class="gray-book-items">
@@ -654,6 +678,15 @@ function grayBookHitHtml(hit) {
   const snippet = state.showGrayEnglish
     ? `<p class="gray-book-snippet">${escapeHtml(hit.snippet || hit.line || "")}</p>`
     : "";
+  const imagePath = grayBookPageImage(hit);
+  const pageImage = state.showGrayBookPages
+    ? `
+      <div class="gray-book-image-wrap">
+        <img src="${escapeHtml(imagePath)}" alt="${escapeHtml(source)}" loading="lazy" data-full-image="${escapeHtml(imagePath)}" />
+        <button type="button" data-full-image="${escapeHtml(imagePath)}">打开正书页图 PDF ${escapeHtml(hit.pdfPage)}</button>
+      </div>
+    `
+    : "";
   return `
     <article class="gray-book-hit">
       <div>
@@ -661,8 +694,14 @@ function grayBookHitHtml(hit) {
         <span>${escapeHtml(source)}</span>
       </div>
       ${snippet}
+      ${pageImage}
     </article>
   `;
+}
+
+function grayBookPageImage(hit) {
+  const page = String(hit.pdfPage || 0).padStart(4, "0");
+  return `assets/pages/gray-book/pdf-${page}.jpg`;
 }
 
 function grayCardHtml(card, term) {
