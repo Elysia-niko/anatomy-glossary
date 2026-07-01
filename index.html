@@ -4,9 +4,9 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>医学课程词库</title>
-    <link rel="stylesheet" href="assets/styles.css?v=organic-20260701" />
+    <link rel="stylesheet" href="assets/styles.css?v=cat-loader-20260702" />
   </head>
-  <body>
+  <body class="loading-pending">
     <header class="topbar">
       <button id="menuButton" class="menu-button" type="button" aria-label="打开词条菜单" aria-expanded="false">
         <span></span>
@@ -174,9 +174,19 @@
       <img id="dialogImage" alt="教材页图" />
     </dialog>
 
+    <div id="loadingOverlay" class="loading-overlay" aria-live="polite" aria-hidden="true">
+      <div class="loading-panel">
+        <img class="loading-cat" src="assets/loading-cat.png" width="150" height="150" alt="" />
+        <div class="loading-title">正在加载词库</div>
+        <div class="loading-progress" role="progressbar" aria-label="加载进度">
+          <span></span>
+        </div>
+      </div>
+    </div>
+
     <noscript>需要启用 JavaScript 才能使用词库。</noscript>
     <script src="data/glossary.js?v=organic-20260701"></script>
     <script src="data/topics.js?v=organic-20260701"></script>
-    <script src="assets/app.js?v=organic-20260701"></script>
+    <script src="assets/app.js?v=cat-loader-20260702"></script>
   </body>
 </html>
