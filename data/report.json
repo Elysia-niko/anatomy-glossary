@@ -21,5 +21,15 @@
     }
   ],
   "totalTerms": 3625,
-  "totalFigures": 967
+  "totalFigures": 967,
+  "cleanedAt": "2026-07-02T15:05:02",
+  "cleaning": {
+    "figureCaptionChanges": 640,
+    "blankFigureCaptions": 441,
+    "histologyDuplicateFieldsCleared": {
+      "structure": 962,
+      "location": 1040,
+      "function": 333
+    }
+  }
 }
