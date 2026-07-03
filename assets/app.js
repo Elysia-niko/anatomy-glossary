@@ -65,12 +65,14 @@ const els = {
   imageZoomReset: document.getElementById("imageZoomReset"),
   imageZoomIn: document.getElementById("imageZoomIn"),
   loadingOverlay: document.getElementById("loadingOverlay"),
+  loadingCat: document.querySelector(".loading-cat"),
 };
 
 const library = normalizeLibrary(rawData);
 const topics = normalizeTopics(rawTopics);
 const topicsById = new Map(topics.map((topic) => [topic.id, topic]));
 const LARGE_COURSE_TERM_THRESHOLD = 500;
+const LOADER_START_DELAY_MS = 180;
 
 const store = {
   stars: readStore("medGlossaryStars", {}),
@@ -189,7 +191,7 @@ function sourceLink(term) {
   return "#";
 }
 
-function setup() {
+async function setup() {
   if (!library.courses.length) {
     els.metaLine.textContent = "未找到词库数据";
     hideLoading();
@@ -198,7 +200,14 @@ function setup() {
 
   setupCourseSelect();
   bindEvents();
+  if (courseTermCount(library.courses[0]) >= LARGE_COURSE_TERM_THRESHOLD) {
+    showLoading();
+    await waitForLoadingMotion();
+  }
   setCourse(library.courses[0].id, { showLoader: false });
+  if (courseTermCount(library.courses[0]) >= LARGE_COURSE_TERM_THRESHOLD) {
+    await nextPaint();
+  }
   hideLoading();
 }
 
@@ -216,19 +225,36 @@ function setCourse(courseId, options = {}) {
   const nextCourse = library.courses.find((course) => course.id === courseId) || library.courses[0];
   const showLoader = Boolean(options.showLoader && nextCourse?.id !== data.id && courseTermCount(nextCourse) >= LARGE_COURSE_TERM_THRESHOLD);
   const renderToken = ++courseRenderToken;
-  const render = () => {
-    if (renderToken !== courseRenderToken) return;
-    applyCourse(nextCourse);
-    if (showLoader) hideLoading();
-  };
 
   if (showLoader) {
     showLoading();
-    window.requestAnimationFrame(() => window.setTimeout(render, 0));
+    renderCourseAfterLoaderStart(nextCourse, renderToken);
     return;
   }
 
-  render();
+  if (renderToken !== courseRenderToken) return;
+  applyCourse(nextCourse);
+}
+
+async function renderCourseAfterLoaderStart(course, renderToken) {
+  await waitForLoadingMotion();
+  if (renderToken !== courseRenderToken) return;
+  applyCourse(course);
+  if (renderToken !== courseRenderToken) return;
+  await nextPaint();
+  if (renderToken !== courseRenderToken) return;
+  hideLoading();
+}
+
+function nextPaint() {
+  return new Promise((resolve) => {
+    window.requestAnimationFrame(() => window.requestAnimationFrame(resolve));
+  });
+}
+
+async function waitForLoadingMotion() {
+  await nextPaint();
+  await new Promise((resolve) => window.setTimeout(resolve, LOADER_START_DELAY_MS));
 }
 
 function applyCourse(course) {
@@ -255,6 +281,7 @@ function applyCourse(course) {
 
 function showLoading() {
   if (!els.loadingOverlay) return;
+  restartLoadingCat();
   document.body.classList.remove("loading-done", "loading-pending");
   document.body.classList.add("loading-active");
   els.loadingOverlay.setAttribute("aria-hidden", "false");
@@ -265,6 +292,15 @@ function hideLoading() {
   document.body.classList.remove("loading-active", "loading-pending");
   document.body.classList.add("loading-done");
   els.loadingOverlay.setAttribute("aria-hidden", "true");
+}
+
+function restartLoadingCat() {
+  const image = els.loadingCat;
+  const src = image?.dataset.src || image?.getAttribute("src");
+  if (!image || !src) return;
+  image.removeAttribute("src");
+  image.offsetWidth;
+  image.src = src;
 }
 
 function updateMetaLine() {
@@ -1147,4 +1183,7 @@ function updateReview(delta) {
   selectRandom();
 }
 
-setup();
+setup().catch((error) => {
+  console.error(error);
+  hideLoading();
+});

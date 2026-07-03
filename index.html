@@ -4,7 +4,7 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>医学课程词库</title>
-    <link rel="stylesheet" href="assets/styles.css?v=viewer-20260703" />
+    <link rel="stylesheet" href="assets/styles.css?v=loader-20260703" />
   </head>
   <body class="loading-pending">
     <header class="topbar">
@@ -188,7 +188,7 @@
 
     <div id="loadingOverlay" class="loading-overlay" aria-live="polite" aria-hidden="true">
       <div class="loading-panel">
-        <img class="loading-cat" src="assets/loading-cat.gif" width="150" height="150" alt="" />
+        <img class="loading-cat" src="assets/loading-cat.gif" data-src="assets/loading-cat.gif" width="150" height="150" alt="" loading="eager" decoding="async" fetchpriority="high" />
         <div class="loading-title">正在加载词库</div>
         <div class="loading-progress" role="progressbar" aria-label="加载进度">
           <span></span>
@@ -197,8 +197,45 @@
     </div>
 
     <noscript>需要启用 JavaScript 才能使用词库。</noscript>
-    <script src="data/glossary.js?v=viewer-20260703"></script>
-    <script src="data/topics.js?v=viewer-20260703"></script>
-    <script src="assets/app.js?v=viewer-20260703"></script>
+    <script>
+      (() => {
+        const scripts = [
+          "data/glossary.js?v=loader-20260703",
+          "data/topics.js?v=loader-20260703",
+          "assets/app.js?v=loader-20260703",
+        ];
+        const loadScript = (src) =>
+          new Promise((resolve, reject) => {
+            const script = document.createElement("script");
+            script.src = src;
+            script.async = false;
+            script.onload = resolve;
+            script.onerror = reject;
+            document.body.appendChild(script);
+          });
+        const start = () =>
+          scripts
+            .reduce((chain, src) => chain.then(() => loadScript(src)), Promise.resolve())
+            .catch(() => {
+              const metaLine = document.getElementById("metaLine");
+              if (metaLine) metaLine.textContent = "词库加载失败，请刷新页面";
+              document.body.classList.add("loading-done");
+            });
+
+        let started = false;
+        const startOnce = () => {
+          if (started) return;
+          started = true;
+          start();
+        };
+
+        if (window.requestAnimationFrame) {
+          window.requestAnimationFrame(() => window.requestAnimationFrame(startOnce));
+          window.setTimeout(startOnce, 120);
+        } else {
+          window.setTimeout(startOnce, 0);
+        }
+      })();
+    </script>
   </body>
 </html>
