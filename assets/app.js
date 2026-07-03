@@ -1,4 +1,4 @@
-const rawData = window.MED_GLOSSARY || window.ANATOMY_GLOSSARY;
+const rawData = window.MED_GLOSSARY_INDEX || window.MED_GLOSSARY || window.ANATOMY_GLOSSARY;
 const rawTopics = window.MED_GLOSSARY_TOPICS || [];
 
 const els = {
@@ -73,6 +73,9 @@ const topics = normalizeTopics(rawTopics);
 const topicsById = new Map(topics.map((topic) => [topic.id, topic]));
 const LARGE_COURSE_TERM_THRESHOLD = 500;
 const LOADER_START_DELAY_MS = 180;
+const COURSE_DATA_VERSION = library.meta?.dataVersion || "split-20260703";
+const courseCache = new Map();
+const loadingScripts = new Map();
 
 const store = {
   stars: readStore("medGlossaryStars", {}),
@@ -81,7 +84,7 @@ const store = {
   legacyReview: readStore("anatomyReview", {}),
 };
 
-let data = library.courses[0] || { terms: [], chapters: [], figures: [], parts: [], meta: {} };
+let data = emptyCourse(library.courses[0]);
 let figuresByLabel = new Map();
 let termsById = new Map();
 let termsByEnglish = new Map();
@@ -101,6 +104,10 @@ let state = {
   navigationStack: [],
   imageZoom: 1,
 };
+
+library.courses.forEach((course) => {
+  if (hasFullCourseData(course)) courseCache.set(course.id, prepareCourse(course));
+});
 
 function normalizeLibrary(payload) {
   if (payload?.courses?.length) return payload;
@@ -134,6 +141,87 @@ function normalizeLibrary(payload) {
     };
   }
   return { schemaVersion: 2, meta: {}, courses: [] };
+}
+
+function emptyCourse(base = {}) {
+  return {
+    id: base.id || "",
+    title: base.title || "",
+    shortTitle: base.shortTitle || base.title || "",
+    description: base.description || "",
+    parts: base.parts || [],
+    chapters: base.chapters || [],
+    figures: [],
+    terms: [],
+    meta: base.meta || {},
+  };
+}
+
+function hasFullCourseData(course) {
+  return Array.isArray(course?.terms) && course.terms.length > 0;
+}
+
+function prepareCourse(course) {
+  if (!course) return emptyCourse();
+  if (course.__prepared) return course;
+  course.parts = Array.isArray(course.parts) ? course.parts : [];
+  course.chapters = Array.isArray(course.chapters) ? course.chapters : [];
+  course.figures = Array.isArray(course.figures) ? course.figures : [];
+  course.terms = Array.isArray(course.terms) ? course.terms.map(prepareTerm) : [];
+  Object.defineProperty(course, "__prepared", { value: true, enumerable: false });
+  return course;
+}
+
+function prepareTerm(term) {
+  term.parts = Array.isArray(term.parts) ? term.parts : term.part ? [term.part] : [];
+  term.chapters = Array.isArray(term.chapters) ? term.chapters : [];
+  term.pages = Array.isArray(term.pages) ? term.pages : [];
+  term.pdfPages = Array.isArray(term.pdfPages) ? term.pdfPages : [];
+  term.figures = Array.isArray(term.figures) ? term.figures : [];
+  term.pageFigures = Array.isArray(term.pageFigures) ? term.pageFigures : [];
+  term.relatedTerms = Array.isArray(term.relatedTerms) ? term.relatedTerms : [];
+  term.contexts = Array.isArray(term.contexts) ? term.contexts : [];
+  term._searchText = buildSearchText(term);
+  term._searchZh = normalize(term.zh);
+  term._searchEn = normalize(term.en);
+  term._searchEnKey = englishKey(term.en);
+  term._searchGrayText = normalize(`${term.gray?.zh || ""} ${term.gray?.en || ""}`);
+  return term;
+}
+
+function buildSearchText(term) {
+  return normalize(
+    [
+      term.zh,
+      term.en,
+      term.part,
+      term.category,
+      term.chapters.join(" "),
+      term.pages.join(" "),
+      term.pdfPages.join(" "),
+      term.figures.join(" "),
+      term.pageFigures.join(" "),
+      term.definition,
+      term.structure,
+      term.location,
+      term.function,
+      term.studyNote,
+      term.gray?.zh,
+      term.gray?.en,
+      (term.gray?.cards || [])
+        .flatMap((card) => [
+          card.title,
+          card.source,
+          ...(card.matchedLabels || []).flatMap((label) => [label.zh, label.en]),
+          ...(card.relatedLabels || []).flatMap((label) => [label.zh, label.en]),
+          ...(card.clinicKeywords || []),
+        ])
+        .join(" "),
+      term.gray?.book?.zh,
+      term.gray?.book?.en,
+      (term.gray?.book?.hits || []).flatMap((hit) => [hit.matched, hit.line, hit.snippet]).join(" "),
+    ].join(" ")
+  );
 }
 
 function normalizeTopics(payload) {
@@ -200,14 +288,7 @@ async function setup() {
 
   setupCourseSelect();
   bindEvents();
-  if (courseTermCount(library.courses[0]) >= LARGE_COURSE_TERM_THRESHOLD) {
-    showLoading();
-    await waitForLoadingMotion();
-  }
-  setCourse(library.courses[0].id, { showLoader: false });
-  if (courseTermCount(library.courses[0]) >= LARGE_COURSE_TERM_THRESHOLD) {
-    await nextPaint();
-  }
+  await setCourse(library.courses[0].id, { showLoader: true, forceLoader: true });
   hideLoading();
 }
 
@@ -218,32 +299,89 @@ function setupCourseSelect() {
 }
 
 function courseTermCount(course) {
-  return course?.meta?.totalTerms || course?.terms?.length || 0;
+  return course?.termCount || course?.meta?.totalTerms || course?.terms?.length || 0;
 }
 
-function setCourse(courseId, options = {}) {
+function courseFigureCount(course) {
+  return course?.figureCount || course?.meta?.totalFigures || course?.figures?.length || 0;
+}
+
+async function loadCourse(courseId) {
+  const cached = courseCache.get(courseId);
+  if (cached) return cached;
+
+  const summary = library.courses.find((course) => course.id === courseId);
+  if (!summary) throw new Error(`Unknown course: ${courseId}`);
+  if (hasFullCourseData(summary)) {
+    const prepared = prepareCourse(summary);
+    courseCache.set(courseId, prepared);
+    return prepared;
+  }
+
+  const path = summary.dataPath || `data/courses/${courseId}.js`;
+  await loadScriptOnce(path);
+  const course = window.MED_GLOSSARY_COURSES?.[courseId];
+  if (!course) throw new Error(`Course data not found after loading ${path}`);
+  const prepared = prepareCourse(course);
+  courseCache.set(courseId, prepared);
+  return prepared;
+}
+
+function loadScriptOnce(path) {
+  const src = versionedDataPath(path);
+  if (loadingScripts.has(src)) return loadingScripts.get(src);
+  const promise = new Promise((resolve, reject) => {
+    const script = document.createElement("script");
+    script.src = src;
+    script.async = false;
+    script.onload = resolve;
+    script.onerror = () => reject(new Error(`Failed to load ${src}`));
+    document.body.appendChild(script);
+  });
+  loadingScripts.set(src, promise);
+  return promise;
+}
+
+function versionedDataPath(path) {
+  return `${path}${path.includes("?") ? "&" : "?"}v=${encodeURIComponent(COURSE_DATA_VERSION)}`;
+}
+
+async function setCourse(courseId, options = {}) {
   const nextCourse = library.courses.find((course) => course.id === courseId) || library.courses[0];
-  const showLoader = Boolean(options.showLoader && nextCourse?.id !== data.id && courseTermCount(nextCourse) >= LARGE_COURSE_TERM_THRESHOLD);
+  const showLoader = Boolean(
+    options.showLoader &&
+      (options.forceLoader || nextCourse?.id !== data.id || !courseCache.has(nextCourse?.id)) &&
+      courseTermCount(nextCourse) >= LARGE_COURSE_TERM_THRESHOLD
+  );
   const renderToken = ++courseRenderToken;
 
   if (showLoader) {
     showLoading();
-    renderCourseAfterLoaderStart(nextCourse, renderToken);
+    await renderCourseAfterLoaderStart(nextCourse, renderToken);
     return;
   }
 
   if (renderToken !== courseRenderToken) return;
-  applyCourse(nextCourse);
+  const loadedCourse = await loadCourse(nextCourse.id);
+  if (renderToken !== courseRenderToken) return;
+  applyCourse(loadedCourse);
 }
 
 async function renderCourseAfterLoaderStart(course, renderToken) {
-  await waitForLoadingMotion();
-  if (renderToken !== courseRenderToken) return;
-  applyCourse(course);
-  if (renderToken !== courseRenderToken) return;
-  await nextPaint();
-  if (renderToken !== courseRenderToken) return;
-  hideLoading();
+  try {
+    await waitForLoadingMotion();
+    if (renderToken !== courseRenderToken) return;
+    const loadedCourse = await loadCourse(course.id);
+    if (renderToken !== courseRenderToken) return;
+    applyCourse(loadedCourse);
+    if (renderToken !== courseRenderToken) return;
+    await nextPaint();
+  } catch (error) {
+    console.error(error);
+    if (renderToken === courseRenderToken) showCourseLoadError(course);
+  } finally {
+    if (renderToken === courseRenderToken) hideLoading();
+  }
 }
 
 function nextPaint() {
@@ -258,7 +396,8 @@ async function waitForLoadingMotion() {
 }
 
 function applyCourse(course) {
-  data = course;
+  data = prepareCourse(course);
+  courseCache.set(data.id, data);
   state.courseId = data.id;
   state.navigationStack = [];
   figuresByLabel = new Map((data.figures || []).map((figure) => [figure.label, figure]));
@@ -294,6 +433,14 @@ function hideLoading() {
   els.loadingOverlay.setAttribute("aria-hidden", "true");
 }
 
+function showCourseLoadError(course) {
+  const title = course?.shortTitle || course?.title || "词库";
+  els.metaLine.textContent = `${title} 加载失败，请刷新页面`;
+  els.emptyState.classList.remove("hidden");
+  els.topicDetail.classList.add("hidden");
+  els.termDetail.classList.add("hidden");
+}
+
 function restartLoadingCat() {
   const image = els.loadingCat;
   const src = image?.dataset.src || image?.getAttribute("src");
@@ -304,8 +451,8 @@ function restartLoadingCat() {
 }
 
 function updateMetaLine() {
-  const totalTerms = data.meta?.totalTerms || data.terms?.length || 0;
-  const totalFigures = data.meta?.totalFigures || data.figures?.length || 0;
+  const totalTerms = courseTermCount(data);
+  const totalFigures = courseFigureCount(data);
   const parts = (data.parts || []).map((part) => part.name).join(" / ");
   els.metaLine.textContent = `${totalTerms} 个词条 · ${totalFigures} 个图号${parts ? ` · ${parts}` : ""}`;
 }
@@ -376,8 +523,24 @@ function setupFilters() {
   resetFilters();
 }
 
+function debounce(fn, delay) {
+  let timer = 0;
+  return (...args) => {
+    window.clearTimeout(timer);
+    timer = window.setTimeout(() => fn(...args), delay);
+  };
+}
+
 function bindEvents() {
-  els.courseSelect.addEventListener("change", () => setCourse(els.courseSelect.value, { showLoader: true }));
+  const debouncedApplyFilters = debounce(applyFilters, 120);
+
+  els.courseSelect.addEventListener("change", () => {
+    setCourse(els.courseSelect.value, { showLoader: true }).catch((error) => {
+      console.error(error);
+      showCourseLoadError(library.courses.find((course) => course.id === els.courseSelect.value));
+      hideLoading();
+    });
+  });
 
   els.topicList.addEventListener("click", (event) => {
     const button = event.target.closest("[data-topic-id]");
@@ -393,14 +556,11 @@ function bindEvents() {
     if (button) selectTerm(button.dataset.topicTermId, { pushBack: true });
   });
 
-  [
-    els.searchInput,
-    els.partFilter,
-    els.chapterFilter,
-    els.categoryFilter,
-    els.figureOnly,
-    els.starOnly,
-  ].forEach((node) => node.addEventListener("input", applyFilters));
+  els.searchInput.addEventListener("input", debouncedApplyFilters);
+
+  [els.partFilter, els.chapterFilter, els.categoryFilter, els.figureOnly, els.starOnly].forEach((node) =>
+    node.addEventListener("input", applyFilters)
+  );
 
   els.clearButton.addEventListener("click", () => {
     resetFilters();
@@ -578,38 +738,7 @@ function termParts(term) {
 
 function matchesQuery(term, query) {
   if (!query) return true;
-  const haystack = normalize(
-    [
-      term.zh,
-      term.en,
-      term.part,
-      term.category,
-      term.chapters.join(" "),
-      term.pages.join(" "),
-      term.pdfPages.join(" "),
-      term.figures.join(" "),
-      term.pageFigures.join(" "),
-      term.definition,
-      term.structure,
-      term.location,
-      term.function,
-      term.studyNote,
-      term.gray?.zh,
-      term.gray?.en,
-      (term.gray?.cards || [])
-        .flatMap((card) => [
-          card.title,
-          card.source,
-          ...(card.matchedLabels || []).flatMap((label) => [label.zh, label.en]),
-          ...(card.relatedLabels || []).flatMap((label) => [label.zh, label.en]),
-          ...(card.clinicKeywords || []),
-        ])
-        .join(" "),
-      term.gray?.book?.zh,
-      term.gray?.book?.en,
-      (term.gray?.book?.hits || []).flatMap((hit) => [hit.matched, hit.line, hit.snippet]).join(" "),
-    ].join(" ")
-  );
+  const haystack = term._searchText || buildSearchText(term);
   return query
     .split(/\s+/)
     .filter(Boolean)
@@ -619,10 +748,10 @@ function matchesQuery(term, query) {
 function searchRank(term, query) {
   if (!query) return 0;
   const compactQuery = englishKey(query);
-  const zh = normalize(term.zh);
-  const en = normalize(term.en);
-  const enCompact = englishKey(term.en);
-  const grayText = normalize(`${term.gray?.zh || ""} ${term.gray?.en || ""}`);
+  const zh = term._searchZh || normalize(term.zh);
+  const en = term._searchEn || normalize(term.en);
+  const enCompact = term._searchEnKey || englishKey(term.en);
+  const grayText = term._searchGrayText || normalize(`${term.gray?.zh || ""} ${term.gray?.en || ""}`);
 
   let score = 0;
   if (zh === query || en === query || (compactQuery && enCompact === compactQuery)) score += 1000;

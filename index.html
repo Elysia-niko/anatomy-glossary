@@ -4,7 +4,7 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>医学课程词库</title>
-    <link rel="stylesheet" href="assets/styles.css?v=loader-20260703" />
+    <link rel="stylesheet" href="assets/styles.css?v=split-20260703" />
   </head>
   <body class="loading-pending">
     <header class="topbar">
@@ -64,7 +64,7 @@
       <section class="detail" aria-live="polite">
         <div id="emptyState" class="empty-state">
           <h2>正在生成词库视图</h2>
-          <p>如果长时间停在这里，请刷新页面或检查 data/glossary.js 是否已随网页一起上传。</p>
+          <p>如果长时间停在这里，请刷新页面或检查 data/index.js 和 data/courses 课程数据是否已随网页一起上传。</p>
         </div>
 
         <article id="topicDetail" class="topic-detail hidden">
@@ -200,9 +200,9 @@
     <script>
       (() => {
         const scripts = [
-          "data/glossary.js?v=loader-20260703",
-          "data/topics.js?v=loader-20260703",
-          "assets/app.js?v=loader-20260703",
+          "data/index.js?v=split-20260703",
+          "data/topics.js?v=split-20260703",
+          "assets/app.js?v=split-20260703",
         ];
         const loadScript = (src) =>
           new Promise((resolve, reject) => {
