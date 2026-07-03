@@ -4,7 +4,7 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>医学课程词库</title>
-    <link rel="stylesheet" href="assets/styles.css?v=clean-20260702" />
+    <link rel="stylesheet" href="assets/styles.css?v=viewer-20260703" />
   </head>
   <body class="loading-pending">
     <header class="topbar">
@@ -70,6 +70,7 @@
         <article id="topicDetail" class="topic-detail hidden">
           <div class="topic-detail-head">
             <div>
+              <button id="topicBackButton" class="back-button hidden" type="button">← 返回</button>
               <div id="topicDetailMeta" class="eyebrow"></div>
               <h2 id="topicDetailTitle"></h2>
               <p id="topicDetailSummary"></p>
@@ -83,6 +84,7 @@
         <article id="termDetail" class="term-detail hidden">
           <div class="detail-header">
             <div>
+              <button id="termBackButton" class="back-button hidden" type="button">← 返回</button>
               <div class="eyebrow" id="detailChapter"></div>
               <h2 id="detailZh"></h2>
               <p id="detailEn"></p>
@@ -170,8 +172,18 @@
     </main>
 
     <dialog id="imageDialog" class="image-dialog">
-      <button id="closeDialog" class="icon-button dialog-close" type="button" title="关闭">×</button>
-      <img id="dialogImage" alt="教材页图" />
+      <div class="image-dialog-toolbar">
+        <strong>教材页图</strong>
+        <div class="image-dialog-actions">
+          <button id="imageZoomOut" class="icon-button" type="button" title="缩小">−</button>
+          <button id="imageZoomReset" class="zoom-reset-button" type="button">100%</button>
+          <button id="imageZoomIn" class="icon-button" type="button" title="放大">＋</button>
+          <button id="closeDialog" class="icon-button dialog-close" type="button" title="关闭">×</button>
+        </div>
+      </div>
+      <div id="imageDialogStage" class="image-dialog-stage">
+        <img id="dialogImage" alt="教材页图" />
+      </div>
     </dialog>
 
     <div id="loadingOverlay" class="loading-overlay" aria-live="polite" aria-hidden="true">
@@ -185,8 +197,8 @@
     </div>
 
     <noscript>需要启用 JavaScript 才能使用词库。</noscript>
-    <script src="data/glossary.js?v=clean-20260702"></script>
-    <script src="data/topics.js?v=clean-20260702"></script>
-    <script src="assets/app.js?v=clean-20260702"></script>
+    <script src="data/glossary.js?v=viewer-20260703"></script>
+    <script src="data/topics.js?v=viewer-20260703"></script>
+    <script src="assets/app.js?v=viewer-20260703"></script>
   </body>
 </html>

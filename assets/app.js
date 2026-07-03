@@ -25,7 +25,9 @@ const els = {
   topicDetailTags: document.getElementById("topicDetailTags"),
   topicTermList: document.getElementById("topicTermList"),
   topicDetailClose: document.getElementById("topicDetailClose"),
+  topicBackButton: document.getElementById("topicBackButton"),
   termDetail: document.getElementById("termDetail"),
+  termBackButton: document.getElementById("termBackButton"),
   detailChapter: document.getElementById("detailChapter"),
   detailZh: document.getElementById("detailZh"),
   detailEn: document.getElementById("detailEn"),
@@ -56,8 +58,12 @@ const els = {
   knownButton: document.getElementById("knownButton"),
   revealButton: document.getElementById("revealButton"),
   imageDialog: document.getElementById("imageDialog"),
+  imageDialogStage: document.getElementById("imageDialogStage"),
   dialogImage: document.getElementById("dialogImage"),
   closeDialog: document.getElementById("closeDialog"),
+  imageZoomOut: document.getElementById("imageZoomOut"),
+  imageZoomReset: document.getElementById("imageZoomReset"),
+  imageZoomIn: document.getElementById("imageZoomIn"),
   loadingOverlay: document.getElementById("loadingOverlay"),
 };
 
@@ -90,6 +96,8 @@ let state = {
   revealed: true,
   showGrayEnglish: false,
   showGrayBookPages: false,
+  navigationStack: [],
+  imageZoom: 1,
 };
 
 function normalizeLibrary(payload) {
@@ -226,6 +234,7 @@ function setCourse(courseId, options = {}) {
 function applyCourse(course) {
   data = course;
   state.courseId = data.id;
+  state.navigationStack = [];
   figuresByLabel = new Map((data.figures || []).map((figure) => [figure.label, figure]));
   termsById = new Map((data.terms || []).map((term) => [term.id, term]));
   termsByEnglish = new Map();
@@ -341,9 +350,11 @@ function bindEvents() {
 
   els.clearTopicButton.addEventListener("click", clearTopic);
   els.topicDetailClose.addEventListener("click", clearTopic);
+  els.termBackButton.addEventListener("click", goBack);
+  els.topicBackButton.addEventListener("click", goBack);
   els.topicTermList.addEventListener("click", (event) => {
     const button = event.target.closest("[data-topic-term-id]");
-    if (button) selectTerm(button.dataset.topicTermId);
+    if (button) selectTerm(button.dataset.topicTermId, { pushBack: true });
   });
 
   [
@@ -359,6 +370,7 @@ function bindEvents() {
     resetFilters();
     state.activeTopicId = "";
     state.selectedId = state.selectedByCourse[data.id] || "";
+    state.navigationStack = [];
     renderTopics();
     applyFilters();
   });
@@ -372,14 +384,14 @@ function bindEvents() {
 
     const button = event.target.closest("[data-term-id]");
     if (button) {
-      selectTerm(button.dataset.termId);
+      selectTerm(button.dataset.termId, { clearBackStack: true });
       if (isMobileLayout()) setDrawerOpen(false);
     }
   });
 
   els.relatedList.addEventListener("click", (event) => {
     const button = event.target.closest("[data-related-id]");
-    if (button) selectTerm(button.dataset.relatedId);
+    if (button) selectTerm(button.dataset.relatedId, { pushBack: true });
   });
 
   els.grayEnglishToggle.addEventListener("click", () => {
@@ -389,7 +401,7 @@ function bindEvents() {
 
   els.grayCards.addEventListener("click", (event) => {
     const button = event.target.closest("[data-gray-related-id]");
-    if (button) selectTerm(button.dataset.grayRelatedId);
+    if (button) selectTerm(button.dataset.grayRelatedId, { pushBack: true });
   });
 
   els.grayBookHits.addEventListener("click", (event) => {
@@ -437,6 +449,11 @@ function bindEvents() {
   els.againButton.addEventListener("click", () => updateReview(-1));
   els.knownButton.addEventListener("click", () => updateReview(1));
   els.closeDialog.addEventListener("click", () => els.imageDialog.close());
+  els.imageZoomOut.addEventListener("click", () => setImageZoom(state.imageZoom / 1.35));
+  els.imageZoomReset.addEventListener("click", () => setImageZoom(1));
+  els.imageZoomIn.addEventListener("click", () => setImageZoom(state.imageZoom * 1.35));
+  els.dialogImage.addEventListener("click", () => setImageZoom(state.imageZoom >= 2 ? 1 : state.imageZoom * 1.35));
+  els.imageDialog.addEventListener("close", () => setImageZoom(1));
 }
 
 function isMobileLayout() {
@@ -446,6 +463,59 @@ function isMobileLayout() {
 function setDrawerOpen(open) {
   document.body.classList.toggle("drawer-open", open);
   els.menuButton.setAttribute("aria-expanded", String(open));
+}
+
+function currentView() {
+  if (!els.topicDetail.classList.contains("hidden") && state.activeTopicId && !state.selectedId) {
+    return { type: "topic", courseId: data.id, topicId: state.activeTopicId };
+  }
+  if (!els.termDetail.classList.contains("hidden") && state.selectedId) {
+    return { type: "term", courseId: data.id, topicId: state.activeTopicId || "", termId: state.selectedId };
+  }
+  return null;
+}
+
+function pushCurrentView() {
+  const view = currentView();
+  if (!view) return;
+  const last = state.navigationStack[state.navigationStack.length - 1];
+  if (last && JSON.stringify(last) === JSON.stringify(view)) return;
+  state.navigationStack.push(view);
+  if (state.navigationStack.length > 20) state.navigationStack.shift();
+}
+
+function updateBackButtons() {
+  const previous = state.navigationStack[state.navigationStack.length - 1];
+  const hasBack = Boolean(previous);
+  const label = previous?.type === "topic" ? "← 返回专题" : "← 返回词条";
+  [els.termBackButton, els.topicBackButton].forEach((button) => {
+    button.classList.toggle("hidden", !hasBack);
+    button.textContent = label;
+  });
+}
+
+function goBack() {
+  const view = state.navigationStack.pop();
+  if (!view || view.courseId !== data.id) {
+    updateBackButtons();
+    return;
+  }
+
+  if (view.type === "topic") {
+    state.activeTopicId = view.topicId;
+    state.selectedId = "";
+    renderTopics();
+    applyFilters();
+  } else if (view.type === "term") {
+    state.activeTopicId = view.topicId || "";
+    state.selectedId = view.termId;
+    state.selectedByCourse[data.id] = view.termId;
+    renderTopics();
+    applyFilters();
+  }
+
+  document.querySelector(".detail")?.scrollTo({ top: 0, behavior: "smooth" });
+  updateBackButtons();
 }
 
 function termKey(term) {
@@ -664,9 +734,10 @@ function toggleGroup(key) {
   renderList();
 }
 
-function selectTopic(id) {
+function selectTopic(id, options = {}) {
   const topic = topicsById.get(id);
   if (!topic || topic.courseId !== data.id) return;
+  if (options.clearBackStack !== false) state.navigationStack = [];
   state.activeTopicId = id;
   state.selectedId = "";
   resetFilters();
@@ -677,13 +748,17 @@ function selectTopic(id) {
 }
 
 function clearTopic() {
+  state.navigationStack = [];
   state.activeTopicId = "";
   state.selectedId = state.selectedByCourse[data.id] || "";
   renderTopics();
   applyFilters();
 }
 
-function selectTerm(id) {
+function selectTerm(id, options = {}) {
+  if (!termsById.has(id)) return;
+  if (options.pushBack) pushCurrentView();
+  if (options.clearBackStack) state.navigationStack = [];
   const topic = currentTopic();
   if (topic && !topic.termIds.includes(id)) {
     state.activeTopicId = "";
@@ -695,6 +770,7 @@ function selectTerm(id) {
   renderList();
   renderDetail(currentTerm());
   document.querySelector(".detail")?.scrollTo({ top: 0, behavior: "smooth" });
+  updateBackButtons();
 }
 
 function selectRandom() {
@@ -705,11 +781,11 @@ function selectRandom() {
   for (let index = 0; index < source.length; index += 1) {
     pick -= weights[index];
     if (pick <= 0) {
-      selectTerm(source[index].id);
+      selectTerm(source[index].id, { clearBackStack: true });
       return;
     }
   }
-  selectTerm(source[0]?.id || "");
+  selectTerm(source[0]?.id || "", { clearBackStack: true });
 }
 
 function renderDetail(term) {
@@ -717,6 +793,7 @@ function renderDetail(term) {
     els.emptyState.classList.remove("hidden");
     els.topicDetail.classList.add("hidden");
     els.termDetail.classList.add("hidden");
+    updateBackButtons();
     return;
   }
 
@@ -746,6 +823,7 @@ function renderDetail(term) {
   renderRelated(term, hiddenAnswer);
   renderFigures(term, hiddenAnswer);
   renderContexts(term, hiddenAnswer);
+  updateBackButtons();
 }
 
 function renderTopicDetail(topic) {
@@ -753,6 +831,7 @@ function renderTopicDetail(topic) {
     els.emptyState.classList.remove("hidden");
     els.topicDetail.classList.add("hidden");
     els.termDetail.classList.add("hidden");
+    updateBackButtons();
     return;
   }
 
@@ -779,6 +858,7 @@ function renderTopicDetail(topic) {
         )
         .join("")
     : `<div class="topic-empty">当前筛选下没有专题词条。</div>`;
+  updateBackButtons();
 }
 
 function renderGray(term, hiddenAnswer) {
@@ -1023,11 +1103,38 @@ function renderContexts(term, hiddenAnswer) {
 function openImage(path) {
   if (!path) return;
   els.dialogImage.src = path;
+  setImageZoom(1);
+  if (els.imageDialogStage) {
+    els.imageDialogStage.scrollTop = 0;
+    els.imageDialogStage.scrollLeft = 0;
+  }
   if (typeof els.imageDialog.showModal === "function") {
     els.imageDialog.showModal();
   } else {
     window.open(path, "_blank");
   }
+}
+
+function setImageZoom(value) {
+  const zoom = Math.max(1, Math.min(4, Number(value) || 1));
+  state.imageZoom = zoom;
+  const percent = Math.round(zoom * 100);
+
+  if (zoom === 1) {
+    els.dialogImage.style.width = "";
+    els.dialogImage.style.maxWidth = "";
+    els.dialogImage.style.maxHeight = "";
+    els.dialogImage.style.cursor = "zoom-in";
+  } else {
+    els.dialogImage.style.width = `${percent}%`;
+    els.dialogImage.style.maxWidth = "none";
+    els.dialogImage.style.maxHeight = "none";
+    els.dialogImage.style.cursor = zoom >= 2 ? "zoom-out" : "zoom-in";
+  }
+
+  els.imageZoomReset.textContent = `${percent}%`;
+  els.imageZoomOut.disabled = zoom <= 1;
+  els.imageZoomIn.disabled = zoom >= 4;
 }
 
 function updateReview(delta) {
