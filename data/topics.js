@@ -1546,7 +1546,7 @@ window.MED_GLOSSARY_TOPICS = [
     "id": "organic-spectroscopy",
     "courseId": "organic-chemistry",
     "title": "结构鉴定与波谱专题",
-    "summary": "用不饱和度、UV、IR、NMR、MS 快速拼出官能团和骨架。",
+    "summary": "用不饱和度、UV、IR、NMR、MS快速拼出官能团和骨架。",
     "tags": [
       "波谱",
       "结构鉴定",

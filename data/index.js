@@ -20,7 +20,16 @@ window.MED_GLOSSARY_INDEX = {
       "UNSW Embryology",
       "Wikipedia when matched"
     ],
-    "dataVersion": "sources-20260707",
+    "textCleanupGeneratedAt": "2026-07-07",
+    "textCleanupVersion": "textclean-20260707",
+    "textCleanupRules": [
+      "remove OCR spaces between Chinese characters",
+      "normalize spaces around Chinese punctuation",
+      "convert Chinese-prose halfwidth punctuation to fullwidth punctuation",
+      "normalize biomedical abbreviation spacing such as X线, DNA分子, pH值",
+      "preserve URLs, English source labels, and standalone English terms"
+    ],
+    "dataVersion": "textclean-20260707",
     "splitCourses": true
   },
   "courses": [

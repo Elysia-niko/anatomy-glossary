@@ -1,0 +1,503 @@
+{
+  "generatedAt": "2026-07-07",
+  "dataVersion": "textclean-20260707",
+  "changedFields": 13317,
+  "byField": {
+    "definition": 3440,
+    "text": 4310,
+    "structure": 1432,
+    "location": 1360,
+    "zh": 1095,
+    "function": 566,
+    "snippet": 816,
+    "line": 9,
+    "caption": 288,
+    "summary": 1
+  },
+  "examples": [
+    {
+      "label": "systematic-anatomy:t0004:X线解剖学",
+      "field": "definition",
+      "before": "运用 X 线摄影技术研究人体形态结构的解剖学称 X 线解剖学 X-ray anatomy。",
+      "after": "运用X线摄影技术研究人体形态结构的解剖学称X线解剖学 X-ray anatomy。"
+    },
+    {
+      "label": "systematic-anatomy:t0004:X线解剖学:context[0]",
+      "field": "text",
+      "before": "运用 X 线摄影技术研究人体形态结构的解剖学称 X 线解剖学 X-ray anatomy。",
+      "after": "运用X线摄影技术研究人体形态结构的解剖学称X线解剖学 X-ray anatomy。"
+    },
+    {
+      "label": "systematic-anatomy:t1295:人体解剖学",
+      "field": "definition",
+      "before": "1 本章数字资源 绪论 一、 人体解剖学的定义和地位 人体解剖学 human anatomy 是研究正常人体形态结构及其发生发展的科学, 属生物科学中的形 态学范畴。",
+      "after": "1 本章数字资源 绪论 一、人体解剖学的定义和地位人体解剖学 human anatomy 是研究正常人体形态结构及其发生发展的科学，属生物科学中的形态学范畴。"
+    },
+    {
+      "label": "systematic-anatomy:t1295:人体解剖学:context[0]",
+      "field": "text",
+      "before": "1 本章数字资源 绪论 一、 人体解剖学的定义和地位 人体解剖学 human anatomy 是研究正常人体形态结构及其发生发展的科学, 属生物科学中的形 态学范畴。",
+      "after": "1 本章数字资源 绪论 一、人体解剖学的定义和地位人体解剖学 human anatomy 是研究正常人体形态结构及其发生发展的科学，属生物科学中的形态学范畴。"
+    },
+    {
+      "label": "systematic-anatomy:t1640:外科解剖学",
+      "field": "definition",
+      "before": "其中, 密切联系外科手术的 解剖学称外科解剖学 surgical anatomy。",
+      "after": "其中，密切联系外科手术的解剖学称外科解剖学 surgical anatomy。"
+    },
+    {
+      "label": "systematic-anatomy:t1640:外科解剖学:context[0]",
+      "field": "text",
+      "before": "其中, 密切联系外科手术的 解剖学称外科解剖学 surgical anatomy。",
+      "after": "其中，密切联系外科手术的解剖学称外科解剖学 surgical anatomy。"
+    },
+    {
+      "label": "systematic-anatomy:t0848:局部解剖学",
+      "field": "definition",
+      "before": "我国对 人体解剖学的分科有多种方法, 通常分为系统解剖学和局部解剖学。",
+      "after": "我国对人体解剖学的分科有多种方法，通常分为系统解剖学和局部解剖学。"
+    },
+    {
+      "label": "systematic-anatomy:t0848:局部解剖学",
+      "field": "structure",
+      "before": "我国对 人体解剖学的分科有多种方法, 通常分为系统解剖学和局部解剖学。",
+      "after": "我国对人体解剖学的分科有多种方法，通常分为系统解剖学和局部解剖学。"
+    },
+    {
+      "label": "systematic-anatomy:t0848:局部解剖学",
+      "field": "location",
+      "before": "我国对 人体解剖学的分科有多种方法, 通常分为系统解剖学和局部解剖学。",
+      "after": "我国对人体解剖学的分科有多种方法，通常分为系统解剖学和局部解剖学。"
+    },
+    {
+      "label": "systematic-anatomy:t0848:局部解剖学:context[0]",
+      "field": "text",
+      "before": "我国对 人体解剖学的分科有多种方法, 通常分为系统解剖学和局部解剖学。",
+      "after": "我国对人体解剖学的分科有多种方法，通常分为系统解剖学和局部解剖学。"
+    },
+    {
+      "label": "systematic-anatomy:t0848:局部解剖学:context[1]",
+      "field": "text",
+      "before": "如果按人体的某一局部 ( 如头部、 颈部、 胸部、 腹部、 盆部、 背部 和四肢等 ) , 重点描述人体的结构层次、 器官配布、 毗邻关系等, 称为局部解剖学regional anatomy。",
+      "after": "如果按人体的某一局部（如头部、颈部、胸部、腹部、盆部、背部和四肢等），重点描述人体的结构层次、器官配布、毗邻关系等，称为局部解剖学regional anatomy。"
+    },
+    {
+      "label": "systematic-anatomy:t0848:局部解剖学:gray.book",
+      "field": "zh",
+      "before": "格氏正书 OCR 在正书第 919 页、正书第 563 页、正书第 617 页附近定位到“局部解剖学”的相关上下文；可展开英文片段核对原书语境。",
+      "after": "格氏正书OCR在正书第919页、正书第563页、正书第617页附近定位到“局部解剖学”的相关上下文；可展开英文片段核对原书语境。"
+    },
+    {
+      "label": "systematic-anatomy:t0852:巨视解剖学",
+      "field": "definition",
+      "before": "系统解剖学和局部解剖学主要通过肉眼观察来描述人体的形态结构, 统称巨视解剖学macroanatomy。",
+      "after": "系统解剖学和局部解剖学主要通过肉眼观察来描述人体的形态结构，统称巨视解剖学macroanatomy。"
+    },
+    {
+      "label": "systematic-anatomy:t0852:巨视解剖学",
+      "field": "structure",
+      "before": "系统解剖学和局部解剖学主要通过肉眼观察来描述人体的形态结构, 统称巨视解剖学macroanatomy。",
+      "after": "系统解剖学和局部解剖学主要通过肉眼观察来描述人体的形态结构，统称巨视解剖学macroanatomy。"
+    },
+    {
+      "label": "systematic-anatomy:t0852:巨视解剖学",
+      "field": "location",
+      "before": "系统解剖学和局部解剖学主要通过肉眼观察来描述人体的形态结构, 统称巨视解剖学macroanatomy。",
+      "after": "系统解剖学和局部解剖学主要通过肉眼观察来描述人体的形态结构，统称巨视解剖学macroanatomy。"
+    },
+    {
+      "label": "systematic-anatomy:t0852:巨视解剖学:context[0]",
+      "field": "text",
+      "before": "系统解剖学和局部解剖学主要通过肉眼观察来描述人体的形态结构, 统称巨视解剖学macroanatomy。",
+      "after": "系统解剖学和局部解剖学主要通过肉眼观察来描述人体的形态结构，统称巨视解剖学macroanatomy。"
+    },
+    {
+      "label": "systematic-anatomy:t1658:微视解剖学",
+      "field": "definition",
+      "before": "以显微镜观察为研究手段的组织学、 细胞学、 胚胎学, 称微视解剖学microanatomy。",
+      "after": "以显微镜观察为研究手段的组织学、细胞学、胚胎学，称微视解剖学microanatomy。"
+    },
+    {
+      "label": "systematic-anatomy:t1658:微视解剖学:context[0]",
+      "field": "text",
+      "before": "以显微镜观察为研究手段的组织学、 细胞学、 胚胎学, 称微视解剖学microanatomy。",
+      "after": "以显微镜观察为研究手段的组织学、细胞学、胚胎学，称微视解剖学microanatomy。"
+    },
+    {
+      "label": "systematic-anatomy:t0245:断层解剖学",
+      "field": "definition",
+      "before": "研 究人体各局部或器官的断面形态结构的解剖学称断层解剖学 sectional anatomy。",
+      "after": "研究人体各局部或器官的断面形态结构的解剖学称断层解剖学 sectional anatomy。"
+    },
+    {
+      "label": "systematic-anatomy:t0245:断层解剖学:context[0]",
+      "field": "text",
+      "before": "研 究人体各局部或器官的断面形态结构的解剖学称断层解剖学 sectional anatomy。",
+      "after": "研究人体各局部或器官的断面形态结构的解剖学称断层解剖学 sectional anatomy。"
+    },
+    {
+      "label": "systematic-anatomy:t1423:神经解剖学",
+      "field": "definition",
+      "before": "以研究脑 形态与功能为主的解剖学称神经解剖学 neuroanatomy。",
+      "after": "以研究脑形态与功能为主的解剖学称神经解剖学 neuroanatomy。"
+    },
+    {
+      "label": "systematic-anatomy:t1423:神经解剖学",
+      "field": "function",
+      "before": "以研究脑 形态与功能为主的解剖学称神经解剖学 neuroanatomy。",
+      "after": "以研究脑形态与功能为主的解剖学称神经解剖学 neuroanatomy。"
+    },
+    {
+      "label": "systematic-anatomy:t1423:神经解剖学:context[0]",
+      "field": "text",
+      "before": "以研究脑 形态与功能为主的解剖学称神经解剖学 neuroanatomy。",
+      "after": "以研究脑形态与功能为主的解剖学称神经解剖学 neuroanatomy。"
+    },
+    {
+      "label": "systematic-anatomy:t1699:系统解剖学",
+      "field": "definition",
+      "before": "我国对 人体解剖学的分科有多种方法, 通常分为系统解剖学和局部解剖学。",
+      "after": "我国对人体解剖学的分科有多种方法，通常分为系统解剖学和局部解剖学。"
+    },
+    {
+      "label": "systematic-anatomy:t1699:系统解剖学",
+      "field": "structure",
+      "before": "我国对 人体解剖学的分科有多种方法, 通常分为系统解剖学和局部解剖学。",
+      "after": "我国对人体解剖学的分科有多种方法，通常分为系统解剖学和局部解剖学。"
+    },
+    {
+      "label": "systematic-anatomy:t1699:系统解剖学",
+      "field": "location",
+      "before": "我国对 人体解剖学的分科有多种方法, 通常分为系统解剖学和局部解剖学。",
+      "after": "我国对人体解剖学的分科有多种方法，通常分为系统解剖学和局部解剖学。"
+    },
+    {
+      "label": "systematic-anatomy:t1699:系统解剖学",
+      "field": "function",
+      "before": "系统解剖学 systematic anatomy 是按人体的器官功能系统 ( 如运动系统、 消化系统、 呼吸系统、 泌尿 系统、 生殖系统、 内分泌系统、 脉管系统、 感觉器和神经系统 ) 阐述正常人体器官的形态结构及其生长 发育规律的科学, 是医学生的必修课。",
+      "after": "系统解剖学 systematic anatomy 是按人体的器官功能系统（如运动系统、消化系统、呼吸系统、泌尿系统、生殖系统、内分泌系统、脉管系统、感觉器和神经系统）阐述正常人体器官的形态结构及其生长发育规律的科学，是医学生的必修课。"
+    },
+    {
+      "label": "systematic-anatomy:t1699:系统解剖学:context[0]",
+      "field": "text",
+      "before": "我国对 人体解剖学的分科有多种方法, 通常分为系统解剖学和局部解剖学。",
+      "after": "我国对人体解剖学的分科有多种方法，通常分为系统解剖学和局部解剖学。"
+    },
+    {
+      "label": "systematic-anatomy:t1699:系统解剖学:context[1]",
+      "field": "text",
+      "before": "系统解剖学 systematic anatomy 是按人体的器官功能系统 ( 如运动系统、 消化系统、 呼吸系统、 泌尿 系统、 生殖系统、 内分泌系统、 脉管系统、 感觉器和神经系统 ) 阐述正常人体器官的形态结构及其生长 发育规律的科学, 是医学生的必修课。",
+      "after": "系统解剖学 systematic anatomy 是按人体的器官功能系统（如运动系统、消化系统、呼吸系统、泌尿系统、生殖系统、内分泌系统、脉管系统、感觉器和神经系统）阐述正常人体器官的形态结构及其生长发育规律的科学，是医学生的必修课。"
+    },
+    {
+      "label": "systematic-anatomy:t1967:艺术解剖学",
+      "field": "definition",
+      "before": "研究人体外形轮廓和结构比例, 为绘画造型 奠定基础的解剖学称艺术解剖学 art anatomy。",
+      "after": "研究人体外形轮廓和结构比例，为绘画造型奠定基础的解剖学称艺术解剖学 art anatomy。"
+    },
+    {
+      "label": "systematic-anatomy:t1967:艺术解剖学:context[0]",
+      "field": "text",
+      "before": "研究人体外形轮廓和结构比例, 为绘画造型 奠定基础的解剖学称艺术解剖学 art anatomy。",
+      "after": "研究人体外形轮廓和结构比例，为绘画造型奠定基础的解剖学称艺术解剖学 art anatomy。"
+    },
+    {
+      "label": "systematic-anatomy:t0075:表面解剖学",
+      "field": "definition",
+      "before": "联系临床应用, 研究人体表面形态特征的解剖学称表面解剖 学 surface anatomy。",
+      "after": "联系临床应用，研究人体表面形态特征的解剖学称表面解剖学 surface anatomy。"
+    },
+    {
+      "label": "systematic-anatomy:t0075:表面解剖学:context[0]",
+      "field": "text",
+      "before": "联系临床应用, 研究人体表面形态特征的解剖学称表面解剖 学 surface anatomy。",
+      "after": "联系临床应用，研究人体表面形态特征的解剖学称表面解剖学 surface anatomy。"
+    },
+    {
+      "label": "systematic-anatomy:t0075:表面解剖学:gray.book",
+      "field": "zh",
+      "before": "格氏正书 OCR 在PDF 第 9 页、正书第 534 页、正书第 671 页附近定位到“表面解剖学”的相关上下文；可展开英文片段核对原书语境。",
+      "after": "格氏正书OCR在PDF 第9页、正书第534页、正书第671页附近定位到“表面解剖学”的相关上下文；可展开英文片段核对原书语境。"
+    },
+    {
+      "label": "systematic-anatomy:t2049:运动解剖学",
+      "field": "definition",
+      "before": "以提高体育运动效 果为目的, 研究体育运动与人体形态结构关系的解剖学称运动解剖学locomotive anatomy。",
+      "after": "以提高体育运动效果为目的，研究体育运动与人体形态结构关系的解剖学称运动解剖学locomotive anatomy。"
+    },
+    {
+      "label": "systematic-anatomy:t2049:运动解剖学",
+      "field": "function",
+      "before": "以提高体育运动效 果为目的, 研究体育运动与人体形态结构关系的解剖学称运动解剖学locomotive anatomy。",
+      "after": "以提高体育运动效果为目的，研究体育运动与人体形态结构关系的解剖学称运动解剖学locomotive anatomy。"
+    },
+    {
+      "label": "systematic-anatomy:t2049:运动解剖学:context[0]",
+      "field": "text",
+      "before": "以提高体育运动效 果为目的, 研究体育运动与人体形态结构关系的解剖学称运动解剖学locomotive anatomy。",
+      "after": "以提高体育运动效果为目的，研究体育运动与人体形态结构关系的解剖学称运动解剖学locomotive anatomy。"
+    },
+    {
+      "label": "systematic-anatomy:t1352:上",
+      "field": "definition",
+      "before": "人体的基本组织包括上皮组 织、 结缔组织、 肌肉组织和神经组织。",
+      "after": "人体的基本组织包括上皮组织、结缔组织、肌肉组织和神经组织。"
+    },
+    {
+      "label": "systematic-anatomy:t1352:上:context[0]",
+      "field": "text",
+      "before": "人体的基本组织包括上皮组 织、 结缔组织、 肌肉组织和神经组织。",
+      "after": "人体的基本组织包括上皮组织、结缔组织、肌肉组织和神经组织。"
+    },
+    {
+      "label": "systematic-anatomy:t1703:下",
+      "field": "definition",
+      "before": "( 一 ) 解剖学姿势 人体的标准解剖学姿势 anatomical position 是指身体直立, 面向前方, 两眼平视正前方, 两足并拢, 足尖向前, 双上肢下垂于躯干的两侧, 掌心向前。",
+      "after": "（一）解剖学姿势人体的标准解剖学姿势 anatomical position 是指身体直立，面向前方，两眼平视正前方，两足并拢，足尖向前，双上肢下垂于躯干的两侧，掌心向前。"
+    },
+    {
+      "label": "systematic-anatomy:t1703:下:context[0]",
+      "field": "text",
+      "before": "( 一 ) 解剖学姿势 人体的标准解剖学姿势 anatomical position 是指身体直立, 面向前方, 两眼平视正前方, 两足并拢, 足尖向前, 双上肢下垂于躯干的两侧, 掌心向前。",
+      "after": "（一）解剖学姿势人体的标准解剖学姿势 anatomical position 是指身体直立，面向前方，两眼平视正前方，两足并拢，足尖向前，双上肢下垂于躯干的两侧，掌心向前。"
+    },
+    {
+      "label": "systematic-anatomy:t1200:前",
+      "field": "definition",
+      "before": "( 一 ) 解剖学姿势 人体的标准解剖学姿势 anatomical position 是指身体直立, 面向前方, 两眼平视正前方, 两足并拢, 足尖向前, 双上肢下垂于躯干的两侧, 掌心向前。",
+      "after": "（一）解剖学姿势人体的标准解剖学姿势 anatomical position 是指身体直立，面向前方，两眼平视正前方，两足并拢，足尖向前，双上肢下垂于躯干的两侧，掌心向前。"
+    },
+    {
+      "label": "systematic-anatomy:t1200:前:context[0]",
+      "field": "text",
+      "before": "( 一 ) 解剖学姿势 人体的标准解剖学姿势 anatomical position 是指身体直立, 面向前方, 两眼平视正前方, 两足并拢, 足尖向前, 双上肢下垂于躯干的两侧, 掌心向前。",
+      "after": "（一）解剖学姿势人体的标准解剖学姿势 anatomical position 是指身体直立，面向前方，两眼平视正前方，两足并拢，足尖向前，双上肢下垂于躯干的两侧，掌心向前。"
+    },
+    {
+      "label": "systematic-anatomy:t1200:前:context[1]",
+      "field": "text",
+      "before": "前 anterior 和后 posterior 是描述器官或结构距身体前、 后面相对远近关系的术语。",
+      "after": "前 anterior 和后 posterior 是描述器官或结构距身体前、后面相对远近关系的术语。"
+    },
+    {
+      "label": "systematic-anatomy:t0574:后",
+      "field": "definition",
+      "before": "此后, 解剖学在我国逐步发展为一门独 立的学科。",
+      "after": "此后，解剖学在我国逐步发展为一门独立的学科。"
+    },
+    {
+      "label": "systematic-anatomy:t0574:后",
+      "field": "structure",
+      "before": "此后, 解剖学在我国逐步发展为一门独 立的学科。",
+      "after": "此后，解剖学在我国逐步发展为一门独立的学科。"
+    },
+    {
+      "label": "systematic-anatomy:t0574:后",
+      "field": "location",
+      "before": "此后, 解剖学在我国逐步发展为一门独 立的学科。",
+      "after": "此后，解剖学在我国逐步发展为一门独立的学科。"
+    },
+    {
+      "label": "systematic-anatomy:t0574:后:context[0]",
+      "field": "text",
+      "before": "此后, 解剖学在我国逐步发展为一门独 立的学科。",
+      "after": "此后，解剖学在我国逐步发展为一门独立的学科。"
+    },
+    {
+      "label": "systematic-anatomy:t0574:后:context[1]",
+      "field": "text",
+      "before": "前 anterior 和后 posterior 是描述器官或结构距身体前、 后面相对远近关系的术语。",
+      "after": "前 anterior 和后 posterior 是描述器官或结构距身体前、后面相对远近关系的术语。"
+    },
+    {
+      "label": "systematic-anatomy:t0574:后:gray.book",
+      "field": "zh",
+      "before": "格氏正书 OCR 在正书第 1116 页、正书第 720 页、正书第 895 页附近定位到“后”的相关上下文；可展开英文片段核对原书语境。",
+      "after": "格氏正书OCR在正书第1116页、正书第720页、正书第895页附近定位到“后”的相关上下文；可展开英文片段核对原书语境。"
+    },
+    {
+      "label": "systematic-anatomy:t0779:解剖学姿势",
+      "field": "definition",
+      "before": "五、 解剖学姿势、 方位术语与人体的轴和面 人体各部与器官结构的位置关系不是恒定不变的, 为了准确描述人体各器官的形态结构和位置, 需要有公认的标准和规范的描述, 以便统一认识, 避免混淆与理解错误。",
+      "after": "五、解剖学姿势、方位术语与人体的轴和面人体各部与器官结构的位置关系不是恒定不变的，为了准确描述人体各器官的形态结构和位置，需要有公认的标准和规范的描述，以便统一认识，避免混淆与理解错误。"
+    },
+    {
+      "label": "systematic-anatomy:t0779:解剖学姿势:context[0]",
+      "field": "text",
+      "before": "五、 解剖学姿势、 方位术语与人体的轴和面 人体各部与器官结构的位置关系不是恒定不变的, 为了准确描述人体各器官的形态结构和位置, 需要有公认的标准和规范的描述, 以便统一认识, 避免混淆与理解错误。",
+      "after": "五、解剖学姿势、方位术语与人体的轴和面人体各部与器官结构的位置关系不是恒定不变的，为了准确描述人体各器官的形态结构和位置，需要有公认的标准和规范的描述，以便统一认识，避免混淆与理解错误。"
+    },
+    {
+      "label": "systematic-anatomy:t0779:解剖学姿势:gray.book",
+      "field": "zh",
+      "before": "格氏正书 OCR 在正书第 785 页、正书第 422 页、正书第 81 页附近定位到“解剖学姿势”的相关上下文；可展开英文片段核对原书语境。",
+      "after": "格氏正书OCR在正书第785页、正书第422页、正书第81页附近定位到“解剖学姿势”的相关上下文；可展开英文片段核对原书语境。"
+    },
+    {
+      "label": "systematic-anatomy:t1055:内",
+      "field": "definition",
+      "before": "4 绪论 内 internal 和外 external 是描述体腔或空腔器官相互位置关系的术语。",
+      "after": "4 绪论内 internal 和外 external 是描述体腔或空腔器官相互位置关系的术语。"
+    },
+    {
+      "label": "systematic-anatomy:t1055:内:context[0]",
+      "field": "text",
+      "before": "4 绪论 内 internal 和外 external 是描述体腔或空腔器官相互位置关系的术语。",
+      "after": "4 绪论内 internal 和外 external 是描述体腔或空腔器官相互位置关系的术语。"
+    },
+    {
+      "label": "systematic-anatomy:t0141:垂直轴",
+      "field": "definition",
+      "before": "1. 轴 (1) 垂直轴 vertical axis: 为上自头侧, 下至尾侧 并与地平面 ( 水平面 ) 相垂直的轴。",
+      "after": "1. 轴（1）垂直轴 vertical axis：为上自头侧，下至尾侧并与地平面（水平面）相垂直的轴。"
+    },
+    {
+      "label": "systematic-anatomy:t0141:垂直轴:context[0]",
+      "field": "text",
+      "before": "1. 轴 (1) 垂直轴 vertical axis: 为上自头侧, 下至尾侧 并与地平面 ( 水平面 ) 相垂直的轴。",
+      "after": "1. 轴（1）垂直轴 vertical axis：为上自头侧，下至尾侧并与地平面（水平面）相垂直的轴。"
+    },
+    {
+      "label": "systematic-anatomy:t0141:垂直轴:gray.book",
+      "field": "zh",
+      "before": "格氏正书 OCR 在正书第 215 页、正书第 556 页、正书第 4 页附近定位到“垂直轴”的相关上下文；可展开英文片段核对原书语境。",
+      "after": "格氏正书OCR在正书第215页、正书第556页、正书第4页附近定位到“垂直轴”的相关上下文；可展开英文片段核对原书语境。"
+    },
+    {
+      "label": "systematic-anatomy:t0141:垂直轴:gray.hit[2]",
+      "field": "snippet",
+      "before": "medial to the eyes, which are in turn medial to the exter- nal ears. Superior and inferior describe structures in reference to the vertical axis of the body. For example, the head ",
+      "after": "medial to the eyes, which are in turn medial to the exter-nal ears. Superior and inferior describe structures in reference to the vertical axis of the body. For example, the head i"
+    },
+    {
+      "label": "systematic-anatomy:t1620:外",
+      "field": "definition",
+      "before": "4 绪论 内 internal 和外 external 是描述体腔或空腔器官相互位置关系的术语。",
+      "after": "4 绪论内 internal 和外 external 是描述体腔或空腔器官相互位置关系的术语。"
+    },
+    {
+      "label": "systematic-anatomy:t1620:外:context[0]",
+      "field": "text",
+      "before": "4 绪论 内 internal 和外 external 是描述体腔或空腔器官相互位置关系的术语。",
+      "after": "4 绪论内 internal 和外 external 是描述体腔或空腔器官相互位置关系的术语。"
+    },
+    {
+      "label": "systematic-anatomy:t0107:尺侧",
+      "field": "definition",
+      "before": "上肢的尺侧 ulnar 和桡侧 radial、 下肢的胫侧tibial 和腓侧 fibular 分别与其内侧和外侧相对应, 是根据前 臂桡骨、 尺骨和小腿胫骨、 腓骨的位置, 描述前臂和小 腿与正中矢状面相对位置的关系术语。",
+      "after": "上肢的尺侧 ulnar 和桡侧 radial、下肢的胫侧tibial 和腓侧 fibular 分别与其内侧和外侧相对应，是根据前臂桡骨、尺骨和小腿胫骨、腓骨的位置，描述前臂和小腿与正中矢状面相对位置的关系术语。"
+    },
+    {
+      "label": "systematic-anatomy:t0107:尺侧:context[0]",
+      "field": "text",
+      "before": "上肢的尺侧 ulnar 和桡侧 radial、 下肢的胫侧tibial 和腓侧 fibular 分别与其内侧和外侧相对应, 是根据前 臂桡骨、 尺骨和小腿胫骨、 腓骨的位置, 描述前臂和小 腿与正中矢状面相对位置的关系术语。",
+      "after": "上肢的尺侧 ulnar 和桡侧 radial、下肢的胫侧tibial 和腓侧 fibular 分别与其内侧和外侧相对应，是根据前臂桡骨、尺骨和小腿胫骨、腓骨的位置，描述前臂和小腿与正中矢状面相对位置的关系术语。"
+    },
+    {
+      "label": "systematic-anatomy:t1279:桡侧",
+      "field": "definition",
+      "before": "上肢的尺侧 ulnar 和桡侧 radial、 下肢的胫侧tibial 和腓侧 fibular 分别与其内侧和外侧相对应, 是根据前 臂桡骨、 尺骨和小腿胫骨、 腓骨的位置, 描述前臂和小 腿与正中矢状面相对位置的关系术语。",
+      "after": "上肢的尺侧 ulnar 和桡侧 radial、下肢的胫侧tibial 和腓侧 fibular 分别与其内侧和外侧相对应，是根据前臂桡骨、尺骨和小腿胫骨、腓骨的位置，描述前臂和小腿与正中矢状面相对位置的关系术语。"
+    },
+    {
+      "label": "systematic-anatomy:t1279:桡侧:context[0]",
+      "field": "text",
+      "before": "上肢的尺侧 ulnar 和桡侧 radial、 下肢的胫侧tibial 和腓侧 fibular 分别与其内侧和外侧相对应, 是根据前 臂桡骨、 尺骨和小腿胫骨、 腓骨的位置, 描述前臂和小 腿与正中矢状面相对位置的关系术语。",
+      "after": "上肢的尺侧 ulnar 和桡侧 radial、下肢的胫侧tibial 和腓侧 fibular 分别与其内侧和外侧相对应，是根据前臂桡骨、尺骨和小腿胫骨、腓骨的位置，描述前臂和小腿与正中矢状面相对位置的关系术语。"
+    },
+    {
+      "label": "systematic-anatomy:t1248:浅:gray.book",
+      "field": "zh",
+      "before": "格氏正书 OCR 在正书第 297 页、正书第 566 页、正书第 582 页附近定位到“浅”的相关上下文；可展开英文片段核对原书语境。",
+      "after": "格氏正书OCR在正书第297页、正书第566页、正书第582页附近定位到“浅”的相关上下文；可展开英文片段核对原书语境。"
+    },
+    {
+      "label": "systematic-anatomy:t1248:浅:gray.hit[0]",
+      "field": "snippet",
+      "before": "Femoral artery and vein Fig. 4.46 Transversus abdominis muscle and the inguinal canal. These structures enter the inguinal canal through the deep inguinal ring and exit it through ",
+      "after": "Femoral artery and vein Fig. 4.46 Transversus abdominis muscle and the inguinal canal. These structures enter the inguinal canal through the deep inguinal ring and exit it through "
+    },
+    {
+      "label": "systematic-anatomy:t1248:浅:gray.hit[1]",
+      "field": "snippet",
+      "before": "wall in the plane between the transversus abdominis and internal oblique muscles, and then passes through the inguinal canal to leave the abdominal wall through the superficial ing",
+      "after": "wall in the plane between the transversus abdominis and internal oblique muscles, and then passes through the inguinal canal to leave the abdominal wall through the superficial ing"
+    },
+    {
+      "label": "systematic-anatomy:t1494:矢状轴",
+      "field": "definition",
+      "before": "人体可设有互相垂直的 3 种轴, 即垂 直轴、 矢状轴和冠状轴; 依据上述 3 种轴, 人体还可设有 互相垂直的 3 种面, 即矢状面、 冠状面和水平面 ( 绪图 -2 )。",
+      "after": "人体可设有互相垂直的3种轴，即垂直轴、矢状轴和冠状轴；依据上述3种轴，人体还可设有互相垂直的3种面，即矢状面、冠状面和水平面（绪图 -2）。"
+    },
+    {
+      "label": "systematic-anatomy:t1494:矢状轴:context[0]",
+      "field": "text",
+      "before": "人体可设有互相垂直的 3 种轴, 即垂 直轴、 矢状轴和冠状轴; 依据上述 3 种轴, 人体还可设有 互相垂直的 3 种面, 即矢状面、 冠状面和水平面 ( 绪图 -2 )。",
+      "after": "人体可设有互相垂直的3种轴，即垂直轴、矢状轴和冠状轴；依据上述3种轴，人体还可设有互相垂直的3种面，即矢状面、冠状面和水平面（绪图 -2）。"
+    },
+    {
+      "label": "systematic-anatomy:t1494:矢状轴:context[1]",
+      "field": "text",
+      "before": "( 2 ) 矢状轴 sagittal axis: 是指从腹侧面至背侧面, 同时与垂直轴呈直角交叉的轴, 又名腹背轴。",
+      "after": "（2）矢状轴 sagittal axis：是指从腹侧面至背侧面，同时与垂直轴呈直角交叉的轴，又名腹背轴。"
+    },
+    {
+      "label": "systematic-anatomy:t0834:胫侧",
+      "field": "definition",
+      "before": "上肢的尺侧 ulnar 和桡侧 radial、 下肢的胫侧tibial 和腓侧 fibular 分别与其内侧和外侧相对应, 是根据前 臂桡骨、 尺骨和小腿胫骨、 腓骨的位置, 描述前臂和小 腿与正中矢状面相对位置的关系术语。",
+      "after": "上肢的尺侧 ulnar 和桡侧 radial、下肢的胫侧tibial 和腓侧 fibular 分别与其内侧和外侧相对应，是根据前臂桡骨、尺骨和小腿胫骨、腓骨的位置，描述前臂和小腿与正中矢状面相对位置的关系术语。"
+    },
+    {
+      "label": "systematic-anatomy:t0834:胫侧:context[0]",
+      "field": "text",
+      "before": "上肢的尺侧 ulnar 和桡侧 radial、 下肢的胫侧tibial 和腓侧 fibular 分别与其内侧和外侧相对应, 是根据前 臂桡骨、 尺骨和小腿胫骨、 腓骨的位置, 描述前臂和小 腿与正中矢状面相对位置的关系术语。",
+      "after": "上肢的尺侧 ulnar 和桡侧 radial、下肢的胫侧tibial 和腓侧 fibular 分别与其内侧和外侧相对应，是根据前臂桡骨、尺骨和小腿胫骨、腓骨的位置，描述前臂和小腿与正中矢状面相对位置的关系术语。"
+    },
+    {
+      "label": "systematic-anatomy:t0293:腓侧",
+      "field": "definition",
+      "before": "上肢的尺侧 ulnar 和桡侧 radial、 下肢的胫侧tibial 和腓侧 fibular 分别与其内侧和外侧相对应, 是根据前 臂桡骨、 尺骨和小腿胫骨、 腓骨的位置, 描述前臂和小 腿与正中矢状面相对位置的关系术语。",
+      "after": "上肢的尺侧 ulnar 和桡侧 radial、下肢的胫侧tibial 和腓侧 fibular 分别与其内侧和外侧相对应，是根据前臂桡骨、尺骨和小腿胫骨、腓骨的位置，描述前臂和小腿与正中矢状面相对位置的关系术语。"
+    },
+    {
+      "label": "systematic-anatomy:t0293:腓侧:context[0]",
+      "field": "text",
+      "before": "上肢的尺侧 ulnar 和桡侧 radial、 下肢的胫侧tibial 和腓侧 fibular 分别与其内侧和外侧相对应, 是根据前 臂桡骨、 尺骨和小腿胫骨、 腓骨的位置, 描述前臂和小 腿与正中矢状面相对位置的关系术语。",
+      "after": "上肢的尺侧 ulnar 和桡侧 radial、下肢的胫侧tibial 和腓侧 fibular 分别与其内侧和外侧相对应，是根据前臂桡骨、尺骨和小腿胫骨、腓骨的位置，描述前臂和小腿与正中矢状面相对位置的关系术语。"
+    },
+    {
+      "label": "systematic-anatomy:t0785:近侧",
+      "field": "definition",
+      "before": "近侧 proximal 和远侧 distal 是描述器官或结构距 肢体根部相对远近的术语, 常用于四肢。",
+      "after": "近侧 proximal 和远侧 distal 是描述器官或结构距肢体根部相对远近的术语，常用于四肢。"
+    },
+    {
+      "label": "systematic-anatomy:t0785:近侧:context[0]",
+      "field": "text",
+      "before": "近侧 proximal 和远侧 distal 是描述器官或结构距 肢体根部相对远近的术语, 常用于四肢。",
+      "after": "近侧 proximal 和远侧 distal 是描述器官或结构距肢体根部相对远近的术语，常用于四肢。"
+    },
+    {
+      "label": "systematic-anatomy:t2046:远侧",
+      "field": "definition",
+      "before": "近侧 proximal 和远侧 distal 是描述器官或结构距 肢体根部相对远近的术语, 常用于四肢。",
+      "after": "近侧 proximal 和远侧 distal 是描述器官或结构距肢体根部相对远近的术语，常用于四肢。"
+    },
+    {
+      "label": "systematic-anatomy:t2046:远侧:context[0]",
+      "field": "text",
+      "before": "近侧 proximal 和远侧 distal 是描述器官或结构距 肢体根部相对远近的术语, 常用于四肢。",
+      "after": "近侧 proximal 和远侧 distal 是描述器官或结构距肢体根部相对远近的术语，常用于四肢。"
+    },
+    {
+      "label": "systematic-anatomy:t0530:冠状轴",
+      "field": "definition",
+      "before": "绪论 5 (3) 冠状轴 frontal axis: 为左、 右方向, 与水平面平行, 与前两个轴相垂直的轴。",
+      "after": "绪论 5 （3）冠状轴 frontal axis：为左、右方向，与水平面平行，与前两个轴相垂直的轴。"
+    }
+  ],
+  "remainingPatternCounts": {
+    "punct_space_zh": 2442,
+    "zh_space_zh": 948
+  }
+}
