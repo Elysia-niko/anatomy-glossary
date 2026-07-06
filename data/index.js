@@ -12,7 +12,15 @@ window.MED_GLOSSARY_INDEX = {
     "grayBookOcrTerms": 1093,
     "grayBookOcrHits": 2935,
     "grayBookOcrPages": 1173,
-    "dataVersion": "split-20260703",
+    "fieldSupplementGeneratedAt": "2026-07-07",
+    "fieldSupplementSources": [
+      "local textbook context",
+      "OpenStax",
+      "Histology Guide",
+      "UNSW Embryology",
+      "Wikipedia when matched"
+    ],
+    "dataVersion": "sources-20260707",
     "splitCourses": true
   },
   "courses": [

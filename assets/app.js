@@ -36,8 +36,14 @@ const els = {
   detailOccurrences: document.getElementById("detailOccurrences"),
   detailDefinition: document.getElementById("detailDefinition"),
   detailLocation: document.getElementById("detailLocation"),
+  detailLocationSources: document.getElementById("detailLocationSources"),
   detailFunction: document.getElementById("detailFunction"),
+  detailFunctionSources: document.getElementById("detailFunctionSources"),
+  structureBlock: document.getElementById("structureBlock"),
+  functionBlock: document.getElementById("functionBlock"),
+  studyNoteSection: document.getElementById("studyNoteSection"),
   detailStudyNote: document.getElementById("detailStudyNote"),
+  detailStudySources: document.getElementById("detailStudySources"),
   graySection: document.getElementById("graySection"),
   grayZh: document.getElementById("grayZh"),
   grayEnglish: document.getElementById("grayEnglish"),
@@ -206,6 +212,10 @@ function buildSearchText(term) {
       term.location,
       term.function,
       term.studyNote,
+      term.mnemonic,
+      sourcesText(term.fieldSources?.structure),
+      sourcesText(term.fieldSources?.function),
+      sourcesText(term.fieldSources?.studyNote),
       term.gray?.zh,
       term.gray?.en,
       (term.gray?.cards || [])
@@ -222,6 +232,10 @@ function buildSearchText(term) {
       (term.gray?.book?.hits || []).flatMap((hit) => [hit.matched, hit.line, hit.snippet]).join(" "),
     ].join(" ")
   );
+}
+
+function sourcesText(sources) {
+  return Array.isArray(sources) ? sources.map((source) => `${source.label || ""} ${source.url || ""}`).join(" ") : "";
 }
 
 function normalizeTopics(payload) {
@@ -976,9 +990,9 @@ function renderDetail(term) {
   els.detailPages.textContent = pageText(term.pages);
   els.detailOccurrences.textContent = `${term.occurrences} 次`;
   els.detailDefinition.textContent = hiddenAnswer ? "......" : term.definition || "暂无自动解释";
-  els.detailLocation.textContent = hiddenAnswer ? "......" : term.structure || term.location || "未在自动上下文中识别到明确结构或分布";
-  els.detailFunction.textContent = hiddenAnswer ? "......" : term.function || "未在自动上下文中识别到明确功能或意义";
-  els.detailStudyNote.textContent = hiddenAnswer ? "......" : term.studyNote;
+  renderTextField(els.structureBlock, els.detailLocation, els.detailLocationSources, hiddenAnswer ? "......" : term.structure || term.location, term.fieldSources?.structure, hiddenAnswer);
+  renderTextField(els.functionBlock, els.detailFunction, els.detailFunctionSources, hiddenAnswer ? "......" : term.function, term.fieldSources?.function, hiddenAnswer);
+  renderTextField(els.studyNoteSection, els.detailStudyNote, els.detailStudySources, hiddenAnswer ? "......" : term.studyNote || term.mnemonic, term.fieldSources?.studyNote, hiddenAnswer);
   els.reviewScore.textContent = reviewScore(term);
   els.starButton.textContent = isStarred(term) ? "★" : "☆";
   els.starButton.classList.toggle("active", isStarred(term));
@@ -989,6 +1003,27 @@ function renderDetail(term) {
   renderFigures(term, hiddenAnswer);
   renderContexts(term, hiddenAnswer);
   updateBackButtons();
+}
+
+function renderTextField(block, textNode, sourceNode, value, sources = [], forceVisible = false) {
+  const text = String(value || "").trim();
+  const visible = forceVisible || Boolean(text);
+  block.classList.toggle("hidden", !visible);
+  textNode.textContent = text;
+  sourceNode.innerHTML = visible && !forceVisible ? sourceLinksHtml(sources) : "";
+}
+
+function sourceLinksHtml(sources = []) {
+  if (!Array.isArray(sources) || !sources.length) return "";
+  return sources
+    .slice(0, 3)
+    .map((source) => {
+      const label = escapeHtml(source.label || source.title || "来源");
+      const url = source.url || "";
+      if (!url) return `<span>${label}</span>`;
+      return `<a href="${escapeHtml(url)}" target="_blank" rel="noopener noreferrer">${label}</a>`;
+    })
+    .join("");
 }
 
 function renderTopicDetail(topic) {

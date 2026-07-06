@@ -2036,5 +2036,20 @@ window.MED_GLOSSARY_TOPICS = [
       "oc0048",
       "oc0091"
     ]
+  },
+  {
+    "id": "mnemonic-formulas",
+    "courseId": "systematic-anatomy",
+    "title": "口诀速记专题",
+    "summary": "只收真正适合背诵的顺序口诀；非口诀型自动学习提示已从词条中移除。",
+    "tags": [
+      "口诀",
+      "顺序",
+      "速记"
+    ],
+    "termIds": [
+      "t1648",
+      "t1052"
+    ]
   }
 ];

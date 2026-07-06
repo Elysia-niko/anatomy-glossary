@@ -4,7 +4,7 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>医学课程词库</title>
-    <link rel="stylesheet" href="assets/styles.css?v=split-20260703" />
+    <link rel="stylesheet" href="assets/styles.css?v=sources-20260707" />
   </head>
   <body class="loading-pending">
     <header class="topbar">
@@ -123,19 +123,22 @@
           </section>
 
           <section class="detail-section split-section">
-            <div>
+            <div id="structureBlock">
               <h3>结构/分布</h3>
               <p id="detailLocation"></p>
+              <div id="detailLocationSources" class="field-source-list"></div>
             </div>
-            <div>
+            <div id="functionBlock">
               <h3>功能/意义</h3>
               <p id="detailFunction"></p>
+              <div id="detailFunctionSources" class="field-source-list"></div>
             </div>
           </section>
 
-          <section class="detail-section">
+          <section id="studyNoteSection" class="detail-section hidden">
             <h3>记忆补充</h3>
             <p id="detailStudyNote"></p>
+            <div id="detailStudySources" class="field-source-list"></div>
           </section>
 
           <section id="graySection" class="detail-section gray-section hidden">
@@ -200,9 +203,9 @@
     <script>
       (() => {
         const scripts = [
-          "data/index.js?v=split-20260703",
-          "data/topics.js?v=split-20260703",
-          "assets/app.js?v=split-20260703",
+          "data/index.js?v=sources-20260707",
+          "data/topics.js?v=sources-20260707",
+          "assets/app.js?v=sources-20260707",
         ];
         const loadScript = (src) =>
           new Promise((resolve, reject) => {

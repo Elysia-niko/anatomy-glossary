@@ -151,7 +151,7 @@ window.MED_GLOSSARY_COURSES["organic-chemistry"] = {
       "structure": "有机化合物的性质主要由碳骨架、官能团和空间结构共同决定。",
       "location": "有机化合物的性质主要由碳骨架、官能团和空间结构共同决定。",
       "function": "学习时把分子分成骨架和官能团：骨架决定疏水性和空间位阻，官能团决定主要反应。",
-      "studyNote": "先问它有什么官能团，再问该官能团在什么电子环境里。",
+      "studyNote": "",
       "figures": [],
       "pageFigures": [],
       "pageImages": [
@@ -201,7 +201,29 @@ window.MED_GLOSSARY_COURSES["organic-chemistry"] = {
         "oc0012",
         "oc0017",
         "oc0014"
-      ]
+      ],
+      "fieldSources": {
+        "structure": [
+          {
+            "label": "有机化学教材上下文：书页 2 / PDF 24",
+            "url": "assets/pages/organic/pdf-024.jpg"
+          },
+          {
+            "label": "OpenStax Anatomy and Physiology 2e: Introduction",
+            "url": "https://openstax.org/books/anatomy-and-physiology-2e/pages/1-introduction"
+          }
+        ],
+        "function": [
+          {
+            "label": "有机化学教材上下文：书页 2 / PDF 24",
+            "url": "assets/pages/organic/pdf-024.jpg"
+          },
+          {
+            "label": "OpenStax Anatomy and Physiology 2e: Introduction",
+            "url": "https://openstax.org/books/anatomy-and-physiology-2e/pages/1-introduction"
+          }
+        ]
+      }
     },
     {
       "id": "oc0002",
@@ -234,7 +256,7 @@ window.MED_GLOSSARY_COURSES["organic-chemistry"] = {
       "structure": "羟基、羰基、羧基、氨基、卤素、碳碳双键等都可作为官能团。",
       "location": "羟基、羰基、羧基、氨基、卤素、碳碳双键等都可作为官能团。",
       "function": "官能团是反应和鉴别的入口，同一官能团在不同电子环境中的活性可能明显不同。",
-      "studyNote": "复习反应时按官能团建表，再补反应条件、主要产物和鉴别现象。",
+      "studyNote": "",
       "figures": [],
       "pageFigures": [],
       "pageImages": [
@@ -284,7 +306,29 @@ window.MED_GLOSSARY_COURSES["organic-chemistry"] = {
         "oc0029",
         "oc0118",
         "oc0025"
-      ]
+      ],
+      "fieldSources": {
+        "structure": [
+          {
+            "label": "有机化学教材上下文：书页 13 / PDF 35",
+            "url": "assets/pages/organic/pdf-035.jpg"
+          },
+          {
+            "label": "OpenStax Anatomy and Physiology 2e: Introduction",
+            "url": "https://openstax.org/books/anatomy-and-physiology-2e/pages/1-introduction"
+          }
+        ],
+        "function": [
+          {
+            "label": "有机化学教材上下文：书页 13 / PDF 35",
+            "url": "assets/pages/organic/pdf-035.jpg"
+          },
+          {
+            "label": "OpenStax Anatomy and Physiology 2e: Introduction",
+            "url": "https://openstax.org/books/anatomy-and-physiology-2e/pages/1-introduction"
+          }
+        ]
+      }
     },
     {
       "id": "oc0003",
@@ -317,7 +361,7 @@ window.MED_GLOSSARY_COURSES["organic-chemistry"] = {
       "structure": "碳常见 sp3、sp2、sp 三种杂化，对应四面体、平面三角形、直线形。",
       "location": "碳常见 sp3、sp2、sp 三种杂化，对应四面体、平面三角形、直线形。",
       "function": "杂化决定键角、键长、酸性和反应位置；s 成分越高，碳原子电负性越大。",
-      "studyNote": "酸性顺序常用 s 成分解释：端炔 C-H 比烯烃、烷烃 C-H 更酸。",
+      "studyNote": "",
       "figures": [],
       "pageFigures": [],
       "pageImages": [
@@ -367,7 +411,29 @@ window.MED_GLOSSARY_COURSES["organic-chemistry"] = {
         "oc0118",
         "oc0014",
         "oc0015"
-      ]
+      ],
+      "fieldSources": {
+        "structure": [
+          {
+            "label": "有机化学教材上下文：书页 4 / PDF 26",
+            "url": "assets/pages/organic/pdf-026.jpg"
+          },
+          {
+            "label": "OpenStax Anatomy and Physiology 2e: Introduction",
+            "url": "https://openstax.org/books/anatomy-and-physiology-2e/pages/1-introduction"
+          }
+        ],
+        "function": [
+          {
+            "label": "有机化学教材上下文：书页 4 / PDF 26",
+            "url": "assets/pages/organic/pdf-026.jpg"
+          },
+          {
+            "label": "OpenStax Anatomy and Physiology 2e: Introduction",
+            "url": "https://openstax.org/books/anatomy-and-physiology-2e/pages/1-introduction"
+          }
+        ]
+      }
     },
     {
       "id": "oc0004",
@@ -400,7 +466,7 @@ window.MED_GLOSSARY_COURSES["organic-chemistry"] = {
       "structure": "单键通常是 σ键；双键含 1 个 σ键和 1 个 π键；叁键含 1 个 σ键和 2 个 π键。",
       "location": "单键通常是 σ键；双键含 1 个 σ键和 1 个 π键；叁键含 1 个 σ键和 2 个 π键。",
       "function": "π键电子云外露、较易极化，是烯烃、炔烃发生加成和氧化的关键。",
-      "studyNote": "看到不饱和键，先判断 π键能否被亲电试剂或氧化剂进攻。",
+      "studyNote": "",
       "figures": [],
       "pageFigures": [],
       "pageImages": [
@@ -450,7 +516,29 @@ window.MED_GLOSSARY_COURSES["organic-chemistry"] = {
         "oc0118",
         "oc0029",
         "oc0014"
-      ]
+      ],
+      "fieldSources": {
+        "structure": [
+          {
+            "label": "有机化学教材上下文：书页 7 / PDF 29",
+            "url": "assets/pages/organic/pdf-029.jpg"
+          },
+          {
+            "label": "OpenStax Anatomy and Physiology 2e: Introduction",
+            "url": "https://openstax.org/books/anatomy-and-physiology-2e/pages/1-introduction"
+          }
+        ],
+        "function": [
+          {
+            "label": "有机化学教材上下文：书页 7 / PDF 29",
+            "url": "assets/pages/organic/pdf-029.jpg"
+          },
+          {
+            "label": "OpenStax Anatomy and Physiology 2e: Introduction",
+            "url": "https://openstax.org/books/anatomy-and-physiology-2e/pages/1-introduction"
+          }
+        ]
+      }
     },
     {
       "id": "oc0005",
@@ -481,7 +569,7 @@ window.MED_GLOSSARY_COURSES["organic-chemistry"] = {
       "structure": "共振式原子位置不变，只改变 π电子或孤对电子分布；真实结构是共振杂化体。",
       "location": "共振式原子位置不变，只改变 π电子或孤对电子分布；真实结构是共振杂化体。",
       "function": "共振能降低体系能量，解释羧酸盐稳定、芳香性、酚和苯胺的取代定位等。",
-      "studyNote": "画共振式时不要移动原子，只移动电子。贡献大的共振式通常八隅体完整、电荷分离少。",
+      "studyNote": "",
       "figures": [],
       "pageFigures": [],
       "pageImages": [
@@ -523,7 +611,29 @@ window.MED_GLOSSARY_COURSES["organic-chemistry"] = {
         "oc0118",
         "oc0026",
         "oc0014"
-      ]
+      ],
+      "fieldSources": {
+        "structure": [
+          {
+            "label": "有机化学教材上下文：书页 6 / PDF 28",
+            "url": "assets/pages/organic/pdf-028.jpg"
+          },
+          {
+            "label": "OpenStax Anatomy and Physiology 2e: Introduction",
+            "url": "https://openstax.org/books/anatomy-and-physiology-2e/pages/1-introduction"
+          }
+        ],
+        "function": [
+          {
+            "label": "有机化学教材上下文：书页 6 / PDF 28",
+            "url": "assets/pages/organic/pdf-028.jpg"
+          },
+          {
+            "label": "OpenStax Anatomy and Physiology 2e: Introduction",
+            "url": "https://openstax.org/books/anatomy-and-physiology-2e/pages/1-introduction"
+          }
+        ]
+      }
     },
     {
       "id": "oc0006",
@@ -556,7 +666,7 @@ window.MED_GLOSSARY_COURSES["organic-chemistry"] = {
       "structure": "吸电子诱导效应用 -I 表示，给电子诱导效应用 +I 表示，传递距离通常较短。",
       "location": "吸电子诱导效应用 -I 表示，给电子诱导效应用 +I 表示，传递距离通常较短。",
       "function": "诱导效应用于解释酸性、碳正离子稳定性、双键极化和取代基对反应活性的影响。",
-      "studyNote": "卤素有 -I；烷基一般有 +I。比较酸性时，吸电子基越近、越强，酸性越强。",
+      "studyNote": "",
       "figures": [],
       "pageFigures": [],
       "pageImages": [
@@ -606,7 +716,29 @@ window.MED_GLOSSARY_COURSES["organic-chemistry"] = {
         "oc0036",
         "oc0037",
         "oc0038"
-      ]
+      ],
+      "fieldSources": {
+        "structure": [
+          {
+            "label": "有机化学教材上下文：书页 68 / PDF 90",
+            "url": "assets/pages/organic/pdf-090.jpg"
+          },
+          {
+            "label": "OpenStax Anatomy and Physiology 2e: Introduction",
+            "url": "https://openstax.org/books/anatomy-and-physiology-2e/pages/1-introduction"
+          }
+        ],
+        "function": [
+          {
+            "label": "有机化学教材上下文：书页 68 / PDF 90",
+            "url": "assets/pages/organic/pdf-090.jpg"
+          },
+          {
+            "label": "OpenStax Anatomy and Physiology 2e: Introduction",
+            "url": "https://openstax.org/books/anatomy-and-physiology-2e/pages/1-introduction"
+          }
+        ]
+      }
     },
     {
       "id": "oc0007",
@@ -639,7 +771,7 @@ window.MED_GLOSSARY_COURSES["organic-chemistry"] = {
       "structure": "共轭体系可包含 C=C-C=C、芳环、羰基相邻双键、含孤对电子的杂原子等。",
       "location": "共轭体系可包含 C=C-C=C、芳环、羰基相邻双键、含孤对电子的杂原子等。",
       "function": "共轭能稳定碳正离子、自由基和羧酸盐，也改变紫外吸收和亲电取代定位。",
-      "studyNote": "判断共轭先看是否有连续 p 轨道；sp3 碳插入会打断共轭。",
+      "studyNote": "",
       "figures": [],
       "pageFigures": [],
       "pageImages": [
@@ -689,7 +821,29 @@ window.MED_GLOSSARY_COURSES["organic-chemistry"] = {
         "oc0036",
         "oc0037",
         "oc0038"
-      ]
+      ],
+      "fieldSources": {
+        "structure": [
+          {
+            "label": "有机化学教材上下文：书页 68 / PDF 90",
+            "url": "assets/pages/organic/pdf-090.jpg"
+          },
+          {
+            "label": "OpenStax Anatomy and Physiology 2e: Introduction",
+            "url": "https://openstax.org/books/anatomy-and-physiology-2e/pages/1-introduction"
+          }
+        ],
+        "function": [
+          {
+            "label": "有机化学教材上下文：书页 68 / PDF 90",
+            "url": "assets/pages/organic/pdf-090.jpg"
+          },
+          {
+            "label": "OpenStax Anatomy and Physiology 2e: Introduction",
+            "url": "https://openstax.org/books/anatomy-and-physiology-2e/pages/1-introduction"
+          }
+        ]
+      }
     },
     {
       "id": "oc0008",
@@ -720,7 +874,7 @@ window.MED_GLOSSARY_COURSES["organic-chemistry"] = {
       "structure": "烷基越多，能参与超共轭的 σ键越多，对碳正离子和烯烃的稳定作用越明显。",
       "location": "烷基越多，能参与超共轭的 σ键越多，对碳正离子和烯烃的稳定作用越明显。",
       "function": "常用来解释碳正离子稳定性、烯烃稳定性和自由基稳定性。",
-      "studyNote": "看到三级碳正离子更稳定，别只背顺序，要想到烷基给电子和超共轭。",
+      "studyNote": "",
       "figures": [],
       "pageFigures": [],
       "pageImages": [
@@ -762,7 +916,29 @@ window.MED_GLOSSARY_COURSES["organic-chemistry"] = {
         "oc0036",
         "oc0037",
         "oc0038"
-      ]
+      ],
+      "fieldSources": {
+        "structure": [
+          {
+            "label": "有机化学教材上下文：书页 68 / PDF 90",
+            "url": "assets/pages/organic/pdf-090.jpg"
+          },
+          {
+            "label": "OpenStax Anatomy and Physiology 2e: Introduction",
+            "url": "https://openstax.org/books/anatomy-and-physiology-2e/pages/1-introduction"
+          }
+        ],
+        "function": [
+          {
+            "label": "有机化学教材上下文：书页 68 / PDF 90",
+            "url": "assets/pages/organic/pdf-090.jpg"
+          },
+          {
+            "label": "OpenStax Anatomy and Physiology 2e: Introduction",
+            "url": "https://openstax.org/books/anatomy-and-physiology-2e/pages/1-introduction"
+          }
+        ]
+      }
     },
     {
       "id": "oc0009",
@@ -795,7 +971,7 @@ window.MED_GLOSSARY_COURSES["organic-chemistry"] = {
       "structure": "常见顺序：苄基/烯丙基型因共振很稳定；脂肪族通常 3° > 2° > 1° > 甲基。",
       "location": "常见顺序：苄基/烯丙基型因共振很稳定；脂肪族通常 3° > 2° > 1° > 甲基。",
       "function": "决定 SN1、E1、Markovnikov 加成等反应中间体的形成倾向和重排风险。",
-      "studyNote": "凡是经碳正离子的反应，都要主动检查是否会重排为更稳定碳正离子。",
+      "studyNote": "",
       "figures": [],
       "pageFigures": [],
       "pageImages": [
@@ -845,7 +1021,29 @@ window.MED_GLOSSARY_COURSES["organic-chemistry"] = {
         "oc0071",
         "oc0077",
         "oc0085"
-      ]
+      ],
+      "fieldSources": {
+        "structure": [
+          {
+            "label": "有机化学教材上下文：书页 11 / PDF 33",
+            "url": "assets/pages/organic/pdf-033.jpg"
+          },
+          {
+            "label": "OpenStax Anatomy and Physiology 2e: Introduction",
+            "url": "https://openstax.org/books/anatomy-and-physiology-2e/pages/1-introduction"
+          }
+        ],
+        "function": [
+          {
+            "label": "有机化学教材上下文：书页 11 / PDF 33",
+            "url": "assets/pages/organic/pdf-033.jpg"
+          },
+          {
+            "label": "OpenStax Anatomy and Physiology 2e: Introduction",
+            "url": "https://openstax.org/books/anatomy-and-physiology-2e/pages/1-introduction"
+          }
+        ]
+      }
     },
     {
       "id": "oc0010",
@@ -878,7 +1076,7 @@ window.MED_GLOSSARY_COURSES["organic-chemistry"] = {
       "structure": "常见顺序：苄基/烯丙基型 > 3° > 2° > 1° > 甲基。",
       "location": "常见顺序：苄基/烯丙基型 > 3° > 2° > 1° > 甲基。",
       "function": "影响烷烃卤代选择性和自由基链反应的主要产物。",
-      "studyNote": "氯代反应选择性较低，溴代更偏向形成稳定自由基的位置。",
+      "studyNote": "",
       "figures": [],
       "pageFigures": [],
       "pageImages": [
@@ -928,7 +1126,29 @@ window.MED_GLOSSARY_COURSES["organic-chemistry"] = {
         "oc0085",
         "oc0090",
         "oc0030"
-      ]
+      ],
+      "fieldSources": {
+        "structure": [
+          {
+            "label": "有机化学教材上下文：书页 52 / PDF 74",
+            "url": "assets/pages/organic/pdf-074.jpg"
+          },
+          {
+            "label": "OpenStax Anatomy and Physiology 2e: Introduction",
+            "url": "https://openstax.org/books/anatomy-and-physiology-2e/pages/1-introduction"
+          }
+        ],
+        "function": [
+          {
+            "label": "有机化学教材上下文：书页 52 / PDF 74",
+            "url": "assets/pages/organic/pdf-074.jpg"
+          },
+          {
+            "label": "OpenStax Anatomy and Physiology 2e: Introduction",
+            "url": "https://openstax.org/books/anatomy-and-physiology-2e/pages/1-introduction"
+          }
+        ]
+      }
     },
     {
       "id": "oc0011",
@@ -961,7 +1181,7 @@ window.MED_GLOSSARY_COURSES["organic-chemistry"] = {
       "structure": "常用因素包括原子电负性和半径、杂化 s 成分、诱导效应、共振效应、溶剂化。",
       "location": "常用因素包括原子电负性和半径、杂化 s 成分、诱导效应、共振效应、溶剂化。",
       "function": "用于比较羧酸、酚、醇、端炔、胺盐等酸性。",
-      "studyNote": "答题时按 ARIO 思路：Atom、Resonance、Induction、Orbital。",
+      "studyNote": "",
       "figures": [],
       "pageFigures": [],
       "pageImages": [
@@ -1011,7 +1231,29 @@ window.MED_GLOSSARY_COURSES["organic-chemistry"] = {
         "oc0004",
         "oc0005",
         "oc0010"
-      ]
+      ],
+      "fieldSources": {
+        "structure": [
+          {
+            "label": "有机化学教材上下文：书页 11 / PDF 33",
+            "url": "assets/pages/organic/pdf-033.jpg"
+          },
+          {
+            "label": "OpenStax Anatomy and Physiology 2e: Introduction",
+            "url": "https://openstax.org/books/anatomy-and-physiology-2e/pages/1-introduction"
+          }
+        ],
+        "function": [
+          {
+            "label": "有机化学教材上下文：书页 11 / PDF 33",
+            "url": "assets/pages/organic/pdf-033.jpg"
+          },
+          {
+            "label": "OpenStax Anatomy and Physiology 2e: Introduction",
+            "url": "https://openstax.org/books/anatomy-and-physiology-2e/pages/1-introduction"
+          }
+        ]
+      }
     },
     {
       "id": "oc0012",
@@ -1040,7 +1282,7 @@ window.MED_GLOSSARY_COURSES["organic-chemistry"] = {
       "structure": "亲核性受电荷、碱性、溶剂、位阻和可极化性影响；强碱不一定总是好亲核体。",
       "location": "亲核性受电荷、碱性、溶剂、位阻和可极化性影响；强碱不一定总是好亲核体。",
       "function": "用于判断 SN2、羰基加成、酰基取代和环氧开环的反应方向。",
-      "studyNote": "区分亲核性和碱性：前者看进攻碳的速度，后者看夺取质子的平衡能力。",
+      "studyNote": "",
       "figures": [],
       "pageFigures": [],
       "pageImages": [
@@ -1074,7 +1316,29 @@ window.MED_GLOSSARY_COURSES["organic-chemistry"] = {
         "oc0005",
         "oc0010",
         "oc0013"
-      ]
+      ],
+      "fieldSources": {
+        "structure": [
+          {
+            "label": "有机化学教材上下文：书页 2 / PDF 24",
+            "url": "assets/pages/organic/pdf-024.jpg"
+          },
+          {
+            "label": "OpenStax Anatomy and Physiology 2e: Introduction",
+            "url": "https://openstax.org/books/anatomy-and-physiology-2e/pages/1-introduction"
+          }
+        ],
+        "function": [
+          {
+            "label": "有机化学教材上下文：书页 2 / PDF 24",
+            "url": "assets/pages/organic/pdf-024.jpg"
+          },
+          {
+            "label": "OpenStax Anatomy and Physiology 2e: Introduction",
+            "url": "https://openstax.org/books/anatomy-and-physiology-2e/pages/1-introduction"
+          }
+        ]
+      }
     },
     {
       "id": "oc0013",
@@ -1107,7 +1371,7 @@ window.MED_GLOSSARY_COURSES["organic-chemistry"] = {
       "structure": "卤离子常见离去能力 I- > Br- > Cl- >> F-；磺酸酯也是优良离去基。",
       "location": "卤离子常见离去能力 I- > Br- > Cl- >> F-；磺酸酯也是优良离去基。",
       "function": "影响亲核取代和消除反应速率，是判断卤代烃反应活性的核心因素之一。",
-      "studyNote": "好离去基通常是弱碱；F- 碱性较强、C-F 键强，所以氟代烷反应性低。",
+      "studyNote": "",
       "figures": [],
       "pageFigures": [],
       "pageImages": [
@@ -1157,7 +1421,29 @@ window.MED_GLOSSARY_COURSES["organic-chemistry"] = {
         "oc0090",
         "oc0009",
         "oc0031"
-      ]
+      ],
+      "fieldSources": {
+        "structure": [
+          {
+            "label": "有机化学教材上下文：书页 104 / PDF 126",
+            "url": "assets/pages/organic/pdf-126.jpg"
+          },
+          {
+            "label": "OpenStax Anatomy and Physiology 2e: Introduction",
+            "url": "https://openstax.org/books/anatomy-and-physiology-2e/pages/1-introduction"
+          }
+        ],
+        "function": [
+          {
+            "label": "有机化学教材上下文：书页 104 / PDF 126",
+            "url": "assets/pages/organic/pdf-126.jpg"
+          },
+          {
+            "label": "OpenStax Anatomy and Physiology 2e: Introduction",
+            "url": "https://openstax.org/books/anatomy-and-physiology-2e/pages/1-introduction"
+          }
+        ]
+      }
     },
     {
       "id": "oc0014",
@@ -1190,7 +1476,7 @@ window.MED_GLOSSARY_COURSES["organic-chemistry"] = {
       "structure": "手性碳使分子可能具有非叠合镜像关系，但有对称面时可能整体不手性。",
       "location": "手性碳使分子可能具有非叠合镜像关系，但有对称面时可能整体不手性。",
       "function": "是判断旋光性、对映体和 R/S 构型的入口。",
-      "studyNote": "先找 sp3 碳，再看四个连接对象是否真正不同。",
+      "studyNote": "",
       "figures": [],
       "pageFigures": [],
       "pageImages": [
@@ -1240,7 +1526,29 @@ window.MED_GLOSSARY_COURSES["organic-chemistry"] = {
         "oc0022",
         "oc0001",
         "oc0002"
-      ]
+      ],
+      "fieldSources": {
+        "structure": [
+          {
+            "label": "有机化学教材上下文：书页 16 / PDF 38",
+            "url": "assets/pages/organic/pdf-038.jpg"
+          },
+          {
+            "label": "OpenStax Anatomy and Physiology 2e: Introduction",
+            "url": "https://openstax.org/books/anatomy-and-physiology-2e/pages/1-introduction"
+          }
+        ],
+        "function": [
+          {
+            "label": "有机化学教材上下文：书页 16 / PDF 38",
+            "url": "assets/pages/organic/pdf-038.jpg"
+          },
+          {
+            "label": "OpenStax Anatomy and Physiology 2e: Introduction",
+            "url": "https://openstax.org/books/anatomy-and-physiology-2e/pages/1-introduction"
+          }
+        ]
+      }
     },
     {
       "id": "oc0015",
@@ -1273,7 +1581,7 @@ window.MED_GLOSSARY_COURSES["organic-chemistry"] = {
       "structure": "对映体在非手性环境中多数物理性质相同，但旋光方向相反。",
       "location": "对映体在非手性环境中多数物理性质相同，但旋光方向相反。",
       "function": "药物、氨基酸和糖的生理活性常与对映异构密切相关。",
-      "studyNote": "看到一个手性中心通常有一对对映体；多个手性中心还要考虑内消旋。",
+      "studyNote": "",
       "figures": [],
       "pageFigures": [],
       "pageImages": [
@@ -1323,7 +1631,29 @@ window.MED_GLOSSARY_COURSES["organic-chemistry"] = {
         "oc0022",
         "oc0001",
         "oc0002"
-      ]
+      ],
+      "fieldSources": {
+        "structure": [
+          {
+            "label": "有机化学教材上下文：书页 16 / PDF 38",
+            "url": "assets/pages/organic/pdf-038.jpg"
+          },
+          {
+            "label": "OpenStax Anatomy and Physiology 2e: Introduction",
+            "url": "https://openstax.org/books/anatomy-and-physiology-2e/pages/1-introduction"
+          }
+        ],
+        "function": [
+          {
+            "label": "有机化学教材上下文：书页 16 / PDF 38",
+            "url": "assets/pages/organic/pdf-038.jpg"
+          },
+          {
+            "label": "OpenStax Anatomy and Physiology 2e: Introduction",
+            "url": "https://openstax.org/books/anatomy-and-physiology-2e/pages/1-introduction"
+          }
+        ]
+      }
     },
     {
       "id": "oc0016",
@@ -1356,7 +1686,7 @@ window.MED_GLOSSARY_COURSES["organic-chemistry"] = {
       "structure": "包括多个手性中心中部分构型不同的异构体，也包括 E/Z 异构。",
       "location": "包括多个手性中心中部分构型不同的异构体，也包括 E/Z 异构。",
       "function": "非对映体物理性质不同，通常可用普通分离方法分开。",
-      "studyNote": "多个手性中心比较时，若不是全部相反，多半是非对映体。",
+      "studyNote": "",
       "figures": [],
       "pageFigures": [],
       "pageImages": [
@@ -1406,7 +1736,29 @@ window.MED_GLOSSARY_COURSES["organic-chemistry"] = {
         "oc0022",
         "oc0001",
         "oc0002"
-      ]
+      ],
+      "fieldSources": {
+        "structure": [
+          {
+            "label": "有机化学教材上下文：书页 23 / PDF 45",
+            "url": "assets/pages/organic/pdf-045.jpg"
+          },
+          {
+            "label": "OpenStax Anatomy and Physiology 2e: Introduction",
+            "url": "https://openstax.org/books/anatomy-and-physiology-2e/pages/1-introduction"
+          }
+        ],
+        "function": [
+          {
+            "label": "有机化学教材上下文：书页 23 / PDF 45",
+            "url": "assets/pages/organic/pdf-045.jpg"
+          },
+          {
+            "label": "OpenStax Anatomy and Physiology 2e: Introduction",
+            "url": "https://openstax.org/books/anatomy-and-physiology-2e/pages/1-introduction"
+          }
+        ]
+      }
     },
     {
       "id": "oc0017",
@@ -1439,7 +1791,7 @@ window.MED_GLOSSARY_COURSES["organic-chemistry"] = {
       "structure": "常有对称面或对称中心，使各手性部分旋光效应相互抵消。",
       "location": "常有对称面或对称中心，使各手性部分旋光效应相互抵消。",
       "function": "用于判断含两个或多个手性中心化合物的异构体数目。",
-      "studyNote": "不要只数手性碳；最后一定看整体对称性。",
+      "studyNote": "",
       "figures": [],
       "pageFigures": [],
       "pageImages": [
@@ -1489,7 +1841,29 @@ window.MED_GLOSSARY_COURSES["organic-chemistry"] = {
         "oc0022",
         "oc0001",
         "oc0002"
-      ]
+      ],
+      "fieldSources": {
+        "structure": [
+          {
+            "label": "有机化学教材上下文：书页 24 / PDF 46",
+            "url": "assets/pages/organic/pdf-046.jpg"
+          },
+          {
+            "label": "OpenStax Anatomy and Physiology 2e: Introduction",
+            "url": "https://openstax.org/books/anatomy-and-physiology-2e/pages/1-introduction"
+          }
+        ],
+        "function": [
+          {
+            "label": "有机化学教材上下文：书页 24 / PDF 46",
+            "url": "assets/pages/organic/pdf-046.jpg"
+          },
+          {
+            "label": "OpenStax Anatomy and Physiology 2e: Introduction",
+            "url": "https://openstax.org/books/anatomy-and-physiology-2e/pages/1-introduction"
+          }
+        ]
+      }
     },
     {
       "id": "oc0018",
@@ -1522,7 +1896,7 @@ window.MED_GLOSSARY_COURSES["organic-chemistry"] = {
       "structure": "外消旋体整体不显示旋光性，但各单一对映体仍有旋光性。",
       "location": "外消旋体整体不显示旋光性，但各单一对映体仍有旋光性。",
       "function": "拆分外消旋体是获得单一手性药物或天然产物的重要方法。",
-      "studyNote": "外消旋体不等于内消旋体：前者是混合物，后者是单一化合物。",
+      "studyNote": "",
       "figures": [],
       "pageFigures": [],
       "pageImages": [
@@ -1572,7 +1946,29 @@ window.MED_GLOSSARY_COURSES["organic-chemistry"] = {
         "oc0022",
         "oc0001",
         "oc0002"
-      ]
+      ],
+      "fieldSources": {
+        "structure": [
+          {
+            "label": "有机化学教材上下文：书页 23 / PDF 45",
+            "url": "assets/pages/organic/pdf-045.jpg"
+          },
+          {
+            "label": "OpenStax Anatomy and Physiology 2e: Introduction",
+            "url": "https://openstax.org/books/anatomy-and-physiology-2e/pages/1-introduction"
+          }
+        ],
+        "function": [
+          {
+            "label": "有机化学教材上下文：书页 23 / PDF 45",
+            "url": "assets/pages/organic/pdf-045.jpg"
+          },
+          {
+            "label": "OpenStax Anatomy and Physiology 2e: Introduction",
+            "url": "https://openstax.org/books/anatomy-and-physiology-2e/pages/1-introduction"
+          }
+        ]
+      }
     },
     {
       "id": "oc0019",
@@ -1605,7 +2001,7 @@ window.MED_GLOSSARY_COURSES["organic-chemistry"] = {
       "structure": "按原子序数排优先级，最低优先级背向观察，1->2->3 顺时针为 R，逆时针为 S。",
       "location": "按原子序数排优先级，最低优先级背向观察，1->2->3 顺时针为 R，逆时针为 S。",
       "function": "用于准确命名手性分子并比较立体异构关系。",
-      "studyNote": "Fischer 投影中横线朝前、竖线朝后，最低优先级在横线时结果要反转。",
+      "studyNote": "",
       "figures": [],
       "pageFigures": [],
       "pageImages": [
@@ -1655,7 +2051,29 @@ window.MED_GLOSSARY_COURSES["organic-chemistry"] = {
         "oc0022",
         "oc0001",
         "oc0002"
-      ]
+      ],
+      "fieldSources": {
+        "structure": [
+          {
+            "label": "有机化学教材上下文：书页 28 / PDF 50",
+            "url": "assets/pages/organic/pdf-050.jpg"
+          },
+          {
+            "label": "OpenStax Anatomy and Physiology 2e: Introduction",
+            "url": "https://openstax.org/books/anatomy-and-physiology-2e/pages/1-introduction"
+          }
+        ],
+        "function": [
+          {
+            "label": "有机化学教材上下文：书页 28 / PDF 50",
+            "url": "assets/pages/organic/pdf-050.jpg"
+          },
+          {
+            "label": "OpenStax Anatomy and Physiology 2e: Introduction",
+            "url": "https://openstax.org/books/anatomy-and-physiology-2e/pages/1-introduction"
+          }
+        ]
+      }
     },
     {
       "id": "oc0020",
@@ -1688,7 +2106,7 @@ window.MED_GLOSSARY_COURSES["organic-chemistry"] = {
       "structure": "两端高优先级基团在同侧为 Z，在异侧为 E。",
       "location": "两端高优先级基团在同侧为 Z，在异侧为 E。",
       "function": "比顺反标记适用范围更广，常用于取代烯烃。",
-      "studyNote": "先分别在双键两端排优先级，再判断同侧或异侧。",
+      "studyNote": "",
       "figures": [],
       "pageFigures": [],
       "pageImages": [
@@ -1738,7 +2156,29 @@ window.MED_GLOSSARY_COURSES["organic-chemistry"] = {
         "oc0015",
         "oc0016",
         "oc0017"
-      ]
+      ],
+      "fieldSources": {
+        "structure": [
+          {
+            "label": "有机化学教材上下文：书页 65 / PDF 87",
+            "url": "assets/pages/organic/pdf-087.jpg"
+          },
+          {
+            "label": "OpenStax Anatomy and Physiology 2e: Introduction",
+            "url": "https://openstax.org/books/anatomy-and-physiology-2e/pages/1-introduction"
+          }
+        ],
+        "function": [
+          {
+            "label": "有机化学教材上下文：书页 65 / PDF 87",
+            "url": "assets/pages/organic/pdf-087.jpg"
+          },
+          {
+            "label": "OpenStax Anatomy and Physiology 2e: Introduction",
+            "url": "https://openstax.org/books/anatomy-and-physiology-2e/pages/1-introduction"
+          }
+        ]
+      }
     },
     {
       "id": "oc0021",
@@ -1771,7 +2211,7 @@ window.MED_GLOSSARY_COURSES["organic-chemistry"] = {
       "structure": "乙烷有交叉式和重叠式；丁烷有反交叉、邻交叉等构象。",
       "location": "乙烷有交叉式和重叠式；丁烷有反交叉、邻交叉等构象。",
       "function": "构象影响能量、稳定性和反应空间取向。",
-      "studyNote": "构象不是构型，通常不需要断键就能互相转化。",
+      "studyNote": "",
       "figures": [],
       "pageFigures": [],
       "pageImages": [
@@ -1821,7 +2261,29 @@ window.MED_GLOSSARY_COURSES["organic-chemistry"] = {
         "oc0018",
         "oc0019",
         "oc0030"
-      ]
+      ],
+      "fieldSources": {
+        "structure": [
+          {
+            "label": "有机化学教材上下文：书页 55 / PDF 77",
+            "url": "assets/pages/organic/pdf-077.jpg"
+          },
+          {
+            "label": "OpenStax Anatomy and Physiology 2e: Introduction",
+            "url": "https://openstax.org/books/anatomy-and-physiology-2e/pages/1-introduction"
+          }
+        ],
+        "function": [
+          {
+            "label": "有机化学教材上下文：书页 55 / PDF 77",
+            "url": "assets/pages/organic/pdf-077.jpg"
+          },
+          {
+            "label": "OpenStax Anatomy and Physiology 2e: Introduction",
+            "url": "https://openstax.org/books/anatomy-and-physiology-2e/pages/1-introduction"
+          }
+        ]
+      }
     },
     {
       "id": "oc0022",
@@ -1854,7 +2316,7 @@ window.MED_GLOSSARY_COURSES["organic-chemistry"] = {
       "structure": "取代基有轴向键和赤道键；体积大的取代基通常更愿意处于赤道键。",
       "location": "取代基有轴向键和赤道键；体积大的取代基通常更愿意处于赤道键。",
       "function": "解释取代环己烷稳定性和反应选择性。",
-      "studyNote": "判断稳定构象时，优先让大基团在 e 键。",
+      "studyNote": "",
       "figures": [],
       "pageFigures": [],
       "pageImages": [
@@ -1904,7 +2366,29 @@ window.MED_GLOSSARY_COURSES["organic-chemistry"] = {
         "oc0019",
         "oc0044",
         "oc0030"
-      ]
+      ],
+      "fieldSources": {
+        "structure": [
+          {
+            "label": "有机化学教材上下文：书页 83 / PDF 105",
+            "url": "assets/pages/organic/pdf-105.jpg"
+          },
+          {
+            "label": "OpenStax Anatomy and Physiology 2e: Introduction",
+            "url": "https://openstax.org/books/anatomy-and-physiology-2e/pages/1-introduction"
+          }
+        ],
+        "function": [
+          {
+            "label": "有机化学教材上下文：书页 83 / PDF 105",
+            "url": "assets/pages/organic/pdf-105.jpg"
+          },
+          {
+            "label": "OpenStax Anatomy and Physiology 2e: Introduction",
+            "url": "https://openstax.org/books/anatomy-and-physiology-2e/pages/1-introduction"
+          }
+        ]
+      }
     },
     {
       "id": "oc0023",
@@ -1937,7 +2421,7 @@ window.MED_GLOSSARY_COURSES["organic-chemistry"] = {
       "structure": "一个环或一个双键贡献 1 个不饱和度，一个叁键贡献 2 个。",
       "location": "一个环或一个双键贡献 1 个不饱和度，一个叁键贡献 2 个。",
       "function": "用于从分子式快速推断是否有芳环、羰基、双键、环等结构。",
-      "studyNote": "含卤素按氢处理，含氮时加一个氢，氧和硫通常不影响计算。",
+      "studyNote": "",
       "figures": [],
       "pageFigures": [],
       "pageImages": [
@@ -1987,7 +2471,29 @@ window.MED_GLOSSARY_COURSES["organic-chemistry"] = {
         "oc0001",
         "oc0002",
         "oc0003"
-      ]
+      ],
+      "fieldSources": {
+        "structure": [
+          {
+            "label": "有机化学教材上下文：书页 47 / PDF 69",
+            "url": "assets/pages/organic/pdf-069.jpg"
+          },
+          {
+            "label": "OpenStax Anatomy and Physiology 2e: Introduction",
+            "url": "https://openstax.org/books/anatomy-and-physiology-2e/pages/1-introduction"
+          }
+        ],
+        "function": [
+          {
+            "label": "有机化学教材上下文：书页 47 / PDF 69",
+            "url": "assets/pages/organic/pdf-069.jpg"
+          },
+          {
+            "label": "OpenStax Anatomy and Physiology 2e: Introduction",
+            "url": "https://openstax.org/books/anatomy-and-physiology-2e/pages/1-introduction"
+          }
+        ]
+      }
     },
     {
       "id": "oc0024",
@@ -2020,7 +2526,7 @@ window.MED_GLOSSARY_COURSES["organic-chemistry"] = {
       "structure": "共轭越长，吸收波长通常越长；羰基可有 n->π* 吸收。",
       "location": "共轭越长，吸收波长通常越长；羰基可有 n->π* 吸收。",
       "function": "适合判断芳香环、共轭双键和部分羰基共轭结构。",
-      "studyNote": "UV 给的是共轭信息，不能单独完成结构鉴定。",
+      "studyNote": "",
       "figures": [],
       "pageFigures": [],
       "pageImages": [
@@ -2070,7 +2576,29 @@ window.MED_GLOSSARY_COURSES["organic-chemistry"] = {
         "oc0001",
         "oc0002",
         "oc0003"
-      ]
+      ],
+      "fieldSources": {
+        "structure": [
+          {
+            "label": "有机化学教材上下文：书页 31 / PDF 53",
+            "url": "assets/pages/organic/pdf-053.jpg"
+          },
+          {
+            "label": "OpenStax Anatomy and Physiology 2e: Introduction",
+            "url": "https://openstax.org/books/anatomy-and-physiology-2e/pages/1-introduction"
+          }
+        ],
+        "function": [
+          {
+            "label": "有机化学教材上下文：书页 31 / PDF 53",
+            "url": "assets/pages/organic/pdf-053.jpg"
+          },
+          {
+            "label": "OpenStax Anatomy and Physiology 2e: Introduction",
+            "url": "https://openstax.org/books/anatomy-and-physiology-2e/pages/1-introduction"
+          }
+        ]
+      }
     },
     {
       "id": "oc0025",
@@ -2103,7 +2631,7 @@ window.MED_GLOSSARY_COURSES["organic-chemistry"] = {
       "structure": "羰基约在 1700 cm-1 强吸收，羟基常有宽峰，叁键约在 2100 cm-1 附近。",
       "location": "羰基约在 1700 cm-1 强吸收，羟基常有宽峰，叁键约在 2100 cm-1 附近。",
       "function": "用于快速判断羰基、羟基、氨基、叁键、芳环等官能团。",
-      "studyNote": "IR 先看特征区，再看指纹区；强峰位置要结合分子环境判断。",
+      "studyNote": "",
       "figures": [],
       "pageFigures": [],
       "pageImages": [
@@ -2153,7 +2681,29 @@ window.MED_GLOSSARY_COURSES["organic-chemistry"] = {
         "oc0002",
         "oc0001",
         "oc0003"
-      ]
+      ],
+      "fieldSources": {
+        "structure": [
+          {
+            "label": "有机化学教材上下文：书页 33 / PDF 55",
+            "url": "assets/pages/organic/pdf-055.jpg"
+          },
+          {
+            "label": "OpenStax Anatomy and Physiology 2e: Introduction",
+            "url": "https://openstax.org/books/anatomy-and-physiology-2e/pages/1-introduction"
+          }
+        ],
+        "function": [
+          {
+            "label": "有机化学教材上下文：书页 33 / PDF 55",
+            "url": "assets/pages/organic/pdf-055.jpg"
+          },
+          {
+            "label": "OpenStax Anatomy and Physiology 2e: Introduction",
+            "url": "https://openstax.org/books/anatomy-and-physiology-2e/pages/1-introduction"
+          }
+        ]
+      }
     },
     {
       "id": "oc0026",
@@ -2186,7 +2736,7 @@ window.MED_GLOSSARY_COURSES["organic-chemistry"] = {
       "structure": "化学位移、积分面积、裂分峰形和偶合常数共同提供结构信息。",
       "location": "化学位移、积分面积、裂分峰形和偶合常数共同提供结构信息。",
       "function": "用于判断氢的类型、数量及相邻氢关系。",
-      "studyNote": "读谱顺序：先积分和组数，再看化学位移，最后用裂分拼片段。",
+      "studyNote": "",
       "figures": [],
       "pageFigures": [],
       "pageImages": [
@@ -2236,7 +2786,29 @@ window.MED_GLOSSARY_COURSES["organic-chemistry"] = {
         "oc0005",
         "oc0001",
         "oc0002"
-      ]
+      ],
+      "fieldSources": {
+        "structure": [
+          {
+            "label": "有机化学教材上下文：书页 47 / PDF 69",
+            "url": "assets/pages/organic/pdf-069.jpg"
+          },
+          {
+            "label": "OpenStax Anatomy and Physiology 2e: Introduction",
+            "url": "https://openstax.org/books/anatomy-and-physiology-2e/pages/1-introduction"
+          }
+        ],
+        "function": [
+          {
+            "label": "有机化学教材上下文：书页 47 / PDF 69",
+            "url": "assets/pages/organic/pdf-069.jpg"
+          },
+          {
+            "label": "OpenStax Anatomy and Physiology 2e: Introduction",
+            "url": "https://openstax.org/books/anatomy-and-physiology-2e/pages/1-introduction"
+          }
+        ]
+      }
     },
     {
       "id": "oc0027",
@@ -2269,7 +2841,7 @@ window.MED_GLOSSARY_COURSES["organic-chemistry"] = {
       "structure": "分子离子峰给相对分子质量，碎片峰反映易裂解部位。",
       "location": "分子离子峰给相对分子质量，碎片峰反映易裂解部位。",
       "function": "与 IR、NMR、UV 合用可推断分子式、官能团和骨架。",
-      "studyNote": "质谱先找分子离子峰，再看同位素峰和特征碎片。",
+      "studyNote": "",
       "figures": [],
       "pageFigures": [],
       "pageImages": [
@@ -2319,7 +2891,29 @@ window.MED_GLOSSARY_COURSES["organic-chemistry"] = {
         "oc0001",
         "oc0002",
         "oc0003"
-      ]
+      ],
+      "fieldSources": {
+        "structure": [
+          {
+            "label": "有机化学教材上下文：书页 44 / PDF 66",
+            "url": "assets/pages/organic/pdf-066.jpg"
+          },
+          {
+            "label": "OpenStax Anatomy and Physiology 2e: Introduction",
+            "url": "https://openstax.org/books/anatomy-and-physiology-2e/pages/1-introduction"
+          }
+        ],
+        "function": [
+          {
+            "label": "有机化学教材上下文：书页 44 / PDF 66",
+            "url": "assets/pages/organic/pdf-066.jpg"
+          },
+          {
+            "label": "OpenStax Anatomy and Physiology 2e: Introduction",
+            "url": "https://openstax.org/books/anatomy-and-physiology-2e/pages/1-introduction"
+          }
+        ]
+      }
     },
     {
       "id": "oc0028",
@@ -2352,7 +2946,7 @@ window.MED_GLOSSARY_COURSES["organic-chemistry"] = {
       "structure": "酰卤、酸酐、酯、醛、酮、羧酸、酰胺位置不同，共轭会使波数降低。",
       "location": "酰卤、酸酐、酯、醛、酮、羧酸、酰胺位置不同，共轭会使波数降低。",
       "function": "是鉴别羰基化合物最直接的 IR 信号之一。",
-      "studyNote": "看到 1700 cm-1 强峰先判断是否羰基，再结合 O-H、C-H、N-H 等峰细分。",
+      "studyNote": "",
       "figures": [],
       "pageFigures": [],
       "pageImages": [
@@ -2402,7 +2996,29 @@ window.MED_GLOSSARY_COURSES["organic-chemistry"] = {
         "oc0002",
         "oc0076",
         "oc0001"
-      ]
+      ],
+      "fieldSources": {
+        "structure": [
+          {
+            "label": "有机化学教材上下文：书页 48 / PDF 70",
+            "url": "assets/pages/organic/pdf-070.jpg"
+          },
+          {
+            "label": "OpenStax Anatomy and Physiology 2e: Introduction",
+            "url": "https://openstax.org/books/anatomy-and-physiology-2e/pages/1-introduction"
+          }
+        ],
+        "function": [
+          {
+            "label": "有机化学教材上下文：书页 48 / PDF 70",
+            "url": "assets/pages/organic/pdf-070.jpg"
+          },
+          {
+            "label": "OpenStax Anatomy and Physiology 2e: Introduction",
+            "url": "https://openstax.org/books/anatomy-and-physiology-2e/pages/1-introduction"
+          }
+        ]
+      }
     },
     {
       "id": "oc0029",
@@ -2435,7 +3051,7 @@ window.MED_GLOSSARY_COURSES["organic-chemistry"] = {
       "structure": "羟基峰常较宽，羧酸 O-H 更宽；胺的 N-H 峰通常较尖，伯胺可有双峰。",
       "location": "羟基峰常较宽，羧酸 O-H 更宽；胺的 N-H 峰通常较尖，伯胺可有双峰。",
       "function": "用于区分醇、酚、羧酸和胺类化合物。",
-      "studyNote": "羧酸 O-H 宽而拖尾，容易和普通醇羟基峰混淆。",
+      "studyNote": "",
       "figures": [],
       "pageFigures": [],
       "pageImages": [
@@ -2485,7 +3101,29 @@ window.MED_GLOSSARY_COURSES["organic-chemistry"] = {
         "oc0119",
         "oc0004",
         "oc0001"
-      ]
+      ],
+      "fieldSources": {
+        "structure": [
+          {
+            "label": "有机化学教材上下文：书页 45 / PDF 67",
+            "url": "assets/pages/organic/pdf-067.jpg"
+          },
+          {
+            "label": "OpenStax Anatomy and Physiology 2e: Introduction",
+            "url": "https://openstax.org/books/anatomy-and-physiology-2e/pages/1-introduction"
+          }
+        ],
+        "function": [
+          {
+            "label": "有机化学教材上下文：书页 45 / PDF 67",
+            "url": "assets/pages/organic/pdf-067.jpg"
+          },
+          {
+            "label": "OpenStax Anatomy and Physiology 2e: Introduction",
+            "url": "https://openstax.org/books/anatomy-and-physiology-2e/pages/1-introduction"
+          }
+        ]
+      }
     },
     {
       "id": "oc0030",
@@ -2518,7 +3156,7 @@ window.MED_GLOSSARY_COURSES["organic-chemistry"] = {
       "structure": "反应包含链引发、链增长和链终止，常生成多种卤代产物。",
       "location": "反应包含链引发、链增长和链终止，常生成多种卤代产物。",
       "function": "用于理解自由基链反应和选择性来源。",
-      "studyNote": "氯代快但选择性较低，溴代慢但更偏向稳定自由基位置。",
+      "studyNote": "",
       "figures": [],
       "pageFigures": [],
       "pageImages": [
@@ -2568,7 +3206,29 @@ window.MED_GLOSSARY_COURSES["organic-chemistry"] = {
         "oc0033",
         "oc0034",
         "oc0039"
-      ]
+      ],
+      "fieldSources": {
+        "structure": [
+          {
+            "label": "有机化学教材上下文：书页 59 / PDF 81",
+            "url": "assets/pages/organic/pdf-081.jpg"
+          },
+          {
+            "label": "OpenStax Anatomy and Physiology 2e: Introduction",
+            "url": "https://openstax.org/books/anatomy-and-physiology-2e/pages/1-introduction"
+          }
+        ],
+        "function": [
+          {
+            "label": "有机化学教材上下文：书页 59 / PDF 81",
+            "url": "assets/pages/organic/pdf-081.jpg"
+          },
+          {
+            "label": "OpenStax Anatomy and Physiology 2e: Introduction",
+            "url": "https://openstax.org/books/anatomy-and-physiology-2e/pages/1-introduction"
+          }
+        ]
+      }
     },
     {
       "id": "oc0031",
@@ -2601,7 +3261,7 @@ window.MED_GLOSSARY_COURSES["organic-chemistry"] = {
       "structure": "叔氢、仲氢、伯氢反应活性通常依次降低；溴代比氯代更能体现这种差异。",
       "location": "叔氢、仲氢、伯氢反应活性通常依次降低；溴代比氯代更能体现这种差异。",
       "function": "用于预测烷烃卤代主产物。",
-      "studyNote": "不要只看有几个氢，也要看抽氢后形成什么自由基。",
+      "studyNote": "",
       "figures": [],
       "pageFigures": [],
       "pageImages": [
@@ -2651,7 +3311,29 @@ window.MED_GLOSSARY_COURSES["organic-chemistry"] = {
         "oc0085",
         "oc0090",
         "oc0013"
-      ]
+      ],
+      "fieldSources": {
+        "structure": [
+          {
+            "label": "有机化学教材上下文：书页 60 / PDF 82",
+            "url": "assets/pages/organic/pdf-082.jpg"
+          },
+          {
+            "label": "OpenStax Anatomy and Physiology 2e: Introduction",
+            "url": "https://openstax.org/books/anatomy-and-physiology-2e/pages/1-introduction"
+          }
+        ],
+        "function": [
+          {
+            "label": "有机化学教材上下文：书页 60 / PDF 82",
+            "url": "assets/pages/organic/pdf-082.jpg"
+          },
+          {
+            "label": "OpenStax Anatomy and Physiology 2e: Introduction",
+            "url": "https://openstax.org/books/anatomy-and-physiology-2e/pages/1-introduction"
+          }
+        ]
+      }
     },
     {
       "id": "oc0032",
@@ -2684,7 +3366,7 @@ window.MED_GLOSSARY_COURSES["organic-chemistry"] = {
       "structure": "常见反应包括加 HX、加 X2、加水、加次卤酸等。",
       "location": "常见反应包括加 HX、加 X2、加水、加次卤酸等。",
       "function": "是烯烃最重要的反应类型，产物取向受碳正离子稳定性或环状中间体控制。",
-      "studyNote": "先判断试剂是否亲电，再看是否有 Markovnikov 取向、反式加成或重排。",
+      "studyNote": "",
       "figures": [],
       "pageFigures": [],
       "pageImages": [
@@ -2734,7 +3416,29 @@ window.MED_GLOSSARY_COURSES["organic-chemistry"] = {
         "oc0030",
         "oc0042",
         "oc0006"
-      ]
+      ],
+      "fieldSources": {
+        "structure": [
+          {
+            "label": "有机化学教材上下文：书页 63 / PDF 85",
+            "url": "assets/pages/organic/pdf-085.jpg"
+          },
+          {
+            "label": "OpenStax Anatomy and Physiology 2e: Introduction",
+            "url": "https://openstax.org/books/anatomy-and-physiology-2e/pages/1-introduction"
+          }
+        ],
+        "function": [
+          {
+            "label": "有机化学教材上下文：书页 63 / PDF 85",
+            "url": "assets/pages/organic/pdf-085.jpg"
+          },
+          {
+            "label": "OpenStax Anatomy and Physiology 2e: Introduction",
+            "url": "https://openstax.org/books/anatomy-and-physiology-2e/pages/1-introduction"
+          }
+        ]
+      }
     },
     {
       "id": "oc0033",
@@ -2767,7 +3471,7 @@ window.MED_GLOSSARY_COURSES["organic-chemistry"] = {
       "structure": "本质是形成更稳定碳正离子或类碳正离子过渡态。",
       "location": "本质是形成更稳定碳正离子或类碳正离子过渡态。",
       "function": "用于预测不对称烯烃加 HX、酸催化水合等反应主产物。",
-      "studyNote": "口诀能用，但本质是中间体稳定性；有过氧化物时 HBr 可反向。",
+      "studyNote": "",
       "figures": [],
       "pageFigures": [],
       "pageImages": [
@@ -2817,7 +3521,29 @@ window.MED_GLOSSARY_COURSES["organic-chemistry"] = {
         "oc0030",
         "oc0006",
         "oc0007"
-      ]
+      ],
+      "fieldSources": {
+        "structure": [
+          {
+            "label": "有机化学教材上下文：书页 67 / PDF 89",
+            "url": "assets/pages/organic/pdf-089.jpg"
+          },
+          {
+            "label": "OpenStax Anatomy and Physiology 2e: Introduction",
+            "url": "https://openstax.org/books/anatomy-and-physiology-2e/pages/1-introduction"
+          }
+        ],
+        "function": [
+          {
+            "label": "有机化学教材上下文：书页 67 / PDF 89",
+            "url": "assets/pages/organic/pdf-089.jpg"
+          },
+          {
+            "label": "OpenStax Anatomy and Physiology 2e: Introduction",
+            "url": "https://openstax.org/books/anatomy-and-physiology-2e/pages/1-introduction"
+          }
+        ]
+      }
     },
     {
       "id": "oc0034",
@@ -2850,7 +3576,7 @@ window.MED_GLOSSARY_COURSES["organic-chemistry"] = {
       "structure": "该效应主要适用于 HBr，不适用于 HCl 和 HI 的普通条件。",
       "location": "该效应主要适用于 HBr，不适用于 HCl 和 HI 的普通条件。",
       "function": "用于区分离子型加成和自由基加成的取向差异。",
-      "studyNote": "看到 ROOR 和 HBr，优先想到自由基机制和反马氏加成。",
+      "studyNote": "",
       "figures": [],
       "pageFigures": [],
       "pageImages": [
@@ -2900,7 +3626,29 @@ window.MED_GLOSSARY_COURSES["organic-chemistry"] = {
         "oc0006",
         "oc0007",
         "oc0008"
-      ]
+      ],
+      "fieldSources": {
+        "structure": [
+          {
+            "label": "有机化学教材上下文：书页 71 / PDF 93",
+            "url": "assets/pages/organic/pdf-093.jpg"
+          },
+          {
+            "label": "OpenStax Anatomy and Physiology 2e: Introduction",
+            "url": "https://openstax.org/books/anatomy-and-physiology-2e/pages/1-introduction"
+          }
+        ],
+        "function": [
+          {
+            "label": "有机化学教材上下文：书页 71 / PDF 93",
+            "url": "assets/pages/organic/pdf-093.jpg"
+          },
+          {
+            "label": "OpenStax Anatomy and Physiology 2e: Introduction",
+            "url": "https://openstax.org/books/anatomy-and-physiology-2e/pages/1-introduction"
+          }
+        ]
+      }
     },
     {
       "id": "oc0035",
@@ -2933,7 +3681,7 @@ window.MED_GLOSSARY_COURSES["organic-chemistry"] = {
       "structure": "常用 Ni、Pt、Pd 等催化剂，通常发生同面加成。",
       "location": "常用 Ni、Pt、Pd 等催化剂，通常发生同面加成。",
       "function": "用于还原碳碳双键，也可反映不饱和程度。",
-      "studyNote": "加氢消耗 H2 的量可帮助判断双键或叁键数目。",
+      "studyNote": "",
       "figures": [],
       "pageFigures": [],
       "pageImages": [
@@ -2983,7 +3731,29 @@ window.MED_GLOSSARY_COURSES["organic-chemistry"] = {
         "oc0030",
         "oc0042",
         "oc0006"
-      ]
+      ],
+      "fieldSources": {
+        "structure": [
+          {
+            "label": "有机化学教材上下文：书页 70 / PDF 92",
+            "url": "assets/pages/organic/pdf-092.jpg"
+          },
+          {
+            "label": "OpenStax Anatomy and Physiology 2e: Introduction",
+            "url": "https://openstax.org/books/anatomy-and-physiology-2e/pages/1-introduction"
+          }
+        ],
+        "function": [
+          {
+            "label": "有机化学教材上下文：书页 70 / PDF 92",
+            "url": "assets/pages/organic/pdf-092.jpg"
+          },
+          {
+            "label": "OpenStax Anatomy and Physiology 2e: Introduction",
+            "url": "https://openstax.org/books/anatomy-and-physiology-2e/pages/1-introduction"
+          }
+        ]
+      }
     },
     {
       "id": "oc0036",
@@ -3016,7 +3786,7 @@ window.MED_GLOSSARY_COURSES["organic-chemistry"] = {
       "structure": "本质是卤素对 π键加成，红棕色溴被消耗。",
       "location": "本质是卤素对 π键加成，红棕色溴被消耗。",
       "function": "用于初步鉴别碳碳双键或叁键。",
-      "studyNote": "能褪色不一定只代表烯烃；酚、醛等还可能发生其他反应。",
+      "studyNote": "",
       "figures": [],
       "pageFigures": [],
       "pageImages": [
@@ -3066,7 +3836,29 @@ window.MED_GLOSSARY_COURSES["organic-chemistry"] = {
         "oc0080",
         "oc0095",
         "oc0107"
-      ]
+      ],
+      "fieldSources": {
+        "structure": [
+          {
+            "label": "有机化学教材上下文：书页 72 / PDF 94",
+            "url": "assets/pages/organic/pdf-094.jpg"
+          },
+          {
+            "label": "OpenStax Anatomy and Physiology 2e: Introduction",
+            "url": "https://openstax.org/books/anatomy-and-physiology-2e/pages/1-introduction"
+          }
+        ],
+        "function": [
+          {
+            "label": "有机化学教材上下文：书页 72 / PDF 94",
+            "url": "assets/pages/organic/pdf-094.jpg"
+          },
+          {
+            "label": "OpenStax Anatomy and Physiology 2e: Introduction",
+            "url": "https://openstax.org/books/anatomy-and-physiology-2e/pages/1-introduction"
+          }
+        ]
+      }
     },
     {
       "id": "oc0037",
@@ -3099,7 +3891,7 @@ window.MED_GLOSSARY_COURSES["organic-chemistry"] = {
       "structure": "温和条件下烯烃可氧化为邻二醇；强氧化条件下可发生断裂。",
       "location": "温和条件下烯烃可氧化为邻二醇；强氧化条件下可发生断裂。",
       "function": "用于鉴别不饱和键，也用于推断双键位置。",
-      "studyNote": "KMnO4 是氧化剂，阳性不专属于烯烃，醛等还原性物质也会反应。",
+      "studyNote": "",
       "figures": [],
       "pageFigures": [],
       "pageImages": [
@@ -3149,7 +3941,29 @@ window.MED_GLOSSARY_COURSES["organic-chemistry"] = {
         "oc0086",
         "oc0095",
         "oc0062"
-      ]
+      ],
+      "fieldSources": {
+        "structure": [
+          {
+            "label": "有机化学教材上下文：书页 72 / PDF 94",
+            "url": "assets/pages/organic/pdf-094.jpg"
+          },
+          {
+            "label": "OpenStax Anatomy and Physiology 2e: Introduction",
+            "url": "https://openstax.org/books/anatomy-and-physiology-2e/pages/1-introduction"
+          }
+        ],
+        "function": [
+          {
+            "label": "有机化学教材上下文：书页 72 / PDF 94",
+            "url": "assets/pages/organic/pdf-094.jpg"
+          },
+          {
+            "label": "OpenStax Anatomy and Physiology 2e: Introduction",
+            "url": "https://openstax.org/books/anatomy-and-physiology-2e/pages/1-introduction"
+          }
+        ]
+      }
     },
     {
       "id": "oc0038",
@@ -3178,7 +3992,7 @@ window.MED_GLOSSARY_COURSES["organic-chemistry"] = {
       "structure": "还原处理常得醛/酮，氧化处理可将醛进一步氧化为酸。",
       "location": "还原处理常得醛/酮，氧化处理可将醛进一步氧化为酸。",
       "function": "用于确定双键位置和合成羰基化合物。",
-      "studyNote": "反推结构时，把产物羰基碳重新连成双键。",
+      "studyNote": "",
       "figures": [],
       "pageFigures": [],
       "pageImages": [
@@ -3212,7 +4026,29 @@ window.MED_GLOSSARY_COURSES["organic-chemistry"] = {
         "oc0030",
         "oc0042",
         "oc0006"
-      ]
+      ],
+      "fieldSources": {
+        "structure": [
+          {
+            "label": "有机化学教材上下文：书页 72 / PDF 94",
+            "url": "assets/pages/organic/pdf-094.jpg"
+          },
+          {
+            "label": "OpenStax Anatomy and Physiology 2e: Introduction",
+            "url": "https://openstax.org/books/anatomy-and-physiology-2e/pages/1-introduction"
+          }
+        ],
+        "function": [
+          {
+            "label": "有机化学教材上下文：书页 72 / PDF 94",
+            "url": "assets/pages/organic/pdf-094.jpg"
+          },
+          {
+            "label": "OpenStax Anatomy and Physiology 2e: Introduction",
+            "url": "https://openstax.org/books/anatomy-and-physiology-2e/pages/1-introduction"
+          }
+        ]
+      }
     },
     {
       "id": "oc0039",
@@ -3245,7 +4081,7 @@ window.MED_GLOSSARY_COURSES["organic-chemistry"] = {
       "structure": "总体表现为反 Markovnikov 水合，且通常为同面加成。",
       "location": "总体表现为反 Markovnikov 水合，且通常为同面加成。",
       "function": "用于把末端烯烃转化为伯醇。",
-      "studyNote": "和酸催化水合对比记：酸水合马氏，硼氢化-氧化反马氏。",
+      "studyNote": "",
       "figures": [],
       "pageFigures": [],
       "pageImages": [
@@ -3295,7 +4131,29 @@ window.MED_GLOSSARY_COURSES["organic-chemistry"] = {
         "oc0030",
         "oc0006",
         "oc0007"
-      ]
+      ],
+      "fieldSources": {
+        "structure": [
+          {
+            "label": "有机化学教材上下文：书页 78 / PDF 100",
+            "url": "assets/pages/organic/pdf-100.jpg"
+          },
+          {
+            "label": "OpenStax Anatomy and Physiology 2e: Introduction",
+            "url": "https://openstax.org/books/anatomy-and-physiology-2e/pages/1-introduction"
+          }
+        ],
+        "function": [
+          {
+            "label": "有机化学教材上下文：书页 78 / PDF 100",
+            "url": "assets/pages/organic/pdf-100.jpg"
+          },
+          {
+            "label": "OpenStax Anatomy and Physiology 2e: Introduction",
+            "url": "https://openstax.org/books/anatomy-and-physiology-2e/pages/1-introduction"
+          }
+        ]
+      }
     },
     {
       "id": "oc0040",
@@ -3326,7 +4184,7 @@ window.MED_GLOSSARY_COURSES["organic-chemistry"] = {
       "structure": "低温常有动力学控制产物，高温常有热力学控制产物。",
       "location": "低温常有动力学控制产物，高温常有热力学控制产物。",
       "function": "体现共轭体系中烯丙基碳正离子的离域。",
-      "studyNote": "看到共轭二烯加成，别只写一个产物，要考虑 1,2 和 1,4 两种。",
+      "studyNote": "",
       "figures": [],
       "pageFigures": [],
       "pageImages": [
@@ -3368,7 +4226,29 @@ window.MED_GLOSSARY_COURSES["organic-chemistry"] = {
         "oc0030",
         "oc0042",
         "oc0043"
-      ]
+      ],
+      "fieldSources": {
+        "structure": [
+          {
+            "label": "有机化学教材上下文：书页 75 / PDF 97",
+            "url": "assets/pages/organic/pdf-097.jpg"
+          },
+          {
+            "label": "OpenStax Anatomy and Physiology 2e: Introduction",
+            "url": "https://openstax.org/books/anatomy-and-physiology-2e/pages/1-introduction"
+          }
+        ],
+        "function": [
+          {
+            "label": "有机化学教材上下文：书页 75 / PDF 97",
+            "url": "assets/pages/organic/pdf-097.jpg"
+          },
+          {
+            "label": "OpenStax Anatomy and Physiology 2e: Introduction",
+            "url": "https://openstax.org/books/anatomy-and-physiology-2e/pages/1-introduction"
+          }
+        ]
+      }
     },
     {
       "id": "oc0041",
@@ -3401,7 +4281,7 @@ window.MED_GLOSSARY_COURSES["organic-chemistry"] = {
       "structure": "末端炔水合常经烯醇互变为甲基酮，硼氢化-氧化可得醛。",
       "location": "末端炔水合常经烯醇互变为甲基酮，硼氢化-氧化可得醛。",
       "function": "用于炔烃向烯烃、卤代烯烃、羰基化合物的转化。",
-      "studyNote": "炔烃加一当量和两当量产物不同，答题要看试剂用量。",
+      "studyNote": "",
       "figures": [],
       "pageFigures": [],
       "pageImages": [
@@ -3451,7 +4331,29 @@ window.MED_GLOSSARY_COURSES["organic-chemistry"] = {
         "oc0030",
         "oc0042",
         "oc0006"
-      ]
+      ],
+      "fieldSources": {
+        "structure": [
+          {
+            "label": "有机化学教材上下文：书页 63 / PDF 85",
+            "url": "assets/pages/organic/pdf-085.jpg"
+          },
+          {
+            "label": "OpenStax Anatomy and Physiology 2e: Introduction",
+            "url": "https://openstax.org/books/anatomy-and-physiology-2e/pages/1-introduction"
+          }
+        ],
+        "function": [
+          {
+            "label": "有机化学教材上下文：书页 63 / PDF 85",
+            "url": "assets/pages/organic/pdf-085.jpg"
+          },
+          {
+            "label": "OpenStax Anatomy and Physiology 2e: Introduction",
+            "url": "https://openstax.org/books/anatomy-and-physiology-2e/pages/1-introduction"
+          }
+        ]
+      }
     },
     {
       "id": "oc0042",
@@ -3482,7 +4384,7 @@ window.MED_GLOSSARY_COURSES["organic-chemistry"] = {
       "structure": "端炔可与强碱形成炔负离子，也可与银氨溶液或亚铜盐形成炔化物沉淀。",
       "location": "端炔可与强碱形成炔负离子，也可与银氨溶液或亚铜盐形成炔化物沉淀。",
       "function": "端炔负离子是重要亲核体，可用于增长碳链。",
-      "studyNote": "只有端炔有可脱去的炔氢，内炔没有这种鉴别反应。",
+      "studyNote": "",
       "figures": [],
       "pageFigures": [],
       "pageImages": [
@@ -3524,7 +4426,29 @@ window.MED_GLOSSARY_COURSES["organic-chemistry"] = {
         "oc0085",
         "oc0006",
         "oc0007"
-      ]
+      ],
+      "fieldSources": {
+        "structure": [
+          {
+            "label": "有机化学教材上下文：书页 77 / PDF 99",
+            "url": "assets/pages/organic/pdf-099.jpg"
+          },
+          {
+            "label": "OpenStax Anatomy and Physiology 2e: Introduction",
+            "url": "https://openstax.org/books/anatomy-and-physiology-2e/pages/1-introduction"
+          }
+        ],
+        "function": [
+          {
+            "label": "有机化学教材上下文：书页 77 / PDF 99",
+            "url": "assets/pages/organic/pdf-099.jpg"
+          },
+          {
+            "label": "OpenStax Anatomy and Physiology 2e: Introduction",
+            "url": "https://openstax.org/books/anatomy-and-physiology-2e/pages/1-introduction"
+          }
+        ]
+      }
     },
     {
       "id": "oc0043",
@@ -3557,7 +4481,7 @@ window.MED_GLOSSARY_COURSES["organic-chemistry"] = {
       "structure": "内炔不含炔氢，通常不发生该沉淀反应。",
       "location": "内炔不含炔氢，通常不发生该沉淀反应。",
       "function": "用于鉴别端炔和内炔。",
-      "studyNote": "炔化银、炔化亚铜干燥时可能有爆炸危险，实验中需谨慎处理。",
+      "studyNote": "",
       "figures": [],
       "pageFigures": [],
       "pageImages": [
@@ -3607,7 +4531,29 @@ window.MED_GLOSSARY_COURSES["organic-chemistry"] = {
         "oc0079",
         "oc0086",
         "oc0095"
-      ]
+      ],
+      "fieldSources": {
+        "structure": [
+          {
+            "label": "有机化学教材上下文：书页 77 / PDF 99",
+            "url": "assets/pages/organic/pdf-099.jpg"
+          },
+          {
+            "label": "OpenStax Anatomy and Physiology 2e: Introduction",
+            "url": "https://openstax.org/books/anatomy-and-physiology-2e/pages/1-introduction"
+          }
+        ],
+        "function": [
+          {
+            "label": "有机化学教材上下文：书页 77 / PDF 99",
+            "url": "assets/pages/organic/pdf-099.jpg"
+          },
+          {
+            "label": "OpenStax Anatomy and Physiology 2e: Introduction",
+            "url": "https://openstax.org/books/anatomy-and-physiology-2e/pages/1-introduction"
+          }
+        ]
+      }
     },
     {
       "id": "oc0044",
@@ -3638,7 +4584,7 @@ window.MED_GLOSSARY_COURSES["organic-chemistry"] = {
       "structure": "小环如环丙烷、环丁烷张力较大，反应性与普通烷烃不同。",
       "location": "小环如环丙烷、环丁烷张力较大，反应性与普通烷烃不同。",
       "function": "解释小环加成、开环和稳定性差异。",
-      "studyNote": "三元环不是普通单键思维，它有明显张力和类似不饱和的反应倾向。",
+      "studyNote": "",
       "figures": [],
       "pageFigures": [],
       "pageImages": [
@@ -3680,7 +4626,29 @@ window.MED_GLOSSARY_COURSES["organic-chemistry"] = {
         "oc0020",
         "oc0021",
         "oc0030"
-      ]
+      ],
+      "fieldSources": {
+        "structure": [
+          {
+            "label": "有机化学教材上下文：书页 82 / PDF 104",
+            "url": "assets/pages/organic/pdf-104.jpg"
+          },
+          {
+            "label": "OpenStax Anatomy and Physiology 2e: Introduction",
+            "url": "https://openstax.org/books/anatomy-and-physiology-2e/pages/1-introduction"
+          }
+        ],
+        "function": [
+          {
+            "label": "有机化学教材上下文：书页 82 / PDF 104",
+            "url": "assets/pages/organic/pdf-104.jpg"
+          },
+          {
+            "label": "OpenStax Anatomy and Physiology 2e: Introduction",
+            "url": "https://openstax.org/books/anatomy-and-physiology-2e/pages/1-introduction"
+          }
+        ]
+      }
     },
     {
       "id": "oc0045",
@@ -3713,7 +4681,7 @@ window.MED_GLOSSARY_COURSES["organic-chemistry"] = {
       "structure": "苯是典型芳香化合物，六个 π电子离域在整个环上。",
       "location": "苯是典型芳香化合物，六个 π电子离域在整个环上。",
       "function": "芳香性解释苯难加成、易取代及芳香杂环的稳定性。",
-      "studyNote": "芳香性不是有香味，而是电子结构稳定。",
+      "studyNote": "",
       "figures": [],
       "pageFigures": [],
       "pageImages": [
@@ -3763,7 +4731,29 @@ window.MED_GLOSSARY_COURSES["organic-chemistry"] = {
         "oc0053",
         "oc0054",
         "oc0006"
-      ]
+      ],
+      "fieldSources": {
+        "structure": [
+          {
+            "label": "有机化学教材上下文：书页 88 / PDF 110",
+            "url": "assets/pages/organic/pdf-110.jpg"
+          },
+          {
+            "label": "OpenStax Anatomy and Physiology 2e: Introduction",
+            "url": "https://openstax.org/books/anatomy-and-physiology-2e/pages/1-introduction"
+          }
+        ],
+        "function": [
+          {
+            "label": "有机化学教材上下文：书页 88 / PDF 110",
+            "url": "assets/pages/organic/pdf-110.jpg"
+          },
+          {
+            "label": "OpenStax Anatomy and Physiology 2e: Introduction",
+            "url": "https://openstax.org/books/anatomy-and-physiology-2e/pages/1-introduction"
+          }
+        ]
+      }
     },
     {
       "id": "oc0046",
@@ -3796,7 +4786,7 @@ window.MED_GLOSSARY_COURSES["organic-chemistry"] = {
       "structure": "苯有 6 个 π电子，符合 n=1；环戊二烯负离子也可符合。",
       "location": "苯有 6 个 π电子，符合 n=1；环戊二烯负离子也可符合。",
       "function": "用于判断芳香、反芳香和非芳香体系。",
-      "studyNote": "先确认环状、平面、连续共轭，再数 π电子。",
+      "studyNote": "",
       "figures": [],
       "pageFigures": [],
       "pageImages": [
@@ -3846,7 +4836,29 @@ window.MED_GLOSSARY_COURSES["organic-chemistry"] = {
         "oc0052",
         "oc0053",
         "oc0054"
-      ]
+      ],
+      "fieldSources": {
+        "structure": [
+          {
+            "label": "有机化学教材上下文：书页 96 / PDF 118",
+            "url": "assets/pages/organic/pdf-118.jpg"
+          },
+          {
+            "label": "OpenStax Anatomy and Physiology 2e: Introduction",
+            "url": "https://openstax.org/books/anatomy-and-physiology-2e/pages/1-introduction"
+          }
+        ],
+        "function": [
+          {
+            "label": "有机化学教材上下文：书页 96 / PDF 118",
+            "url": "assets/pages/organic/pdf-118.jpg"
+          },
+          {
+            "label": "OpenStax Anatomy and Physiology 2e: Introduction",
+            "url": "https://openstax.org/books/anatomy-and-physiology-2e/pages/1-introduction"
+          }
+        ]
+      }
     },
     {
       "id": "oc0047",
@@ -3879,7 +4891,7 @@ window.MED_GLOSSARY_COURSES["organic-chemistry"] = {
       "structure": "包括硝化、磺化、卤代、Friedel-Crafts 烷基化和酰基化。",
       "location": "包括硝化、磺化、卤代、Friedel-Crafts 烷基化和酰基化。",
       "function": "是苯及其衍生物最重要的反应模式。",
-      "studyNote": "关键中间体是 σ络合物；最终脱 H+ 恢复芳香性。",
+      "studyNote": "",
       "figures": [],
       "pageFigures": [],
       "pageImages": [
@@ -3929,7 +4941,29 @@ window.MED_GLOSSARY_COURSES["organic-chemistry"] = {
         "oc0053",
         "oc0098",
         "oc0054"
-      ]
+      ],
+      "fieldSources": {
+        "structure": [
+          {
+            "label": "有机化学教材上下文：书页 91 / PDF 113",
+            "url": "assets/pages/organic/pdf-113.jpg"
+          },
+          {
+            "label": "OpenStax Anatomy and Physiology 2e: Introduction",
+            "url": "https://openstax.org/books/anatomy-and-physiology-2e/pages/1-introduction"
+          }
+        ],
+        "function": [
+          {
+            "label": "有机化学教材上下文：书页 91 / PDF 113",
+            "url": "assets/pages/organic/pdf-113.jpg"
+          },
+          {
+            "label": "OpenStax Anatomy and Physiology 2e: Introduction",
+            "url": "https://openstax.org/books/anatomy-and-physiology-2e/pages/1-introduction"
+          }
+        ]
+      }
     },
     {
       "id": "oc0048",
@@ -3962,7 +4996,7 @@ window.MED_GLOSSARY_COURSES["organic-chemistry"] = {
       "structure": "活性亲电体通常是硝酰正离子 NO2+。",
       "location": "活性亲电体通常是硝酰正离子 NO2+。",
       "function": "用于制备硝基芳香化合物，也用于后续还原为芳胺。",
-      "studyNote": "硝基是强吸电子、间位定位、钝化基团。",
+      "studyNote": "",
       "figures": [],
       "pageFigures": [],
       "pageImages": [
@@ -4012,7 +5046,29 @@ window.MED_GLOSSARY_COURSES["organic-chemistry"] = {
         "oc0046",
         "oc0053",
         "oc0073"
-      ]
+      ],
+      "fieldSources": {
+        "structure": [
+          {
+            "label": "有机化学教材上下文：书页 90 / PDF 112",
+            "url": "assets/pages/organic/pdf-112.jpg"
+          },
+          {
+            "label": "OpenStax Anatomy and Physiology 2e: Introduction",
+            "url": "https://openstax.org/books/anatomy-and-physiology-2e/pages/1-introduction"
+          }
+        ],
+        "function": [
+          {
+            "label": "有机化学教材上下文：书页 90 / PDF 112",
+            "url": "assets/pages/organic/pdf-112.jpg"
+          },
+          {
+            "label": "OpenStax Anatomy and Physiology 2e: Introduction",
+            "url": "https://openstax.org/books/anatomy-and-physiology-2e/pages/1-introduction"
+          }
+        ]
+      }
     },
     {
       "id": "oc0049",
@@ -4045,7 +5101,7 @@ window.MED_GLOSSARY_COURSES["organic-chemistry"] = {
       "structure": "磺化通常可逆，磺酸基是强吸电子、间位定位基团。",
       "location": "磺化通常可逆，磺酸基是强吸电子、间位定位基团。",
       "function": "可用于引入水溶性或作为合成中的临时定位基。",
-      "studyNote": "磺酸基可作为阻挡基记忆，用完还能脱去。",
+      "studyNote": "",
       "figures": [],
       "pageFigures": [],
       "pageImages": [
@@ -4095,7 +5151,29 @@ window.MED_GLOSSARY_COURSES["organic-chemistry"] = {
         "oc0046",
         "oc0053",
         "oc0073"
-      ]
+      ],
+      "fieldSources": {
+        "structure": [
+          {
+            "label": "有机化学教材上下文：书页 91 / PDF 113",
+            "url": "assets/pages/organic/pdf-113.jpg"
+          },
+          {
+            "label": "OpenStax Anatomy and Physiology 2e: Introduction",
+            "url": "https://openstax.org/books/anatomy-and-physiology-2e/pages/1-introduction"
+          }
+        ],
+        "function": [
+          {
+            "label": "有机化学教材上下文：书页 91 / PDF 113",
+            "url": "assets/pages/organic/pdf-113.jpg"
+          },
+          {
+            "label": "OpenStax Anatomy and Physiology 2e: Introduction",
+            "url": "https://openstax.org/books/anatomy-and-physiology-2e/pages/1-introduction"
+          }
+        ]
+      }
     },
     {
       "id": "oc0050",
@@ -4124,7 +5202,7 @@ window.MED_GLOSSARY_COURSES["organic-chemistry"] = {
       "structure": "常用 FeBr3、FeCl3、AlCl3 等促进卤素极化。",
       "location": "常用 FeBr3、FeCl3、AlCl3 等促进卤素极化。",
       "function": "卤素取代基虽钝化芳环，但定位为邻、对位。",
-      "studyNote": "卤素是特殊定位基：吸电子诱导使其钝化，孤对共轭使其邻对位定位。",
+      "studyNote": "",
       "figures": [],
       "pageFigures": [],
       "pageImages": [
@@ -4158,7 +5236,29 @@ window.MED_GLOSSARY_COURSES["organic-chemistry"] = {
         "oc0031",
         "oc0045",
         "oc0046"
-      ]
+      ],
+      "fieldSources": {
+        "structure": [
+          {
+            "label": "有机化学教材上下文：书页 88 / PDF 110",
+            "url": "assets/pages/organic/pdf-110.jpg"
+          },
+          {
+            "label": "OpenStax Anatomy and Physiology 2e: Introduction",
+            "url": "https://openstax.org/books/anatomy-and-physiology-2e/pages/1-introduction"
+          }
+        ],
+        "function": [
+          {
+            "label": "有机化学教材上下文：书页 88 / PDF 110",
+            "url": "assets/pages/organic/pdf-110.jpg"
+          },
+          {
+            "label": "OpenStax Anatomy and Physiology 2e: Introduction",
+            "url": "https://openstax.org/books/anatomy-and-physiology-2e/pages/1-introduction"
+          }
+        ]
+      }
     },
     {
       "id": "oc0051",
@@ -4191,7 +5291,7 @@ window.MED_GLOSSARY_COURSES["organic-chemistry"] = {
       "structure": "反应可能经碳正离子或类似活性物种，易发生重排和多烷基化。",
       "location": "反应可能经碳正离子或类似活性物种，易发生重排和多烷基化。",
       "function": "用于构建烷基苯，但对强钝化芳环常不适用。",
-      "studyNote": "烷基化最常见坑：重排、多取代、芳环太钝不反应。",
+      "studyNote": "",
       "figures": [],
       "pageFigures": [],
       "pageImages": [
@@ -4241,7 +5341,29 @@ window.MED_GLOSSARY_COURSES["organic-chemistry"] = {
         "oc0053",
         "oc0054",
         "oc0006"
-      ]
+      ],
+      "fieldSources": {
+        "structure": [
+          {
+            "label": "有机化学教材上下文：书页 90 / PDF 112",
+            "url": "assets/pages/organic/pdf-112.jpg"
+          },
+          {
+            "label": "OpenStax Anatomy and Physiology 2e: Introduction",
+            "url": "https://openstax.org/books/anatomy-and-physiology-2e/pages/1-introduction"
+          }
+        ],
+        "function": [
+          {
+            "label": "有机化学教材上下文：书页 90 / PDF 112",
+            "url": "assets/pages/organic/pdf-112.jpg"
+          },
+          {
+            "label": "OpenStax Anatomy and Physiology 2e: Introduction",
+            "url": "https://openstax.org/books/anatomy-and-physiology-2e/pages/1-introduction"
+          }
+        ]
+      }
     },
     {
       "id": "oc0052",
@@ -4274,7 +5396,7 @@ window.MED_GLOSSARY_COURSES["organic-chemistry"] = {
       "structure": "酰基正离子或其等价体是关键亲电体，通常不发生碳链重排。",
       "location": "酰基正离子或其等价体是关键亲电体，通常不发生碳链重排。",
       "function": "用于合成芳香酮，产物酰基钝化芳环，一般不易多酰基化。",
-      "studyNote": "酰基化比烷基化更可控，常用于先酰化再还原得到烷基苯。",
+      "studyNote": "",
       "figures": [],
       "pageFigures": [],
       "pageImages": [
@@ -4324,7 +5446,29 @@ window.MED_GLOSSARY_COURSES["organic-chemistry"] = {
         "oc0053",
         "oc0054",
         "oc0072"
-      ]
+      ],
+      "fieldSources": {
+        "structure": [
+          {
+            "label": "有机化学教材上下文：书页 90 / PDF 112",
+            "url": "assets/pages/organic/pdf-112.jpg"
+          },
+          {
+            "label": "OpenStax Anatomy and Physiology 2e: Introduction",
+            "url": "https://openstax.org/books/anatomy-and-physiology-2e/pages/1-introduction"
+          }
+        ],
+        "function": [
+          {
+            "label": "有机化学教材上下文：书页 90 / PDF 112",
+            "url": "assets/pages/organic/pdf-112.jpg"
+          },
+          {
+            "label": "OpenStax Anatomy and Physiology 2e: Introduction",
+            "url": "https://openstax.org/books/anatomy-and-physiology-2e/pages/1-introduction"
+          }
+        ]
+      }
     },
     {
       "id": "oc0053",
@@ -4355,7 +5499,7 @@ window.MED_GLOSSARY_COURSES["organic-chemistry"] = {
       "structure": "给电子基多为邻、对位定位并活化；强吸电子基多为间位定位并钝化。",
       "location": "给电子基多为邻、对位定位并活化；强吸电子基多为间位定位并钝化。",
       "function": "用于预测二取代苯主要产物和芳环反应速度。",
-      "studyNote": "定位和活性要分开答：卤素邻对位定位但总体钝化。",
+      "studyNote": "",
       "figures": [],
       "pageFigures": [],
       "pageImages": [
@@ -4397,7 +5541,29 @@ window.MED_GLOSSARY_COURSES["organic-chemistry"] = {
         "oc0071",
         "oc0077",
         "oc0085"
-      ]
+      ],
+      "fieldSources": {
+        "structure": [
+          {
+            "label": "有机化学教材上下文：书页 93 / PDF 115",
+            "url": "assets/pages/organic/pdf-115.jpg"
+          },
+          {
+            "label": "OpenStax Anatomy and Physiology 2e: Introduction",
+            "url": "https://openstax.org/books/anatomy-and-physiology-2e/pages/1-introduction"
+          }
+        ],
+        "function": [
+          {
+            "label": "有机化学教材上下文：书页 93 / PDF 115",
+            "url": "assets/pages/organic/pdf-115.jpg"
+          },
+          {
+            "label": "OpenStax Anatomy and Physiology 2e: Introduction",
+            "url": "https://openstax.org/books/anatomy-and-physiology-2e/pages/1-introduction"
+          }
+        ]
+      }
     },
     {
       "id": "oc0054",
@@ -4430,7 +5596,7 @@ window.MED_GLOSSARY_COURSES["organic-chemistry"] = {
       "structure": "常见趋势：强给电子基活化 > 烷基苯 > 苯 > 卤苯 > 含硝基、羰基、磺酸基等钝化芳环。",
       "location": "常见趋势：强给电子基活化 > 烷基苯 > 苯 > 卤苯 > 含硝基、羰基、磺酸基等钝化芳环。",
       "function": "用于判断芳香亲电取代的快慢、条件强弱和主产物。",
-      "studyNote": "做题时先分活化/钝化，再分邻对/间定位。",
+      "studyNote": "",
       "figures": [],
       "pageFigures": [],
       "pageImages": [
@@ -4480,7 +5646,29 @@ window.MED_GLOSSARY_COURSES["organic-chemistry"] = {
         "oc0118",
         "oc0010",
         "oc0013"
-      ]
+      ],
+      "fieldSources": {
+        "structure": [
+          {
+            "label": "有机化学教材上下文：书页 92 / PDF 114",
+            "url": "assets/pages/organic/pdf-114.jpg"
+          },
+          {
+            "label": "OpenStax Anatomy and Physiology 2e: Introduction",
+            "url": "https://openstax.org/books/anatomy-and-physiology-2e/pages/1-introduction"
+          }
+        ],
+        "function": [
+          {
+            "label": "有机化学教材上下文：书页 92 / PDF 114",
+            "url": "assets/pages/organic/pdf-114.jpg"
+          },
+          {
+            "label": "OpenStax Anatomy and Physiology 2e: Introduction",
+            "url": "https://openstax.org/books/anatomy-and-physiology-2e/pages/1-introduction"
+          }
+        ]
+      }
     },
     {
       "id": "oc0055",
@@ -4513,7 +5701,7 @@ window.MED_GLOSSARY_COURSES["organic-chemistry"] = {
       "structure": "常见机制为 SN1 和 SN2，受底物结构、亲核体、溶剂和离去基影响。",
       "location": "常见机制为 SN1 和 SN2，受底物结构、亲核体、溶剂和离去基影响。",
       "function": "用于将卤代烃转化为醇、醚、腈、胺等。",
-      "studyNote": "先判断底物是甲基/伯/仲/叔，再看亲核体强弱和溶剂。",
+      "studyNote": "",
       "figures": [],
       "pageFigures": [],
       "pageImages": [
@@ -4563,7 +5751,29 @@ window.MED_GLOSSARY_COURSES["organic-chemistry"] = {
         "oc0022",
         "oc0030",
         "oc0031"
-      ]
+      ],
+      "fieldSources": {
+        "structure": [
+          {
+            "label": "有机化学教材上下文：书页 103 / PDF 125",
+            "url": "assets/pages/organic/pdf-125.jpg"
+          },
+          {
+            "label": "OpenStax Anatomy and Physiology 2e: Introduction",
+            "url": "https://openstax.org/books/anatomy-and-physiology-2e/pages/1-introduction"
+          }
+        ],
+        "function": [
+          {
+            "label": "有机化学教材上下文：书页 103 / PDF 125",
+            "url": "assets/pages/organic/pdf-125.jpg"
+          },
+          {
+            "label": "OpenStax Anatomy and Physiology 2e: Introduction",
+            "url": "https://openstax.org/books/anatomy-and-physiology-2e/pages/1-introduction"
+          }
+        ]
+      }
     },
     {
       "id": "oc0056",
@@ -4596,7 +5806,7 @@ window.MED_GLOSSARY_COURSES["organic-chemistry"] = {
       "structure": "通常有两步：离去基先离去形成碳正离子，亲核体再进攻。",
       "location": "通常有两步：离去基先离去形成碳正离子，亲核体再进攻。",
       "function": "叔卤代烃、苄基或烯丙基卤代物在极性质子溶剂中较易发生。",
-      "studyNote": "SN1 可能外消旋化，也可能发生碳正离子重排。",
+      "studyNote": "",
       "figures": [],
       "pageFigures": [],
       "pageImages": [
@@ -4646,7 +5856,29 @@ window.MED_GLOSSARY_COURSES["organic-chemistry"] = {
         "oc0081",
         "oc0082",
         "oc0102"
-      ]
+      ],
+      "fieldSources": {
+        "structure": [
+          {
+            "label": "有机化学教材上下文：书页 103 / PDF 125",
+            "url": "assets/pages/organic/pdf-125.jpg"
+          },
+          {
+            "label": "OpenStax Anatomy and Physiology 2e: Introduction",
+            "url": "https://openstax.org/books/anatomy-and-physiology-2e/pages/1-introduction"
+          }
+        ],
+        "function": [
+          {
+            "label": "有机化学教材上下文：书页 103 / PDF 125",
+            "url": "assets/pages/organic/pdf-125.jpg"
+          },
+          {
+            "label": "OpenStax Anatomy and Physiology 2e: Introduction",
+            "url": "https://openstax.org/books/anatomy-and-physiology-2e/pages/1-introduction"
+          }
+        ]
+      }
     },
     {
       "id": "oc0057",
@@ -4675,7 +5907,7 @@ window.MED_GLOSSARY_COURSES["organic-chemistry"] = {
       "structure": "速率与底物和亲核体浓度有关，位阻越小越有利。",
       "location": "速率与底物和亲核体浓度有关，位阻越小越有利。",
       "function": "甲基和伯卤代烷最适合 SN2，产物构型通常发生 Walden 反转。",
-      "studyNote": "强亲核体、小位阻、极性非质子溶剂有利于 SN2。",
+      "studyNote": "",
       "figures": [],
       "pageFigures": [],
       "pageImages": [
@@ -4709,7 +5941,29 @@ window.MED_GLOSSARY_COURSES["organic-chemistry"] = {
         "oc0081",
         "oc0082",
         "oc0102"
-      ]
+      ],
+      "fieldSources": {
+        "structure": [
+          {
+            "label": "有机化学教材上下文：书页 104 / PDF 126",
+            "url": "assets/pages/organic/pdf-126.jpg"
+          },
+          {
+            "label": "OpenStax Anatomy and Physiology 2e: Introduction",
+            "url": "https://openstax.org/books/anatomy-and-physiology-2e/pages/1-introduction"
+          }
+        ],
+        "function": [
+          {
+            "label": "有机化学教材上下文：书页 104 / PDF 126",
+            "url": "assets/pages/organic/pdf-126.jpg"
+          },
+          {
+            "label": "OpenStax Anatomy and Physiology 2e: Introduction",
+            "url": "https://openstax.org/books/anatomy-and-physiology-2e/pages/1-introduction"
+          }
+        ]
+      }
     },
     {
       "id": "oc0058",
@@ -4742,7 +5996,7 @@ window.MED_GLOSSARY_COURSES["organic-chemistry"] = {
       "structure": "卤代烃可发生脱卤化氢形成烯烃，常见机制包括 E1 和 E2。",
       "location": "卤代烃可发生脱卤化氢形成烯烃，常见机制包括 E1 和 E2。",
       "function": "与亲核取代竞争，受底物、碱、溶剂和温度影响。",
-      "studyNote": "强碱、高温、位阻大时更要考虑消除。",
+      "studyNote": "",
       "figures": [],
       "pageFigures": [],
       "pageImages": [
@@ -4792,7 +6046,29 @@ window.MED_GLOSSARY_COURSES["organic-chemistry"] = {
         "oc0082",
         "oc0006",
         "oc0007"
-      ]
+      ],
+      "fieldSources": {
+        "structure": [
+          {
+            "label": "有机化学教材上下文：书页 105 / PDF 127",
+            "url": "assets/pages/organic/pdf-127.jpg"
+          },
+          {
+            "label": "OpenStax Anatomy and Physiology 2e: Introduction",
+            "url": "https://openstax.org/books/anatomy-and-physiology-2e/pages/1-introduction"
+          }
+        ],
+        "function": [
+          {
+            "label": "有机化学教材上下文：书页 105 / PDF 127",
+            "url": "assets/pages/organic/pdf-127.jpg"
+          },
+          {
+            "label": "OpenStax Anatomy and Physiology 2e: Introduction",
+            "url": "https://openstax.org/books/anatomy-and-physiology-2e/pages/1-introduction"
+          }
+        ]
+      }
     },
     {
       "id": "oc0059",
@@ -4825,7 +6101,7 @@ window.MED_GLOSSARY_COURSES["organic-chemistry"] = {
       "structure": "同类烷基中常见离去基趋势 RI > RBr > RCl >> RF；SN1 底物常 3° > 2° > 1°，SN2 则位阻小更快。",
       "location": "同类烷基中常见离去基趋势 RI > RBr > RCl >> RF；SN1 底物常 3° > 2° > 1°，SN2 则位阻小更快。",
       "function": "用于比较卤代烃取代反应速率和选择合成条件。",
-      "studyNote": "不要背一个万能顺序，要先判机制：SN1 看碳正离子，SN2 看位阻和亲核体。",
+      "studyNote": "",
       "figures": [],
       "pageFigures": [],
       "pageImages": [
@@ -4875,7 +6151,29 @@ window.MED_GLOSSARY_COURSES["organic-chemistry"] = {
         "oc0063",
         "oc0071",
         "oc0085"
-      ]
+      ],
+      "fieldSources": {
+        "structure": [
+          {
+            "label": "有机化学教材上下文：书页 103 / PDF 125",
+            "url": "assets/pages/organic/pdf-125.jpg"
+          },
+          {
+            "label": "OpenStax Anatomy and Physiology 2e: Introduction",
+            "url": "https://openstax.org/books/anatomy-and-physiology-2e/pages/1-introduction"
+          }
+        ],
+        "function": [
+          {
+            "label": "有机化学教材上下文：书页 103 / PDF 125",
+            "url": "assets/pages/organic/pdf-125.jpg"
+          },
+          {
+            "label": "OpenStax Anatomy and Physiology 2e: Introduction",
+            "url": "https://openstax.org/books/anatomy-and-physiology-2e/pages/1-introduction"
+          }
+        ]
+      }
     },
     {
       "id": "oc0060",
@@ -4908,7 +6206,7 @@ window.MED_GLOSSARY_COURSES["organic-chemistry"] = {
       "structure": "卤素直接连在双键碳或芳环碳上，C-X 键具有部分双键性。",
       "location": "卤素直接连在双键碳或芳环碳上，C-X 键具有部分双键性。",
       "function": "用于区分卤代烷、烯丙基/苄基卤和芳基/乙烯基卤的反应性。",
-      "studyNote": "看到氯苯不要按普通氯代烷处理，它通常不能轻易水解。",
+      "studyNote": "",
       "figures": [],
       "pageFigures": [],
       "pageImages": [
@@ -4958,7 +6256,29 @@ window.MED_GLOSSARY_COURSES["organic-chemistry"] = {
         "oc0040",
         "oc0054",
         "oc0083"
-      ]
+      ],
+      "fieldSources": {
+        "structure": [
+          {
+            "label": "有机化学教材上下文：书页 100 / PDF 122",
+            "url": "assets/pages/organic/pdf-122.jpg"
+          },
+          {
+            "label": "OpenStax Anatomy and Physiology 2e: Introduction",
+            "url": "https://openstax.org/books/anatomy-and-physiology-2e/pages/1-introduction"
+          }
+        ],
+        "function": [
+          {
+            "label": "有机化学教材上下文：书页 100 / PDF 122",
+            "url": "assets/pages/organic/pdf-122.jpg"
+          },
+          {
+            "label": "OpenStax Anatomy and Physiology 2e: Introduction",
+            "url": "https://openstax.org/books/anatomy-and-physiology-2e/pages/1-introduction"
+          }
+        ]
+      }
     },
     {
       "id": "oc0061",
@@ -4991,7 +6311,7 @@ window.MED_GLOSSARY_COURSES["organic-chemistry"] = {
       "structure": "伯醇 RCH2OH，仲醇 R2CHOH，叔醇 R3COH。",
       "location": "伯醇 RCH2OH，仲醇 R2CHOH，叔醇 R3COH。",
       "function": "醇的分类直接影响氧化、脱水和 Lucas 试验速度。",
-      "studyNote": "醇的反应活性常要先判断伯、仲、叔。",
+      "studyNote": "",
       "figures": [],
       "pageFigures": [],
       "pageImages": [
@@ -5041,7 +6361,29 @@ window.MED_GLOSSARY_COURSES["organic-chemistry"] = {
         "oc0068",
         "oc0022",
         "oc0030"
-      ]
+      ],
+      "fieldSources": {
+        "structure": [
+          {
+            "label": "有机化学教材上下文：书页 110 / PDF 132",
+            "url": "assets/pages/organic/pdf-132.jpg"
+          },
+          {
+            "label": "OpenStax Anatomy and Physiology 2e: Introduction",
+            "url": "https://openstax.org/books/anatomy-and-physiology-2e/pages/1-introduction"
+          }
+        ],
+        "function": [
+          {
+            "label": "有机化学教材上下文：书页 110 / PDF 132",
+            "url": "assets/pages/organic/pdf-132.jpg"
+          },
+          {
+            "label": "OpenStax Anatomy and Physiology 2e: Introduction",
+            "url": "https://openstax.org/books/anatomy-and-physiology-2e/pages/1-introduction"
+          }
+        ]
+      }
     },
     {
       "id": "oc0062",
@@ -5070,7 +6412,7 @@ window.MED_GLOSSARY_COURSES["organic-chemistry"] = {
       "structure": "叔醇迅速浑浊，仲醇较慢，伯醇常温下通常很慢或不明显。",
       "location": "叔醇迅速浑浊，仲醇较慢，伯醇常温下通常很慢或不明显。",
       "function": "用于根据取代程度判断醇类型。",
-      "studyNote": "Lucas 试验适合低级可溶醇；高碳醇溶解性差会干扰现象。",
+      "studyNote": "",
       "figures": [],
       "pageFigures": [],
       "pageImages": [
@@ -5104,7 +6446,29 @@ window.MED_GLOSSARY_COURSES["organic-chemistry"] = {
         "oc0080",
         "oc0086",
         "oc0095"
-      ]
+      ],
+      "fieldSources": {
+        "structure": [
+          {
+            "label": "有机化学教材上下文：书页 110 / PDF 132",
+            "url": "assets/pages/organic/pdf-132.jpg"
+          },
+          {
+            "label": "OpenStax Anatomy and Physiology 2e: Introduction",
+            "url": "https://openstax.org/books/anatomy-and-physiology-2e/pages/1-introduction"
+          }
+        ],
+        "function": [
+          {
+            "label": "有机化学教材上下文：书页 110 / PDF 132",
+            "url": "assets/pages/organic/pdf-132.jpg"
+          },
+          {
+            "label": "OpenStax Anatomy and Physiology 2e: Introduction",
+            "url": "https://openstax.org/books/anatomy-and-physiology-2e/pages/1-introduction"
+          }
+        ]
+      }
     },
     {
       "id": "oc0063",
@@ -5137,7 +6501,7 @@ window.MED_GLOSSARY_COURSES["organic-chemistry"] = {
       "structure": "伯醇可氧化为醛再到酸，仲醇可氧化为酮，叔醇通常不易被普通氧化剂氧化。",
       "location": "伯醇可氧化为醛再到酸，仲醇可氧化为酮，叔醇通常不易被普通氧化剂氧化。",
       "function": "用于预测醇氧化产物和鉴别伯、仲、叔醇。",
-      "studyNote": "记住关键：没有 α-H 的叔醇不容易普通氧化。",
+      "studyNote": "",
       "figures": [],
       "pageFigures": [],
       "pageImages": [
@@ -5187,7 +6551,29 @@ window.MED_GLOSSARY_COURSES["organic-chemistry"] = {
         "oc0013",
         "oc0031",
         "oc0059"
-      ]
+      ],
+      "fieldSources": {
+        "structure": [
+          {
+            "label": "有机化学教材上下文：书页 114 / PDF 136",
+            "url": "assets/pages/organic/pdf-136.jpg"
+          },
+          {
+            "label": "OpenStax Anatomy and Physiology 2e: Introduction",
+            "url": "https://openstax.org/books/anatomy-and-physiology-2e/pages/1-introduction"
+          }
+        ],
+        "function": [
+          {
+            "label": "有机化学教材上下文：书页 114 / PDF 136",
+            "url": "assets/pages/organic/pdf-136.jpg"
+          },
+          {
+            "label": "OpenStax Anatomy and Physiology 2e: Introduction",
+            "url": "https://openstax.org/books/anatomy-and-physiology-2e/pages/1-introduction"
+          }
+        ]
+      }
     },
     {
       "id": "oc0064",
@@ -5220,7 +6606,7 @@ window.MED_GLOSSARY_COURSES["organic-chemistry"] = {
       "structure": "分子内脱水生成烯烃，分子间脱水可生成醚；条件和底物结构决定方向。",
       "location": "分子内脱水生成烯烃，分子间脱水可生成醚；条件和底物结构决定方向。",
       "function": "用于由醇制备烯烃或醚。",
-      "studyNote": "脱水成烯烃常遵循生成更稳定烯烃的倾向，并可能重排。",
+      "studyNote": "",
       "figures": [],
       "pageFigures": [],
       "pageImages": [
@@ -5270,7 +6656,29 @@ window.MED_GLOSSARY_COURSES["organic-chemistry"] = {
         "oc0062",
         "oc0067",
         "oc0068"
-      ]
+      ],
+      "fieldSources": {
+        "structure": [
+          {
+            "label": "有机化学教材上下文：书页 114 / PDF 136",
+            "url": "assets/pages/organic/pdf-136.jpg"
+          },
+          {
+            "label": "OpenStax Anatomy and Physiology 2e: Introduction",
+            "url": "https://openstax.org/books/anatomy-and-physiology-2e/pages/1-introduction"
+          }
+        ],
+        "function": [
+          {
+            "label": "有机化学教材上下文：书页 114 / PDF 136",
+            "url": "assets/pages/organic/pdf-136.jpg"
+          },
+          {
+            "label": "OpenStax Anatomy and Physiology 2e: Introduction",
+            "url": "https://openstax.org/books/anatomy-and-physiology-2e/pages/1-introduction"
+          }
+        ]
+      }
     },
     {
       "id": "oc0065",
@@ -5303,7 +6711,7 @@ window.MED_GLOSSARY_COURSES["organic-chemistry"] = {
       "structure": "酸催化羧酸酯化为可逆反应，酰卤和酸酐酰化通常更活泼。",
       "location": "酸催化羧酸酯化为可逆反应，酰卤和酸酐酰化通常更活泼。",
       "function": "用于连接羧酸和醇，也是理解脂类、磷脂和糖苷衍生物的基础。",
-      "studyNote": "判断酯化效率时，羧酸衍生物活性顺序很重要。",
+      "studyNote": "",
       "figures": [],
       "pageFigures": [],
       "pageImages": [
@@ -5353,7 +6761,29 @@ window.MED_GLOSSARY_COURSES["organic-chemistry"] = {
         "oc0067",
         "oc0068",
         "oc0022"
-      ]
+      ],
+      "fieldSources": {
+        "structure": [
+          {
+            "label": "有机化学教材上下文：书页 113 / PDF 135",
+            "url": "assets/pages/organic/pdf-135.jpg"
+          },
+          {
+            "label": "OpenStax Anatomy and Physiology 2e: Introduction",
+            "url": "https://openstax.org/books/anatomy-and-physiology-2e/pages/1-introduction"
+          }
+        ],
+        "function": [
+          {
+            "label": "有机化学教材上下文：书页 113 / PDF 135",
+            "url": "assets/pages/organic/pdf-135.jpg"
+          },
+          {
+            "label": "OpenStax Anatomy and Physiology 2e: Introduction",
+            "url": "https://openstax.org/books/anatomy-and-physiology-2e/pages/1-introduction"
+          }
+        ]
+      }
     },
     {
       "id": "oc0066",
@@ -5386,7 +6816,7 @@ window.MED_GLOSSARY_COURSES["organic-chemistry"] = {
       "structure": "酚氧负离子可通过芳环共振分散负电荷；吸电子基增强酚酸性。",
       "location": "酚氧负离子可通过芳环共振分散负电荷；吸电子基增强酚酸性。",
       "function": "用于区分酚、醇和羧酸，也影响酚的成盐和取代反应。",
-      "studyNote": "酚能与 NaOH 成盐，普通醇通常不能；酚一般不能与 NaHCO3 放 CO2。",
+      "studyNote": "",
       "figures": [],
       "pageFigures": [],
       "pageImages": [
@@ -5436,7 +6866,29 @@ window.MED_GLOSSARY_COURSES["organic-chemistry"] = {
         "oc0068",
         "oc0085",
         "oc0062"
-      ]
+      ],
+      "fieldSources": {
+        "structure": [
+          {
+            "label": "有机化学教材上下文：书页 120 / PDF 142",
+            "url": "assets/pages/organic/pdf-142.jpg"
+          },
+          {
+            "label": "OpenStax Anatomy and Physiology 2e: Introduction",
+            "url": "https://openstax.org/books/anatomy-and-physiology-2e/pages/1-introduction"
+          }
+        ],
+        "function": [
+          {
+            "label": "有机化学教材上下文：书页 120 / PDF 142",
+            "url": "assets/pages/organic/pdf-142.jpg"
+          },
+          {
+            "label": "OpenStax Anatomy and Physiology 2e: Introduction",
+            "url": "https://openstax.org/books/anatomy-and-physiology-2e/pages/1-introduction"
+          }
+        ]
+      }
     },
     {
       "id": "oc0067",
@@ -5469,7 +6921,7 @@ window.MED_GLOSSARY_COURSES["organic-chemistry"] = {
       "structure": "显色来自酚氧负离子与铁离子的配位。",
       "location": "显色来自酚氧负离子与铁离子的配位。",
       "function": "用于鉴别酚羟基，尤其是与普通醇区分。",
-      "studyNote": "不是所有酚显色都相同，且烯醇类也可能显色。",
+      "studyNote": "",
       "figures": [],
       "pageFigures": [],
       "pageImages": [
@@ -5519,7 +6971,29 @@ window.MED_GLOSSARY_COURSES["organic-chemistry"] = {
         "oc0079",
         "oc0080",
         "oc0095"
-      ]
+      ],
+      "fieldSources": {
+        "structure": [
+          {
+            "label": "有机化学教材上下文：书页 122 / PDF 144",
+            "url": "assets/pages/organic/pdf-144.jpg"
+          },
+          {
+            "label": "OpenStax Anatomy and Physiology 2e: Introduction",
+            "url": "https://openstax.org/books/anatomy-and-physiology-2e/pages/1-introduction"
+          }
+        ],
+        "function": [
+          {
+            "label": "有机化学教材上下文：书页 122 / PDF 144",
+            "url": "assets/pages/organic/pdf-144.jpg"
+          },
+          {
+            "label": "OpenStax Anatomy and Physiology 2e: Introduction",
+            "url": "https://openstax.org/books/anatomy-and-physiology-2e/pages/1-introduction"
+          }
+        ]
+      }
     },
     {
       "id": "oc0068",
@@ -5552,7 +7026,7 @@ window.MED_GLOSSARY_COURSES["organic-chemistry"] = {
       "structure": "酚羟基强烈活化芳环并使邻、对位易发生取代。",
       "location": "酚羟基强烈活化芳环并使邻、对位易发生取代。",
       "function": "用于鉴别活泼酚类化合物。",
-      "studyNote": "溴水褪色也可能来自不饱和键，看到白色沉淀更支持苯酚。",
+      "studyNote": "",
       "figures": [],
       "pageFigures": [],
       "pageImages": [
@@ -5602,7 +7076,29 @@ window.MED_GLOSSARY_COURSES["organic-chemistry"] = {
         "oc0079",
         "oc0080",
         "oc0095"
-      ]
+      ],
+      "fieldSources": {
+        "structure": [
+          {
+            "label": "有机化学教材上下文：书页 121 / PDF 143",
+            "url": "assets/pages/organic/pdf-143.jpg"
+          },
+          {
+            "label": "OpenStax Anatomy and Physiology 2e: Introduction",
+            "url": "https://openstax.org/books/anatomy-and-physiology-2e/pages/1-introduction"
+          }
+        ],
+        "function": [
+          {
+            "label": "有机化学教材上下文：书页 121 / PDF 143",
+            "url": "assets/pages/organic/pdf-143.jpg"
+          },
+          {
+            "label": "OpenStax Anatomy and Physiology 2e: Introduction",
+            "url": "https://openstax.org/books/anatomy-and-physiology-2e/pages/1-introduction"
+          }
+        ]
+      }
     },
     {
       "id": "oc0069",
@@ -5635,7 +7131,7 @@ window.MED_GLOSSARY_COURSES["organic-chemistry"] = {
       "structure": "过氧化物能把 I- 氧化为 I2，碘遇淀粉呈蓝色。",
       "location": "过氧化物能把 I- 氧化为 I2，碘遇淀粉呈蓝色。",
       "function": "用于蒸馏醚前安全检查。",
-      "studyNote": "醚类蒸馏不要蒸干；检出过氧化物应先用还原剂处理。",
+      "studyNote": "",
       "figures": [],
       "pageFigures": [],
       "pageImages": [
@@ -5685,7 +7181,29 @@ window.MED_GLOSSARY_COURSES["organic-chemistry"] = {
         "oc0079",
         "oc0080",
         "oc0095"
-      ]
+      ],
+      "fieldSources": {
+        "structure": [
+          {
+            "label": "有机化学教材上下文：书页 128 / PDF 150",
+            "url": "assets/pages/organic/pdf-150.jpg"
+          },
+          {
+            "label": "OpenStax Anatomy and Physiology 2e: Introduction",
+            "url": "https://openstax.org/books/anatomy-and-physiology-2e/pages/1-introduction"
+          }
+        ],
+        "function": [
+          {
+            "label": "有机化学教材上下文：书页 128 / PDF 150",
+            "url": "assets/pages/organic/pdf-150.jpg"
+          },
+          {
+            "label": "OpenStax Anatomy and Physiology 2e: Introduction",
+            "url": "https://openstax.org/books/anatomy-and-physiology-2e/pages/1-introduction"
+          }
+        ]
+      }
     },
     {
       "id": "oc0070",
@@ -5718,7 +7236,7 @@ window.MED_GLOSSARY_COURSES["organic-chemistry"] = {
       "structure": "酸性条件下亲核体多进攻取代较多碳，碱性条件下多进攻位阻较小碳。",
       "location": "酸性条件下亲核体多进攻取代较多碳，碱性条件下多进攻位阻较小碳。",
       "function": "用于合成邻二醇、氨基醇、醚醇等。",
-      "studyNote": "酸开环看类 SN1 稳定性，碱开环看 SN2 位阻。",
+      "studyNote": "",
       "figures": [],
       "pageFigures": [],
       "pageImages": [
@@ -5768,7 +7286,29 @@ window.MED_GLOSSARY_COURSES["organic-chemistry"] = {
         "oc0022",
         "oc0030",
         "oc0031"
-      ]
+      ],
+      "fieldSources": {
+        "structure": [
+          {
+            "label": "有机化学教材上下文：书页 128 / PDF 150",
+            "url": "assets/pages/organic/pdf-150.jpg"
+          },
+          {
+            "label": "OpenStax Anatomy and Physiology 2e: Introduction",
+            "url": "https://openstax.org/books/anatomy-and-physiology-2e/pages/1-introduction"
+          }
+        ],
+        "function": [
+          {
+            "label": "有机化学教材上下文：书页 128 / PDF 150",
+            "url": "assets/pages/organic/pdf-150.jpg"
+          },
+          {
+            "label": "OpenStax Anatomy and Physiology 2e: Introduction",
+            "url": "https://openstax.org/books/anatomy-and-physiology-2e/pages/1-introduction"
+          }
+        ]
+      }
     },
     {
       "id": "oc0071",
@@ -5801,7 +7341,7 @@ window.MED_GLOSSARY_COURSES["organic-chemistry"] = {
       "structure": "脂肪胺通常比氨强；芳香胺因孤对电子与苯环共轭，碱性明显降低。",
       "location": "脂肪胺通常比氨强；芳香胺因孤对电子与苯环共轭，碱性明显降低。",
       "function": "用于比较胺、苯胺、吡啶、吡咯等含氮化合物。",
-      "studyNote": "水溶液中还要考虑溶剂化，不能只看烷基给电子。",
+      "studyNote": "",
       "figures": [],
       "pageFigures": [],
       "pageImages": [
@@ -5851,7 +7391,29 @@ window.MED_GLOSSARY_COURSES["organic-chemistry"] = {
         "oc0031",
         "oc0059",
         "oc0072"
-      ]
+      ],
+      "fieldSources": {
+        "structure": [
+          {
+            "label": "有机化学教材上下文：书页 135 / PDF 157",
+            "url": "assets/pages/organic/pdf-157.jpg"
+          },
+          {
+            "label": "OpenStax Anatomy and Physiology 2e: Introduction",
+            "url": "https://openstax.org/books/anatomy-and-physiology-2e/pages/1-introduction"
+          }
+        ],
+        "function": [
+          {
+            "label": "有机化学教材上下文：书页 135 / PDF 157",
+            "url": "assets/pages/organic/pdf-157.jpg"
+          },
+          {
+            "label": "OpenStax Anatomy and Physiology 2e: Introduction",
+            "url": "https://openstax.org/books/anatomy-and-physiology-2e/pages/1-introduction"
+          }
+        ]
+      }
     },
     {
       "id": "oc0072",
@@ -5884,7 +7446,7 @@ window.MED_GLOSSARY_COURSES["organic-chemistry"] = {
       "structure": "叔胺没有 N-H，通常不能形成普通酰胺，但可作为碱捕获酸。",
       "location": "叔胺没有 N-H，通常不能形成普通酰胺，但可作为碱捕获酸。",
       "function": "用于保护氨基、合成酰胺，也可辅助区分胺类。",
-      "studyNote": "酰化后氮孤对电子与羰基共轭，碱性大幅降低。",
+      "studyNote": "",
       "figures": [],
       "pageFigures": [],
       "pageImages": [
@@ -5934,7 +7496,29 @@ window.MED_GLOSSARY_COURSES["organic-chemistry"] = {
         "oc0031",
         "oc0032",
         "oc0035"
-      ]
+      ],
+      "fieldSources": {
+        "structure": [
+          {
+            "label": "有机化学教材上下文：书页 136 / PDF 158",
+            "url": "assets/pages/organic/pdf-158.jpg"
+          },
+          {
+            "label": "OpenStax Anatomy and Physiology 2e: Introduction",
+            "url": "https://openstax.org/books/anatomy-and-physiology-2e/pages/1-introduction"
+          }
+        ],
+        "function": [
+          {
+            "label": "有机化学教材上下文：书页 136 / PDF 158",
+            "url": "assets/pages/organic/pdf-158.jpg"
+          },
+          {
+            "label": "OpenStax Anatomy and Physiology 2e: Introduction",
+            "url": "https://openstax.org/books/anatomy-and-physiology-2e/pages/1-introduction"
+          }
+        ]
+      }
     },
     {
       "id": "oc0073",
@@ -5967,7 +7551,7 @@ window.MED_GLOSSARY_COURSES["organic-chemistry"] = {
       "structure": "常用 NaNO2/HCl 原位生成 HNO2，温度通常控制在 0-5 ℃。",
       "location": "常用 NaNO2/HCl 原位生成 HNO2，温度通常控制在 0-5 ℃。",
       "function": "重氮盐可用于 Sandmeyer 反应和偶联反应。",
-      "studyNote": "脂肪伯胺和芳香伯胺遇亚硝酸现象不同，注意反应条件和稳定性。",
+      "studyNote": "",
       "figures": [],
       "pageFigures": [],
       "pageImages": [
@@ -6017,7 +7601,29 @@ window.MED_GLOSSARY_COURSES["organic-chemistry"] = {
         "oc0022",
         "oc0030",
         "oc0031"
-      ]
+      ],
+      "fieldSources": {
+        "structure": [
+          {
+            "label": "有机化学教材上下文：书页 137 / PDF 159",
+            "url": "assets/pages/organic/pdf-159.jpg"
+          },
+          {
+            "label": "OpenStax Anatomy and Physiology 2e: Introduction",
+            "url": "https://openstax.org/books/anatomy-and-physiology-2e/pages/1-introduction"
+          }
+        ],
+        "function": [
+          {
+            "label": "有机化学教材上下文：书页 137 / PDF 159",
+            "url": "assets/pages/organic/pdf-159.jpg"
+          },
+          {
+            "label": "OpenStax Anatomy and Physiology 2e: Introduction",
+            "url": "https://openstax.org/books/anatomy-and-physiology-2e/pages/1-introduction"
+          }
+        ]
+      }
     },
     {
       "id": "oc0074",
@@ -6050,7 +7656,7 @@ window.MED_GLOSSARY_COURSES["organic-chemistry"] = {
       "structure": "酚和芳胺等富电子芳环常在对位或邻位偶联，生成有色偶氮染料。",
       "location": "酚和芳胺等富电子芳环常在对位或邻位偶联，生成有色偶氮染料。",
       "function": "用于制备偶氮染料，也可作为芳香胺衍生反应。",
-      "studyNote": "偶联需要芳环足够活化，pH 对酚和芳胺偶联很重要。",
+      "studyNote": "",
       "figures": [],
       "pageFigures": [],
       "pageImages": [
@@ -6100,7 +7706,29 @@ window.MED_GLOSSARY_COURSES["organic-chemistry"] = {
         "oc0082",
         "oc0006",
         "oc0007"
-      ]
+      ],
+      "fieldSources": {
+        "structure": [
+          {
+            "label": "有机化学教材上下文：书页 140 / PDF 162",
+            "url": "assets/pages/organic/pdf-162.jpg"
+          },
+          {
+            "label": "OpenStax Anatomy and Physiology 2e: Introduction",
+            "url": "https://openstax.org/books/anatomy-and-physiology-2e/pages/1-introduction"
+          }
+        ],
+        "function": [
+          {
+            "label": "有机化学教材上下文：书页 140 / PDF 162",
+            "url": "assets/pages/organic/pdf-162.jpg"
+          },
+          {
+            "label": "OpenStax Anatomy and Physiology 2e: Introduction",
+            "url": "https://openstax.org/books/anatomy-and-physiology-2e/pages/1-introduction"
+          }
+        ]
+      }
     },
     {
       "id": "oc0075",
@@ -6133,7 +7761,7 @@ window.MED_GLOSSARY_COURSES["organic-chemistry"] = {
       "structure": "常见沉淀试剂包括苦味酸、碘化铋钾、碘化汞钾等。",
       "location": "常见沉淀试剂包括苦味酸、碘化铋钾、碘化汞钾等。",
       "function": "用于生物碱的初步检识。",
-      "studyNote": "沉淀反应是初筛，不等于结构鉴定；需结合其他方法确认。",
+      "studyNote": "",
       "figures": [],
       "pageFigures": [],
       "pageImages": [
@@ -6183,7 +7811,29 @@ window.MED_GLOSSARY_COURSES["organic-chemistry"] = {
         "oc0080",
         "oc0086",
         "oc0095"
-      ]
+      ],
+      "fieldSources": {
+        "structure": [
+          {
+            "label": "有机化学教材上下文：书页 138 / PDF 160",
+            "url": "assets/pages/organic/pdf-160.jpg"
+          },
+          {
+            "label": "OpenStax Anatomy and Physiology 2e: Introduction",
+            "url": "https://openstax.org/books/anatomy-and-physiology-2e/pages/1-introduction"
+          }
+        ],
+        "function": [
+          {
+            "label": "有机化学教材上下文：书页 138 / PDF 160",
+            "url": "assets/pages/organic/pdf-160.jpg"
+          },
+          {
+            "label": "OpenStax Anatomy and Physiology 2e: Introduction",
+            "url": "https://openstax.org/books/anatomy-and-physiology-2e/pages/1-introduction"
+          }
+        ]
+      }
     },
     {
       "id": "oc0076",
@@ -6216,7 +7866,7 @@ window.MED_GLOSSARY_COURSES["organic-chemistry"] = {
       "structure": "反应可生成醇、氰醇、半缩醛、肟、腙等产物。",
       "location": "反应可生成醇、氰醇、半缩醛、肟、腙等产物。",
       "function": "是醛酮最核心的反应类型，也是糖化学和生物羰基反应的基础。",
-      "studyNote": "先让亲核体进攻羰基碳，再处理氧负离子质子化。",
+      "studyNote": "",
       "figures": [],
       "pageFigures": [],
       "pageImages": [
@@ -6266,7 +7916,29 @@ window.MED_GLOSSARY_COURSES["organic-chemistry"] = {
         "oc0082",
         "oc0028",
         "oc0032"
-      ]
+      ],
+      "fieldSources": {
+        "structure": [
+          {
+            "label": "有机化学教材上下文：书页 149 / PDF 171",
+            "url": "assets/pages/organic/pdf-171.jpg"
+          },
+          {
+            "label": "OpenStax Anatomy and Physiology 2e: Introduction",
+            "url": "https://openstax.org/books/anatomy-and-physiology-2e/pages/1-introduction"
+          }
+        ],
+        "function": [
+          {
+            "label": "有机化学教材上下文：书页 149 / PDF 171",
+            "url": "assets/pages/organic/pdf-171.jpg"
+          },
+          {
+            "label": "OpenStax Anatomy and Physiology 2e: Introduction",
+            "url": "https://openstax.org/books/anatomy-and-physiology-2e/pages/1-introduction"
+          }
+        ]
+      }
     },
     {
       "id": "oc0077",
@@ -6299,7 +7971,7 @@ window.MED_GLOSSARY_COURSES["organic-chemistry"] = {
       "structure": "一般脂肪醛 > 芳香醛 > 脂肪酮 > 芳香酮；甲醛通常最活泼。",
       "location": "一般脂肪醛 > 芳香醛 > 脂肪酮 > 芳香酮；甲醛通常最活泼。",
       "function": "用于判断加成反应速率和选择性。",
-      "studyNote": "醛比酮活泼主要因为位阻更小、烷基给电子更少。",
+      "studyNote": "",
       "figures": [],
       "pageFigures": [],
       "pageImages": [
@@ -6349,7 +8021,29 @@ window.MED_GLOSSARY_COURSES["organic-chemistry"] = {
         "oc0010",
         "oc0013",
         "oc0031"
-      ]
+      ],
+      "fieldSources": {
+        "structure": [
+          {
+            "label": "有机化学教材上下文：书页 157 / PDF 179",
+            "url": "assets/pages/organic/pdf-179.jpg"
+          },
+          {
+            "label": "OpenStax Anatomy and Physiology 2e: Introduction",
+            "url": "https://openstax.org/books/anatomy-and-physiology-2e/pages/1-introduction"
+          }
+        ],
+        "function": [
+          {
+            "label": "有机化学教材上下文：书页 157 / PDF 179",
+            "url": "assets/pages/organic/pdf-179.jpg"
+          },
+          {
+            "label": "OpenStax Anatomy and Physiology 2e: Introduction",
+            "url": "https://openstax.org/books/anatomy-and-physiology-2e/pages/1-introduction"
+          }
+        ]
+      }
     },
     {
       "id": "oc0078",
@@ -6382,7 +8076,7 @@ window.MED_GLOSSARY_COURSES["organic-chemistry"] = {
       "structure": "糖的环状结构本质上常含半缩醛或半缩酮。",
       "location": "糖的环状结构本质上常含半缩醛或半缩酮。",
       "function": "缩醛在碱性条件较稳定，酸性条件可水解，可用于保护羰基。",
-      "studyNote": "糖类里看到端基碳，想半缩醛和变旋光。",
+      "studyNote": "",
       "figures": [],
       "pageFigures": [],
       "pageImages": [
@@ -6432,7 +8126,29 @@ window.MED_GLOSSARY_COURSES["organic-chemistry"] = {
         "oc0082",
         "oc0040",
         "oc0043"
-      ]
+      ],
+      "fieldSources": {
+        "structure": [
+          {
+            "label": "有机化学教材上下文：书页 150 / PDF 172",
+            "url": "assets/pages/organic/pdf-172.jpg"
+          },
+          {
+            "label": "OpenStax Anatomy and Physiology 2e: Introduction",
+            "url": "https://openstax.org/books/anatomy-and-physiology-2e/pages/1-introduction"
+          }
+        ],
+        "function": [
+          {
+            "label": "有机化学教材上下文：书页 150 / PDF 172",
+            "url": "assets/pages/organic/pdf-172.jpg"
+          },
+          {
+            "label": "OpenStax Anatomy and Physiology 2e: Introduction",
+            "url": "https://openstax.org/books/anatomy-and-physiology-2e/pages/1-introduction"
+          }
+        ]
+      }
     },
     {
       "id": "oc0079",
@@ -6465,7 +8181,7 @@ window.MED_GLOSSARY_COURSES["organic-chemistry"] = {
       "structure": "反应属于羰基与含氮亲核试剂的加成-脱水。",
       "location": "反应属于羰基与含氮亲核试剂的加成-脱水。",
       "function": "用于鉴别醛酮羰基。",
-      "studyNote": "羧酸、酯、酰胺通常不呈普通 DNPH 阳性。",
+      "studyNote": "",
       "figures": [],
       "pageFigures": [],
       "pageImages": [
@@ -6515,7 +8231,29 @@ window.MED_GLOSSARY_COURSES["organic-chemistry"] = {
         "oc0081",
         "oc0082",
         "oc0086"
-      ]
+      ],
+      "fieldSources": {
+        "structure": [
+          {
+            "label": "有机化学教材上下文：书页 151 / PDF 173",
+            "url": "assets/pages/organic/pdf-173.jpg"
+          },
+          {
+            "label": "OpenStax Anatomy and Physiology 2e: Introduction",
+            "url": "https://openstax.org/books/anatomy-and-physiology-2e/pages/1-introduction"
+          }
+        ],
+        "function": [
+          {
+            "label": "有机化学教材上下文：书页 151 / PDF 173",
+            "url": "assets/pages/organic/pdf-173.jpg"
+          },
+          {
+            "label": "OpenStax Anatomy and Physiology 2e: Introduction",
+            "url": "https://openstax.org/books/anatomy-and-physiology-2e/pages/1-introduction"
+          }
+        ]
+      }
     },
     {
       "id": "oc0080",
@@ -6548,7 +8286,7 @@ window.MED_GLOSSARY_COURSES["organic-chemistry"] = {
       "structure": "醛被氧化为羧酸盐，银氨络离子被还原为金属银。",
       "location": "醛被氧化为羧酸盐，银氨络离子被还原为金属银。",
       "function": "用于鉴别醛与多数酮，也用于判断还原糖。",
-      "studyNote": "甲酸和部分 α-羟基酮也可能阳性，不能机械地等同于醛。",
+      "studyNote": "",
       "figures": [],
       "pageFigures": [],
       "pageImages": [
@@ -6598,7 +8336,29 @@ window.MED_GLOSSARY_COURSES["organic-chemistry"] = {
         "oc0068",
         "oc0069",
         "oc0082"
-      ]
+      ],
+      "fieldSources": {
+        "structure": [
+          {
+            "label": "有机化学教材上下文：书页 154 / PDF 176",
+            "url": "assets/pages/organic/pdf-176.jpg"
+          },
+          {
+            "label": "OpenStax Anatomy and Physiology 2e: Introduction",
+            "url": "https://openstax.org/books/anatomy-and-physiology-2e/pages/1-introduction"
+          }
+        ],
+        "function": [
+          {
+            "label": "有机化学教材上下文：书页 154 / PDF 176",
+            "url": "assets/pages/organic/pdf-176.jpg"
+          },
+          {
+            "label": "OpenStax Anatomy and Physiology 2e: Introduction",
+            "url": "https://openstax.org/books/anatomy-and-physiology-2e/pages/1-introduction"
+          }
+        ]
+      }
     },
     {
       "id": "oc0081",
@@ -6627,7 +8387,7 @@ window.MED_GLOSSARY_COURSES["organic-chemistry"] = {
       "structure": "芳香醛通常较难使 Fehling 试剂阳性。",
       "location": "芳香醛通常较难使 Fehling 试剂阳性。",
       "function": "用于鉴别脂肪醛和还原糖。",
-      "studyNote": "糖类题中，能开链形成醛基或 α-羟基酮结构的糖常表现还原性。",
+      "studyNote": "",
       "figures": [],
       "pageFigures": [],
       "pageImages": [
@@ -6661,7 +8421,29 @@ window.MED_GLOSSARY_COURSES["organic-chemistry"] = {
         "oc0062",
         "oc0067",
         "oc0068"
-      ]
+      ],
+      "fieldSources": {
+        "structure": [
+          {
+            "label": "有机化学教材上下文：书页 154 / PDF 176",
+            "url": "assets/pages/organic/pdf-176.jpg"
+          },
+          {
+            "label": "OpenStax Anatomy and Physiology 2e: Introduction",
+            "url": "https://openstax.org/books/anatomy-and-physiology-2e/pages/1-introduction"
+          }
+        ],
+        "function": [
+          {
+            "label": "有机化学教材上下文：书页 154 / PDF 176",
+            "url": "assets/pages/organic/pdf-176.jpg"
+          },
+          {
+            "label": "OpenStax Anatomy and Physiology 2e: Introduction",
+            "url": "https://openstax.org/books/anatomy-and-physiology-2e/pages/1-introduction"
+          }
+        ]
+      }
     },
     {
       "id": "oc0082",
@@ -6694,7 +8476,7 @@ window.MED_GLOSSARY_COURSES["organic-chemistry"] = {
       "structure": "乙醇和含 CH3CHOH- 结构的仲醇也可阳性。",
       "location": "乙醇和含 CH3CHOH- 结构的仲醇也可阳性。",
       "function": "用于鉴别甲基酮、乙醛、乙醇及相关结构。",
-      "studyNote": "黄色、有特殊气味的 CHI3 沉淀是关键词。",
+      "studyNote": "",
       "figures": [],
       "pageFigures": [],
       "pageImages": [
@@ -6744,7 +8526,29 @@ window.MED_GLOSSARY_COURSES["organic-chemistry"] = {
         "oc0067",
         "oc0068",
         "oc0069"
-      ]
+      ],
+      "fieldSources": {
+        "structure": [
+          {
+            "label": "有机化学教材上下文：书页 154 / PDF 176",
+            "url": "assets/pages/organic/pdf-176.jpg"
+          },
+          {
+            "label": "OpenStax Anatomy and Physiology 2e: Introduction",
+            "url": "https://openstax.org/books/anatomy-and-physiology-2e/pages/1-introduction"
+          }
+        ],
+        "function": [
+          {
+            "label": "有机化学教材上下文：书页 154 / PDF 176",
+            "url": "assets/pages/organic/pdf-176.jpg"
+          },
+          {
+            "label": "OpenStax Anatomy and Physiology 2e: Introduction",
+            "url": "https://openstax.org/books/anatomy-and-physiology-2e/pages/1-introduction"
+          }
+        ]
+      }
     },
     {
       "id": "oc0083",
@@ -6777,7 +8581,7 @@ window.MED_GLOSSARY_COURSES["organic-chemistry"] = {
       "structure": "醛通常还原为伯醇，酮还原为仲醇；催化氢化或金属氢化物均可实现。",
       "location": "醛通常还原为伯醇，酮还原为仲醇；催化氢化或金属氢化物均可实现。",
       "function": "用于羰基到醇的官能团转化。",
-      "studyNote": "反应前后碳骨架不变，羰基碳变成醇碳。",
+      "studyNote": "",
       "figures": [],
       "pageFigures": [],
       "pageImages": [
@@ -6827,7 +8631,29 @@ window.MED_GLOSSARY_COURSES["organic-chemistry"] = {
         "oc0079",
         "oc0080",
         "oc0082"
-      ]
+      ],
+      "fieldSources": {
+        "structure": [
+          {
+            "label": "有机化学教材上下文：书页 150 / PDF 172",
+            "url": "assets/pages/organic/pdf-172.jpg"
+          },
+          {
+            "label": "OpenStax Anatomy and Physiology 2e: Introduction",
+            "url": "https://openstax.org/books/anatomy-and-physiology-2e/pages/1-introduction"
+          }
+        ],
+        "function": [
+          {
+            "label": "有机化学教材上下文：书页 150 / PDF 172",
+            "url": "assets/pages/organic/pdf-172.jpg"
+          },
+          {
+            "label": "OpenStax Anatomy and Physiology 2e: Introduction",
+            "url": "https://openstax.org/books/anatomy-and-physiology-2e/pages/1-introduction"
+          }
+        ]
+      }
     },
     {
       "id": "oc0084",
@@ -6860,7 +8686,7 @@ window.MED_GLOSSARY_COURSES["organic-chemistry"] = {
       "structure": "关键是 α-H 酸性和烯醇/烯醇负离子形成。",
       "location": "关键是 α-H 酸性和烯醇/烯醇负离子形成。",
       "function": "用于形成新的 C-C 键。",
-      "studyNote": "先找 α-H；没有 α-H 的羰基化合物不能作自身羟醛缩合供体。",
+      "studyNote": "",
       "figures": [],
       "pageFigures": [],
       "pageImages": [
@@ -6910,7 +8736,29 @@ window.MED_GLOSSARY_COURSES["organic-chemistry"] = {
         "oc0082",
         "oc0006",
         "oc0007"
-      ]
+      ],
+      "fieldSources": {
+        "structure": [
+          {
+            "label": "有机化学教材上下文：书页 152 / PDF 174",
+            "url": "assets/pages/organic/pdf-174.jpg"
+          },
+          {
+            "label": "OpenStax Anatomy and Physiology 2e: Introduction",
+            "url": "https://openstax.org/books/anatomy-and-physiology-2e/pages/1-introduction"
+          }
+        ],
+        "function": [
+          {
+            "label": "有机化学教材上下文：书页 152 / PDF 174",
+            "url": "assets/pages/organic/pdf-174.jpg"
+          },
+          {
+            "label": "OpenStax Anatomy and Physiology 2e: Introduction",
+            "url": "https://openstax.org/books/anatomy-and-physiology-2e/pages/1-introduction"
+          }
+        ]
+      }
     },
     {
       "id": "oc0085",
@@ -6943,7 +8791,7 @@ window.MED_GLOSSARY_COURSES["organic-chemistry"] = {
       "structure": "吸电子基增强酸性，给电子基减弱酸性；吸电子基越近影响越强。",
       "location": "吸电子基增强酸性，给电子基减弱酸性；吸电子基越近影响越强。",
       "function": "用于比较脂肪酸、芳香酸、卤代酸、羟基酸等酸性。",
-      "studyNote": "比较取代羧酸时看取代基吸/给电子能力和距离。",
+      "studyNote": "",
       "figures": [],
       "pageFigures": [],
       "pageImages": [
@@ -6993,7 +8841,29 @@ window.MED_GLOSSARY_COURSES["organic-chemistry"] = {
         "oc0010",
         "oc0011",
         "oc0013"
-      ]
+      ],
+      "fieldSources": {
+        "structure": [
+          {
+            "label": "有机化学教材上下文：书页 162 / PDF 184",
+            "url": "assets/pages/organic/pdf-184.jpg"
+          },
+          {
+            "label": "OpenStax Anatomy and Physiology 2e: Introduction",
+            "url": "https://openstax.org/books/anatomy-and-physiology-2e/pages/1-introduction"
+          }
+        ],
+        "function": [
+          {
+            "label": "有机化学教材上下文：书页 162 / PDF 184",
+            "url": "assets/pages/organic/pdf-184.jpg"
+          },
+          {
+            "label": "OpenStax Anatomy and Physiology 2e: Introduction",
+            "url": "https://openstax.org/books/anatomy-and-physiology-2e/pages/1-introduction"
+          }
+        ]
+      }
     },
     {
       "id": "oc0086",
@@ -7026,7 +8896,7 @@ window.MED_GLOSSARY_COURSES["organic-chemistry"] = {
       "structure": "酚酸性通常不足以与 NaHCO3 明显放 CO2。",
       "location": "酚酸性通常不足以与 NaHCO3 明显放 CO2。",
       "function": "用于区分羧酸与酚、醇等弱酸性化合物。",
-      "studyNote": "有气泡是羧酸鉴别的核心现象，但也要排除其他可放气的酸性物质。",
+      "studyNote": "",
       "figures": [],
       "pageFigures": [],
       "pageImages": [
@@ -7076,7 +8946,29 @@ window.MED_GLOSSARY_COURSES["organic-chemistry"] = {
         "oc0080",
         "oc0085",
         "oc0087"
-      ]
+      ],
+      "fieldSources": {
+        "structure": [
+          {
+            "label": "有机化学教材上下文：书页 163 / PDF 185",
+            "url": "assets/pages/organic/pdf-185.jpg"
+          },
+          {
+            "label": "OpenStax Anatomy and Physiology 2e: Introduction",
+            "url": "https://openstax.org/books/anatomy-and-physiology-2e/pages/1-introduction"
+          }
+        ],
+        "function": [
+          {
+            "label": "有机化学教材上下文：书页 163 / PDF 185",
+            "url": "assets/pages/organic/pdf-185.jpg"
+          },
+          {
+            "label": "OpenStax Anatomy and Physiology 2e: Introduction",
+            "url": "https://openstax.org/books/anatomy-and-physiology-2e/pages/1-introduction"
+          }
+        ]
+      }
     },
     {
       "id": "oc0087",
@@ -7109,7 +9001,7 @@ window.MED_GLOSSARY_COURSES["organic-chemistry"] = {
       "structure": "提高醇或酸浓度、移去水或产物可推动平衡向酯生成方向移动。",
       "location": "提高醇或酸浓度、移去水或产物可推动平衡向酯生成方向移动。",
       "function": "是合成酯、理解脂类和药物前体的重要反应。",
-      "studyNote": "Fischer 酯化是平衡反应，不是单向到底。",
+      "studyNote": "",
       "figures": [],
       "pageFigures": [],
       "pageImages": [
@@ -7159,7 +9051,29 @@ window.MED_GLOSSARY_COURSES["organic-chemistry"] = {
         "oc0092",
         "oc0094",
         "oc0090"
-      ]
+      ],
+      "fieldSources": {
+        "structure": [
+          {
+            "label": "有机化学教材上下文：书页 164 / PDF 186",
+            "url": "assets/pages/organic/pdf-186.jpg"
+          },
+          {
+            "label": "OpenStax Anatomy and Physiology 2e: Introduction",
+            "url": "https://openstax.org/books/anatomy-and-physiology-2e/pages/1-introduction"
+          }
+        ],
+        "function": [
+          {
+            "label": "有机化学教材上下文：书页 164 / PDF 186",
+            "url": "assets/pages/organic/pdf-186.jpg"
+          },
+          {
+            "label": "OpenStax Anatomy and Physiology 2e: Introduction",
+            "url": "https://openstax.org/books/anatomy-and-physiology-2e/pages/1-introduction"
+          }
+        ]
+      }
     },
     {
       "id": "oc0088",
@@ -7192,7 +9106,7 @@ window.MED_GLOSSARY_COURSES["organic-chemistry"] = {
       "structure": "β-酮酸、丙二酸类化合物等较易脱羧。",
       "location": "β-酮酸、丙二酸类化合物等较易脱羧。",
       "function": "用于解释体内代谢和有机合成中的碳链缩短。",
-      "studyNote": "易脱羧结构通常能形成稳定过渡态或稳定产物。",
+      "studyNote": "",
       "figures": [],
       "pageFigures": [],
       "pageImages": [
@@ -7242,7 +9156,29 @@ window.MED_GLOSSARY_COURSES["organic-chemistry"] = {
         "oc0094",
         "oc0006",
         "oc0007"
-      ]
+      ],
+      "fieldSources": {
+        "structure": [
+          {
+            "label": "有机化学教材上下文：书页 165 / PDF 187",
+            "url": "assets/pages/organic/pdf-187.jpg"
+          },
+          {
+            "label": "OpenStax Anatomy and Physiology 2e: Introduction",
+            "url": "https://openstax.org/books/anatomy-and-physiology-2e/pages/1-introduction"
+          }
+        ],
+        "function": [
+          {
+            "label": "有机化学教材上下文：书页 165 / PDF 187",
+            "url": "assets/pages/organic/pdf-187.jpg"
+          },
+          {
+            "label": "OpenStax Anatomy and Physiology 2e: Introduction",
+            "url": "https://openstax.org/books/anatomy-and-physiology-2e/pages/1-introduction"
+          }
+        ]
+      }
     },
     {
       "id": "oc0089",
@@ -7275,7 +9211,7 @@ window.MED_GLOSSARY_COURSES["organic-chemistry"] = {
       "structure": "Tollens 试剂等通常不氧化普通醇，却可氧化某些 α-羟基酸。",
       "location": "Tollens 试剂等通常不氧化普通醇，却可氧化某些 α-羟基酸。",
       "function": "用于理解乳酸、苹果酸等生物相关羟基酸的反应性。",
-      "studyNote": "羧基的 -I 效应增强邻位羟基相关反应。",
+      "studyNote": "",
       "figures": [],
       "pageFigures": [],
       "pageImages": [
@@ -7325,7 +9261,29 @@ window.MED_GLOSSARY_COURSES["organic-chemistry"] = {
         "oc0094",
         "oc0039",
         "oc0063"
-      ]
+      ],
+      "fieldSources": {
+        "structure": [
+          {
+            "label": "有机化学教材上下文：书页 168 / PDF 190",
+            "url": "assets/pages/organic/pdf-190.jpg"
+          },
+          {
+            "label": "OpenStax Anatomy and Physiology 2e: Introduction",
+            "url": "https://openstax.org/books/anatomy-and-physiology-2e/pages/1-introduction"
+          }
+        ],
+        "function": [
+          {
+            "label": "有机化学教材上下文：书页 168 / PDF 190",
+            "url": "assets/pages/organic/pdf-190.jpg"
+          },
+          {
+            "label": "OpenStax Anatomy and Physiology 2e: Introduction",
+            "url": "https://openstax.org/books/anatomy-and-physiology-2e/pages/1-introduction"
+          }
+        ]
+      }
     },
     {
       "id": "oc0090",
@@ -7358,7 +9316,7 @@ window.MED_GLOSSARY_COURSES["organic-chemistry"] = {
       "structure": "常见顺序：酰卤 > 酸酐 > 酯 ≈ 羧酸 > 酰胺；酰胺因氮给电子共轭最不活泼。",
       "location": "常见顺序：酰卤 > 酸酐 > 酯 ≈ 羧酸 > 酰胺；酰胺因氮给电子共轭最不活泼。",
       "function": "用于选择酰化试剂、判断水解和醇解难易。",
-      "studyNote": "衍生物互相转化一般从高活性到低活性更容易。",
+      "studyNote": "",
       "figures": [],
       "pageFigures": [],
       "pageImages": [
@@ -7408,7 +9366,29 @@ window.MED_GLOSSARY_COURSES["organic-chemistry"] = {
         "oc0010",
         "oc0013",
         "oc0031"
-      ]
+      ],
+      "fieldSources": {
+        "structure": [
+          {
+            "label": "有机化学教材上下文：书页 172 / PDF 194",
+            "url": "assets/pages/organic/pdf-194.jpg"
+          },
+          {
+            "label": "OpenStax Anatomy and Physiology 2e: Introduction",
+            "url": "https://openstax.org/books/anatomy-and-physiology-2e/pages/1-introduction"
+          }
+        ],
+        "function": [
+          {
+            "label": "有机化学教材上下文：书页 172 / PDF 194",
+            "url": "assets/pages/organic/pdf-194.jpg"
+          },
+          {
+            "label": "OpenStax Anatomy and Physiology 2e: Introduction",
+            "url": "https://openstax.org/books/anatomy-and-physiology-2e/pages/1-introduction"
+          }
+        ]
+      }
     },
     {
       "id": "oc0091",
@@ -7441,7 +9421,7 @@ window.MED_GLOSSARY_COURSES["organic-chemistry"] = {
       "structure": "酰氯最常见，易水解、醇解、氨解生成酸、酯、酰胺。",
       "location": "酰氯最常见，易水解、醇解、氨解生成酸、酯、酰胺。",
       "function": "常用作酰化试剂。",
-      "studyNote": "酰氯遇水敏感，反应常需要无水条件或碱捕酸。",
+      "studyNote": "",
       "figures": [],
       "pageFigures": [],
       "pageImages": [
@@ -7491,7 +9471,29 @@ window.MED_GLOSSARY_COURSES["organic-chemistry"] = {
         "oc0095",
         "oc0006",
         "oc0007"
-      ]
+      ],
+      "fieldSources": {
+        "structure": [
+          {
+            "label": "有机化学教材上下文：书页 172 / PDF 194",
+            "url": "assets/pages/organic/pdf-194.jpg"
+          },
+          {
+            "label": "OpenStax Anatomy and Physiology 2e: Introduction",
+            "url": "https://openstax.org/books/anatomy-and-physiology-2e/pages/1-introduction"
+          }
+        ],
+        "function": [
+          {
+            "label": "有机化学教材上下文：书页 172 / PDF 194",
+            "url": "assets/pages/organic/pdf-194.jpg"
+          },
+          {
+            "label": "OpenStax Anatomy and Physiology 2e: Introduction",
+            "url": "https://openstax.org/books/anatomy-and-physiology-2e/pages/1-introduction"
+          }
+        ]
+      }
     },
     {
       "id": "oc0092",
@@ -7524,7 +9526,7 @@ window.MED_GLOSSARY_COURSES["organic-chemistry"] = {
       "structure": "酸酐可与醇、胺、水反应生成酯、酰胺或羧酸。",
       "location": "酸酐可与醇、胺、水反应生成酯、酰胺或羧酸。",
       "function": "乙酸酐常用作乙酰化试剂。",
-      "studyNote": "酸酐活性低于酰氯但高于酯，反应更温和可控。",
+      "studyNote": "",
       "figures": [],
       "pageFigures": [],
       "pageImages": [
@@ -7574,7 +9576,29 @@ window.MED_GLOSSARY_COURSES["organic-chemistry"] = {
         "oc0095",
         "oc0072",
         "oc0006"
-      ]
+      ],
+      "fieldSources": {
+        "structure": [
+          {
+            "label": "有机化学教材上下文：书页 176 / PDF 198",
+            "url": "assets/pages/organic/pdf-198.jpg"
+          },
+          {
+            "label": "OpenStax Anatomy and Physiology 2e: Introduction",
+            "url": "https://openstax.org/books/anatomy-and-physiology-2e/pages/1-introduction"
+          }
+        ],
+        "function": [
+          {
+            "label": "有机化学教材上下文：书页 176 / PDF 198",
+            "url": "assets/pages/organic/pdf-198.jpg"
+          },
+          {
+            "label": "OpenStax Anatomy and Physiology 2e: Introduction",
+            "url": "https://openstax.org/books/anatomy-and-physiology-2e/pages/1-introduction"
+          }
+        ]
+      }
     },
     {
       "id": "oc0093",
@@ -7607,7 +9631,7 @@ window.MED_GLOSSARY_COURSES["organic-chemistry"] = {
       "structure": "酸性水解可逆，碱性水解因生成羧酸盐而较完全。",
       "location": "酸性水解可逆，碱性水解因生成羧酸盐而较完全。",
       "function": "用于脂类水解、药物酯键代谢和合成转化。",
-      "studyNote": "皂化不可简单当作普通可逆酯化的逆反应，因为羧酸盐形成推动反应。",
+      "studyNote": "",
       "figures": [],
       "pageFigures": [],
       "pageImages": [
@@ -7657,7 +9681,29 @@ window.MED_GLOSSARY_COURSES["organic-chemistry"] = {
         "oc0090",
         "oc0095",
         "oc0022"
-      ]
+      ],
+      "fieldSources": {
+        "structure": [
+          {
+            "label": "有机化学教材上下文：书页 175 / PDF 197",
+            "url": "assets/pages/organic/pdf-197.jpg"
+          },
+          {
+            "label": "OpenStax Anatomy and Physiology 2e: Introduction",
+            "url": "https://openstax.org/books/anatomy-and-physiology-2e/pages/1-introduction"
+          }
+        ],
+        "function": [
+          {
+            "label": "有机化学教材上下文：书页 175 / PDF 197",
+            "url": "assets/pages/organic/pdf-197.jpg"
+          },
+          {
+            "label": "OpenStax Anatomy and Physiology 2e: Introduction",
+            "url": "https://openstax.org/books/anatomy-and-physiology-2e/pages/1-introduction"
+          }
+        ]
+      }
     },
     {
       "id": "oc0094",
@@ -7690,7 +9736,7 @@ window.MED_GLOSSARY_COURSES["organic-chemistry"] = {
       "structure": "氮孤对电子与羰基共轭，使酰胺 C-N 键具有部分双键性。",
       "location": "氮孤对电子与羰基共轭，使酰胺 C-N 键具有部分双键性。",
       "function": "酰胺键是蛋白质肽键的化学基础。",
-      "studyNote": "酰胺最不活泼，水解通常需要较强酸、强碱或酶催化。",
+      "studyNote": "",
       "figures": [],
       "pageFigures": [],
       "pageImages": [
@@ -7740,7 +9786,29 @@ window.MED_GLOSSARY_COURSES["organic-chemistry"] = {
         "oc0095",
         "oc0072",
         "oc0006"
-      ]
+      ],
+      "fieldSources": {
+        "structure": [
+          {
+            "label": "有机化学教材上下文：书页 172 / PDF 194",
+            "url": "assets/pages/organic/pdf-194.jpg"
+          },
+          {
+            "label": "OpenStax Anatomy and Physiology 2e: Introduction",
+            "url": "https://openstax.org/books/anatomy-and-physiology-2e/pages/1-introduction"
+          }
+        ],
+        "function": [
+          {
+            "label": "有机化学教材上下文：书页 172 / PDF 194",
+            "url": "assets/pages/organic/pdf-194.jpg"
+          },
+          {
+            "label": "OpenStax Anatomy and Physiology 2e: Introduction",
+            "url": "https://openstax.org/books/anatomy-and-physiology-2e/pages/1-introduction"
+          }
+        ]
+      }
     },
     {
       "id": "oc0095",
@@ -7773,7 +9841,7 @@ window.MED_GLOSSARY_COURSES["organic-chemistry"] = {
       "structure": "用于某些酯类和酰基衍生物的检识。",
       "location": "用于某些酯类和酰基衍生物的检识。",
       "function": "可作为酯类化合物的特定鉴别反应之一。",
-      "studyNote": "不同底物反应速度不同，实验条件会影响显色。",
+      "studyNote": "",
       "figures": [],
       "pageFigures": [],
       "pageImages": [
@@ -7823,7 +9891,29 @@ window.MED_GLOSSARY_COURSES["organic-chemistry"] = {
         "oc0080",
         "oc0086",
         "oc0062"
-      ]
+      ],
+      "fieldSources": {
+        "structure": [
+          {
+            "label": "有机化学教材上下文：书页 172 / PDF 194",
+            "url": "assets/pages/organic/pdf-194.jpg"
+          },
+          {
+            "label": "OpenStax Anatomy and Physiology 2e: Introduction",
+            "url": "https://openstax.org/books/anatomy-and-physiology-2e/pages/1-introduction"
+          }
+        ],
+        "function": [
+          {
+            "label": "有机化学教材上下文：书页 172 / PDF 194",
+            "url": "assets/pages/organic/pdf-194.jpg"
+          },
+          {
+            "label": "OpenStax Anatomy and Physiology 2e: Introduction",
+            "url": "https://openstax.org/books/anatomy-and-physiology-2e/pages/1-introduction"
+          }
+        ]
+      }
     },
     {
       "id": "oc0096",
@@ -7856,7 +9946,7 @@ window.MED_GLOSSARY_COURSES["organic-chemistry"] = {
       "structure": "环上电子云密度通常高于苯，易发生亲电取代，主要在 α 位。",
       "location": "环上电子云密度通常高于苯，易发生亲电取代，主要在 α 位。",
       "function": "是许多天然产物和药物结构的基本单元。",
-      "studyNote": "吡咯碱性很弱，因为氮孤对电子参与芳香性。",
+      "studyNote": "",
       "figures": [],
       "pageFigures": [],
       "pageImages": [
@@ -7906,7 +9996,29 @@ window.MED_GLOSSARY_COURSES["organic-chemistry"] = {
         "oc0081",
         "oc0083",
         "oc0004"
-      ]
+      ],
+      "fieldSources": {
+        "structure": [
+          {
+            "label": "有机化学教材上下文：书页 187 / PDF 209",
+            "url": "assets/pages/organic/pdf-209.jpg"
+          },
+          {
+            "label": "OpenStax Anatomy and Physiology 2e: Introduction",
+            "url": "https://openstax.org/books/anatomy-and-physiology-2e/pages/1-introduction"
+          }
+        ],
+        "function": [
+          {
+            "label": "有机化学教材上下文：书页 187 / PDF 209",
+            "url": "assets/pages/organic/pdf-209.jpg"
+          },
+          {
+            "label": "OpenStax Anatomy and Physiology 2e: Introduction",
+            "url": "https://openstax.org/books/anatomy-and-physiology-2e/pages/1-introduction"
+          }
+        ]
+      }
     },
     {
       "id": "oc0097",
@@ -7939,7 +10051,7 @@ window.MED_GLOSSARY_COURSES["organic-chemistry"] = {
       "structure": "吡啶比脂肪胺弱碱，但比吡咯明显更碱。",
       "location": "吡啶比脂肪胺弱碱，但比吡咯明显更碱。",
       "function": "用于比较含氮杂环在生理和药物环境中的质子化状态。",
-      "studyNote": "吡咯的孤对电子在芳香体系里，吡啶的孤对电子在环平面内，这是核心差别。",
+      "studyNote": "",
       "figures": [],
       "pageFigures": [],
       "pageImages": [
@@ -7989,7 +10101,29 @@ window.MED_GLOSSARY_COURSES["organic-chemistry"] = {
         "oc0032",
         "oc0035",
         "oc0038"
-      ]
+      ],
+      "fieldSources": {
+        "structure": [
+          {
+            "label": "有机化学教材上下文：书页 187 / PDF 209",
+            "url": "assets/pages/organic/pdf-209.jpg"
+          },
+          {
+            "label": "OpenStax Anatomy and Physiology 2e: Introduction",
+            "url": "https://openstax.org/books/anatomy-and-physiology-2e/pages/1-introduction"
+          }
+        ],
+        "function": [
+          {
+            "label": "有机化学教材上下文：书页 187 / PDF 209",
+            "url": "assets/pages/organic/pdf-209.jpg"
+          },
+          {
+            "label": "OpenStax Anatomy and Physiology 2e: Introduction",
+            "url": "https://openstax.org/books/anatomy-and-physiology-2e/pages/1-introduction"
+          }
+        ]
+      }
     },
     {
       "id": "oc0098",
@@ -8022,7 +10156,7 @@ window.MED_GLOSSARY_COURSES["organic-chemistry"] = {
       "structure": "α 位取代形成的中间体可有更多稳定共振式。",
       "location": "α 位取代形成的中间体可有更多稳定共振式。",
       "function": "用于预测吡咯、呋喃、噻吩硝化、卤代等反应产物。",
-      "studyNote": "吡咯和呋喃遇强酸容易破坏芳香体系，条件要温和。",
+      "studyNote": "",
       "figures": [],
       "pageFigures": [],
       "pageImages": [
@@ -8072,7 +10206,29 @@ window.MED_GLOSSARY_COURSES["organic-chemistry"] = {
         "oc0030",
         "oc0031",
         "oc0035"
-      ]
+      ],
+      "fieldSources": {
+        "structure": [
+          {
+            "label": "有机化学教材上下文：书页 188 / PDF 210",
+            "url": "assets/pages/organic/pdf-210.jpg"
+          },
+          {
+            "label": "OpenStax Anatomy and Physiology 2e: Introduction",
+            "url": "https://openstax.org/books/anatomy-and-physiology-2e/pages/1-introduction"
+          }
+        ],
+        "function": [
+          {
+            "label": "有机化学教材上下文：书页 188 / PDF 210",
+            "url": "assets/pages/organic/pdf-210.jpg"
+          },
+          {
+            "label": "OpenStax Anatomy and Physiology 2e: Introduction",
+            "url": "https://openstax.org/books/anatomy-and-physiology-2e/pages/1-introduction"
+          }
+        ]
+      }
     },
     {
       "id": "oc0099",
@@ -8105,7 +10261,7 @@ window.MED_GLOSSARY_COURSES["organic-chemistry"] = {
       "structure": "脂肪酸钠盐或钾盐就是肥皂的主要成分。",
       "location": "脂肪酸钠盐或钾盐就是肥皂的主要成分。",
       "function": "用于理解油脂水解、肥皂制备和酯的碱性水解。",
-      "studyNote": "皂化本质是酯的碱性水解。",
+      "studyNote": "",
       "figures": [],
       "pageFigures": [],
       "pageImages": [
@@ -8155,7 +10311,29 @@ window.MED_GLOSSARY_COURSES["organic-chemistry"] = {
         "oc0106",
         "oc0107",
         "oc0108"
-      ]
+      ],
+      "fieldSources": {
+        "structure": [
+          {
+            "label": "有机化学教材上下文：书页 202 / PDF 224",
+            "url": "assets/pages/organic/pdf-224.jpg"
+          },
+          {
+            "label": "OpenStax Anatomy and Physiology 2e: Introduction",
+            "url": "https://openstax.org/books/anatomy-and-physiology-2e/pages/1-introduction"
+          }
+        ],
+        "function": [
+          {
+            "label": "有机化学教材上下文：书页 202 / PDF 224",
+            "url": "assets/pages/organic/pdf-224.jpg"
+          },
+          {
+            "label": "OpenStax Anatomy and Physiology 2e: Introduction",
+            "url": "https://openstax.org/books/anatomy-and-physiology-2e/pages/1-introduction"
+          }
+        ]
+      }
     },
     {
       "id": "oc0100",
@@ -8188,7 +10366,7 @@ window.MED_GLOSSARY_COURSES["organic-chemistry"] = {
       "structure": "双键越多，能加成卤素越多，碘值越高。",
       "location": "双键越多，能加成卤素越多，碘值越高。",
       "function": "用于比较脂肪酸或油脂的不饱和程度。",
-      "studyNote": "碘值高通常说明不饱和脂肪酸比例高。",
+      "studyNote": "",
       "figures": [],
       "pageFigures": [],
       "pageImages": [
@@ -8238,7 +10416,29 @@ window.MED_GLOSSARY_COURSES["organic-chemistry"] = {
         "oc0105",
         "oc0106",
         "oc0108"
-      ]
+      ],
+      "fieldSources": {
+        "structure": [
+          {
+            "label": "有机化学教材上下文：书页 203 / PDF 225",
+            "url": "assets/pages/organic/pdf-225.jpg"
+          },
+          {
+            "label": "OpenStax Anatomy and Physiology 2e: Introduction",
+            "url": "https://openstax.org/books/anatomy-and-physiology-2e/pages/1-introduction"
+          }
+        ],
+        "function": [
+          {
+            "label": "有机化学教材上下文：书页 203 / PDF 225",
+            "url": "assets/pages/organic/pdf-225.jpg"
+          },
+          {
+            "label": "OpenStax Anatomy and Physiology 2e: Introduction",
+            "url": "https://openstax.org/books/anatomy-and-physiology-2e/pages/1-introduction"
+          }
+        ]
+      }
     },
     {
       "id": "oc0101",
@@ -8271,7 +10471,7 @@ window.MED_GLOSSARY_COURSES["organic-chemistry"] = {
       "structure": "油脂酸败会增加游离脂肪酸含量，使酸值升高。",
       "location": "油脂酸败会增加游离脂肪酸含量，使酸值升高。",
       "function": "用于评价油脂质量和水解酸败程度。",
-      "studyNote": "酸值看游离酸，碘值看不饱和。",
+      "studyNote": "",
       "figures": [],
       "pageFigures": [],
       "pageImages": [
@@ -8321,7 +10521,29 @@ window.MED_GLOSSARY_COURSES["organic-chemistry"] = {
         "oc0095",
         "oc0103",
         "oc0104"
-      ]
+      ],
+      "fieldSources": {
+        "structure": [
+          {
+            "label": "有机化学教材上下文：书页 204 / PDF 226",
+            "url": "assets/pages/organic/pdf-226.jpg"
+          },
+          {
+            "label": "OpenStax Anatomy and Physiology 2e: Introduction",
+            "url": "https://openstax.org/books/anatomy-and-physiology-2e/pages/1-introduction"
+          }
+        ],
+        "function": [
+          {
+            "label": "有机化学教材上下文：书页 204 / PDF 226",
+            "url": "assets/pages/organic/pdf-226.jpg"
+          },
+          {
+            "label": "OpenStax Anatomy and Physiology 2e: Introduction",
+            "url": "https://openstax.org/books/anatomy-and-physiology-2e/pages/1-introduction"
+          }
+        ]
+      }
     },
     {
       "id": "oc0102",
@@ -8354,7 +10576,7 @@ window.MED_GLOSSARY_COURSES["organic-chemistry"] = {
       "structure": "胆固醇常用该反应鉴别。",
       "location": "胆固醇常用该反应鉴别。",
       "function": "用于甾醇类化合物的特定检识。",
-      "studyNote": "颜色变化序列是记忆点，但实验条件会影响色调。",
+      "studyNote": "",
       "figures": [],
       "pageFigures": [],
       "pageImages": [
@@ -8404,7 +10626,29 @@ window.MED_GLOSSARY_COURSES["organic-chemistry"] = {
         "oc0037",
         "oc0043",
         "oc0067"
-      ]
+      ],
+      "fieldSources": {
+        "structure": [
+          {
+            "label": "有机化学教材上下文：书页 208 / PDF 230",
+            "url": "assets/pages/organic/pdf-230.jpg"
+          },
+          {
+            "label": "OpenStax Anatomy and Physiology 2e: Introduction",
+            "url": "https://openstax.org/books/anatomy-and-physiology-2e/pages/1-introduction"
+          }
+        ],
+        "function": [
+          {
+            "label": "有机化学教材上下文：书页 208 / PDF 230",
+            "url": "assets/pages/organic/pdf-230.jpg"
+          },
+          {
+            "label": "OpenStax Anatomy and Physiology 2e: Introduction",
+            "url": "https://openstax.org/books/anatomy-and-physiology-2e/pages/1-introduction"
+          }
+        ]
+      }
     },
     {
       "id": "oc0103",
@@ -8437,7 +10681,7 @@ window.MED_GLOSSARY_COURSES["organic-chemistry"] = {
       "structure": "葡萄糖、果糖、麦芽糖等通常有还原性；蔗糖因两个端基都成苷键而无还原性。",
       "location": "葡萄糖、果糖、麦芽糖等通常有还原性；蔗糖因两个端基都成苷键而无还原性。",
       "function": "可用 Tollens、Fehling、Benedict 等反应鉴别。",
-      "studyNote": "果糖虽是酮糖，但在碱性条件下可异构化而呈还原性。",
+      "studyNote": "",
       "figures": [],
       "pageFigures": [],
       "pageImages": [
@@ -8487,7 +10731,29 @@ window.MED_GLOSSARY_COURSES["organic-chemistry"] = {
         "oc0089",
         "oc0099",
         "oc0100"
-      ]
+      ],
+      "fieldSources": {
+        "structure": [
+          {
+            "label": "有机化学教材上下文：书页 222 / PDF 244",
+            "url": "assets/pages/organic/pdf-244.jpg"
+          },
+          {
+            "label": "OpenStax Anatomy and Physiology 2e: Introduction",
+            "url": "https://openstax.org/books/anatomy-and-physiology-2e/pages/1-introduction"
+          }
+        ],
+        "function": [
+          {
+            "label": "有机化学教材上下文：书页 222 / PDF 244",
+            "url": "assets/pages/organic/pdf-244.jpg"
+          },
+          {
+            "label": "OpenStax Anatomy and Physiology 2e: Introduction",
+            "url": "https://openstax.org/books/anatomy-and-physiology-2e/pages/1-introduction"
+          }
+        ]
+      }
     },
     {
       "id": "oc0104",
@@ -8520,7 +10786,7 @@ window.MED_GLOSSARY_COURSES["organic-chemistry"] = {
       "structure": "具有游离半缩醛羟基的糖常有变旋光现象。",
       "location": "具有游离半缩醛羟基的糖常有变旋光现象。",
       "function": "用于判断糖是否保留还原端。",
-      "studyNote": "没有游离端基的糖苷通常不显示变旋光。",
+      "studyNote": "",
       "figures": [],
       "pageFigures": [],
       "pageImages": [
@@ -8570,7 +10836,29 @@ window.MED_GLOSSARY_COURSES["organic-chemistry"] = {
         "oc0101",
         "oc0102",
         "oc0109"
-      ]
+      ],
+      "fieldSources": {
+        "structure": [
+          {
+            "label": "有机化学教材上下文：书页 218 / PDF 240",
+            "url": "assets/pages/organic/pdf-240.jpg"
+          },
+          {
+            "label": "OpenStax Anatomy and Physiology 2e: Introduction",
+            "url": "https://openstax.org/books/anatomy-and-physiology-2e/pages/1-introduction"
+          }
+        ],
+        "function": [
+          {
+            "label": "有机化学教材上下文：书页 218 / PDF 240",
+            "url": "assets/pages/organic/pdf-240.jpg"
+          },
+          {
+            "label": "OpenStax Anatomy and Physiology 2e: Introduction",
+            "url": "https://openstax.org/books/anatomy-and-physiology-2e/pages/1-introduction"
+          }
+        ]
+      }
     },
     {
       "id": "oc0105",
@@ -8603,7 +10891,7 @@ window.MED_GLOSSARY_COURSES["organic-chemistry"] = {
       "structure": "苷键形成后端基碳被锁定，可能失去还原性和变旋光。",
       "location": "苷键形成后端基碳被锁定，可能失去还原性和变旋光。",
       "function": "是二糖、多糖、核苷等结构的关键连接方式。",
-      "studyNote": "判断还原糖时看是否还有游离半缩醛羟基。",
+      "studyNote": "",
       "figures": [],
       "pageFigures": [],
       "pageImages": [
@@ -8653,7 +10941,29 @@ window.MED_GLOSSARY_COURSES["organic-chemistry"] = {
         "oc0099",
         "oc0100",
         "oc0101"
-      ]
+      ],
+      "fieldSources": {
+        "structure": [
+          {
+            "label": "有机化学教材上下文：书页 221 / PDF 243",
+            "url": "assets/pages/organic/pdf-243.jpg"
+          },
+          {
+            "label": "OpenStax Anatomy and Physiology 2e: Introduction",
+            "url": "https://openstax.org/books/anatomy-and-physiology-2e/pages/1-introduction"
+          }
+        ],
+        "function": [
+          {
+            "label": "有机化学教材上下文：书页 221 / PDF 243",
+            "url": "assets/pages/organic/pdf-243.jpg"
+          },
+          {
+            "label": "OpenStax Anatomy and Physiology 2e: Introduction",
+            "url": "https://openstax.org/books/anatomy-and-physiology-2e/pages/1-introduction"
+          }
+        ]
+      }
     },
     {
       "id": "oc0106",
@@ -8686,7 +10996,7 @@ window.MED_GLOSSARY_COURSES["organic-chemistry"] = {
       "structure": "非还原糖如蔗糖通常阴性，水解后可转为阳性。",
       "location": "非还原糖如蔗糖通常阴性，水解后可转为阳性。",
       "function": "用于区分还原糖和非还原糖。",
-      "studyNote": "判断二糖还原性时看参与苷键的端基碳是否都被占用。",
+      "studyNote": "",
       "figures": [],
       "pageFigures": [],
       "pageImages": [
@@ -8736,7 +11046,29 @@ window.MED_GLOSSARY_COURSES["organic-chemistry"] = {
         "oc0036",
         "oc0037",
         "oc0043"
-      ]
+      ],
+      "fieldSources": {
+        "structure": [
+          {
+            "label": "有机化学教材上下文：书页 222 / PDF 244",
+            "url": "assets/pages/organic/pdf-244.jpg"
+          },
+          {
+            "label": "OpenStax Anatomy and Physiology 2e: Introduction",
+            "url": "https://openstax.org/books/anatomy-and-physiology-2e/pages/1-introduction"
+          }
+        ],
+        "function": [
+          {
+            "label": "有机化学教材上下文：书页 222 / PDF 244",
+            "url": "assets/pages/organic/pdf-244.jpg"
+          },
+          {
+            "label": "OpenStax Anatomy and Physiology 2e: Introduction",
+            "url": "https://openstax.org/books/anatomy-and-physiology-2e/pages/1-introduction"
+          }
+        ]
+      }
     },
     {
       "id": "oc0107",
@@ -8769,7 +11101,7 @@ window.MED_GLOSSARY_COURSES["organic-chemistry"] = {
       "structure": "碘分子进入直链淀粉螺旋空腔形成有色包合物。",
       "location": "碘分子进入直链淀粉螺旋空腔形成有色包合物。",
       "function": "用于鉴别淀粉，也可观察淀粉水解程度。",
-      "studyNote": "加热颜色可减弱，冷却后可恢复。",
+      "studyNote": "",
       "figures": [],
       "pageFigures": [],
       "pageImages": [
@@ -8819,7 +11151,29 @@ window.MED_GLOSSARY_COURSES["organic-chemistry"] = {
         "oc0037",
         "oc0043",
         "oc0079"
-      ]
+      ],
+      "fieldSources": {
+        "structure": [
+          {
+            "label": "有机化学教材上下文：书页 226 / PDF 248",
+            "url": "assets/pages/organic/pdf-248.jpg"
+          },
+          {
+            "label": "OpenStax Anatomy and Physiology 2e: Introduction",
+            "url": "https://openstax.org/books/anatomy-and-physiology-2e/pages/1-introduction"
+          }
+        ],
+        "function": [
+          {
+            "label": "有机化学教材上下文：书页 226 / PDF 248",
+            "url": "assets/pages/organic/pdf-248.jpg"
+          },
+          {
+            "label": "OpenStax Anatomy and Physiology 2e: Introduction",
+            "url": "https://openstax.org/books/anatomy-and-physiology-2e/pages/1-introduction"
+          }
+        ]
+      }
     },
     {
       "id": "oc0108",
@@ -8852,7 +11206,7 @@ window.MED_GLOSSARY_COURSES["organic-chemistry"] = {
       "structure": "果糖等酮糖反应较快，醛糖反应较慢。",
       "location": "果糖等酮糖反应较快，醛糖反应较慢。",
       "function": "用于区分酮糖和醛糖的经典鉴别。",
-      "studyNote": "时间控制很关键，久置醛糖也可能显色。",
+      "studyNote": "",
       "figures": [],
       "pageFigures": [],
       "pageImages": [
@@ -8902,7 +11256,29 @@ window.MED_GLOSSARY_COURSES["organic-chemistry"] = {
         "oc0068",
         "oc0069",
         "oc0079"
-      ]
+      ],
+      "fieldSources": {
+        "structure": [
+          {
+            "label": "有机化学教材上下文：书页 222 / PDF 244",
+            "url": "assets/pages/organic/pdf-244.jpg"
+          },
+          {
+            "label": "OpenStax Anatomy and Physiology 2e: Introduction",
+            "url": "https://openstax.org/books/anatomy-and-physiology-2e/pages/1-introduction"
+          }
+        ],
+        "function": [
+          {
+            "label": "有机化学教材上下文：书页 222 / PDF 244",
+            "url": "assets/pages/organic/pdf-244.jpg"
+          },
+          {
+            "label": "OpenStax Anatomy and Physiology 2e: Introduction",
+            "url": "https://openstax.org/books/anatomy-and-physiology-2e/pages/1-introduction"
+          }
+        ]
+      }
     },
     {
       "id": "oc0109",
@@ -8935,7 +11311,7 @@ window.MED_GLOSSARY_COURSES["organic-chemistry"] = {
       "structure": "在水溶液中常以内盐或两性离子形式存在。",
       "location": "在水溶液中常以内盐或两性离子形式存在。",
       "function": "解释氨基酸溶解性、等电点和电泳行为。",
-      "studyNote": "写氨基酸状态时要看 pH，而不是固定写中性分子。",
+      "studyNote": "",
       "figures": [],
       "pageFigures": [],
       "pageImages": [
@@ -8985,7 +11361,29 @@ window.MED_GLOSSARY_COURSES["organic-chemistry"] = {
         "oc0091",
         "oc0092",
         "oc0095"
-      ]
+      ],
+      "fieldSources": {
+        "structure": [
+          {
+            "label": "有机化学教材上下文：书页 236 / PDF 258",
+            "url": "assets/pages/organic/pdf-258.jpg"
+          },
+          {
+            "label": "OpenStax Anatomy and Physiology 2e: Introduction",
+            "url": "https://openstax.org/books/anatomy-and-physiology-2e/pages/1-introduction"
+          }
+        ],
+        "function": [
+          {
+            "label": "有机化学教材上下文：书页 236 / PDF 258",
+            "url": "assets/pages/organic/pdf-258.jpg"
+          },
+          {
+            "label": "OpenStax Anatomy and Physiology 2e: Introduction",
+            "url": "https://openstax.org/books/anatomy-and-physiology-2e/pages/1-introduction"
+          }
+        ]
+      }
     },
     {
       "id": "oc0110",
@@ -9018,7 +11416,7 @@ window.MED_GLOSSARY_COURSES["organic-chemistry"] = {
       "structure": "pH 低于等电点时整体偏正电，高于等电点时整体偏负电。",
       "location": "pH 低于等电点时整体偏正电，高于等电点时整体偏负电。",
       "function": "用于解释蛋白质沉淀、电泳和分离。",
-      "studyNote": "等电点附近溶解度常较低，容易沉淀。",
+      "studyNote": "",
       "figures": [],
       "pageFigures": [],
       "pageImages": [
@@ -9068,7 +11466,29 @@ window.MED_GLOSSARY_COURSES["organic-chemistry"] = {
         "oc0100",
         "oc0101",
         "oc0102"
-      ]
+      ],
+      "fieldSources": {
+        "structure": [
+          {
+            "label": "有机化学教材上下文：书页 233 / PDF 255",
+            "url": "assets/pages/organic/pdf-255.jpg"
+          },
+          {
+            "label": "OpenStax Anatomy and Physiology 2e: Introduction",
+            "url": "https://openstax.org/books/anatomy-and-physiology-2e/pages/1-introduction"
+          }
+        ],
+        "function": [
+          {
+            "label": "有机化学教材上下文：书页 233 / PDF 255",
+            "url": "assets/pages/organic/pdf-255.jpg"
+          },
+          {
+            "label": "OpenStax Anatomy and Physiology 2e: Introduction",
+            "url": "https://openstax.org/books/anatomy-and-physiology-2e/pages/1-introduction"
+          }
+        ]
+      }
     },
     {
       "id": "oc0111",
@@ -9101,7 +11521,7 @@ window.MED_GLOSSARY_COURSES["organic-chemistry"] = {
       "structure": "脯氨酸等亚氨基酸常显黄色。",
       "location": "脯氨酸等亚氨基酸常显黄色。",
       "function": "用于氨基酸和肽的显色检识。",
-      "studyNote": "茚三酮是氨基酸题最常见的显色反应。",
+      "studyNote": "",
       "figures": [],
       "pageFigures": [],
       "pageImages": [
@@ -9151,7 +11571,29 @@ window.MED_GLOSSARY_COURSES["organic-chemistry"] = {
         "oc0037",
         "oc0043",
         "oc0067"
-      ]
+      ],
+      "fieldSources": {
+        "structure": [
+          {
+            "label": "有机化学教材上下文：书页 235 / PDF 257",
+            "url": "assets/pages/organic/pdf-257.jpg"
+          },
+          {
+            "label": "OpenStax Anatomy and Physiology 2e: Introduction",
+            "url": "https://openstax.org/books/anatomy-and-physiology-2e/pages/1-introduction"
+          }
+        ],
+        "function": [
+          {
+            "label": "有机化学教材上下文：书页 235 / PDF 257",
+            "url": "assets/pages/organic/pdf-257.jpg"
+          },
+          {
+            "label": "OpenStax Anatomy and Physiology 2e: Introduction",
+            "url": "https://openstax.org/books/anatomy-and-physiology-2e/pages/1-introduction"
+          }
+        ]
+      }
     },
     {
       "id": "oc0112",
@@ -9184,7 +11626,7 @@ window.MED_GLOSSARY_COURSES["organic-chemistry"] = {
       "structure": "蛋白质和多肽通常阳性，游离氨基酸通常阴性。",
       "location": "蛋白质和多肽通常阳性，游离氨基酸通常阴性。",
       "function": "用于鉴别蛋白质或多肽。",
-      "studyNote": "看的是肽键数量，不是单个氨基酸。",
+      "studyNote": "",
       "figures": [],
       "pageFigures": [],
       "pageImages": [
@@ -9234,7 +11676,29 @@ window.MED_GLOSSARY_COURSES["organic-chemistry"] = {
         "oc0114",
         "oc0036",
         "oc0037"
-      ]
+      ],
+      "fieldSources": {
+        "structure": [
+          {
+            "label": "有机化学教材上下文：书页 235 / PDF 257",
+            "url": "assets/pages/organic/pdf-257.jpg"
+          },
+          {
+            "label": "OpenStax Anatomy and Physiology 2e: Introduction",
+            "url": "https://openstax.org/books/anatomy-and-physiology-2e/pages/1-introduction"
+          }
+        ],
+        "function": [
+          {
+            "label": "有机化学教材上下文：书页 235 / PDF 257",
+            "url": "assets/pages/organic/pdf-257.jpg"
+          },
+          {
+            "label": "OpenStax Anatomy and Physiology 2e: Introduction",
+            "url": "https://openstax.org/books/anatomy-and-physiology-2e/pages/1-introduction"
+          }
+        ]
+      }
     },
     {
       "id": "oc0113",
@@ -9267,7 +11731,7 @@ window.MED_GLOSSARY_COURSES["organic-chemistry"] = {
       "structure": "酪氨酸、色氨酸、苯丙氨酸等芳香族氨基酸相关结构可阳性。",
       "location": "酪氨酸、色氨酸、苯丙氨酸等芳香族氨基酸相关结构可阳性。",
       "function": "用于提示蛋白质中芳香族氨基酸残基。",
-      "studyNote": "黄色反应不能说明蛋白总量，只提示芳香环结构。",
+      "studyNote": "",
       "figures": [],
       "pageFigures": [],
       "pageImages": [
@@ -9317,7 +11781,29 @@ window.MED_GLOSSARY_COURSES["organic-chemistry"] = {
         "oc0036",
         "oc0037",
         "oc0043"
-      ]
+      ],
+      "fieldSources": {
+        "structure": [
+          {
+            "label": "有机化学教材上下文：书页 231 / PDF 253",
+            "url": "assets/pages/organic/pdf-253.jpg"
+          },
+          {
+            "label": "OpenStax Anatomy and Physiology 2e: Introduction",
+            "url": "https://openstax.org/books/anatomy-and-physiology-2e/pages/1-introduction"
+          }
+        ],
+        "function": [
+          {
+            "label": "有机化学教材上下文：书页 231 / PDF 253",
+            "url": "assets/pages/organic/pdf-253.jpg"
+          },
+          {
+            "label": "OpenStax Anatomy and Physiology 2e: Introduction",
+            "url": "https://openstax.org/books/anatomy-and-physiology-2e/pages/1-introduction"
+          }
+        ]
+      }
     },
     {
       "id": "oc0114",
@@ -9350,7 +11836,7 @@ window.MED_GLOSSARY_COURSES["organic-chemistry"] = {
       "structure": "高温、强酸强碱、有机溶剂、重金属盐等可导致变性。",
       "location": "高温、强酸强碱、有机溶剂、重金属盐等可导致变性。",
       "function": "解释消毒、沉淀、酶失活和重金属中毒等现象。",
-      "studyNote": "变性通常不破坏一级结构肽键，水解才断肽键。",
+      "studyNote": "",
       "figures": [],
       "pageFigures": [],
       "pageImages": [
@@ -9400,7 +11886,29 @@ window.MED_GLOSSARY_COURSES["organic-chemistry"] = {
         "oc0101",
         "oc0102",
         "oc0103"
-      ]
+      ],
+      "fieldSources": {
+        "structure": [
+          {
+            "label": "有机化学教材上下文：书页 243 / PDF 265",
+            "url": "assets/pages/organic/pdf-265.jpg"
+          },
+          {
+            "label": "OpenStax Anatomy and Physiology 2e: Introduction",
+            "url": "https://openstax.org/books/anatomy-and-physiology-2e/pages/1-introduction"
+          }
+        ],
+        "function": [
+          {
+            "label": "有机化学教材上下文：书页 243 / PDF 265",
+            "url": "assets/pages/organic/pdf-265.jpg"
+          },
+          {
+            "label": "OpenStax Anatomy and Physiology 2e: Introduction",
+            "url": "https://openstax.org/books/anatomy-and-physiology-2e/pages/1-introduction"
+          }
+        ]
+      }
     },
     {
       "id": "oc0115",
@@ -9433,7 +11941,7 @@ window.MED_GLOSSARY_COURSES["organic-chemistry"] = {
       "structure": "核苷是碱基加戊糖，核苷酸是在核苷基础上再连磷酸。",
       "location": "核苷是碱基加戊糖，核苷酸是在核苷基础上再连磷酸。",
       "function": "用于理解 DNA、RNA、ATP 和辅酶结构。",
-      "studyNote": "核苷和核苷酸不要混：有没有磷酸是关键。",
+      "studyNote": "",
       "figures": [],
       "pageFigures": [],
       "pageImages": [
@@ -9483,7 +11991,29 @@ window.MED_GLOSSARY_COURSES["organic-chemistry"] = {
         "oc0104",
         "oc0105",
         "oc0106"
-      ]
+      ],
+      "fieldSources": {
+        "structure": [
+          {
+            "label": "有机化学教材上下文：书页 245 / PDF 267",
+            "url": "assets/pages/organic/pdf-267.jpg"
+          },
+          {
+            "label": "OpenStax Anatomy and Physiology 2e: Introduction",
+            "url": "https://openstax.org/books/anatomy-and-physiology-2e/pages/1-introduction"
+          }
+        ],
+        "function": [
+          {
+            "label": "有机化学教材上下文：书页 245 / PDF 267",
+            "url": "assets/pages/organic/pdf-267.jpg"
+          },
+          {
+            "label": "OpenStax Anatomy and Physiology 2e: Introduction",
+            "url": "https://openstax.org/books/anatomy-and-physiology-2e/pages/1-introduction"
+          }
+        ]
+      }
     },
     {
       "id": "oc0116",
@@ -9516,7 +12046,7 @@ window.MED_GLOSSARY_COURSES["organic-chemistry"] = {
       "structure": "核酸链具有 5' 端和 3' 端方向性。",
       "location": "核酸链具有 5' 端和 3' 端方向性。",
       "function": "决定 DNA、RNA 主链结构和序列书写方向。",
-      "studyNote": "核酸序列通常从 5' 端写到 3' 端。",
+      "studyNote": "",
       "figures": [],
       "pageFigures": [],
       "pageImages": [
@@ -9566,7 +12096,29 @@ window.MED_GLOSSARY_COURSES["organic-chemistry"] = {
         "oc0102",
         "oc0103",
         "oc0104"
-      ]
+      ],
+      "fieldSources": {
+        "structure": [
+          {
+            "label": "有机化学教材上下文：书页 248 / PDF 270",
+            "url": "assets/pages/organic/pdf-270.jpg"
+          },
+          {
+            "label": "OpenStax Anatomy and Physiology 2e: Introduction",
+            "url": "https://openstax.org/books/anatomy-and-physiology-2e/pages/1-introduction"
+          }
+        ],
+        "function": [
+          {
+            "label": "有机化学教材上下文：书页 248 / PDF 270",
+            "url": "assets/pages/organic/pdf-270.jpg"
+          },
+          {
+            "label": "OpenStax Anatomy and Physiology 2e: Introduction",
+            "url": "https://openstax.org/books/anatomy-and-physiology-2e/pages/1-introduction"
+          }
+        ]
+      }
     },
     {
       "id": "oc0117",
@@ -9599,7 +12151,7 @@ window.MED_GLOSSARY_COURSES["organic-chemistry"] = {
       "structure": "DNA 缺少 2'-羟基，化学稳定性通常高于 RNA。",
       "location": "DNA 缺少 2'-羟基，化学稳定性通常高于 RNA。",
       "function": "解释遗传信息长期储存多由 DNA 承担，而 RNA 更适合短期功能和调控。",
-      "studyNote": "记忆点：RNA 多一个 2'-OH，所以更活泼、更不稳定。",
+      "studyNote": "",
       "figures": [],
       "pageFigures": [],
       "pageImages": [
@@ -9649,7 +12201,29 @@ window.MED_GLOSSARY_COURSES["organic-chemistry"] = {
         "oc0043",
         "oc0060",
         "oc0077"
-      ]
+      ],
+      "fieldSources": {
+        "structure": [
+          {
+            "label": "有机化学教材上下文：书页 248 / PDF 270",
+            "url": "assets/pages/organic/pdf-270.jpg"
+          },
+          {
+            "label": "OpenStax Anatomy and Physiology 2e: Introduction",
+            "url": "https://openstax.org/books/anatomy-and-physiology-2e/pages/1-introduction"
+          }
+        ],
+        "function": [
+          {
+            "label": "有机化学教材上下文：书页 248 / PDF 270",
+            "url": "assets/pages/organic/pdf-270.jpg"
+          },
+          {
+            "label": "OpenStax Anatomy and Physiology 2e: Introduction",
+            "url": "https://openstax.org/books/anatomy-and-physiology-2e/pages/1-introduction"
+          }
+        ]
+      }
     },
     {
       "id": "oc0118",
@@ -9680,7 +12254,7 @@ window.MED_GLOSSARY_COURSES["organic-chemistry"] = {
       "structure": "核心包括碳正离子、自由基、芳环活化、卤代烃取代、醛酮加成、羧酸衍生物酰基取代、醇氧化和胺碱性。",
       "location": "核心包括碳正离子、自由基、芳环活化、卤代烃取代、醛酮加成、羧酸衍生物酰基取代、醇氧化和胺碱性。",
       "function": "用于做选择题、推主产物、判断反应条件强弱和设计合成路线。",
-      "studyNote": "先判机制，再套顺序；机制不同，同一底物顺序可能反过来。",
+      "studyNote": "",
       "figures": [],
       "pageFigures": [],
       "pageImages": [
@@ -9722,7 +12296,29 @@ window.MED_GLOSSARY_COURSES["organic-chemistry"] = {
         "oc0010",
         "oc0013",
         "oc0059"
-      ]
+      ],
+      "fieldSources": {
+        "structure": [
+          {
+            "label": "有机化学教材上下文：书页 8 / PDF 30",
+            "url": "assets/pages/organic/pdf-030.jpg"
+          },
+          {
+            "label": "OpenStax Anatomy and Physiology 2e: Introduction",
+            "url": "https://openstax.org/books/anatomy-and-physiology-2e/pages/1-introduction"
+          }
+        ],
+        "function": [
+          {
+            "label": "有机化学教材上下文：书页 8 / PDF 30",
+            "url": "assets/pages/organic/pdf-030.jpg"
+          },
+          {
+            "label": "OpenStax Anatomy and Physiology 2e: Introduction",
+            "url": "https://openstax.org/books/anatomy-and-physiology-2e/pages/1-introduction"
+          }
+        ]
+      }
     },
     {
       "id": "oc0119",
@@ -9755,7 +12351,7 @@ window.MED_GLOSSARY_COURSES["organic-chemistry"] = {
       "structure": "常见包括溴水、KMnO4、端炔银盐、Lucas、FeCl3、Tollens、Fehling、DNPH、碘仿、茚三酮、双缩脲、淀粉碘反应等。",
       "location": "常见包括溴水、KMnO4、端炔银盐、Lucas、FeCl3、Tollens、Fehling、DNPH、碘仿、茚三酮、双缩脲、淀粉碘反应等。",
       "function": "用于实验鉴别题和官能团推断题。",
-      "studyNote": "鉴别反应要记三件事：试剂、阳性现象、能排除或混淆的对象。",
+      "studyNote": "",
       "figures": [],
       "pageFigures": [],
       "pageImages": [
@@ -9805,7 +12401,29 @@ window.MED_GLOSSARY_COURSES["organic-chemistry"] = {
         "oc0029",
         "oc0036",
         "oc0037"
-      ]
+      ],
+      "fieldSources": {
+        "structure": [
+          {
+            "label": "有机化学教材上下文：书页 36 / PDF 58",
+            "url": "assets/pages/organic/pdf-058.jpg"
+          },
+          {
+            "label": "OpenStax Anatomy and Physiology 2e: Introduction",
+            "url": "https://openstax.org/books/anatomy-and-physiology-2e/pages/1-introduction"
+          }
+        ],
+        "function": [
+          {
+            "label": "有机化学教材上下文：书页 36 / PDF 58",
+            "url": "assets/pages/organic/pdf-058.jpg"
+          },
+          {
+            "label": "OpenStax Anatomy and Physiology 2e: Introduction",
+            "url": "https://openstax.org/books/anatomy-and-physiology-2e/pages/1-introduction"
+          }
+        ]
+      }
     }
   ],
   "meta": {
