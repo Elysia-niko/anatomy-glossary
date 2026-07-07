@@ -1,0 +1,619 @@
+{
+  "generatedAt": "2026-07-07",
+  "dataVersion": "termformat-20260707",
+  "termPairs": 3494,
+  "changedFields": 9472,
+  "byField": {
+    "definition": 2959,
+    "text": 3548,
+    "structure": 1277,
+    "location": 1220,
+    "function": 468
+  },
+  "examples": [
+    {
+      "label": "systematic-anatomy:t0004:X线解剖学",
+      "field": "definition",
+      "before": "运用X线摄影技术研究人体形态结构的解剖学称X线解剖学 X-ray anatomy。",
+      "after": "运用X线摄影技术研究人体形态结构的解剖学称X线解剖学（X-ray anatomy）。"
+    },
+    {
+      "label": "systematic-anatomy:t0004:X线解剖学:context[0]",
+      "field": "text",
+      "before": "运用X线摄影技术研究人体形态结构的解剖学称X线解剖学 X-ray anatomy。",
+      "after": "运用X线摄影技术研究人体形态结构的解剖学称X线解剖学（X-ray anatomy）。"
+    },
+    {
+      "label": "systematic-anatomy:t1295:人体解剖学",
+      "field": "definition",
+      "before": "1 本章数字资源 绪论 一、人体解剖学的定义和地位人体解剖学 human anatomy 是研究正常人体形态结构及其发生发展的科学，属生物科学中的形态学范畴。",
+      "after": "人体解剖学（human anatomy）是研究正常人体形态结构及其发生发展的科学，属生物科学中的形态学范畴。"
+    },
+    {
+      "label": "systematic-anatomy:t1295:人体解剖学:context[0]",
+      "field": "text",
+      "before": "1 本章数字资源 绪论 一、人体解剖学的定义和地位人体解剖学 human anatomy 是研究正常人体形态结构及其发生发展的科学，属生物科学中的形态学范畴。",
+      "after": "人体解剖学（human anatomy）是研究正常人体形态结构及其发生发展的科学，属生物科学中的形态学范畴。"
+    },
+    {
+      "label": "systematic-anatomy:t1640:外科解剖学",
+      "field": "definition",
+      "before": "其中，密切联系外科手术的解剖学称外科解剖学 surgical anatomy。",
+      "after": "其中，密切联系外科手术的解剖学称外科解剖学（surgical anatomy）。"
+    },
+    {
+      "label": "systematic-anatomy:t1640:外科解剖学:context[0]",
+      "field": "text",
+      "before": "其中，密切联系外科手术的解剖学称外科解剖学 surgical anatomy。",
+      "after": "其中，密切联系外科手术的解剖学称外科解剖学（surgical anatomy）。"
+    },
+    {
+      "label": "systematic-anatomy:t0848:局部解剖学:context[1]",
+      "field": "text",
+      "before": "如果按人体的某一局部（如头部、颈部、胸部、腹部、盆部、背部和四肢等），重点描述人体的结构层次、器官配布、毗邻关系等，称为局部解剖学regional anatomy。",
+      "after": "如果按人体的某一局部（如头部、颈部、胸部、腹部、盆部、背部和四肢等），重点描述人体的结构层次、器官配布、毗邻关系等，称为局部解剖学（regional anatomy）。"
+    },
+    {
+      "label": "systematic-anatomy:t0852:巨视解剖学",
+      "field": "definition",
+      "before": "系统解剖学和局部解剖学主要通过肉眼观察来描述人体的形态结构，统称巨视解剖学macroanatomy。",
+      "after": "系统解剖学和局部解剖学主要通过肉眼观察来描述人体的形态结构，统称巨视解剖学（macroanatomy）。"
+    },
+    {
+      "label": "systematic-anatomy:t0852:巨视解剖学",
+      "field": "structure",
+      "before": "系统解剖学和局部解剖学主要通过肉眼观察来描述人体的形态结构，统称巨视解剖学macroanatomy。",
+      "after": "系统解剖学和局部解剖学主要通过肉眼观察来描述人体的形态结构，统称巨视解剖学（macroanatomy）。"
+    },
+    {
+      "label": "systematic-anatomy:t0852:巨视解剖学",
+      "field": "location",
+      "before": "系统解剖学和局部解剖学主要通过肉眼观察来描述人体的形态结构，统称巨视解剖学macroanatomy。",
+      "after": "系统解剖学和局部解剖学主要通过肉眼观察来描述人体的形态结构，统称巨视解剖学（macroanatomy）。"
+    },
+    {
+      "label": "systematic-anatomy:t0852:巨视解剖学:context[0]",
+      "field": "text",
+      "before": "系统解剖学和局部解剖学主要通过肉眼观察来描述人体的形态结构，统称巨视解剖学macroanatomy。",
+      "after": "系统解剖学和局部解剖学主要通过肉眼观察来描述人体的形态结构，统称巨视解剖学（macroanatomy）。"
+    },
+    {
+      "label": "systematic-anatomy:t1658:微视解剖学",
+      "field": "definition",
+      "before": "以显微镜观察为研究手段的组织学、细胞学、胚胎学，称微视解剖学microanatomy。",
+      "after": "以显微镜观察为研究手段的组织学、细胞学、胚胎学，称微视解剖学（microanatomy）。"
+    },
+    {
+      "label": "systematic-anatomy:t1658:微视解剖学:context[0]",
+      "field": "text",
+      "before": "以显微镜观察为研究手段的组织学、细胞学、胚胎学，称微视解剖学microanatomy。",
+      "after": "以显微镜观察为研究手段的组织学、细胞学、胚胎学，称微视解剖学（microanatomy）。"
+    },
+    {
+      "label": "systematic-anatomy:t0245:断层解剖学",
+      "field": "definition",
+      "before": "研究人体各局部或器官的断面形态结构的解剖学称断层解剖学 sectional anatomy。",
+      "after": "研究人体各局部或器官的断面形态结构的解剖学称断层解剖学（sectional anatomy）。"
+    },
+    {
+      "label": "systematic-anatomy:t0245:断层解剖学:context[0]",
+      "field": "text",
+      "before": "研究人体各局部或器官的断面形态结构的解剖学称断层解剖学 sectional anatomy。",
+      "after": "研究人体各局部或器官的断面形态结构的解剖学称断层解剖学（sectional anatomy）。"
+    },
+    {
+      "label": "systematic-anatomy:t1423:神经解剖学",
+      "field": "definition",
+      "before": "以研究脑形态与功能为主的解剖学称神经解剖学 neuroanatomy。",
+      "after": "以研究脑形态与功能为主的解剖学称神经解剖学（neuroanatomy）。"
+    },
+    {
+      "label": "systematic-anatomy:t1423:神经解剖学",
+      "field": "function",
+      "before": "以研究脑形态与功能为主的解剖学称神经解剖学 neuroanatomy。",
+      "after": "以研究脑形态与功能为主的解剖学称神经解剖学（neuroanatomy）。"
+    },
+    {
+      "label": "systematic-anatomy:t1423:神经解剖学:context[0]",
+      "field": "text",
+      "before": "以研究脑形态与功能为主的解剖学称神经解剖学 neuroanatomy。",
+      "after": "以研究脑形态与功能为主的解剖学称神经解剖学（neuroanatomy）。"
+    },
+    {
+      "label": "systematic-anatomy:t1699:系统解剖学",
+      "field": "function",
+      "before": "系统解剖学 systematic anatomy 是按人体的器官功能系统（如运动系统、消化系统、呼吸系统、泌尿系统、生殖系统、内分泌系统、脉管系统、感觉器和神经系统）阐述正常人体器官的形态结构及其生长发育规律的科学，是医学生的必修课。",
+      "after": "系统解剖学（systematic anatomy）是按人体的器官功能系统（如运动系统、消化系统、呼吸系统、泌尿系统、生殖系统、内分泌系统、脉管系统、感觉器和神经系统）阐述正常人体器官的形态结构及其生长发育规律的科学，是医学生的必修课。"
+    },
+    {
+      "label": "systematic-anatomy:t1699:系统解剖学:context[1]",
+      "field": "text",
+      "before": "系统解剖学 systematic anatomy 是按人体的器官功能系统（如运动系统、消化系统、呼吸系统、泌尿系统、生殖系统、内分泌系统、脉管系统、感觉器和神经系统）阐述正常人体器官的形态结构及其生长发育规律的科学，是医学生的必修课。",
+      "after": "系统解剖学（systematic anatomy）是按人体的器官功能系统（如运动系统、消化系统、呼吸系统、泌尿系统、生殖系统、内分泌系统、脉管系统、感觉器和神经系统）阐述正常人体器官的形态结构及其生长发育规律的科学，是医学生的必修课。"
+    },
+    {
+      "label": "systematic-anatomy:t1967:艺术解剖学",
+      "field": "definition",
+      "before": "研究人体外形轮廓和结构比例，为绘画造型奠定基础的解剖学称艺术解剖学 art anatomy。",
+      "after": "研究人体外形轮廓和结构比例，为绘画造型奠定基础的解剖学称艺术解剖学（art anatomy）。"
+    },
+    {
+      "label": "systematic-anatomy:t1967:艺术解剖学:context[0]",
+      "field": "text",
+      "before": "研究人体外形轮廓和结构比例，为绘画造型奠定基础的解剖学称艺术解剖学 art anatomy。",
+      "after": "研究人体外形轮廓和结构比例，为绘画造型奠定基础的解剖学称艺术解剖学（art anatomy）。"
+    },
+    {
+      "label": "systematic-anatomy:t0075:表面解剖学",
+      "field": "definition",
+      "before": "联系临床应用，研究人体表面形态特征的解剖学称表面解剖学 surface anatomy。",
+      "after": "联系临床应用，研究人体表面形态特征的解剖学称表面解剖学（surface anatomy）。"
+    },
+    {
+      "label": "systematic-anatomy:t0075:表面解剖学:context[0]",
+      "field": "text",
+      "before": "联系临床应用，研究人体表面形态特征的解剖学称表面解剖学 surface anatomy。",
+      "after": "联系临床应用，研究人体表面形态特征的解剖学称表面解剖学（surface anatomy）。"
+    },
+    {
+      "label": "systematic-anatomy:t2049:运动解剖学",
+      "field": "definition",
+      "before": "以提高体育运动效果为目的，研究体育运动与人体形态结构关系的解剖学称运动解剖学locomotive anatomy。",
+      "after": "以提高体育运动效果为目的，研究体育运动与人体形态结构关系的解剖学称运动解剖学（locomotive anatomy）。"
+    },
+    {
+      "label": "systematic-anatomy:t2049:运动解剖学",
+      "field": "function",
+      "before": "以提高体育运动效果为目的，研究体育运动与人体形态结构关系的解剖学称运动解剖学locomotive anatomy。",
+      "after": "以提高体育运动效果为目的，研究体育运动与人体形态结构关系的解剖学称运动解剖学（locomotive anatomy）。"
+    },
+    {
+      "label": "systematic-anatomy:t2049:运动解剖学:context[0]",
+      "field": "text",
+      "before": "以提高体育运动效果为目的，研究体育运动与人体形态结构关系的解剖学称运动解剖学locomotive anatomy。",
+      "after": "以提高体育运动效果为目的，研究体育运动与人体形态结构关系的解剖学称运动解剖学（locomotive anatomy）。"
+    },
+    {
+      "label": "systematic-anatomy:t1352:上:context[1]",
+      "field": "text",
+      "before": "上 superior 和下 inferior 是描述器官或结构距颅顶或足底的相对远近关系的术语。",
+      "after": "上（superior）和下（inferior）是描述器官或结构距颅顶或足底的相对远近关系的术语。"
+    },
+    {
+      "label": "systematic-anatomy:t1703:下",
+      "field": "definition",
+      "before": "（一）解剖学姿势人体的标准解剖学姿势 anatomical position 是指身体直立，面向前方，两眼平视正前方，两足并拢，足尖向前，双上肢下垂于躯干的两侧，掌心向前。",
+      "after": "（一）解剖学姿势人体的标准解剖学姿势（anatomical position）是指身体直立，面向前方，两眼平视正前方，两足并拢，足尖向前，双上肢下垂于躯干的两侧，掌心向前。"
+    },
+    {
+      "label": "systematic-anatomy:t1703:下:context[0]",
+      "field": "text",
+      "before": "（一）解剖学姿势人体的标准解剖学姿势 anatomical position 是指身体直立，面向前方，两眼平视正前方，两足并拢，足尖向前，双上肢下垂于躯干的两侧，掌心向前。",
+      "after": "（一）解剖学姿势人体的标准解剖学姿势（anatomical position）是指身体直立，面向前方，两眼平视正前方，两足并拢，足尖向前，双上肢下垂于躯干的两侧，掌心向前。"
+    },
+    {
+      "label": "systematic-anatomy:t1703:下:context[1]",
+      "field": "text",
+      "before": "上 superior 和下 inferior 是描述器官或结构距颅顶或足底的相对远近关系的术语。",
+      "after": "上（superior）和下（inferior）是描述器官或结构距颅顶或足底的相对远近关系的术语。"
+    },
+    {
+      "label": "systematic-anatomy:t1056:内侧",
+      "field": "definition",
+      "before": "内侧 medial 和外侧 lateral 是描述器官或结构距人体正中矢状面相对远近关系的术语。",
+      "after": "内侧（medial）和外侧（lateral）是描述器官或结构距人体正中矢状面相对远近关系的术语。"
+    },
+    {
+      "label": "systematic-anatomy:t1056:内侧:context[0]",
+      "field": "text",
+      "before": "内侧 medial 和外侧 lateral 是描述器官或结构距人体正中矢状面相对远近关系的术语。",
+      "after": "内侧（medial）和外侧（lateral）是描述器官或结构距人体正中矢状面相对远近关系的术语。"
+    },
+    {
+      "label": "systematic-anatomy:t1200:前",
+      "field": "definition",
+      "before": "（一）解剖学姿势人体的标准解剖学姿势 anatomical position 是指身体直立，面向前方，两眼平视正前方，两足并拢，足尖向前，双上肢下垂于躯干的两侧，掌心向前。",
+      "after": "（一）解剖学姿势人体的标准解剖学姿势（anatomical position）是指身体直立，面向前方，两眼平视正前方，两足并拢，足尖向前，双上肢下垂于躯干的两侧，掌心向前。"
+    },
+    {
+      "label": "systematic-anatomy:t1200:前:context[0]",
+      "field": "text",
+      "before": "（一）解剖学姿势人体的标准解剖学姿势 anatomical position 是指身体直立，面向前方，两眼平视正前方，两足并拢，足尖向前，双上肢下垂于躯干的两侧，掌心向前。",
+      "after": "（一）解剖学姿势人体的标准解剖学姿势（anatomical position）是指身体直立，面向前方，两眼平视正前方，两足并拢，足尖向前，双上肢下垂于躯干的两侧，掌心向前。"
+    },
+    {
+      "label": "systematic-anatomy:t1200:前:context[1]",
+      "field": "text",
+      "before": "前 anterior 和后 posterior 是描述器官或结构距身体前、后面相对远近关系的术语。",
+      "after": "前（anterior）和后（posterior）是描述器官或结构距身体前、后面相对远近关系的术语。"
+    },
+    {
+      "label": "systematic-anatomy:t0574:后:context[1]",
+      "field": "text",
+      "before": "前 anterior 和后 posterior 是描述器官或结构距身体前、后面相对远近关系的术语。",
+      "after": "前（anterior）和后（posterior）是描述器官或结构距身体前、后面相对远近关系的术语。"
+    },
+    {
+      "label": "systematic-anatomy:t1622:外侧",
+      "field": "definition",
+      "before": "内侧 medial 和外侧 lateral 是描述器官或结构距人体正中矢状面相对远近关系的术语。",
+      "after": "内侧（medial）和外侧（lateral）是描述器官或结构距人体正中矢状面相对远近关系的术语。"
+    },
+    {
+      "label": "systematic-anatomy:t1622:外侧:context[0]",
+      "field": "text",
+      "before": "内侧 medial 和外侧 lateral 是描述器官或结构距人体正中矢状面相对远近关系的术语。",
+      "after": "内侧（medial）和外侧（lateral）是描述器官或结构距人体正中矢状面相对远近关系的术语。"
+    },
+    {
+      "label": "systematic-anatomy:t1055:内",
+      "field": "definition",
+      "before": "4 绪论内 internal 和外 external 是描述体腔或空腔器官相互位置关系的术语。",
+      "after": "绪论内（internal）和外（external）是描述体腔或空腔器官相互位置关系的术语。"
+    },
+    {
+      "label": "systematic-anatomy:t1055:内:context[0]",
+      "field": "text",
+      "before": "4 绪论内 internal 和外 external 是描述体腔或空腔器官相互位置关系的术语。",
+      "after": "绪论内（internal）和外（external）是描述体腔或空腔器官相互位置关系的术语。"
+    },
+    {
+      "label": "systematic-anatomy:t0141:垂直轴",
+      "field": "definition",
+      "before": "1. 轴（1）垂直轴 vertical axis：为上自头侧，下至尾侧并与地平面（水平面）相垂直的轴。",
+      "after": "轴（1）垂直轴（vertical axis）：为上自头侧，下至尾侧并与地平面（水平面）相垂直的轴。"
+    },
+    {
+      "label": "systematic-anatomy:t0141:垂直轴:context[0]",
+      "field": "text",
+      "before": "1. 轴（1）垂直轴 vertical axis：为上自头侧，下至尾侧并与地平面（水平面）相垂直的轴。",
+      "after": "轴（1）垂直轴（vertical axis）：为上自头侧，下至尾侧并与地平面（水平面）相垂直的轴。"
+    },
+    {
+      "label": "systematic-anatomy:t1620:外",
+      "field": "definition",
+      "before": "4 绪论内 internal 和外 external 是描述体腔或空腔器官相互位置关系的术语。",
+      "after": "绪论内（internal）和外（external）是描述体腔或空腔器官相互位置关系的术语。"
+    },
+    {
+      "label": "systematic-anatomy:t1620:外:context[0]",
+      "field": "text",
+      "before": "4 绪论内 internal 和外 external 是描述体腔或空腔器官相互位置关系的术语。",
+      "after": "绪论内（internal）和外（external）是描述体腔或空腔器官相互位置关系的术语。"
+    },
+    {
+      "label": "systematic-anatomy:t0107:尺侧",
+      "field": "definition",
+      "before": "上肢的尺侧 ulnar 和桡侧 radial、下肢的胫侧tibial 和腓侧 fibular 分别与其内侧和外侧相对应，是根据前臂桡骨、尺骨和小腿胫骨、腓骨的位置，描述前臂和小腿与正中矢状面相对位置的关系术语。",
+      "after": "上肢的尺侧（ulnar）和桡侧（radial）、下肢的胫侧（tibial）和腓侧（fibular）分别与其内侧和外侧相对应，是根据前臂桡骨、尺骨和小腿胫骨、腓骨的位置，描述前臂和小腿与正中矢状面相对位置的关系术语。"
+    },
+    {
+      "label": "systematic-anatomy:t0107:尺侧:context[0]",
+      "field": "text",
+      "before": "上肢的尺侧 ulnar 和桡侧 radial、下肢的胫侧tibial 和腓侧 fibular 分别与其内侧和外侧相对应，是根据前臂桡骨、尺骨和小腿胫骨、腓骨的位置，描述前臂和小腿与正中矢状面相对位置的关系术语。",
+      "after": "上肢的尺侧（ulnar）和桡侧（radial）、下肢的胫侧（tibial）和腓侧（fibular）分别与其内侧和外侧相对应，是根据前臂桡骨、尺骨和小腿胫骨、腓骨的位置，描述前臂和小腿与正中矢状面相对位置的关系术语。"
+    },
+    {
+      "label": "systematic-anatomy:t1279:桡侧",
+      "field": "definition",
+      "before": "上肢的尺侧 ulnar 和桡侧 radial、下肢的胫侧tibial 和腓侧 fibular 分别与其内侧和外侧相对应，是根据前臂桡骨、尺骨和小腿胫骨、腓骨的位置，描述前臂和小腿与正中矢状面相对位置的关系术语。",
+      "after": "上肢的尺侧（ulnar）和桡侧（radial）、下肢的胫侧（tibial）和腓侧（fibular）分别与其内侧和外侧相对应，是根据前臂桡骨、尺骨和小腿胫骨、腓骨的位置，描述前臂和小腿与正中矢状面相对位置的关系术语。"
+    },
+    {
+      "label": "systematic-anatomy:t1279:桡侧:context[0]",
+      "field": "text",
+      "before": "上肢的尺侧 ulnar 和桡侧 radial、下肢的胫侧tibial 和腓侧 fibular 分别与其内侧和外侧相对应，是根据前臂桡骨、尺骨和小腿胫骨、腓骨的位置，描述前臂和小腿与正中矢状面相对位置的关系术语。",
+      "after": "上肢的尺侧（ulnar）和桡侧（radial）、下肢的胫侧（tibial）和腓侧（fibular）分别与其内侧和外侧相对应，是根据前臂桡骨、尺骨和小腿胫骨、腓骨的位置，描述前臂和小腿与正中矢状面相对位置的关系术语。"
+    },
+    {
+      "label": "systematic-anatomy:t1248:浅",
+      "field": "definition",
+      "before": "浅 superficial 和深 profundal 是描述器官或结构距皮肤表面相对远近的术语。",
+      "after": "浅（superficial）和深（profundal）是描述器官或结构距皮肤表面相对远近的术语。"
+    },
+    {
+      "label": "systematic-anatomy:t1248:浅:context[0]",
+      "field": "text",
+      "before": "浅 superficial 和深 profundal 是描述器官或结构距皮肤表面相对远近的术语。",
+      "after": "浅（superficial）和深（profundal）是描述器官或结构距皮肤表面相对远近的术语。"
+    },
+    {
+      "label": "systematic-anatomy:t1412:深",
+      "field": "definition",
+      "before": "浅 superficial 和深 profundal 是描述器官或结构距皮肤表面相对远近的术语。",
+      "after": "浅（superficial）和深（profundal）是描述器官或结构距皮肤表面相对远近的术语。"
+    },
+    {
+      "label": "systematic-anatomy:t1412:深:context[0]",
+      "field": "text",
+      "before": "浅 superficial 和深 profundal 是描述器官或结构距皮肤表面相对远近的术语。",
+      "after": "浅（superficial）和深（profundal）是描述器官或结构距皮肤表面相对远近的术语。"
+    },
+    {
+      "label": "systematic-anatomy:t1494:矢状轴:context[1]",
+      "field": "text",
+      "before": "（2）矢状轴 sagittal axis：是指从腹侧面至背侧面，同时与垂直轴呈直角交叉的轴，又名腹背轴。",
+      "after": "（2）矢状轴（sagittal axis）：是指从腹侧面至背侧面，同时与垂直轴呈直角交叉的轴，又名腹背轴。"
+    },
+    {
+      "label": "systematic-anatomy:t0834:胫侧",
+      "field": "definition",
+      "before": "上肢的尺侧 ulnar 和桡侧 radial、下肢的胫侧tibial 和腓侧 fibular 分别与其内侧和外侧相对应，是根据前臂桡骨、尺骨和小腿胫骨、腓骨的位置，描述前臂和小腿与正中矢状面相对位置的关系术语。",
+      "after": "上肢的尺侧（ulnar）和桡侧（radial）、下肢的胫侧（tibial）和腓侧（fibular）分别与其内侧和外侧相对应，是根据前臂桡骨、尺骨和小腿胫骨、腓骨的位置，描述前臂和小腿与正中矢状面相对位置的关系术语。"
+    },
+    {
+      "label": "systematic-anatomy:t0834:胫侧:context[0]",
+      "field": "text",
+      "before": "上肢的尺侧 ulnar 和桡侧 radial、下肢的胫侧tibial 和腓侧 fibular 分别与其内侧和外侧相对应，是根据前臂桡骨、尺骨和小腿胫骨、腓骨的位置，描述前臂和小腿与正中矢状面相对位置的关系术语。",
+      "after": "上肢的尺侧（ulnar）和桡侧（radial）、下肢的胫侧（tibial）和腓侧（fibular）分别与其内侧和外侧相对应，是根据前臂桡骨、尺骨和小腿胫骨、腓骨的位置，描述前臂和小腿与正中矢状面相对位置的关系术语。"
+    },
+    {
+      "label": "systematic-anatomy:t0293:腓侧",
+      "field": "definition",
+      "before": "上肢的尺侧 ulnar 和桡侧 radial、下肢的胫侧tibial 和腓侧 fibular 分别与其内侧和外侧相对应，是根据前臂桡骨、尺骨和小腿胫骨、腓骨的位置，描述前臂和小腿与正中矢状面相对位置的关系术语。",
+      "after": "上肢的尺侧（ulnar）和桡侧（radial）、下肢的胫侧（tibial）和腓侧（fibular）分别与其内侧和外侧相对应，是根据前臂桡骨、尺骨和小腿胫骨、腓骨的位置，描述前臂和小腿与正中矢状面相对位置的关系术语。"
+    },
+    {
+      "label": "systematic-anatomy:t0293:腓侧:context[0]",
+      "field": "text",
+      "before": "上肢的尺侧 ulnar 和桡侧 radial、下肢的胫侧tibial 和腓侧 fibular 分别与其内侧和外侧相对应，是根据前臂桡骨、尺骨和小腿胫骨、腓骨的位置，描述前臂和小腿与正中矢状面相对位置的关系术语。",
+      "after": "上肢的尺侧（ulnar）和桡侧（radial）、下肢的胫侧（tibial）和腓侧（fibular）分别与其内侧和外侧相对应，是根据前臂桡骨、尺骨和小腿胫骨、腓骨的位置，描述前臂和小腿与正中矢状面相对位置的关系术语。"
+    },
+    {
+      "label": "systematic-anatomy:t0785:近侧",
+      "field": "definition",
+      "before": "近侧 proximal 和远侧 distal 是描述器官或结构距肢体根部相对远近的术语，常用于四肢。",
+      "after": "近侧（proximal）和远侧（distal）是描述器官或结构距肢体根部相对远近的术语，常用于四肢。"
+    },
+    {
+      "label": "systematic-anatomy:t0785:近侧:context[0]",
+      "field": "text",
+      "before": "近侧 proximal 和远侧 distal 是描述器官或结构距肢体根部相对远近的术语，常用于四肢。",
+      "after": "近侧（proximal）和远侧（distal）是描述器官或结构距肢体根部相对远近的术语，常用于四肢。"
+    },
+    {
+      "label": "systematic-anatomy:t2046:远侧",
+      "field": "definition",
+      "before": "近侧 proximal 和远侧 distal 是描述器官或结构距肢体根部相对远近的术语，常用于四肢。",
+      "after": "近侧（proximal）和远侧（distal）是描述器官或结构距肢体根部相对远近的术语，常用于四肢。"
+    },
+    {
+      "label": "systematic-anatomy:t2046:远侧:context[0]",
+      "field": "text",
+      "before": "近侧 proximal 和远侧 distal 是描述器官或结构距肢体根部相对远近的术语，常用于四肢。",
+      "after": "近侧（proximal）和远侧（distal）是描述器官或结构距肢体根部相对远近的术语，常用于四肢。"
+    },
+    {
+      "label": "systematic-anatomy:t0530:冠状轴",
+      "field": "definition",
+      "before": "绪论 5 （3）冠状轴 frontal axis：为左、右方向，与水平面平行，与前两个轴相垂直的轴。",
+      "after": "绪论 （3）冠状轴（frontal axis）：为左、右方向，与水平面平行，与前两个轴相垂直的轴。"
+    },
+    {
+      "label": "systematic-anatomy:t0530:冠状轴:context[0]",
+      "field": "text",
+      "before": "绪论 5 （3）冠状轴 frontal axis：为左、右方向，与水平面平行，与前两个轴相垂直的轴。",
+      "after": "绪论 （3）冠状轴（frontal axis）：为左、右方向，与水平面平行，与前两个轴相垂直的轴。"
+    },
+    {
+      "label": "systematic-anatomy:t0528:冠状面",
+      "field": "definition",
+      "before": "（2）冠状面 frontal plane：是指左、右方向，将人体分为前、后两部的剖面，该切面与水平面及矢状面互相垂直。",
+      "after": "（2）冠状面（frontal plane）：是指左、右方向，将人体分为前、后两部的剖面，该切面与水平面及矢状面互相垂直。"
+    },
+    {
+      "label": "systematic-anatomy:t0528:冠状面:context[0]",
+      "field": "text",
+      "before": "（2）冠状面 frontal plane：是指左、右方向，将人体分为前、后两部的剖面，该切面与水平面及矢状面互相垂直。",
+      "after": "（2）冠状面（frontal plane）：是指左、右方向，将人体分为前、后两部的剖面，该切面与水平面及矢状面互相垂直。"
+    },
+    {
+      "label": "systematic-anatomy:t1968:异常",
+      "field": "definition",
+      "before": "如超出一般变异范围，统计学上出现率极低，甚至影响正常生理功能者，称为异常 abnormal 或畸形 deformation。",
+      "after": "如超出一般变异范围，统计学上出现率极低，甚至影响正常生理功能者，称为异常（abnormal）或畸形（deformation）。"
+    },
+    {
+      "label": "systematic-anatomy:t1968:异常",
+      "field": "function",
+      "before": "如超出一般变异范围，统计学上出现率极低，甚至影响正常生理功能者，称为异常 abnormal 或畸形 deformation。",
+      "after": "如超出一般变异范围，统计学上出现率极低，甚至影响正常生理功能者，称为异常（abnormal）或畸形（deformation）。"
+    },
+    {
+      "label": "systematic-anatomy:t1968:异常:context[0]",
+      "field": "text",
+      "before": "如超出一般变异范围，统计学上出现率极低，甚至影响正常生理功能者，称为异常 abnormal 或畸形 deformation。",
+      "after": "如超出一般变异范围，统计学上出现率极低，甚至影响正常生理功能者，称为异常（abnormal）或畸形（deformation）。"
+    },
+    {
+      "label": "systematic-anatomy:t1553:水平面",
+      "field": "definition",
+      "before": "绪论 5 （3）冠状轴 frontal axis：为左、右方向，与水平面平行，与前两个轴相垂直的轴。",
+      "after": "绪论 （3）冠状轴（frontal axis）：为左、右方向，与水平面平行，与前两个轴相垂直的轴。"
+    },
+    {
+      "label": "systematic-anatomy:t1553:水平面:context[0]",
+      "field": "text",
+      "before": "绪论 5 （3）冠状轴 frontal axis：为左、右方向，与水平面平行，与前两个轴相垂直的轴。",
+      "after": "绪论 （3）冠状轴（frontal axis）：为左、右方向，与水平面平行，与前两个轴相垂直的轴。"
+    },
+    {
+      "label": "systematic-anatomy:t1553:水平面:context[1]",
+      "field": "text",
+      "before": "（3）水平面 horizontal plane：又称横切面，是指与地平面平行，与矢状面和冠状面相互垂直，将人体分为上、下两部的剖面。",
+      "after": "（3）水平面（horizontal plane）：又称横切面，是指与地平面平行，与矢状面和冠状面相互垂直，将人体分为上、下两部的剖面。"
+    },
+    {
+      "label": "systematic-anatomy:t1493:矢状面",
+      "field": "definition",
+      "before": "2. 面（1）矢状面 sagittal plane：是指前、后方向，将人体分成左、右两部的剖面，该切面与地平面垂直。",
+      "after": "面（1）矢状面（sagittal plane）：是指前、后方向，将人体分成左、右两部的剖面，该切面与地平面垂直。"
+    },
+    {
+      "label": "systematic-anatomy:t1493:矢状面:context[0]",
+      "field": "text",
+      "before": "2. 面（1）矢状面 sagittal plane：是指前、后方向，将人体分成左、右两部的剖面，该切面与地平面垂直。",
+      "after": "面（1）矢状面（sagittal plane）：是指前、后方向，将人体分成左、右两部的剖面，该切面与地平面垂直。"
+    },
+    {
+      "label": "systematic-anatomy:t0083:不规则骨",
+      "field": "definition",
+      "before": "4. 不规则骨 irregular bone 形状不规则，如椎骨。",
+      "after": "不规则骨（irregular bone）形状不规则，如椎骨。"
+    },
+    {
+      "label": "systematic-anatomy:t0083:不规则骨:context[0]",
+      "field": "text",
+      "before": "4. 不规则骨 irregular bone 形状不规则，如椎骨。",
+      "after": "不规则骨（irregular bone）形状不规则，如椎骨。"
+    },
+    {
+      "label": "systematic-anatomy:t0544:含气骨",
+      "field": "definition",
+      "before": "有些不规则骨内有与外界相通的腔洞，称含气骨 pneumatic bone，如上颌骨。",
+      "after": "有些不规则骨内有与外界相通的腔洞，称含气骨（pneumatic bone），如上颌骨。"
+    },
+    {
+      "label": "systematic-anatomy:t0544:含气骨",
+      "field": "structure",
+      "before": "有些不规则骨内有与外界相通的腔洞，称含气骨 pneumatic bone，如上颌骨。",
+      "after": "有些不规则骨内有与外界相通的腔洞，称含气骨（pneumatic bone），如上颌骨。"
+    },
+    {
+      "label": "systematic-anatomy:t0544:含气骨",
+      "field": "location",
+      "before": "有些不规则骨内有与外界相通的腔洞，称含气骨 pneumatic bone，如上颌骨。",
+      "after": "有些不规则骨内有与外界相通的腔洞，称含气骨（pneumatic bone），如上颌骨。"
+    },
+    {
+      "label": "systematic-anatomy:t0544:含气骨:context[0]",
+      "field": "text",
+      "before": "有些不规则骨内有与外界相通的腔洞，称含气骨 pneumatic bone，如上颌骨。",
+      "after": "有些不规则骨内有与外界相通的腔洞，称含气骨（pneumatic bone），如上颌骨。"
+    },
+    {
+      "label": "systematic-anatomy:t0408:干骺端",
+      "field": "definition",
+      "before": "骨干与骺相邻的部分称干骺端metaphysis，幼年时保留透明软骨成分，称骺软骨 epiphysial cartilage，骺软骨细胞不断分裂增殖和骨化，使骨不断加长。",
+      "after": "骨干与骺相邻的部分称干骺端（metaphysis），幼年时保留透明软骨成分，称骺软骨（epiphysial cartilage），骺软骨细胞不断分裂增殖和骨化，使骨不断加长。"
+    },
+    {
+      "label": "systematic-anatomy:t0408:干骺端:context[0]",
+      "field": "text",
+      "before": "骨干与骺相邻的部分称干骺端metaphysis，幼年时保留透明软骨成分，称骺软骨 epiphysial cartilage，骺软骨细胞不断分裂增殖和骨化，使骨不断加长。",
+      "after": "骨干与骺相邻的部分称干骺端（metaphysis），幼年时保留透明软骨成分，称骺软骨（epiphysial cartilage），骺软骨细胞不断分裂增殖和骨化，使骨不断加长。"
+    },
+    {
+      "label": "systematic-anatomy:t0070:扁骨",
+      "field": "definition",
+      "before": "3. 扁骨 flat bone 呈板状，参与构成颅腔、胸腔和盆腔壁，可保护脏器，如颅盖骨和肋骨。",
+      "after": "扁骨（flat bone）呈板状，参与构成颅腔、胸腔和盆腔壁，可保护脏器，如颅盖骨和肋骨。"
+    },
+    {
+      "label": "systematic-anatomy:t0070:扁骨",
+      "field": "function",
+      "before": "3. 扁骨 flat bone 呈板状，参与构成颅腔、胸腔和盆腔壁，可保护脏器，如颅盖骨和肋骨。",
+      "after": "扁骨（flat bone）呈板状，参与构成颅腔、胸腔和盆腔壁，可保护脏器，如颅盖骨和肋骨。"
+    },
+    {
+      "label": "systematic-anatomy:t0070:扁骨:context[0]",
+      "field": "text",
+      "before": "3. 扁骨 flat bone 呈板状，参与构成颅腔、胸腔和盆腔壁，可保护脏器，如颅盖骨和肋骨。",
+      "after": "扁骨（flat bone）呈板状，参与构成颅腔、胸腔和盆腔壁，可保护脏器，如颅盖骨和肋骨。"
+    },
+    {
+      "label": "systematic-anatomy:t0242:短骨",
+      "field": "definition",
+      "before": "2. 短骨 short bone 形似立方体，多成群分布于连结牢固且运动较灵活的部位，如腕骨和跗骨。",
+      "after": "短骨（short bone）形似立方体，多成群分布于连结牢固且运动较灵活的部位，如腕骨和跗骨。"
+    },
+    {
+      "label": "systematic-anatomy:t0242:短骨",
+      "field": "structure",
+      "before": "2. 短骨 short bone 形似立方体，多成群分布于连结牢固且运动较灵活的部位，如腕骨和跗骨。",
+      "after": "短骨（short bone）形似立方体，多成群分布于连结牢固且运动较灵活的部位，如腕骨和跗骨。"
+    },
+    {
+      "label": "systematic-anatomy:t0242:短骨",
+      "field": "location",
+      "before": "2. 短骨 short bone 形似立方体，多成群分布于连结牢固且运动较灵活的部位，如腕骨和跗骨。",
+      "after": "短骨（short bone）形似立方体，多成群分布于连结牢固且运动较灵活的部位，如腕骨和跗骨。"
+    },
+    {
+      "label": "systematic-anatomy:t0242:短骨",
+      "field": "function",
+      "before": "2. 短骨 short bone 形似立方体，多成群分布于连结牢固且运动较灵活的部位，如腕骨和跗骨。",
+      "after": "短骨（short bone）形似立方体，多成群分布于连结牢固且运动较灵活的部位，如腕骨和跗骨。"
+    },
+    {
+      "label": "systematic-anatomy:t0242:短骨:context[0]",
+      "field": "text",
+      "before": "2. 短骨 short bone 形似立方体，多成群分布于连结牢固且运动较灵活的部位，如腕骨和跗骨。",
+      "after": "短骨（short bone）形似立方体，多成群分布于连结牢固且运动较灵活的部位，如腕骨和跗骨。"
+    },
+    {
+      "label": "systematic-anatomy:t2214:籽骨",
+      "field": "definition",
+      "before": "位于肌腱内的扁圆形小骨称籽骨 sesamoid bone，在运动中起着减少摩擦和改变肌肉牵拉方向的作用。",
+      "after": "位于肌腱内的扁圆形小骨称籽骨（sesamoid bone），在运动中起着减少摩擦和改变肌肉牵拉方向的作用。"
+    },
+    {
+      "label": "systematic-anatomy:t2214:籽骨",
+      "field": "structure",
+      "before": "位于肌腱内的扁圆形小骨称籽骨 sesamoid bone，在运动中起着减少摩擦和改变肌肉牵拉方向的作用。",
+      "after": "位于肌腱内的扁圆形小骨称籽骨（sesamoid bone），在运动中起着减少摩擦和改变肌肉牵拉方向的作用。"
+    },
+    {
+      "label": "systematic-anatomy:t2214:籽骨",
+      "field": "location",
+      "before": "位于肌腱内的扁圆形小骨称籽骨 sesamoid bone，在运动中起着减少摩擦和改变肌肉牵拉方向的作用。",
+      "after": "位于肌腱内的扁圆形小骨称籽骨（sesamoid bone），在运动中起着减少摩擦和改变肌肉牵拉方向的作用。"
+    },
+    {
+      "label": "systematic-anatomy:t2214:籽骨",
+      "field": "function",
+      "before": "位于肌腱内的扁圆形小骨称籽骨 sesamoid bone，在运动中起着减少摩擦和改变肌肉牵拉方向的作用。",
+      "after": "位于肌腱内的扁圆形小骨称籽骨（sesamoid bone），在运动中起着减少摩擦和改变肌肉牵拉方向的作用。"
+    },
+    {
+      "label": "systematic-anatomy:t2214:籽骨:context[0]",
+      "field": "text",
+      "before": "位于肌腱内的扁圆形小骨称籽骨 sesamoid bone，在运动中起着减少摩擦和改变肌肉牵拉方向的作用。",
+      "after": "位于肌腱内的扁圆形小骨称籽骨（sesamoid bone），在运动中起着减少摩擦和改变肌肉牵拉方向的作用。"
+    },
+    {
+      "label": "systematic-anatomy:t2214:籽骨:context[1]",
+      "field": "text",
+      "before": "颞窝下颌骨冠突翼内肌翼突窝下颌角内面的翼肌粗隆翼外肌蝶骨大翼下面和翼突外侧面下颌颈两侧同时收缩作张口运动；一侧收缩使下颌骨移向对侧 4. 籽骨籽骨 sesamoid bone 是发生在某些肌腱内的扁圆形小骨，髌骨是人体最大的籽骨。",
+      "after": "颞窝下颌骨冠突翼内肌翼突窝下颌角内面的翼肌粗隆翼外肌蝶骨大翼下面和翼突外侧面下颌颈两侧同时收缩作张口运动；一侧收缩使下颌骨移向对侧 4. 籽骨籽骨（sesamoid bone）是发生在某些肌腱内的扁圆形小骨，髌骨是人体最大的籽骨。"
+    },
+    {
+      "label": "systematic-anatomy:t0092:长骨",
+      "field": "definition",
+      "before": "1. 长骨 long bone 分布于四肢，呈长管状，分为一体两端。",
+      "after": "长骨（long bone）分布于四肢，呈长管状，分为一体两端。"
+    },
+    {
+      "label": "systematic-anatomy:t0092:长骨",
+      "field": "structure",
+      "before": "1. 长骨 long bone 分布于四肢，呈长管状，分为一体两端。",
+      "after": "长骨（long bone）分布于四肢，呈长管状，分为一体两端。"
+    },
+    {
+      "label": "systematic-anatomy:t0092:长骨",
+      "field": "location",
+      "before": "1. 长骨 long bone 分布于四肢，呈长管状，分为一体两端。",
+      "after": "长骨（long bone）分布于四肢，呈长管状，分为一体两端。"
+    },
+    {
+      "label": "systematic-anatomy:t0092:长骨:context[0]",
+      "field": "text",
+      "before": "1. 长骨 long bone 分布于四肢，呈长管状，分为一体两端。",
+      "after": "长骨（long bone）分布于四肢，呈长管状，分为一体两端。"
+    }
+  ],
+  "remainingPatternCounts": {
+    "leadingNumber": 39,
+    "unwrappedKnownZhEn": 0
+  }
+}

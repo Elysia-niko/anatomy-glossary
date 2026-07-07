@@ -270,6 +270,18 @@ function escapeHtml(value) {
     .replaceAll("'", "&#039;");
 }
 
+function formatEnglish(value) {
+  const text = String(value || "").trim();
+  return text ? `（${text}）` : "";
+}
+
+function formatTermPair(zh, en) {
+  const zhText = String(zh || "").trim();
+  const enText = String(en || "").trim();
+  if (zhText && enText) return `${zhText}${formatEnglish(enText)}`;
+  return zhText || enText;
+}
+
 function normalize(value) {
   return String(value ?? "").trim().toLowerCase();
 }
@@ -842,7 +854,7 @@ function termItemHtml(term) {
     <button class="term-item${active}" type="button" data-term-id="${term.id}">
       <span class="term-main">
         <span class="term-zh">${star}${escapeHtml(term.zh)}</span>
-        <span class="term-en">${escapeHtml(term.en)}</span>
+        <span class="term-en">${escapeHtml(formatEnglish(term.en))}</span>
       </span>
       ${badges ? `<span class="term-side">${badges}</span>` : ""}
     </button>
@@ -985,7 +997,7 @@ function renderDetail(term) {
   const chapterLine = [data.shortTitle || data.title, term.part, ...term.chapters].filter(Boolean);
   els.detailChapter.textContent = [...new Set(chapterLine)].join(" / ");
   els.detailZh.textContent = term.zh;
-  els.detailEn.textContent = hiddenAnswer ? "......" : term.en;
+  els.detailEn.textContent = hiddenAnswer ? "......" : formatEnglish(term.en);
   els.detailCategory.textContent = term.category;
   els.detailPages.textContent = pageText(term.pages);
   els.detailOccurrences.textContent = `${term.occurrences} 次`;
@@ -1051,7 +1063,7 @@ function renderTopicDetail(topic) {
           (term) => `
             <button class="topic-term-chip" type="button" data-topic-term-id="${escapeHtml(term.id)}">
               <strong>${escapeHtml(term.zh)}</strong>
-              <span>${escapeHtml(term.en)}</span>
+              <span>${escapeHtml(formatEnglish(term.en))}</span>
               <small>${escapeHtml([term.category, term.chapters?.[0]].filter(Boolean).join(" · "))}</small>
             </button>
           `
@@ -1210,7 +1222,7 @@ function grayCardHtml(card, term) {
 function grayLabelHtml(label, options = {}) {
   const target = termsByEnglish.get(englishKey(label.en));
   const isCurrent = target?.id && target.id === options.currentId;
-  const text = `${label.number ? `${label.number}. ` : ""}${label.zh || label.en}${label.zh && label.en ? ` / ${label.en}` : ""}`;
+  const text = formatTermPair(label.zh, label.en);
   const className = `gray-label ${options.mode === "match" ? "match" : ""}`.trim();
 
   if (target && !isCurrent) {
@@ -1231,7 +1243,7 @@ function renderRelated(term, hiddenAnswer) {
           (item) => `
             <button class="related-chip" type="button" data-related-id="${item.id}">
               <strong>${escapeHtml(item.zh)}</strong>
-              <span>${escapeHtml(item.en)}</span>
+              <span>${escapeHtml(formatEnglish(item.en))}</span>
             </button>
           `
         )
