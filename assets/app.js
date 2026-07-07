@@ -80,6 +80,9 @@ const topicsById = new Map(topics.map((topic) => [topic.id, topic]));
 const LARGE_COURSE_TERM_THRESHOLD = 500;
 const LOADER_START_DELAY_MS = 180;
 const COURSE_DATA_VERSION = library.meta?.dataVersion || "split-20260703";
+const IMAGE_MIN_ZOOM = 1;
+const IMAGE_MAX_ZOOM = 1.35;
+const IMAGE_WHEEL_ZOOM_STEP = 0.05;
 const courseCache = new Map();
 const loadingScripts = new Map();
 
@@ -109,6 +112,7 @@ let state = {
   showGrayBookPages: false,
   navigationStack: [],
   imageZoom: 1,
+  imageDrag: null,
 };
 
 library.courses.forEach((course) => {
@@ -671,11 +675,22 @@ function bindEvents() {
   els.againButton.addEventListener("click", () => updateReview(-1));
   els.knownButton.addEventListener("click", () => updateReview(1));
   els.closeDialog.addEventListener("click", () => els.imageDialog.close());
-  els.imageZoomOut.addEventListener("click", () => setImageZoom(state.imageZoom / 1.35));
-  els.imageZoomReset.addEventListener("click", () => setImageZoom(1));
-  els.imageZoomIn.addEventListener("click", () => setImageZoom(state.imageZoom * 1.35));
-  els.dialogImage.addEventListener("click", () => setImageZoom(state.imageZoom >= 2 ? 1 : state.imageZoom * 1.35));
-  els.imageDialog.addEventListener("close", () => setImageZoom(1));
+  els.imageZoomOut.addEventListener("click", () => setImageZoom(IMAGE_MIN_ZOOM));
+  els.imageZoomReset.addEventListener("click", () => setImageZoom(IMAGE_MIN_ZOOM));
+  els.imageZoomIn.addEventListener("click", () => setImageZoom(IMAGE_MAX_ZOOM, { center: true }));
+  els.dialogImage.addEventListener("dblclick", (event) => {
+    event.preventDefault();
+    toggleImageZoom();
+  });
+  els.dialogImage.addEventListener("dragstart", (event) => event.preventDefault());
+  els.imageDialogStage.addEventListener("wheel", handleImageWheel, { passive: false });
+  els.imageDialogStage.addEventListener("mousedown", startImageDrag);
+  window.addEventListener("mousemove", moveImageDrag);
+  window.addEventListener("mouseup", stopImageDrag);
+  els.imageDialog.addEventListener("close", () => {
+    stopImageDrag();
+    setImageZoom(IMAGE_MIN_ZOOM);
+  });
 }
 
 function isMobileLayout() {
@@ -1314,25 +1329,29 @@ function renderContexts(term, hiddenAnswer) {
 
 function openImage(path) {
   if (!path) return;
+  stopImageDrag();
   els.dialogImage.src = path;
-  setImageZoom(1);
-  if (els.imageDialogStage) {
-    els.imageDialogStage.scrollTop = 0;
-    els.imageDialogStage.scrollLeft = 0;
-  }
+  setImageZoom(IMAGE_MIN_ZOOM, { preserveScroll: false });
   if (typeof els.imageDialog.showModal === "function") {
     els.imageDialog.showModal();
+    requestAnimationFrame(resetImageScroll);
   } else {
     window.open(path, "_blank");
   }
 }
 
-function setImageZoom(value) {
-  const zoom = Math.max(1, Math.min(4, Number(value) || 1));
+function clampNumber(value, min, max) {
+  return Math.max(min, Math.min(max, Number(value) || min));
+}
+
+function setImageZoom(value, options = {}) {
+  const zoom = clampNumber(value, IMAGE_MIN_ZOOM, IMAGE_MAX_ZOOM);
+  const shouldPreserveScroll = options.preserveScroll !== false && !options.center;
+  const scrollRatio = shouldPreserveScroll ? imageScrollRatio() : null;
   state.imageZoom = zoom;
   const percent = Math.round(zoom * 100);
 
-  if (zoom === 1) {
+  if (zoom <= IMAGE_MIN_ZOOM) {
     els.dialogImage.style.width = "";
     els.dialogImage.style.maxWidth = "";
     els.dialogImage.style.maxHeight = "";
@@ -1341,12 +1360,94 @@ function setImageZoom(value) {
     els.dialogImage.style.width = `${percent}%`;
     els.dialogImage.style.maxWidth = "none";
     els.dialogImage.style.maxHeight = "none";
-    els.dialogImage.style.cursor = zoom >= 2 ? "zoom-out" : "zoom-in";
+    els.dialogImage.style.cursor = "grab";
   }
+  els.imageDialogStage?.classList.toggle("image-zoomed", zoom > IMAGE_MIN_ZOOM);
 
   els.imageZoomReset.textContent = `${percent}%`;
-  els.imageZoomOut.disabled = zoom <= 1;
-  els.imageZoomIn.disabled = zoom >= 4;
+  els.imageZoomOut.disabled = zoom <= IMAGE_MIN_ZOOM;
+  els.imageZoomIn.disabled = zoom >= IMAGE_MAX_ZOOM - 0.001;
+
+  requestAnimationFrame(() => {
+    if (options.center && zoom > IMAGE_MIN_ZOOM) {
+      centerImageScroll();
+    } else if (scrollRatio) {
+      restoreImageScrollRatio(scrollRatio);
+    } else if (zoom <= IMAGE_MIN_ZOOM) {
+      resetImageScroll();
+    }
+  });
+}
+
+function toggleImageZoom() {
+  if (state.imageZoom > IMAGE_MIN_ZOOM) {
+    setImageZoom(IMAGE_MIN_ZOOM);
+    return;
+  }
+  setImageZoom(IMAGE_MAX_ZOOM, { center: true });
+}
+
+function handleImageWheel(event) {
+  if (!els.imageDialog.open) return;
+  event.preventDefault();
+  const direction = event.deltaY < 0 ? 1 : -1;
+  setImageZoom(state.imageZoom + direction * IMAGE_WHEEL_ZOOM_STEP);
+}
+
+function imageScrollRatio() {
+  const stage = els.imageDialogStage;
+  if (!stage) return null;
+  return {
+    x: stage.scrollWidth > stage.clientWidth ? (stage.scrollLeft + stage.clientWidth / 2) / stage.scrollWidth : 0.5,
+    y: stage.scrollHeight > stage.clientHeight ? (stage.scrollTop + stage.clientHeight / 2) / stage.scrollHeight : 0.5,
+  };
+}
+
+function restoreImageScrollRatio(ratio) {
+  const stage = els.imageDialogStage;
+  if (!stage || !ratio) return;
+  const maxLeft = Math.max(0, stage.scrollWidth - stage.clientWidth);
+  const maxTop = Math.max(0, stage.scrollHeight - stage.clientHeight);
+  stage.scrollLeft = clampNumber(ratio.x * stage.scrollWidth - stage.clientWidth / 2, 0, maxLeft);
+  stage.scrollTop = clampNumber(ratio.y * stage.scrollHeight - stage.clientHeight / 2, 0, maxTop);
+}
+
+function centerImageScroll() {
+  restoreImageScrollRatio({ x: 0.5, y: 0.5 });
+}
+
+function resetImageScroll() {
+  if (!els.imageDialogStage) return;
+  els.imageDialogStage.scrollTop = 0;
+  els.imageDialogStage.scrollLeft = 0;
+}
+
+function startImageDrag(event) {
+  if (state.imageZoom <= IMAGE_MIN_ZOOM || event.button !== 0) return;
+  state.imageDrag = {
+    startX: event.clientX,
+    startY: event.clientY,
+    scrollLeft: els.imageDialogStage.scrollLeft,
+    scrollTop: els.imageDialogStage.scrollTop,
+  };
+  els.imageDialogStage.classList.add("image-dragging");
+  els.dialogImage.style.cursor = "grabbing";
+  event.preventDefault();
+}
+
+function moveImageDrag(event) {
+  const drag = state.imageDrag;
+  if (!drag) return;
+  els.imageDialogStage.scrollLeft = drag.scrollLeft - (event.clientX - drag.startX);
+  els.imageDialogStage.scrollTop = drag.scrollTop - (event.clientY - drag.startY);
+  event.preventDefault();
+}
+
+function stopImageDrag() {
+  if (!state.imageDrag) return;
+  state.imageDrag = null;
+  els.imageDialogStage?.classList.remove("image-dragging");
+  els.dialogImage.style.cursor = state.imageZoom > IMAGE_MIN_ZOOM ? "grab" : "zoom-in";
 }
 
 function updateReview(delta) {

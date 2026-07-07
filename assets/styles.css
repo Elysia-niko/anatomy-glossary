@@ -1193,6 +1193,7 @@ button.gray-label:hover {
 .image-dialog-stage {
   height: calc(100% - 48px);
   overflow: auto;
+  overscroll-behavior: contain;
   padding: 14px;
   background: #eef0ec;
   text-align: center;
@@ -1206,6 +1207,13 @@ button.gray-label:hover {
   display: block;
   margin: 0 auto;
   cursor: zoom-in;
+  user-select: none;
+  -webkit-user-drag: none;
+}
+
+.image-dialog-stage.image-dragging,
+.image-dialog-stage.image-dragging img {
+  cursor: grabbing !important;
 }
 
 .dialog-close {
