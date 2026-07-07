@@ -29,14 +29,15 @@ window.MED_GLOSSARY_INDEX = {
       "normalize biomedical abbreviation spacing such as X线, DNA分子, pH值",
       "preserve URLs, English source labels, and standalone English terms"
     ],
-    "termLabelCleanupGeneratedAt": "2026-07-07",
-    "termLabelCleanupVersion": "termformat-20260707",
+    "termLabelCleanupGeneratedAt": "2026-07-08",
+    "termLabelCleanupVersion": "termfix-20260708",
     "termLabelCleanupRules": [
       "wrap known Chinese term + English term pairs as Chinese（English）",
       "strip leading OCR page/order numbers from term explanations",
+      "strip leading parenthesized enumerators from prose explanations while preserving Gray figure label numbers",
       "remove exercise prompt fragments pulled into contexts"
     ],
-    "dataVersion": "termformat-20260707",
+    "dataVersion": "termfix-20260708",
     "splitCourses": true
   },
   "courses": [

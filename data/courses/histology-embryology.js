@@ -12860,7 +12860,7 @@ window.MED_GLOSSARY_COURSES["histology-embryology"] = {
       ],
       "firstPage": 21,
       "firstPdfPage": 44,
-      "definition": "（1）吞噬作用（phagocytosis）: 可分为特异性吞噬作用和非特异性吞噬作用。",
+      "definition": "吞噬作用（phagocytosis）: 可分为特异性吞噬作用和非特异性吞噬作用。",
       "structure": "应把细胞、纤维和基质分开记，再结合疏松、致密、脂肪等类型及其分布部位理解。",
       "location": "应把细胞、纤维和基质分开记，再结合疏松、致密、脂肪等类型及其分布部位理解。",
       "function": "功能意义在于支持、连接、营养、修复、防御和储能；不同纤维和基质比例决定力学性质。",
@@ -12882,7 +12882,7 @@ window.MED_GLOSSARY_COURSES["histology-embryology"] = {
           "pdfPage": 44,
           "chapter": "第3章 结缔组织",
           "part": "组织学",
-          "text": "（1）吞噬作用（phagocytosis）: 可分为特异性吞噬作用和非特异性吞噬作用。"
+          "text": "吞噬作用（phagocytosis）: 可分为特异性吞噬作用和非特异性吞噬作用。"
         }
       ],
       "occurrences": 5,
@@ -20020,7 +20020,7 @@ window.MED_GLOSSARY_COURSES["histology-embryology"] = {
       ],
       "firstPage": 34,
       "firstPdfPage": 57,
-      "definition": "（3）间骨板（interstitial lamella）: 位于骨单位之间或骨单位与环骨板之间，为大小和形状皆不规则的骨板聚集体，是骨生长和重建过程中较早期的骨单位和环骨板的残留部分。",
+      "definition": "间骨板（interstitial lamella）: 位于骨单位之间或骨单位与环骨板之间，为大小和形状皆不规则的骨板聚集体，是骨生长和重建过程中较早期的骨单位和环骨板的残留部分。",
       "structure": "应按细胞类型、基质成分、纤维类型、软骨膜或骨膜、骨单位和生长改建方式来定位。",
       "location": "应按细胞类型、基质成分、纤维类型、软骨膜或骨膜、骨单位和生长改建方式来定位。",
       "function": "功能意义在于支持、保护、运动杠杆、造血微环境和矿物储存；软骨与骨的结构差异决定其力学和修复特点。",
@@ -20039,7 +20039,7 @@ window.MED_GLOSSARY_COURSES["histology-embryology"] = {
           "pdfPage": 57,
           "chapter": "第4章 软骨和骨",
           "part": "组织学",
-          "text": "（3）间骨板（interstitial lamella）: 位于骨单位之间或骨单位与环骨板之间，为大小和形状皆不规则的骨板聚集体，是骨生长和重建过程中较早期的骨单位和环骨板的残留部分。"
+          "text": "间骨板（interstitial lamella）: 位于骨单位之间或骨单位与环骨板之间，为大小和形状皆不规则的骨板聚集体，是骨生长和重建过程中较早期的骨单位和环骨板的残留部分。"
         }
       ],
       "occurrences": 4,
@@ -20455,7 +20455,7 @@ window.MED_GLOSSARY_COURSES["histology-embryology"] = {
       ],
       "firstPage": 35,
       "firstPdfPage": 58,
-      "definition": "（3）初级骨化中心与骨髓腔形成：软骨雏形中央的软骨细胞停止分裂，体积增大，软骨细胞逐渐凋亡，周围的软骨基质钙化。",
+      "definition": "初级骨化中心与骨髓腔形成：软骨雏形中央的软骨细胞停止分裂，体积增大，软骨细胞逐渐凋亡，周围的软骨基质钙化。",
       "structure": "应按细胞类型、基质成分、纤维类型、软骨膜或骨膜、骨单位和生长改建方式来定位。",
       "location": "应按细胞类型、基质成分、纤维类型、软骨膜或骨膜、骨单位和生长改建方式来定位。",
       "function": "功能意义在于支持、保护、运动杠杆、造血微环境和矿物储存；软骨与骨的结构差异决定其力学和修复特点。",
@@ -20474,7 +20474,7 @@ window.MED_GLOSSARY_COURSES["histology-embryology"] = {
           "pdfPage": 58,
           "chapter": "第4章 软骨和骨",
           "part": "组织学",
-          "text": "（3）初级骨化中心与骨髓腔形成：软骨雏形中央的软骨细胞停止分裂，体积增大，软骨细胞逐渐凋亡，周围的软骨基质钙化。"
+          "text": "初级骨化中心与骨髓腔形成：软骨雏形中央的软骨细胞停止分裂，体积增大，软骨细胞逐渐凋亡，周围的软骨基质钙化。"
         }
       ],
       "occurrences": 4,
@@ -20707,7 +20707,7 @@ window.MED_GLOSSARY_COURSES["histology-embryology"] = {
       ],
       "firstPage": 35,
       "firstPdfPage": 58,
-      "definition": "（1）软骨雏形形成：在将要成骨的部位间充质细胞聚集，分化为骨祖细胞，继而分化为成软骨细胞，成软骨细胞进一步转变为软骨细胞，后者不断增殖分裂并分泌软骨基质，形成透明软骨，因其外形与将要形成的长骨相似，故称软骨雏形（cartilage model）。",
+      "definition": "软骨雏形形成：在将要成骨的部位间充质细胞聚集，分化为骨祖细胞，继而分化为成软骨细胞，成软骨细胞进一步转变为软骨细胞，后者不断增殖分裂并分泌软骨基质，形成透明软骨，因其外形与将要形成的长骨相似，故称软骨雏形（cartilage model）。",
       "structure": "应按细胞类型、基质成分、纤维类型、软骨膜或骨膜、骨单位和生长改建方式来定位。",
       "location": "应按细胞类型、基质成分、纤维类型、软骨膜或骨膜、骨单位和生长改建方式来定位。",
       "function": "功能意义在于支持、保护、运动杠杆、造血微环境和矿物储存；软骨与骨的结构差异决定其力学和修复特点。",
@@ -20728,7 +20728,7 @@ window.MED_GLOSSARY_COURSES["histology-embryology"] = {
           "pdfPage": 58,
           "chapter": "第4章 软骨和骨",
           "part": "组织学",
-          "text": "（1）软骨雏形形成：在将要成骨的部位间充质细胞聚集，分化为骨祖细胞，继而分化为成软骨细胞，成软骨细胞进一步转变为软骨细胞，后者不断增殖分裂并分泌软骨基质，形成透明软骨，因其外形与将要形成的长骨相似，故称软骨雏形（cartilage model）。"
+          "text": "软骨雏形形成：在将要成骨的部位间充质细胞聚集，分化为骨祖细胞，继而分化为成软骨细胞，成软骨细胞进一步转变为软骨细胞，后者不断增殖分裂并分泌软骨基质，形成透明软骨，因其外形与将要形成的长骨相似，故称软骨雏形（cartilage model）。"
         }
       ],
       "occurrences": 7,
@@ -20961,7 +20961,7 @@ window.MED_GLOSSARY_COURSES["histology-embryology"] = {
       ],
       "firstPage": 35,
       "firstPdfPage": 58,
-      "definition": "（2）骨领形成：在软骨雏形中段，软骨膜内的骨祖细胞增殖分化为成骨细胞，后者贴附在软骨组织表面形成薄层原始骨组织。",
+      "definition": "骨领形成：在软骨雏形中段，软骨膜内的骨祖细胞增殖分化为成骨细胞，后者贴附在软骨组织表面形成薄层原始骨组织。",
       "structure": "应按细胞类型、基质成分、纤维类型、软骨膜或骨膜、骨单位和生长改建方式来定位。",
       "location": "应按细胞类型、基质成分、纤维类型、软骨膜或骨膜、骨单位和生长改建方式来定位。",
       "function": "功能意义在于支持、保护、运动杠杆、造血微环境和矿物储存；软骨与骨的结构差异决定其力学和修复特点。",
@@ -20982,7 +20982,7 @@ window.MED_GLOSSARY_COURSES["histology-embryology"] = {
           "pdfPage": 58,
           "chapter": "第4章 软骨和骨",
           "part": "组织学",
-          "text": "（2）骨领形成：在软骨雏形中段，软骨膜内的骨祖细胞增殖分化为成骨细胞，后者贴附在软骨组织表面形成薄层原始骨组织。"
+          "text": "骨领形成：在软骨雏形中段，软骨膜内的骨祖细胞增殖分化为成骨细胞，后者贴附在软骨组织表面形成薄层原始骨组织。"
         }
       ],
       "occurrences": 5,
@@ -21046,7 +21046,7 @@ window.MED_GLOSSARY_COURSES["histology-embryology"] = {
       ],
       "firstPage": 36,
       "firstPdfPage": 59,
-      "definition": "（4）次级骨化中心与骨骺形成：次级骨化中心（secondary ossification center）出现在骨干两端的软骨组织中央，此处将形成骨骺。",
+      "definition": "次级骨化中心与骨骺形成：次级骨化中心（secondary ossification center）出现在骨干两端的软骨组织中央，此处将形成骨骺。",
       "structure": "应按细胞类型、基质成分、纤维类型、软骨膜或骨膜、骨单位和生长改建方式来定位。",
       "location": "应按细胞类型、基质成分、纤维类型、软骨膜或骨膜、骨单位和生长改建方式来定位。",
       "function": "功能意义在于支持、保护、运动杠杆、造血微环境和矿物储存；软骨与骨的结构差异决定其力学和修复特点。",
@@ -21066,7 +21066,7 @@ window.MED_GLOSSARY_COURSES["histology-embryology"] = {
           "pdfPage": 59,
           "chapter": "第4章 软骨和骨",
           "part": "组织学",
-          "text": "（4）次级骨化中心与骨骺形成：次级骨化中心（secondary ossification center）出现在骨干两端的软骨组织中央，此处将形成骨骺。"
+          "text": "次级骨化中心与骨骺形成：次级骨化中心（secondary ossification center）出现在骨干两端的软骨组织中央，此处将形成骨骺。"
         }
       ],
       "occurrences": 3,
@@ -21214,7 +21214,7 @@ window.MED_GLOSSARY_COURSES["histology-embryology"] = {
       ],
       "firstPage": 37,
       "firstPdfPage": 60,
-      "definition": "（5）成骨区（zone of ossification）: 破骨细胞和成骨细胞极为活跃，光镜下易见到（见图4-6 B）。",
+      "definition": "成骨区（zone of ossification）: 破骨细胞和成骨细胞极为活跃，光镜下易见到（见图4-6 B）。",
       "structure": "应按细胞类型、基质成分、纤维类型、软骨膜或骨膜、骨单位和生长改建方式来定位。",
       "location": "应按细胞类型、基质成分、纤维类型、软骨膜或骨膜、骨单位和生长改建方式来定位。",
       "function": "功能意义在于支持、保护、运动杠杆、造血微环境和矿物储存；软骨与骨的结构差异决定其力学和修复特点。",
@@ -21236,7 +21236,7 @@ window.MED_GLOSSARY_COURSES["histology-embryology"] = {
           "pdfPage": 60,
           "chapter": "第4章 软骨和骨",
           "part": "组织学",
-          "text": "（5）成骨区（zone of ossification）: 破骨细胞和成骨细胞极为活跃，光镜下易见到（见图4-6 B）。"
+          "text": "成骨区（zone of ossification）: 破骨细胞和成骨细胞极为活跃，光镜下易见到（见图4-6 B）。"
         }
       ],
       "occurrences": 3,
@@ -21300,7 +21300,7 @@ window.MED_GLOSSARY_COURSES["histology-embryology"] = {
       ],
       "firstPage": 37,
       "firstPdfPage": 60,
-      "definition": "（1）软骨储备区（zone of reserving cartilage）: 软骨细胞小，分散存在，软骨基质呈弱嗜碱性。",
+      "definition": "软骨储备区（zone of reserving cartilage）: 软骨细胞小，分散存在，软骨基质呈弱嗜碱性。",
       "structure": "应按细胞类型、基质成分、纤维类型、软骨膜或骨膜、骨单位和生长改建方式来定位。",
       "location": "应按细胞类型、基质成分、纤维类型、软骨膜或骨膜、骨单位和生长改建方式来定位。",
       "function": "功能意义在于支持、保护、运动杠杆、造血微环境和矿物储存；软骨与骨的结构差异决定其力学和修复特点。",
@@ -21321,7 +21321,7 @@ window.MED_GLOSSARY_COURSES["histology-embryology"] = {
           "pdfPage": 60,
           "chapter": "第4章 软骨和骨",
           "part": "组织学",
-          "text": "（1）软骨储备区（zone of reserving cartilage）: 软骨细胞小，分散存在，软骨基质呈弱嗜碱性。"
+          "text": "软骨储备区（zone of reserving cartilage）: 软骨细胞小，分散存在，软骨基质呈弱嗜碱性。"
         }
       ],
       "occurrences": 2,
@@ -21385,7 +21385,7 @@ window.MED_GLOSSARY_COURSES["histology-embryology"] = {
       ],
       "firstPage": 37,
       "firstPdfPage": 60,
-      "definition": "（2）软骨增生区（zone of proliferating cartilage）: 软骨细胞明显生长，变成椭圆形和圆形，随之分裂增生形成同源细胞群，细胞排列大体上呈纵向分布。",
+      "definition": "软骨增生区（zone of proliferating cartilage）: 软骨细胞明显生长，变成椭圆形和圆形，随之分裂增生形成同源细胞群，细胞排列大体上呈纵向分布。",
       "structure": "应按细胞类型、基质成分、纤维类型、软骨膜或骨膜、骨单位和生长改建方式来定位。",
       "location": "应按细胞类型、基质成分、纤维类型、软骨膜或骨膜、骨单位和生长改建方式来定位。",
       "function": "功能意义在于支持、保护、运动杠杆、造血微环境和矿物储存；软骨与骨的结构差异决定其力学和修复特点。",
@@ -21406,7 +21406,7 @@ window.MED_GLOSSARY_COURSES["histology-embryology"] = {
           "pdfPage": 60,
           "chapter": "第4章 软骨和骨",
           "part": "组织学",
-          "text": "（2）软骨增生区（zone of proliferating cartilage）: 软骨细胞明显生长，变成椭圆形和圆形，随之分裂增生形成同源细胞群，细胞排列大体上呈纵向分布。"
+          "text": "软骨增生区（zone of proliferating cartilage）: 软骨细胞明显生长，变成椭圆形和圆形，随之分裂增生形成同源细胞群，细胞排列大体上呈纵向分布。"
         }
       ],
       "occurrences": 2,
@@ -21470,7 +21470,7 @@ window.MED_GLOSSARY_COURSES["histology-embryology"] = {
       ],
       "firstPage": 37,
       "firstPdfPage": 60,
-      "definition": "（3）软骨成熟区（zone of maturing cartilage）: 软骨细胞明显增大成熟，同源细胞群之间的软骨基质的宽度变窄，嗜碱性增强。",
+      "definition": "软骨成熟区（zone of maturing cartilage）: 软骨细胞明显增大成熟，同源细胞群之间的软骨基质的宽度变窄，嗜碱性增强。",
       "structure": "应按细胞类型、基质成分、纤维类型、软骨膜或骨膜、骨单位和生长改建方式来定位。",
       "location": "应按细胞类型、基质成分、纤维类型、软骨膜或骨膜、骨单位和生长改建方式来定位。",
       "function": "功能意义在于支持、保护、运动杠杆、造血微环境和矿物储存；软骨与骨的结构差异决定其力学和修复特点。",
@@ -21491,7 +21491,7 @@ window.MED_GLOSSARY_COURSES["histology-embryology"] = {
           "pdfPage": 60,
           "chapter": "第4章 软骨和骨",
           "part": "组织学",
-          "text": "（3）软骨成熟区（zone of maturing cartilage）: 软骨细胞明显增大成熟，同源细胞群之间的软骨基质的宽度变窄，嗜碱性增强。"
+          "text": "软骨成熟区（zone of maturing cartilage）: 软骨细胞明显增大成熟，同源细胞群之间的软骨基质的宽度变窄，嗜碱性增强。"
         }
       ],
       "occurrences": 2,
@@ -21555,7 +21555,7 @@ window.MED_GLOSSARY_COURSES["histology-embryology"] = {
       ],
       "firstPage": 37,
       "firstPdfPage": 60,
-      "definition": "（4）软骨钙化区（zone of calcifying cartilage）: 软骨细胞开始退化、凋亡，细胞质空化，出现核固缩与核溶解，接近骨髓腔的细胞消失，仅留下空洞状的软骨陷窝，陷窝内可有破骨细胞到达。",
+      "definition": "软骨钙化区（zone of calcifying cartilage）: 软骨细胞开始退化、凋亡，细胞质空化，出现核固缩与核溶解，接近骨髓腔的细胞消失，仅留下空洞状的软骨陷窝，陷窝内可有破骨细胞到达。",
       "structure": "应按细胞类型、基质成分、纤维类型、软骨膜或骨膜、骨单位和生长改建方式来定位。",
       "location": "应按细胞类型、基质成分、纤维类型、软骨膜或骨膜、骨单位和生长改建方式来定位。",
       "function": "功能意义在于支持、保护、运动杠杆、造血微环境和矿物储存；软骨与骨的结构差异决定其力学和修复特点。",
@@ -21576,7 +21576,7 @@ window.MED_GLOSSARY_COURSES["histology-embryology"] = {
           "pdfPage": 60,
           "chapter": "第4章 软骨和骨",
           "part": "组织学",
-          "text": "（4）软骨钙化区（zone of calcifying cartilage）: 软骨细胞开始退化、凋亡，细胞质空化，出现核固缩与核溶解，接近骨髓腔的细胞消失，仅留下空洞状的软骨陷窝，陷窝内可有破骨细胞到达。"
+          "text": "软骨钙化区（zone of calcifying cartilage）: 软骨细胞开始退化、凋亡，细胞质空化，出现核固缩与核溶解，接近骨髓腔的细胞消失，仅留下空洞状的软骨陷窝，陷窝内可有破骨细胞到达。"
         }
       ],
       "occurrences": 2,
@@ -24010,7 +24010,7 @@ window.MED_GLOSSARY_COURSES["histology-embryology"] = {
       ],
       "firstPage": 44,
       "firstPdfPage": 67,
-      "definition": "（3）自然杀伤细胞（natural killer cell）: 简称NK细胞，产生于骨髓，约占10%~15%；为中淋巴细胞，溶酶体较多。",
+      "definition": "自然杀伤细胞（natural killer cell）: 简称NK细胞，产生于骨髓，约占10%~15%；为中淋巴细胞，溶酶体较多。",
       "structure": "应按血细胞类型、形态、比例、寿命、造血谱系和骨髓微环境来整理。",
       "location": "应按血细胞类型、形态、比例、寿命、造血谱系和骨髓微环境来整理。",
       "function": "功能意义包括运输、免疫防御、止血凝血和内环境维持；细胞形态常直接提示功能状态。",
@@ -24031,7 +24031,7 @@ window.MED_GLOSSARY_COURSES["histology-embryology"] = {
           "pdfPage": 67,
           "chapter": "第5章 血液",
           "part": "组织学",
-          "text": "（3）自然杀伤细胞（natural killer cell）: 简称NK细胞，产生于骨髓，约占10%~15%；为中淋巴细胞，溶酶体较多。"
+          "text": "自然杀伤细胞（natural killer cell）: 简称NK细胞，产生于骨髓，约占10%~15%；为中淋巴细胞，溶酶体较多。"
         }
       ],
       "occurrences": 2,
@@ -24095,7 +24095,7 @@ window.MED_GLOSSARY_COURSES["histology-embryology"] = {
       ],
       "firstPage": 44,
       "firstPdfPage": 67,
-      "definition": "（2）骨髓依赖性淋巴细胞（bone marrow dependent lymphocyte）: 简称B淋巴细胞，产生于骨髓，约占10%~15%；其体积略大，一般不含溶酶体，有少量粗面内质网。",
+      "definition": "骨髓依赖性淋巴细胞（bone marrow dependent lymphocyte）: 简称B淋巴细胞，产生于骨髓，约占10%~15%；其体积略大，一般不含溶酶体，有少量粗面内质网。",
       "structure": "应按血细胞类型、形态、比例、寿命、造血谱系和骨髓微环境来整理。",
       "location": "应按血细胞类型、形态、比例、寿命、造血谱系和骨髓微环境来整理。",
       "function": "功能意义包括运输、免疫防御、止血凝血和内环境维持；细胞形态常直接提示功能状态。",
@@ -24116,7 +24116,7 @@ window.MED_GLOSSARY_COURSES["histology-embryology"] = {
           "pdfPage": 67,
           "chapter": "第5章 血液",
           "part": "组织学",
-          "text": "（2）骨髓依赖性淋巴细胞（bone marrow dependent lymphocyte）: 简称B淋巴细胞，产生于骨髓，约占10%~15%；其体积略大，一般不含溶酶体，有少量粗面内质网。"
+          "text": "骨髓依赖性淋巴细胞（bone marrow dependent lymphocyte）: 简称B淋巴细胞，产生于骨髓，约占10%~15%；其体积略大，一般不含溶酶体，有少量粗面内质网。"
         }
       ],
       "occurrences": 2,
@@ -28982,7 +28982,7 @@ window.MED_GLOSSARY_COURSES["histology-embryology"] = {
       ],
       "firstPage": 60,
       "firstPdfPage": 83,
-      "definition": "（2）细胞质：在光镜下，其特征性结构为尼氏体和神经原纤维（图7-3）。",
+      "definition": "细胞质：在光镜下，其特征性结构为尼氏体和神经原纤维（图7-3）。",
       "structure": "应按神经元、神经胶质、神经纤维、突触、髓鞘和屏障结构来定位，并区分中枢与周围神经系统。",
       "location": "应按神经元、神经胶质、神经纤维、突触、髓鞘和屏障结构来定位，并区分中枢与周围神经系统。",
       "function": "功能意义在于接受、整合和传递信息；胶质细胞和屏障结构对支持、绝缘、免疫和内环境稳定同样关键。",
@@ -29005,7 +29005,7 @@ window.MED_GLOSSARY_COURSES["histology-embryology"] = {
           "pdfPage": 83,
           "chapter": "第7章 神经组织",
           "part": "组织学",
-          "text": "（2）细胞质：在光镜下，其特征性结构为尼氏体和神经原纤维（图7-3）。"
+          "text": "细胞质：在光镜下，其特征性结构为尼氏体和神经原纤维（图7-3）。"
         }
       ],
       "occurrences": 1,
@@ -37772,7 +37772,7 @@ window.MED_GLOSSARY_COURSES["histology-embryology"] = {
       ],
       "firstPage": 83,
       "firstPdfPage": 106,
-      "definition": "（2） W-P小体：内皮细胞的细胞质中可见有膜包裹的杆状结构，为怀布尔-帕拉德小体（Weibel-Palade body）,又称 W-P小体。",
+      "definition": "W-P小体：内皮细胞的细胞质中可见有膜包裹的杆状结构，为怀布尔-帕拉德小体（Weibel-Palade body）,又称 W-P小体。",
       "structure": "应按管壁层次、内皮、平滑肌、弹性成分、瓣膜和血流压力关系来理解不同血管或心脏结构。",
       "location": "应按管壁层次、内皮、平滑肌、弹性成分、瓣膜和血流压力关系来理解不同血管或心脏结构。",
       "function": "功能意义在于运输血液、调节阻力与容量、交换物质并维持灌注；管壁结构反映其所承受的压力和流量。",
@@ -37790,7 +37790,7 @@ window.MED_GLOSSARY_COURSES["histology-embryology"] = {
           "pdfPage": 106,
           "chapter": "第9章 循环系统",
           "part": "组织学",
-          "text": "（2） W-P小体：内皮细胞的细胞质中可见有膜包裹的杆状结构，为怀布尔-帕拉德小体（Weibel-Palade body）,又称 W-P小体。"
+          "text": "W-P小体：内皮细胞的细胞质中可见有膜包裹的杆状结构，为怀布尔-帕拉德小体（Weibel-Palade body）,又称 W-P小体。"
         }
       ],
       "occurrences": 1,
@@ -43356,7 +43356,7 @@ window.MED_GLOSSARY_COURSES["histology-embryology"] = {
       ],
       "firstPage": 95,
       "firstPdfPage": 118,
-      "definition": "（2） B-2 细胞：即绝大多数B淋巴细胞，表达CD40膜分子，主要分泌 IgG，其活化需要T淋巴细胞参与，主要对蛋白质抗原作出反应，能与 Th2 细胞结合并释放细胞因子，从而抑制 Th1 细胞的细胞周期，促进记忆B细胞和浆细胞形成，是适应性体液免疫应答的主要执行者。",
+      "definition": "B-2 细胞：即绝大多数B淋巴细胞，表达CD40膜分子，主要分泌 IgG，其活化需要T淋巴细胞参与，主要对蛋白质抗原作出反应，能与 Th2 细胞结合并释放细胞因子，从而抑制 Th1 细胞的细胞周期，促进记忆B细胞和浆细胞形成，是适应性体液免疫应答的主要执行者。",
       "structure": "应把淋巴细胞、抗原呈递细胞、网状组织和淋巴器官分区放在一起记，关注抗原进入和细胞迁移路径。",
       "location": "应把淋巴细胞、抗原呈递细胞、网状组织和淋巴器官分区放在一起记，关注抗原进入和细胞迁移路径。",
       "function": "功能意义在于免疫监视、抗原识别、免疫应答和淋巴细胞成熟；结构分区常对应不同免疫事件。",
@@ -43372,7 +43372,7 @@ window.MED_GLOSSARY_COURSES["histology-embryology"] = {
           "pdfPage": 118,
           "chapter": "第10章 免疫系统",
           "part": "组织学",
-          "text": "（2） B-2 细胞：即绝大多数B淋巴细胞，表达CD40膜分子，主要分泌 IgG，其活化需要T淋巴细胞参与，主要对蛋白质抗原作出反应，能与 Th2 细胞结合并释放细胞因子，从而抑制 Th1 细胞的细胞周期，促进记忆B细胞和浆细胞形成，是适应性体液免疫应答的主要执行者。"
+          "text": "B-2 细胞：即绝大多数B淋巴细胞，表达CD40膜分子，主要分泌 IgG，其活化需要T淋巴细胞参与，主要对蛋白质抗原作出反应，能与 Th2 细胞结合并释放细胞因子，从而抑制 Th1 细胞的细胞周期，促进记忆B细胞和浆细胞形成，是适应性体液免疫应答的主要执行者。"
         }
       ],
       "occurrences": 3,
@@ -43836,7 +43836,7 @@ window.MED_GLOSSARY_COURSES["histology-embryology"] = {
       ],
       "firstPage": 95,
       "firstPdfPage": 118,
-      "definition": "（3）调节性T细胞（regulatory T cell）: 简称 Treg 细胞，数量较少，表达 CD4、CD25膜分子和核转录因子 Foxp3，具有抑制机体免疫应答的功能。",
+      "definition": "调节性T细胞（regulatory T cell）: 简称 Treg 细胞，数量较少，表达 CD4、CD25膜分子和核转录因子 Foxp3，具有抑制机体免疫应答的功能。",
       "structure": "应把淋巴细胞、抗原呈递细胞、网状组织和淋巴器官分区放在一起记，关注抗原进入和细胞迁移路径。",
       "location": "应把淋巴细胞、抗原呈递细胞、网状组织和淋巴器官分区放在一起记，关注抗原进入和细胞迁移路径。",
       "function": "功能意义在于免疫监视、抗原识别、免疫应答和淋巴细胞成熟；结构分区常对应不同免疫事件。",
@@ -43852,7 +43852,7 @@ window.MED_GLOSSARY_COURSES["histology-embryology"] = {
           "pdfPage": 118,
           "chapter": "第10章 免疫系统",
           "part": "组织学",
-          "text": "（3）调节性T细胞（regulatory T cell）: 简称 Treg 细胞，数量较少，表达 CD4、CD25膜分子和核转录因子 Foxp3，具有抑制机体免疫应答的功能。"
+          "text": "调节性T细胞（regulatory T cell）: 简称 Treg 细胞，数量较少，表达 CD4、CD25膜分子和核转录因子 Foxp3，具有抑制机体免疫应答的功能。"
         }
       ],
       "occurrences": 1,
@@ -46385,7 +46385,7 @@ window.MED_GLOSSARY_COURSES["histology-embryology"] = {
       ],
       "firstPage": 98,
       "firstPdfPage": 121,
-      "definition": "（3）胸腺的血液供应及血-胸腺屏障：小动脉穿越胸腺被膜，沿小叶间隔至皮质与髓质交界处形成微动脉，然后发出分支进入皮质和髓质。",
+      "definition": "胸腺的血液供应及血-胸腺屏障：小动脉穿越胸腺被膜，沿小叶间隔至皮质与髓质交界处形成微动脉，然后发出分支进入皮质和髓质。",
       "structure": "应把淋巴细胞、抗原呈递细胞、网状组织和淋巴器官分区放在一起记，关注抗原进入和细胞迁移路径。",
       "location": "应把淋巴细胞、抗原呈递细胞、网状组织和淋巴器官分区放在一起记，关注抗原进入和细胞迁移路径。",
       "function": "功能意义在于免疫监视、抗原识别、免疫应答和淋巴细胞成熟；结构分区常对应不同免疫事件。",
@@ -46404,7 +46404,7 @@ window.MED_GLOSSARY_COURSES["histology-embryology"] = {
           "pdfPage": 121,
           "chapter": "第10章 免疫系统",
           "part": "组织学",
-          "text": "（3）胸腺的血液供应及血-胸腺屏障：小动脉穿越胸腺被膜，沿小叶间隔至皮质与髓质交界处形成微动脉，然后发出分支进入皮质和髓质。"
+          "text": "胸腺的血液供应及血-胸腺屏障：小动脉穿越胸腺被膜，沿小叶间隔至皮质与髓质交界处形成微动脉，然后发出分支进入皮质和髓质。"
         }
       ],
       "occurrences": 1,
@@ -46551,7 +46551,7 @@ window.MED_GLOSSARY_COURSES["histology-embryology"] = {
       ],
       "firstPage": 99,
       "firstPdfPage": 122,
-      "definition": "（1）皮质：位于被膜下方，由浅层皮质、副皮质区及皮质淋巴窦构成。",
+      "definition": "皮质：位于被膜下方，由浅层皮质、副皮质区及皮质淋巴窦构成。",
       "structure": "应把淋巴细胞、抗原呈递细胞、网状组织和淋巴器官分区放在一起记，关注抗原进入和细胞迁移路径。",
       "location": "应把淋巴细胞、抗原呈递细胞、网状组织和淋巴器官分区放在一起记，关注抗原进入和细胞迁移路径。",
       "function": "功能意义在于免疫监视、抗原识别、免疫应答和淋巴细胞成熟；结构分区常对应不同免疫事件。",
@@ -46571,7 +46571,7 @@ window.MED_GLOSSARY_COURSES["histology-embryology"] = {
           "pdfPage": 122,
           "chapter": "第10章 免疫系统",
           "part": "组织学",
-          "text": "（1）皮质：位于被膜下方，由浅层皮质、副皮质区及皮质淋巴窦构成。"
+          "text": "皮质：位于被膜下方，由浅层皮质、副皮质区及皮质淋巴窦构成。"
         }
       ],
       "occurrences": 8,
@@ -46719,7 +46719,7 @@ window.MED_GLOSSARY_COURSES["histology-embryology"] = {
       ],
       "firstPage": 99,
       "firstPdfPage": 122,
-      "definition": "（1）皮质：位于被膜下方，由浅层皮质、副皮质区及皮质淋巴窦构成。",
+      "definition": "皮质：位于被膜下方，由浅层皮质、副皮质区及皮质淋巴窦构成。",
       "structure": "应把淋巴细胞、抗原呈递细胞、网状组织和淋巴器官分区放在一起记，关注抗原进入和细胞迁移路径。",
       "location": "应把淋巴细胞、抗原呈递细胞、网状组织和淋巴器官分区放在一起记，关注抗原进入和细胞迁移路径。",
       "function": "功能意义在于免疫监视、抗原识别、免疫应答和淋巴细胞成熟；结构分区常对应不同免疫事件。",
@@ -46739,7 +46739,7 @@ window.MED_GLOSSARY_COURSES["histology-embryology"] = {
           "pdfPage": 122,
           "chapter": "第10章 免疫系统",
           "part": "组织学",
-          "text": "（1）皮质：位于被膜下方，由浅层皮质、副皮质区及皮质淋巴窦构成。"
+          "text": "皮质：位于被膜下方，由浅层皮质、副皮质区及皮质淋巴窦构成。"
         }
       ],
       "occurrences": 3,
@@ -47406,7 +47406,7 @@ window.MED_GLOSSARY_COURSES["histology-embryology"] = {
       ],
       "firstPage": 101,
       "firstPdfPage": 124,
-      "definition": "（2）白髓（white pulp）: 由动脉周围淋巴鞘、脾小体和边缘区构成，相当于淋巴结的皮质。",
+      "definition": "白髓（white pulp）: 由动脉周围淋巴鞘、脾小体和边缘区构成，相当于淋巴结的皮质。",
       "structure": "应把淋巴细胞、抗原呈递细胞、网状组织和淋巴器官分区放在一起记，关注抗原进入和细胞迁移路径。",
       "location": "应把淋巴细胞、抗原呈递细胞、网状组织和淋巴器官分区放在一起记，关注抗原进入和细胞迁移路径。",
       "function": "功能意义在于免疫监视、抗原识别、免疫应答和淋巴细胞成熟；结构分区常对应不同免疫事件。",
@@ -47426,7 +47426,7 @@ window.MED_GLOSSARY_COURSES["histology-embryology"] = {
           "pdfPage": 124,
           "chapter": "第10章 免疫系统",
           "part": "组织学",
-          "text": "（2）白髓（white pulp）: 由动脉周围淋巴鞘、脾小体和边缘区构成，相当于淋巴结的皮质。"
+          "text": "白髓（white pulp）: 由动脉周围淋巴鞘、脾小体和边缘区构成，相当于淋巴结的皮质。"
         }
       ],
       "occurrences": 5,
@@ -47578,7 +47578,7 @@ window.MED_GLOSSARY_COURSES["histology-embryology"] = {
       ],
       "firstPage": 101,
       "firstPdfPage": 124,
-      "definition": "（2）白髓（white pulp）: 由动脉周围淋巴鞘、脾小体和边缘区构成，相当于淋巴结的皮质。",
+      "definition": "白髓（white pulp）: 由动脉周围淋巴鞘、脾小体和边缘区构成，相当于淋巴结的皮质。",
       "structure": "应把淋巴细胞、抗原呈递细胞、网状组织和淋巴器官分区放在一起记，关注抗原进入和细胞迁移路径。",
       "location": "应把淋巴细胞、抗原呈递细胞、网状组织和淋巴器官分区放在一起记，关注抗原进入和细胞迁移路径。",
       "function": "功能意义在于免疫监视、抗原识别、免疫应答和淋巴细胞成熟；结构分区常对应不同免疫事件。",
@@ -47598,7 +47598,7 @@ window.MED_GLOSSARY_COURSES["histology-embryology"] = {
           "pdfPage": 124,
           "chapter": "第10章 免疫系统",
           "part": "组织学",
-          "text": "（2）白髓（white pulp）: 由动脉周围淋巴鞘、脾小体和边缘区构成，相当于淋巴结的皮质。"
+          "text": "白髓（white pulp）: 由动脉周围淋巴鞘、脾小体和边缘区构成，相当于淋巴结的皮质。"
         }
       ],
       "occurrences": 3,
@@ -47662,7 +47662,7 @@ window.MED_GLOSSARY_COURSES["histology-embryology"] = {
       ],
       "firstPage": 101,
       "firstPdfPage": 124,
-      "definition": "（2）白髓（white pulp）: 由动脉周围淋巴鞘、脾小体和边缘区构成，相当于淋巴结的皮质。",
+      "definition": "白髓（white pulp）: 由动脉周围淋巴鞘、脾小体和边缘区构成，相当于淋巴结的皮质。",
       "structure": "应把淋巴细胞、抗原呈递细胞、网状组织和淋巴器官分区放在一起记，关注抗原进入和细胞迁移路径。",
       "location": "应把淋巴细胞、抗原呈递细胞、网状组织和淋巴器官分区放在一起记，关注抗原进入和细胞迁移路径。",
       "function": "功能意义在于免疫监视、抗原识别、免疫应答和淋巴细胞成熟；结构分区常对应不同免疫事件。",
@@ -47682,7 +47682,7 @@ window.MED_GLOSSARY_COURSES["histology-embryology"] = {
           "pdfPage": 124,
           "chapter": "第10章 免疫系统",
           "part": "组织学",
-          "text": "（2）白髓（white pulp）: 由动脉周围淋巴鞘、脾小体和边缘区构成，相当于淋巴结的皮质。"
+          "text": "白髓（white pulp）: 由动脉周围淋巴鞘、脾小体和边缘区构成，相当于淋巴结的皮质。"
         }
       ],
       "occurrences": 4,
@@ -51629,7 +51629,7 @@ window.MED_GLOSSARY_COURSES["histology-embryology"] = {
       ],
       "firstPage": 114,
       "firstPdfPage": 137,
-      "definition": "（2）前界层（anterior limiting lamina）: 为不含细胞的薄层结构，由胶原原纤维和基质构成。",
+      "definition": "前界层（anterior limiting lamina）: 为不含细胞的薄层结构，由胶原原纤维和基质构成。",
       "structure": "应按感受细胞、支持结构、透明介质、传导方向和附属保护结构来定位。",
       "location": "应按感受细胞、支持结构、透明介质、传导方向和附属保护结构来定位。",
       "function": "功能意义在于视觉、听觉和平衡觉的感受与传导；结构层次常用于解释相应感觉障碍。",
@@ -51651,7 +51651,7 @@ window.MED_GLOSSARY_COURSES["histology-embryology"] = {
           "pdfPage": 137,
           "chapter": "第12章 眼与耳",
           "part": "组织学",
-          "text": "（2）前界层（anterior limiting lamina）: 为不含细胞的薄层结构，由胶原原纤维和基质构成。"
+          "text": "前界层（anterior limiting lamina）: 为不含细胞的薄层结构，由胶原原纤维和基质构成。"
         }
       ],
       "occurrences": 2,
@@ -51811,7 +51811,7 @@ window.MED_GLOSSARY_COURSES["histology-embryology"] = {
       ],
       "firstPage": 114,
       "firstPdfPage": 137,
-      "definition": "（1）角膜上皮（corneal epithelium）: 为未角化的复层扁平上皮，其基部平坦，表面平整光滑，由 5~6层排列整齐的细胞构成，无黑素细胞。",
+      "definition": "角膜上皮（corneal epithelium）: 为未角化的复层扁平上皮，其基部平坦，表面平整光滑，由 5~6层排列整齐的细胞构成，无黑素细胞。",
       "structure": "应按感受细胞、支持结构、透明介质、传导方向和附属保护结构来定位。",
       "location": "应按感受细胞、支持结构、透明介质、传导方向和附属保护结构来定位。",
       "function": "功能意义在于视觉、听觉和平衡觉的感受与传导；结构层次常用于解释相应感觉障碍。",
@@ -51831,7 +51831,7 @@ window.MED_GLOSSARY_COURSES["histology-embryology"] = {
           "pdfPage": 137,
           "chapter": "第12章 眼与耳",
           "part": "组织学",
-          "text": "（1）角膜上皮（corneal epithelium）: 为未角化的复层扁平上皮，其基部平坦，表面平整光滑，由 5~6层排列整齐的细胞构成，无黑素细胞。"
+          "text": "角膜上皮（corneal epithelium）: 为未角化的复层扁平上皮，其基部平坦，表面平整光滑，由 5~6层排列整齐的细胞构成，无黑素细胞。"
         }
       ],
       "occurrences": 2,
@@ -51895,7 +51895,7 @@ window.MED_GLOSSARY_COURSES["histology-embryology"] = {
       ],
       "firstPage": 114,
       "firstPdfPage": 137,
-      "definition": "（3）角膜基质（corneal stroma）: 又称固有层，约占角膜全厚度的90%，主要成分为多层与表面平行图12-3 眼球前部光镜图1. 巩膜静脉窦；2. 小梁网；3. 睫状体；4. 睫状小带; ↑ 瞳孔括约肌。",
+      "definition": "角膜基质（corneal stroma）: 又称固有层，约占角膜全厚度的90%，主要成分为多层与表面平行图12-3 眼球前部光镜图1. 巩膜静脉窦；2. 小梁网；3. 睫状体；4. 睫状小带; ↑ 瞳孔括约肌。",
       "structure": "应按感受细胞、支持结构、透明介质、传导方向和附属保护结构来定位。",
       "location": "应按感受细胞、支持结构、透明介质、传导方向和附属保护结构来定位。",
       "function": "功能意义在于视觉、听觉和平衡觉的感受与传导；结构层次常用于解释相应感觉障碍。",
@@ -51917,7 +51917,7 @@ window.MED_GLOSSARY_COURSES["histology-embryology"] = {
           "pdfPage": 137,
           "chapter": "第12章 眼与耳",
           "part": "组织学",
-          "text": "（3）角膜基质（corneal stroma）: 又称固有层，约占角膜全厚度的90%，主要成分为多层与表面平行图12-3 眼球前部光镜图1. 巩膜静脉窦；2. 小梁网；3. 睫状体；4. 睫状小带; ↑ 瞳孔括约肌。"
+          "text": "角膜基质（corneal stroma）: 又称固有层，约占角膜全厚度的90%，主要成分为多层与表面平行图12-3 眼球前部光镜图1. 巩膜静脉窦；2. 小梁网；3. 睫状体；4. 睫状小带; ↑ 瞳孔括约肌。"
         }
       ],
       "occurrences": 2,
@@ -52159,7 +52159,7 @@ window.MED_GLOSSARY_COURSES["histology-embryology"] = {
       ],
       "firstPage": 115,
       "firstPdfPage": 138,
-      "definition": "（2）巩膜（sclera）: 呈瓷白色，主要由大量粗大的胶原纤维交织而成，质地坚韧，是眼球壁的重要保护层。",
+      "definition": "巩膜（sclera）: 呈瓷白色，主要由大量粗大的胶原纤维交织而成，质地坚韧，是眼球壁的重要保护层。",
       "structure": "应按感受细胞、支持结构、透明介质、传导方向和附属保护结构来定位。",
       "location": "应按感受细胞、支持结构、透明介质、传导方向和附属保护结构来定位。",
       "function": "功能意义在于视觉、听觉和平衡觉的感受与传导；结构层次常用于解释相应感觉障碍。",
@@ -52181,7 +52181,7 @@ window.MED_GLOSSARY_COURSES["histology-embryology"] = {
           "pdfPage": 138,
           "chapter": "第12章 眼与耳",
           "part": "组织学",
-          "text": "（2）巩膜（sclera）: 呈瓷白色，主要由大量粗大的胶原纤维交织而成，质地坚韧，是眼球壁的重要保护层。"
+          "text": "巩膜（sclera）: 呈瓷白色，主要由大量粗大的胶原纤维交织而成，质地坚韧，是眼球壁的重要保护层。"
         }
       ],
       "occurrences": 11,
@@ -52520,7 +52520,7 @@ window.MED_GLOSSARY_COURSES["histology-embryology"] = {
       ],
       "firstPage": 115,
       "firstPdfPage": 138,
-      "definition": "（3）角膜缘（corneal limbus）: 为角膜与巩膜的带状移行区域，宽 1~2mm。",
+      "definition": "角膜缘（corneal limbus）: 为角膜与巩膜的带状移行区域，宽 1~2mm。",
       "structure": "应按感受细胞、支持结构、透明介质、传导方向和附属保护结构来定位。",
       "location": "应按感受细胞、支持结构、透明介质、传导方向和附属保护结构来定位。",
       "function": "功能意义在于视觉、听觉和平衡觉的感受与传导；结构层次常用于解释相应感觉障碍。",
@@ -52545,7 +52545,7 @@ window.MED_GLOSSARY_COURSES["histology-embryology"] = {
           "pdfPage": 138,
           "chapter": "第12章 眼与耳",
           "part": "组织学",
-          "text": "（3）角膜缘（corneal limbus）: 为角膜与巩膜的带状移行区域，宽 1~2mm。"
+          "text": "角膜缘（corneal limbus）: 为角膜与巩膜的带状移行区域，宽 1~2mm。"
         }
       ],
       "occurrences": 8,
@@ -52785,7 +52785,7 @@ window.MED_GLOSSARY_COURSES["histology-embryology"] = {
       ],
       "firstPage": 116,
       "firstPdfPage": 139,
-      "definition": "（2）视细胞层：视细胞（visual cell）是感受光线的感觉神经元，又称感光细胞（photoreceptor cell）, 分为胞体、外突和内突3部分。",
+      "definition": "视细胞层：视细胞（visual cell）是感受光线的感觉神经元，又称感光细胞（photoreceptor cell）, 分为胞体、外突和内突3部分。",
       "structure": "应按感受细胞、支持结构、透明介质、传导方向和附属保护结构来定位。",
       "location": "应按感受细胞、支持结构、透明介质、传导方向和附属保护结构来定位。",
       "function": "功能意义在于视觉、听觉和平衡觉的感受与传导；结构层次常用于解释相应感觉障碍。",
@@ -52810,7 +52810,7 @@ window.MED_GLOSSARY_COURSES["histology-embryology"] = {
           "pdfPage": 139,
           "chapter": "第12章 眼与耳",
           "part": "组织学",
-          "text": "（2）视细胞层：视细胞（visual cell）是感受光线的感觉神经元，又称感光细胞（photoreceptor cell）, 分为胞体、外突和内突3部分。"
+          "text": "视细胞层：视细胞（visual cell）是感受光线的感觉神经元，又称感光细胞（photoreceptor cell）, 分为胞体、外突和内突3部分。"
         }
       ],
       "occurrences": 2,
@@ -53425,7 +53425,7 @@ window.MED_GLOSSARY_COURSES["histology-embryology"] = {
       ],
       "firstPage": 116,
       "firstPdfPage": 139,
-      "definition": "（2）睫状体（ciliary body）: 介于虹膜与脉络膜之间，为具有伸缩功能的环带状结构，在眼球矢状切面上大致呈三角形。",
+      "definition": "睫状体（ciliary body）: 介于虹膜与脉络膜之间，为具有伸缩功能的环带状结构，在眼球矢状切面上大致呈三角形。",
       "structure": "应按感受细胞、支持结构、透明介质、传导方向和附属保护结构来定位。",
       "location": "应按感受细胞、支持结构、透明介质、传导方向和附属保护结构来定位。",
       "function": "功能意义在于视觉、听觉和平衡觉的感受与传导；结构层次常用于解释相应感觉障碍。",
@@ -53453,7 +53453,7 @@ window.MED_GLOSSARY_COURSES["histology-embryology"] = {
           "pdfPage": 139,
           "chapter": "第12章 眼与耳",
           "part": "组织学",
-          "text": "（2）睫状体（ciliary body）: 介于虹膜与脉络膜之间，为具有伸缩功能的环带状结构，在眼球矢状切面上大致呈三角形。"
+          "text": "睫状体（ciliary body）: 介于虹膜与脉络膜之间，为具有伸缩功能的环带状结构，在眼球矢状切面上大致呈三角形。"
         }
       ],
       "occurrences": 4,
@@ -53967,7 +53967,7 @@ window.MED_GLOSSARY_COURSES["histology-embryology"] = {
       ],
       "firstPage": 116,
       "firstPdfPage": 139,
-      "definition": "（3）脉络膜（choroid）: 血管膜的后 2/3部分，充填于巩膜与视网膜之间，为富含血管和大量黑素细胞的疏松结缔组织，呈棕黑色。",
+      "definition": "脉络膜（choroid）: 血管膜的后 2/3部分，充填于巩膜与视网膜之间，为富含血管和大量黑素细胞的疏松结缔组织，呈棕黑色。",
       "structure": "应按感受细胞、支持结构、透明介质、传导方向和附属保护结构来定位。",
       "location": "应按感受细胞、支持结构、透明介质、传导方向和附属保护结构来定位。",
       "function": "功能意义在于视觉、听觉和平衡觉的感受与传导；结构层次常用于解释相应感觉障碍。",
@@ -53992,7 +53992,7 @@ window.MED_GLOSSARY_COURSES["histology-embryology"] = {
           "pdfPage": 139,
           "chapter": "第12章 眼与耳",
           "part": "组织学",
-          "text": "（3）脉络膜（choroid）: 血管膜的后 2/3部分，充填于巩膜与视网膜之间，为富含血管和大量黑素细胞的疏松结缔组织，呈棕黑色。"
+          "text": "脉络膜（choroid）: 血管膜的后 2/3部分，充填于巩膜与视网膜之间，为富含血管和大量黑素细胞的疏松结缔组织，呈棕黑色。"
         }
       ],
       "occurrences": 9,
@@ -54830,7 +54830,7 @@ window.MED_GLOSSARY_COURSES["histology-embryology"] = {
       ],
       "firstPage": 118,
       "firstPdfPage": 141,
-      "definition": "（3）双极细胞层：主要由双极细胞（bipolar cell）的胞体构成。",
+      "definition": "双极细胞层：主要由双极细胞（bipolar cell）的胞体构成。",
       "structure": "应按感受细胞、支持结构、透明介质、传导方向和附属保护结构来定位。",
       "location": "应按感受细胞、支持结构、透明介质、传导方向和附属保护结构来定位。",
       "function": "功能意义在于视觉、听觉和平衡觉的感受与传导；结构层次常用于解释相应感觉障碍。",
@@ -54849,7 +54849,7 @@ window.MED_GLOSSARY_COURSES["histology-embryology"] = {
           "pdfPage": 141,
           "chapter": "第12章 眼与耳",
           "part": "组织学",
-          "text": "（3）双极细胞层：主要由双极细胞（bipolar cell）的胞体构成。"
+          "text": "双极细胞层：主要由双极细胞（bipolar cell）的胞体构成。"
         }
       ],
       "occurrences": 18,
@@ -55674,7 +55674,7 @@ window.MED_GLOSSARY_COURSES["histology-embryology"] = {
       ],
       "firstPage": 118,
       "firstPdfPage": 141,
-      "definition": "（2）视锥细胞（cone cell）: 主要分布在视网膜中部，感受强光和颜色。",
+      "definition": "视锥细胞（cone cell）: 主要分布在视网膜中部，感受强光和颜色。",
       "structure": "应按感受细胞、支持结构、透明介质、传导方向和附属保护结构来定位。",
       "location": "应按感受细胞、支持结构、透明介质、传导方向和附属保护结构来定位。",
       "function": "功能意义在于视觉、听觉和平衡觉的感受与传导；结构层次常用于解释相应感觉障碍。",
@@ -55693,7 +55693,7 @@ window.MED_GLOSSARY_COURSES["histology-embryology"] = {
           "pdfPage": 141,
           "chapter": "第12章 眼与耳",
           "part": "组织学",
-          "text": "（2）视锥细胞（cone cell）: 主要分布在视网膜中部，感受强光和颜色。"
+          "text": "视锥细胞（cone cell）: 主要分布在视网膜中部，感受强光和颜色。"
         }
       ],
       "occurrences": 8,
@@ -56993,8 +56993,8 @@ window.MED_GLOSSARY_COURSES["histology-embryology"] = {
       ],
       "firstPage": 121,
       "firstPdfPage": 144,
-      "definition": "（1）骨蜗管：被膜蜗管分隔为上下两部分，上部为前庭阶（scala vestibuli）, 起始于卵圆窗；下部为鼓室阶（scala tympani）, 起自圆窗；二者均含外淋巴，并在蜗顶以蜗孔相通。",
-      "structure": "（1）骨蜗管：被膜蜗管分隔为上下两部分，上部为前庭阶（scala vestibuli）, 起始于卵圆窗；",
+      "definition": "骨蜗管：被膜蜗管分隔为上下两部分，上部为前庭阶（scala vestibuli）, 起始于卵圆窗；下部为鼓室阶（scala tympani）, 起自圆窗；二者均含外淋巴，并在蜗顶以蜗孔相通。",
+      "structure": "骨蜗管：被膜蜗管分隔为上下两部分，上部为前庭阶（scala vestibuli）, 起始于卵圆窗；",
       "location": "",
       "function": "功能意义在于视觉、听觉和平衡觉的感受与传导；结构层次常用于解释相应感觉障碍。",
       "studyNote": "",
@@ -57019,7 +57019,7 @@ window.MED_GLOSSARY_COURSES["histology-embryology"] = {
           "pdfPage": 144,
           "chapter": "第12章 眼与耳",
           "part": "组织学",
-          "text": "（1）骨蜗管：被膜蜗管分隔为上下两部分，上部为前庭阶（scala vestibuli）, 起始于卵圆窗；下部为鼓室阶（scala tympani）, 起自圆窗；二者均含外淋巴，并在蜗顶以蜗孔相通。"
+          "text": "骨蜗管：被膜蜗管分隔为上下两部分，上部为前庭阶（scala vestibuli）, 起始于卵圆窗；下部为鼓室阶（scala tympani）, 起自圆窗；二者均含外淋巴，并在蜗顶以蜗孔相通。"
         }
       ],
       "occurrences": 4,
@@ -57179,8 +57179,8 @@ window.MED_GLOSSARY_COURSES["histology-embryology"] = {
       ],
       "firstPage": 121,
       "firstPdfPage": 144,
-      "definition": "（1）骨蜗管：被膜蜗管分隔为上下两部分，上部为前庭阶（scala vestibuli）, 起始于卵圆窗；下部为鼓室阶（scala tympani）, 起自圆窗；二者均含外淋巴，并在蜗顶以蜗孔相通。",
-      "structure": "（1）骨蜗管：被膜蜗管分隔为上下两部分，上部为前庭阶（scala vestibuli）, 起始于卵圆窗；",
+      "definition": "骨蜗管：被膜蜗管分隔为上下两部分，上部为前庭阶（scala vestibuli）, 起始于卵圆窗；下部为鼓室阶（scala tympani）, 起自圆窗；二者均含外淋巴，并在蜗顶以蜗孔相通。",
+      "structure": "骨蜗管：被膜蜗管分隔为上下两部分，上部为前庭阶（scala vestibuli）, 起始于卵圆窗；",
       "location": "",
       "function": "功能意义在于视觉、听觉和平衡觉的感受与传导；结构层次常用于解释相应感觉障碍。",
       "studyNote": "",
@@ -57205,7 +57205,7 @@ window.MED_GLOSSARY_COURSES["histology-embryology"] = {
           "pdfPage": 144,
           "chapter": "第12章 眼与耳",
           "part": "组织学",
-          "text": "（1）骨蜗管：被膜蜗管分隔为上下两部分，上部为前庭阶（scala vestibuli）, 起始于卵圆窗；下部为鼓室阶（scala tympani）, 起自圆窗；二者均含外淋巴，并在蜗顶以蜗孔相通。"
+          "text": "骨蜗管：被膜蜗管分隔为上下两部分，上部为前庭阶（scala vestibuli）, 起始于卵圆窗；下部为鼓室阶（scala tympani）, 起自圆窗；二者均含外淋巴，并在蜗顶以蜗孔相通。"
         }
       ],
       "occurrences": 4,
@@ -57269,7 +57269,7 @@ window.MED_GLOSSARY_COURSES["histology-embryology"] = {
       ],
       "firstPage": 122,
       "firstPdfPage": 145,
-      "definition": "（2）毛细胞：是感受听觉刺激的上皮细胞，坐落于指细胞顶部的凹陷内，故相应地分为1列内毛细胞（inner hair cell）和3~4列外毛细胞（outer hair cell）。",
+      "definition": "毛细胞：是感受听觉刺激的上皮细胞，坐落于指细胞顶部的凹陷内，故相应地分为1列内毛细胞（inner hair cell）和3~4列外毛细胞（outer hair cell）。",
       "structure": "应按感受细胞、支持结构、透明介质、传导方向和附属保护结构来定位。",
       "location": "应按感受细胞、支持结构、透明介质、传导方向和附属保护结构来定位。",
       "function": "功能意义在于视觉、听觉和平衡觉的感受与传导；结构层次常用于解释相应感觉障碍。",
@@ -57292,7 +57292,7 @@ window.MED_GLOSSARY_COURSES["histology-embryology"] = {
           "pdfPage": 145,
           "chapter": "第12章 眼与耳",
           "part": "组织学",
-          "text": "（2）毛细胞：是感受听觉刺激的上皮细胞，坐落于指细胞顶部的凹陷内，故相应地分为1列内毛细胞（inner hair cell）和3~4列外毛细胞（outer hair cell）。"
+          "text": "毛细胞：是感受听觉刺激的上皮细胞，坐落于指细胞顶部的凹陷内，故相应地分为1列内毛细胞（inner hair cell）和3~4列外毛细胞（outer hair cell）。"
         }
       ],
       "occurrences": 4,
@@ -57524,7 +57524,7 @@ window.MED_GLOSSARY_COURSES["histology-embryology"] = {
       ],
       "firstPage": 122,
       "firstPdfPage": 145,
-      "definition": "（2）毛细胞：是感受听觉刺激的上皮细胞，坐落于指细胞顶部的凹陷内，故相应地分为1列内毛细胞（inner hair cell）和3~4列外毛细胞（outer hair cell）。",
+      "definition": "毛细胞：是感受听觉刺激的上皮细胞，坐落于指细胞顶部的凹陷内，故相应地分为1列内毛细胞（inner hair cell）和3~4列外毛细胞（outer hair cell）。",
       "structure": "应按感受细胞、支持结构、透明介质、传导方向和附属保护结构来定位。",
       "location": "应按感受细胞、支持结构、透明介质、传导方向和附属保护结构来定位。",
       "function": "功能意义在于视觉、听觉和平衡觉的感受与传导；结构层次常用于解释相应感觉障碍。",
@@ -57547,7 +57547,7 @@ window.MED_GLOSSARY_COURSES["histology-embryology"] = {
           "pdfPage": 145,
           "chapter": "第12章 眼与耳",
           "part": "组织学",
-          "text": "（2）毛细胞：是感受听觉刺激的上皮细胞，坐落于指细胞顶部的凹陷内，故相应地分为1列内毛细胞（inner hair cell）和3~4列外毛细胞（outer hair cell）。"
+          "text": "毛细胞：是感受听觉刺激的上皮细胞，坐落于指细胞顶部的凹陷内，故相应地分为1列内毛细胞（inner hair cell）和3~4列外毛细胞（outer hair cell）。"
         }
       ],
       "occurrences": 3,
@@ -57611,7 +57611,7 @@ window.MED_GLOSSARY_COURSES["histology-embryology"] = {
       ],
       "firstPage": 122,
       "firstPdfPage": 145,
-      "definition": "（1）支持细胞：主要有柱细胞（pillar cell）和指细胞（phalangeal cell）。",
+      "definition": "支持细胞：主要有柱细胞（pillar cell）和指细胞（phalangeal cell）。",
       "structure": "应按感受细胞、支持结构、透明介质、传导方向和附属保护结构来定位。",
       "location": "应按感受细胞、支持结构、透明介质、传导方向和附属保护结构来定位。",
       "function": "功能意义在于视觉、听觉和平衡觉的感受与传导；结构层次常用于解释相应感觉障碍。",
@@ -57634,7 +57634,7 @@ window.MED_GLOSSARY_COURSES["histology-embryology"] = {
           "pdfPage": 145,
           "chapter": "第12章 眼与耳",
           "part": "组织学",
-          "text": "（1）支持细胞：主要有柱细胞（pillar cell）和指细胞（phalangeal cell）。"
+          "text": "支持细胞：主要有柱细胞（pillar cell）和指细胞（phalangeal cell）。"
         }
       ],
       "occurrences": 7,
@@ -57698,7 +57698,7 @@ window.MED_GLOSSARY_COURSES["histology-embryology"] = {
       ],
       "firstPage": 122,
       "firstPdfPage": 145,
-      "definition": "（1）支持细胞：主要有柱细胞（pillar cell）和指细胞（phalangeal cell）。",
+      "definition": "支持细胞：主要有柱细胞（pillar cell）和指细胞（phalangeal cell）。",
       "structure": "应按感受细胞、支持结构、透明介质、传导方向和附属保护结构来定位。",
       "location": "应按感受细胞、支持结构、透明介质、传导方向和附属保护结构来定位。",
       "function": "功能意义在于视觉、听觉和平衡觉的感受与传导；结构层次常用于解释相应感觉障碍。",
@@ -57721,7 +57721,7 @@ window.MED_GLOSSARY_COURSES["histology-embryology"] = {
           "pdfPage": 145,
           "chapter": "第12章 眼与耳",
           "part": "组织学",
-          "text": "（1）支持细胞：主要有柱细胞（pillar cell）和指细胞（phalangeal cell）。"
+          "text": "支持细胞：主要有柱细胞（pillar cell）和指细胞（phalangeal cell）。"
         }
       ],
       "occurrences": 9,
@@ -57872,7 +57872,7 @@ window.MED_GLOSSARY_COURSES["histology-embryology"] = {
       ],
       "firstPage": 122,
       "firstPdfPage": 145,
-      "definition": "（3）螺旋器（spiral organ）:又称科蒂器（organ of Corti）, 是基底膜上感受听觉的高度分化结构，呈螺旋状走行，由支持细胞和毛细胞组成（图1 2-2 2）。",
+      "definition": "螺旋器（spiral organ）:又称科蒂器（organ of Corti）, 是基底膜上感受听觉的高度分化结构，呈螺旋状走行，由支持细胞和毛细胞组成（图1 2-2 2）。",
       "structure": "应按感受细胞、支持结构、透明介质、传导方向和附属保护结构来定位。",
       "location": "应按感受细胞、支持结构、透明介质、传导方向和附属保护结构来定位。",
       "function": "功能意义在于视觉、听觉和平衡觉的感受与传导；结构层次常用于解释相应感觉障碍。",
@@ -57895,7 +57895,7 @@ window.MED_GLOSSARY_COURSES["histology-embryology"] = {
           "pdfPage": 145,
           "chapter": "第12章 眼与耳",
           "part": "组织学",
-          "text": "（3）螺旋器（spiral organ）:又称科蒂器（organ of Corti）, 是基底膜上感受听觉的高度分化结构，呈螺旋状走行，由支持细胞和毛细胞组成（图1 2-2 2）。"
+          "text": "螺旋器（spiral organ）:又称科蒂器（organ of Corti）, 是基底膜上感受听觉的高度分化结构，呈螺旋状走行，由支持细胞和毛细胞组成（图1 2-2 2）。"
         }
       ],
       "occurrences": 2,
@@ -63545,7 +63545,7 @@ window.MED_GLOSSARY_COURSES["histology-embryology"] = {
       ],
       "firstPage": 132,
       "firstPdfPage": 155,
-      "definition": "（2）嗜碱性细胞（basophilic cell）: 数量较嗜酸性细胞少，呈椭圆形或多边形，细胞质内含嗜碱性颗粒。",
+      "definition": "嗜碱性细胞（basophilic cell）: 数量较嗜酸性细胞少，呈椭圆形或多边形，细胞质内含嗜碱性颗粒。",
       "structure": "应按腺体位置、细胞类型、激素类别、血窦或滤泡结构及调节轴来整理。",
       "location": "应按腺体位置、细胞类型、激素类别、血窦或滤泡结构及调节轴来整理。",
       "function": "功能意义在于分泌激素并调节代谢、生长、生殖、应激和内环境稳态；细胞类型通常对应激素功能。",
@@ -63564,7 +63564,7 @@ window.MED_GLOSSARY_COURSES["histology-embryology"] = {
           "pdfPage": 155,
           "chapter": "第13章 内分泌系统",
           "part": "组织学",
-          "text": "（2）嗜碱性细胞（basophilic cell）: 数量较嗜酸性细胞少，呈椭圆形或多边形，细胞质内含嗜碱性颗粒。"
+          "text": "嗜碱性细胞（basophilic cell）: 数量较嗜酸性细胞少，呈椭圆形或多边形，细胞质内含嗜碱性颗粒。"
         }
       ],
       "occurrences": 6,
@@ -63806,7 +63806,7 @@ window.MED_GLOSSARY_COURSES["histology-embryology"] = {
       ],
       "firstPage": 132,
       "firstPdfPage": 155,
-      "definition": "（3）嫌色细胞（chromophobe cell）: 数量多，体积小，细胞质少，着色浅，细胞界限不清。",
+      "definition": "嫌色细胞（chromophobe cell）: 数量多，体积小，细胞质少，着色浅，细胞界限不清。",
       "structure": "应按腺体位置、细胞类型、激素类别、血窦或滤泡结构及调节轴来整理。",
       "location": "应按腺体位置、细胞类型、激素类别、血窦或滤泡结构及调节轴来整理。",
       "function": "功能意义在于分泌激素并调节代谢、生长、生殖、应激和内环境稳态；细胞类型通常对应激素功能。",
@@ -63827,7 +63827,7 @@ window.MED_GLOSSARY_COURSES["histology-embryology"] = {
           "pdfPage": 155,
           "chapter": "第13章 内分泌系统",
           "part": "组织学",
-          "text": "（3）嫌色细胞（chromophobe cell）: 数量多，体积小，细胞质少，着色浅，细胞界限不清。"
+          "text": "嫌色细胞（chromophobe cell）: 数量多，体积小，细胞质少，着色浅，细胞界限不清。"
         }
       ],
       "occurrences": 4,
@@ -67409,7 +67409,7 @@ window.MED_GLOSSARY_COURSES["histology-embryology"] = {
       ],
       "firstPage": 141,
       "firstPdfPage": 164,
-      "definition": "（2）壁细胞（parietal cell）:又称泌酸细胞（oxyntic cell）, 在腺的上半部较多。",
+      "definition": "壁细胞（parietal cell）:又称泌酸细胞（oxyntic cell）, 在腺的上半部较多。",
       "structure": "应按黏膜、黏膜下层、肌层和外膜/浆膜定位，再补充上皮、腺体和特殊细胞类型。",
       "location": "应按黏膜、黏膜下层、肌层和外膜/浆膜定位，再补充上皮、腺体和特殊细胞类型。",
       "function": "功能意义包括摄取、消化、吸收、屏障和内分泌调节；各段管壁差异反映其主要任务。",
@@ -67432,7 +67432,7 @@ window.MED_GLOSSARY_COURSES["histology-embryology"] = {
           "pdfPage": 164,
           "chapter": "第14章 消化管",
           "part": "组织学",
-          "text": "（2）壁细胞（parietal cell）:又称泌酸细胞（oxyntic cell）, 在腺的上半部较多。"
+          "text": "壁细胞（parietal cell）:又称泌酸细胞（oxyntic cell）, 在腺的上半部较多。"
         }
       ],
       "occurrences": 2,
@@ -67496,7 +67496,7 @@ window.MED_GLOSSARY_COURSES["histology-embryology"] = {
       ],
       "firstPage": 141,
       "firstPdfPage": 164,
-      "definition": "（1）胃底腺（fundic gland）:又称泌酸腺（oxyntic gland）, 分布于胃底和胃体部，是胃黏膜中数量最多、功能最重要的腺体。",
+      "definition": "胃底腺（fundic gland）:又称泌酸腺（oxyntic gland）, 分布于胃底和胃体部，是胃黏膜中数量最多、功能最重要的腺体。",
       "structure": "应按黏膜、黏膜下层、肌层和外膜/浆膜定位，再补充上皮、腺体和特殊细胞类型。",
       "location": "应按黏膜、黏膜下层、肌层和外膜/浆膜定位，再补充上皮、腺体和特殊细胞类型。",
       "function": "功能意义包括摄取、消化、吸收、屏障和内分泌调节；各段管壁差异反映其主要任务。",
@@ -67521,7 +67521,7 @@ window.MED_GLOSSARY_COURSES["histology-embryology"] = {
           "pdfPage": 164,
           "chapter": "第14章 消化管",
           "part": "组织学",
-          "text": "（1）胃底腺（fundic gland）:又称泌酸腺（oxyntic gland）, 分布于胃底和胃体部，是胃黏膜中数量最多、功能最重要的腺体。"
+          "text": "胃底腺（fundic gland）:又称泌酸腺（oxyntic gland）, 分布于胃底和胃体部，是胃黏膜中数量最多、功能最重要的腺体。"
         }
       ],
       "occurrences": 2,
@@ -67759,7 +67759,7 @@ window.MED_GLOSSARY_COURSES["histology-embryology"] = {
       ],
       "firstPage": 141,
       "firstPdfPage": 164,
-      "definition": "（1）主细胞（chief cell）:又称胃酶细胞（zymogenic cell）, 数量最多，主要分布于腺的下半部。",
+      "definition": "主细胞（chief cell）:又称胃酶细胞（zymogenic cell）, 数量最多，主要分布于腺的下半部。",
       "structure": "应按黏膜、黏膜下层、肌层和外膜/浆膜定位，再补充上皮、腺体和特殊细胞类型。",
       "location": "应按黏膜、黏膜下层、肌层和外膜/浆膜定位，再补充上皮、腺体和特殊细胞类型。",
       "function": "功能意义包括摄取、消化、吸收、屏障和内分泌调节；各段管壁差异反映其主要任务。",
@@ -67785,7 +67785,7 @@ window.MED_GLOSSARY_COURSES["histology-embryology"] = {
           "pdfPage": 164,
           "chapter": "第14章 消化管",
           "part": "组织学",
-          "text": "（1）主细胞（chief cell）:又称胃酶细胞（zymogenic cell）, 数量最多，主要分布于腺的下半部。"
+          "text": "主细胞（chief cell）:又称胃酶细胞（zymogenic cell）, 数量最多，主要分布于腺的下半部。"
         }
       ],
       "occurrences": 2,
@@ -68021,7 +68021,7 @@ window.MED_GLOSSARY_COURSES["histology-embryology"] = {
       ],
       "firstPage": 142,
       "firstPdfPage": 165,
-      "definition": "（4）干细胞（stem cell）: 存在于从胃底腺顶部至胃小凹深部一带，胞体较小，呈低柱状。",
+      "definition": "干细胞（stem cell）: 存在于从胃底腺顶部至胃小凹深部一带，胞体较小，呈低柱状。",
       "structure": "应按黏膜、黏膜下层、肌层和外膜/浆膜定位，再补充上皮、腺体和特殊细胞类型。",
       "location": "应按黏膜、黏膜下层、肌层和外膜/浆膜定位，再补充上皮、腺体和特殊细胞类型。",
       "function": "功能意义包括摄取、消化、吸收、屏障和内分泌调节；各段管壁差异反映其主要任务。",
@@ -68043,7 +68043,7 @@ window.MED_GLOSSARY_COURSES["histology-embryology"] = {
           "pdfPage": 165,
           "chapter": "第14章 消化管",
           "part": "组织学",
-          "text": "（4）干细胞（stem cell）: 存在于从胃底腺顶部至胃小凹深部一带，胞体较小，呈低柱状。"
+          "text": "干细胞（stem cell）: 存在于从胃底腺顶部至胃小凹深部一带，胞体较小，呈低柱状。"
         }
       ],
       "occurrences": 3,
@@ -68278,7 +68278,7 @@ window.MED_GLOSSARY_COURSES["histology-embryology"] = {
       ],
       "firstPage": 142,
       "firstPdfPage": 165,
-      "definition": "（2）贲门腺（cardiac gland）: 分布于近贲门处宽 1~3cm 的区域，为单管或分支管状腺，分泌黏液和溶菌酶。",
+      "definition": "贲门腺（cardiac gland）: 分布于近贲门处宽 1~3cm 的区域，为单管或分支管状腺，分泌黏液和溶菌酶。",
       "structure": "应按黏膜、黏膜下层、肌层和外膜/浆膜定位，再补充上皮、腺体和特殊细胞类型。",
       "location": "应按黏膜、黏膜下层、肌层和外膜/浆膜定位，再补充上皮、腺体和特殊细胞类型。",
       "function": "功能意义包括摄取、消化、吸收、屏障和内分泌调节；各段管壁差异反映其主要任务。",
@@ -68298,7 +68298,7 @@ window.MED_GLOSSARY_COURSES["histology-embryology"] = {
           "pdfPage": 165,
           "chapter": "第14章 消化管",
           "part": "组织学",
-          "text": "（2）贲门腺（cardiac gland）: 分布于近贲门处宽 1~3cm 的区域，为单管或分支管状腺，分泌黏液和溶菌酶。"
+          "text": "贲门腺（cardiac gland）: 分布于近贲门处宽 1~3cm 的区域，为单管或分支管状腺，分泌黏液和溶菌酶。"
         }
       ],
       "occurrences": 2,
@@ -74269,7 +74269,7 @@ window.MED_GLOSSARY_COURSES["histology-embryology"] = {
       ],
       "firstPage": 167,
       "firstPdfPage": 190,
-      "definition": "（4）气-血屏障（blood-air barrier）: 是肺泡腔内氧气与肺泡隔毛细血管中的二氧化碳进行气体交换所通过的结构。",
+      "definition": "气-血屏障（blood-air barrier）: 是肺泡腔内氧气与肺泡隔毛细血管中的二氧化碳进行气体交换所通过的结构。",
       "structure": "应沿导气部到呼吸部梳理上皮、腺体、软骨、平滑肌、肺泡细胞和气血屏障。",
       "location": "应沿导气部到呼吸部梳理上皮、腺体、软骨、平滑肌、肺泡细胞和气血屏障。",
       "function": "功能意义在于通气、气体交换、过滤防御和表面活性物质维持肺泡稳定。",
@@ -74294,7 +74294,7 @@ window.MED_GLOSSARY_COURSES["histology-embryology"] = {
           "pdfPage": 190,
           "chapter": "第16章 呼吸系统",
           "part": "组织学",
-          "text": "（4）气-血屏障（blood-air barrier）: 是肺泡腔内氧气与肺泡隔毛细血管中的二氧化碳进行气体交换所通过的结构。"
+          "text": "气-血屏障（blood-air barrier）: 是肺泡腔内氧气与肺泡隔毛细血管中的二氧化碳进行气体交换所通过的结构。"
         }
       ],
       "occurrences": 1,
@@ -74448,7 +74448,7 @@ window.MED_GLOSSARY_COURSES["histology-embryology"] = {
       ],
       "firstPage": 167,
       "firstPdfPage": 190,
-      "definition": "（3）肺泡孔（alveolar pore）: 为相邻肺泡之间气体流通的小孔（见图16-15），直径 10~15μm，一个肺泡壁上可有1个至数个，可均衡肺泡间气体含量。",
+      "definition": "肺泡孔（alveolar pore）: 为相邻肺泡之间气体流通的小孔（见图16-15），直径 10~15μm，一个肺泡壁上可有1个至数个，可均衡肺泡间气体含量。",
       "structure": "应沿导气部到呼吸部梳理上皮、腺体、软骨、平滑肌、肺泡细胞和气血屏障。",
       "location": "应沿导气部到呼吸部梳理上皮、腺体、软骨、平滑肌、肺泡细胞和气血屏障。",
       "function": "功能意义在于通气、气体交换、过滤防御和表面活性物质维持肺泡稳定。",
@@ -74474,7 +74474,7 @@ window.MED_GLOSSARY_COURSES["histology-embryology"] = {
           "pdfPage": 190,
           "chapter": "第16章 呼吸系统",
           "part": "组织学",
-          "text": "（3）肺泡孔（alveolar pore）: 为相邻肺泡之间气体流通的小孔（见图16-15），直径 10~15μm，一个肺泡壁上可有1个至数个，可均衡肺泡间气体含量。"
+          "text": "肺泡孔（alveolar pore）: 为相邻肺泡之间气体流通的小孔（见图16-15），直径 10~15μm，一个肺泡壁上可有1个至数个，可均衡肺泡间气体含量。"
         }
       ],
       "occurrences": 4,
@@ -74538,7 +74538,7 @@ window.MED_GLOSSARY_COURSES["histology-embryology"] = {
       ],
       "firstPage": 167,
       "firstPdfPage": 190,
-      "definition": "（2）肺泡隔（alveolar septum）: 相邻肺泡之间的薄层结缔组织构成肺泡隔，其内有密集的连续毛细血管和丰富的弹性纤维（图16-2 0），起回缩肺泡的作用（图16-21）。",
+      "definition": "肺泡隔（alveolar septum）: 相邻肺泡之间的薄层结缔组织构成肺泡隔，其内有密集的连续毛细血管和丰富的弹性纤维（图16-2 0），起回缩肺泡的作用（图16-21）。",
       "structure": "应沿导气部到呼吸部梳理上皮、腺体、软骨、平滑肌、肺泡细胞和气血屏障。",
       "location": "应沿导气部到呼吸部梳理上皮、腺体、软骨、平滑肌、肺泡细胞和气血屏障。",
       "function": "功能意义在于通气、气体交换、过滤防御和表面活性物质维持肺泡稳定。",
@@ -74564,7 +74564,7 @@ window.MED_GLOSSARY_COURSES["histology-embryology"] = {
           "pdfPage": 190,
           "chapter": "第16章 呼吸系统",
           "part": "组织学",
-          "text": "（2）肺泡隔（alveolar septum）: 相邻肺泡之间的薄层结缔组织构成肺泡隔，其内有密集的连续毛细血管和丰富的弹性纤维（图16-2 0），起回缩肺泡的作用（图16-21）。"
+          "text": "肺泡隔（alveolar septum）: 相邻肺泡之间的薄层结缔组织构成肺泡隔，其内有密集的连续毛细血管和丰富的弹性纤维（图16-2 0），起回缩肺泡的作用（图16-21）。"
         }
       ],
       "occurrences": 6,
@@ -75840,7 +75840,7 @@ window.MED_GLOSSARY_COURSES["histology-embryology"] = {
       ],
       "firstPage": 172,
       "firstPdfPage": 195,
-      "definition": "（3）滤过屏障（filtration barrier）: 肾小体犹如滤过器，当血液流经血管球的毛细血管时，管内血压较高，血浆内部分物质经有孔内皮、基膜和足细胞裂孔膜滤入肾小囊腔。",
+      "definition": "滤过屏障（filtration barrier）: 肾小体犹如滤过器，当血液流经血管球的毛细血管时，管内血压较高，血浆内部分物质经有孔内皮、基膜和足细胞裂孔膜滤入肾小囊腔。",
       "structure": "应以肾单位和集合管为主线，定位肾小体、肾小管各段、球旁复合体和尿路上皮。",
       "location": "应以肾单位和集合管为主线，定位肾小体、肾小管各段、球旁复合体和尿路上皮。",
       "function": "功能意义包括滤过、重吸收、分泌、浓缩尿液和内分泌调节；每段上皮结构对应不同转运任务。",
@@ -75862,7 +75862,7 @@ window.MED_GLOSSARY_COURSES["histology-embryology"] = {
           "pdfPage": 195,
           "chapter": "第17章 泌尿系统",
           "part": "组织学",
-          "text": "（3）滤过屏障（filtration barrier）: 肾小体犹如滤过器，当血液流经血管球的毛细血管时，管内血压较高，血浆内部分物质经有孔内皮、基膜和足细胞裂孔膜滤入肾小囊腔。"
+          "text": "滤过屏障（filtration barrier）: 肾小体犹如滤过器，当血液流经血管球的毛细血管时，管内血压较高，血浆内部分物质经有孔内皮、基膜和足细胞裂孔膜滤入肾小囊腔。"
         }
       ],
       "occurrences": 3,
@@ -76102,7 +76102,7 @@ window.MED_GLOSSARY_COURSES["histology-embryology"] = {
       ],
       "firstPage": 172,
       "firstPdfPage": 195,
-      "definition": "（2）肾小囊（renal capsule）: 是在胚胎时期肾小管的起始端膨大凹陷而成的杯状双层上皮囊。",
+      "definition": "肾小囊（renal capsule）: 是在胚胎时期肾小管的起始端膨大凹陷而成的杯状双层上皮囊。",
       "structure": "应以肾单位和集合管为主线，定位肾小体、肾小管各段、球旁复合体和尿路上皮。",
       "location": "应以肾单位和集合管为主线，定位肾小体、肾小管各段、球旁复合体和尿路上皮。",
       "function": "功能意义包括滤过、重吸收、分泌、浓缩尿液和内分泌调节；每段上皮结构对应不同转运任务。",
@@ -76129,7 +76129,7 @@ window.MED_GLOSSARY_COURSES["histology-embryology"] = {
           "pdfPage": 195,
           "chapter": "第17章 泌尿系统",
           "part": "组织学",
-          "text": "（2）肾小囊（renal capsule）: 是在胚胎时期肾小管的起始端膨大凹陷而成的杯状双层上皮囊。"
+          "text": "肾小囊（renal capsule）: 是在胚胎时期肾小管的起始端膨大凹陷而成的杯状双层上皮囊。"
         }
       ],
       "occurrences": 4,
@@ -76708,7 +76708,7 @@ window.MED_GLOSSARY_COURSES["histology-embryology"] = {
       ],
       "firstPage": 174,
       "firstPdfPage": 197,
-      "definition": "（2）细段（thin segment）: 管径细，直径 10~15μm，管壁为单层扁平上皮，细胞核椭圆形，含核部分突向管腔，细胞质着色较浅，无刷状缘（图17-11，图17-12）。",
+      "definition": "细段（thin segment）: 管径细，直径 10~15μm，管壁为单层扁平上皮，细胞核椭圆形，含核部分突向管腔，细胞质着色较浅，无刷状缘（图17-11，图17-12）。",
       "structure": "应以肾单位和集合管为主线，定位肾小体、肾小管各段、球旁复合体和尿路上皮。",
       "location": "应以肾单位和集合管为主线，定位肾小体、肾小管各段、球旁复合体和尿路上皮。",
       "function": "功能意义包括滤过、重吸收、分泌、浓缩尿液和内分泌调节；每段上皮结构对应不同转运任务。",
@@ -76732,7 +76732,7 @@ window.MED_GLOSSARY_COURSES["histology-embryology"] = {
           "pdfPage": 197,
           "chapter": "第17章 泌尿系统",
           "part": "组织学",
-          "text": "（2）细段（thin segment）: 管径细，直径 10~15μm，管壁为单层扁平上皮，细胞核椭圆形，含核部分突向管腔，细胞质着色较浅，无刷状缘（图17-11，图17-12）。"
+          "text": "细段（thin segment）: 管径细，直径 10~15μm，管壁为单层扁平上皮，细胞核椭圆形，含核部分突向管腔，细胞质着色较浅，无刷状缘（图17-11，图17-12）。"
         }
       ],
       "occurrences": 3,
@@ -76884,7 +76884,7 @@ window.MED_GLOSSARY_COURSES["histology-embryology"] = {
       ],
       "firstPage": 174,
       "firstPdfPage": 197,
-      "definition": "（3）远端小管（distal tubule）: 包括远直小管和远曲小管。",
+      "definition": "远端小管（distal tubule）: 包括远直小管和远曲小管。",
       "structure": "应以肾单位和集合管为主线，定位肾小体、肾小管各段、球旁复合体和尿路上皮。",
       "location": "应以肾单位和集合管为主线，定位肾小体、肾小管各段、球旁复合体和尿路上皮。",
       "function": "功能意义包括滤过、重吸收、分泌、浓缩尿液和内分泌调节；每段上皮结构对应不同转运任务。",
@@ -76908,7 +76908,7 @@ window.MED_GLOSSARY_COURSES["histology-embryology"] = {
           "pdfPage": 197,
           "chapter": "第17章 泌尿系统",
           "part": "组织学",
-          "text": "（3）远端小管（distal tubule）: 包括远直小管和远曲小管。"
+          "text": "远端小管（distal tubule）: 包括远直小管和远曲小管。"
         }
       ],
       "occurrences": 2,
@@ -77322,7 +77322,7 @@ window.MED_GLOSSARY_COURSES["histology-embryology"] = {
       ],
       "firstPage": 175,
       "firstPdfPage": 198,
-      "definition": "（2）远曲小管（distal convoluted tubule）: 直径 35~45μm，其超微结构与直部相似，但质膜内褶不如直部发达。",
+      "definition": "远曲小管（distal convoluted tubule）: 直径 35~45μm，其超微结构与直部相似，但质膜内褶不如直部发达。",
       "structure": "应以肾单位和集合管为主线，定位肾小体、肾小管各段、球旁复合体和尿路上皮。",
       "location": "应以肾单位和集合管为主线，定位肾小体、肾小管各段、球旁复合体和尿路上皮。",
       "function": "功能意义包括滤过、重吸收、分泌、浓缩尿液和内分泌调节；每段上皮结构对应不同转运任务。",
@@ -77343,7 +77343,7 @@ window.MED_GLOSSARY_COURSES["histology-embryology"] = {
           "pdfPage": 198,
           "chapter": "第17章 泌尿系统",
           "part": "组织学",
-          "text": "（2）远曲小管（distal convoluted tubule）: 直径 35~45μm，其超微结构与直部相似，但质膜内褶不如直部发达。"
+          "text": "远曲小管（distal convoluted tubule）: 直径 35~45μm，其超微结构与直部相似，但质膜内褶不如直部发达。"
         }
       ],
       "occurrences": 5,
@@ -79166,7 +79166,7 @@ window.MED_GLOSSARY_COURSES["histology-embryology"] = {
       ],
       "firstPage": 182,
       "firstPdfPage": 205,
-      "definition": "（4）精子细胞（spermatid）: 位于近腔面，直径约 8μm。",
+      "definition": "精子细胞（spermatid）: 位于近腔面，直径约 8μm。",
       "structure": "应按生殖细胞发生、支持细胞、内分泌细胞、管道结构和周期性变化来整理。",
       "location": "应按生殖细胞发生、支持细胞、内分泌细胞、管道结构和周期性变化来整理。",
       "function": "功能意义在于配子发生、激素分泌、受精准备和胚胎早期支持；结构变化常与周期或发育阶段相关。",
@@ -79187,7 +79187,7 @@ window.MED_GLOSSARY_COURSES["histology-embryology"] = {
           "pdfPage": 205,
           "chapter": "第18章 男性生殖系统",
           "part": "组织学",
-          "text": "（4）精子细胞（spermatid）: 位于近腔面，直径约 8μm。"
+          "text": "精子细胞（spermatid）: 位于近腔面，直径约 8μm。"
         }
       ],
       "occurrences": 19,
@@ -79338,7 +79338,7 @@ window.MED_GLOSSARY_COURSES["histology-embryology"] = {
       ],
       "firstPage": 182,
       "firstPdfPage": 205,
-      "definition": "（4）精子细胞（spermatid）: 位于近腔面，直径约 8μm。",
+      "definition": "精子细胞（spermatid）: 位于近腔面，直径约 8μm。",
       "structure": "应按生殖细胞发生、支持细胞、内分泌细胞、管道结构和周期性变化来整理。",
       "location": "应按生殖细胞发生、支持细胞、内分泌细胞、管道结构和周期性变化来整理。",
       "function": "功能意义在于配子发生、激素分泌、受精准备和胚胎早期支持；结构变化常与周期或发育阶段相关。",
@@ -79359,7 +79359,7 @@ window.MED_GLOSSARY_COURSES["histology-embryology"] = {
           "pdfPage": 205,
           "chapter": "第18章 男性生殖系统",
           "part": "组织学",
-          "text": "（4）精子细胞（spermatid）: 位于近腔面，直径约 8μm。"
+          "text": "精子细胞（spermatid）: 位于近腔面，直径约 8μm。"
         }
       ],
       "occurrences": 2,
@@ -85540,7 +85540,7 @@ window.MED_GLOSSARY_COURSES["histology-embryology"] = {
       ],
       "firstPage": 200,
       "firstPdfPage": 223,
-      "definition": "（5）分子胚胎学（molecular embryology）: 用分子生物学的理论和技术研究受精、植入、细胞分化、组织诱导、细胞迁移等生物学过程的分子基础，探索胚胎发生过程中基因表达的时间顺序、空间分布与调控因素，研究基因表达产物即各种蛋白质在胚胎发育中的作用，阐明胚胎发育的分子过程和机制。",
+      "definition": "分子胚胎学（molecular embryology）: 用分子生物学的理论和技术研究受精、植入、细胞分化、组织诱导、细胞迁移等生物学过程的分子基础，探索胚胎发生过程中基因表达的时间顺序、空间分布与调控因素，研究基因表达产物即各种蛋白质在胚胎发育中的作用，阐明胚胎发育的分子过程和机制。",
       "structure": "应按时间顺序定位受精、卵裂、植入、胚层形成、胚体折叠、胎膜和胎盘等阶段。",
       "location": "应按时间顺序定位受精、卵裂、植入、胚层形成、胚体折叠、胎膜和胎盘等阶段。",
       "function": "功能意义在于解释成熟组织器官来源、体腔和轴向建立，以及先天异常发生的时间窗。",
@@ -85556,7 +85556,7 @@ window.MED_GLOSSARY_COURSES["histology-embryology"] = {
           "pdfPage": 223,
           "chapter": "第20章 胚胎学绪论",
           "part": "胚胎学",
-          "text": "（5）分子胚胎学（molecular embryology）: 用分子生物学的理论和技术研究受精、植入、细胞分化、组织诱导、细胞迁移等生物学过程的分子基础，探索胚胎发生过程中基因表达的时间顺序、空间分布与调控因素，研究基因表达产物即各种蛋白质在胚胎发育中的作用，阐明胚胎发育的分子过程和机制。"
+          "text": "分子胚胎学（molecular embryology）: 用分子生物学的理论和技术研究受精、植入、细胞分化、组织诱导、细胞迁移等生物学过程的分子基础，探索胚胎发生过程中基因表达的时间顺序、空间分布与调控因素，研究基因表达产物即各种蛋白质在胚胎发育中的作用，阐明胚胎发育的分子过程和机制。"
         }
       ],
       "occurrences": 2,
@@ -85620,7 +85620,7 @@ window.MED_GLOSSARY_COURSES["histology-embryology"] = {
       ],
       "firstPage": 200,
       "firstPdfPage": 223,
-      "definition": "（4）化学胚胎学（chemical embryology）: 随着化学、生物化学和组织学技术的发展，人们应用这些技术研究胚胎发生过程中细胞和组织内某些化学物质的变化和形态发生的化学基础，探讨胚胎发生的机制。",
+      "definition": "化学胚胎学（chemical embryology）: 随着化学、生物化学和组织学技术的发展，人们应用这些技术研究胚胎发生过程中细胞和组织内某些化学物质的变化和形态发生的化学基础，探讨胚胎发生的机制。",
       "structure": "应按时间顺序定位受精、卵裂、植入、胚层形成、胚体折叠、胎膜和胎盘等阶段。",
       "location": "应按时间顺序定位受精、卵裂、植入、胚层形成、胚体折叠、胎膜和胎盘等阶段。",
       "function": "功能意义在于解释成熟组织器官来源、体腔和轴向建立，以及先天异常发生的时间窗。",
@@ -85636,7 +85636,7 @@ window.MED_GLOSSARY_COURSES["histology-embryology"] = {
           "pdfPage": 223,
           "chapter": "第20章 胚胎学绪论",
           "part": "胚胎学",
-          "text": "（4）化学胚胎学（chemical embryology）: 随着化学、生物化学和组织学技术的发展，人们应用这些技术研究胚胎发生过程中细胞和组织内某些化学物质的变化和形态发生的化学基础，探讨胚胎发生的机制。"
+          "text": "化学胚胎学（chemical embryology）: 随着化学、生物化学和组织学技术的发展，人们应用这些技术研究胚胎发生过程中细胞和组织内某些化学物质的变化和形态发生的化学基础，探讨胚胎发生的机制。"
         }
       ],
       "occurrences": 2,
@@ -85780,7 +85780,7 @@ window.MED_GLOSSARY_COURSES["histology-embryology"] = {
       ],
       "firstPage": 200,
       "firstPdfPage": 223,
-      "definition": "（3）实验胚胎学（experimental embryology）: 对胚胎或体外培养的胚胎组织给予化学或物理因素刺激，或施加显微手术，如胚胎切割、细胞移植、体外培养等，观察其对胚胎发育的影响，旨在研究胚胎发育的内在规律和机制。",
+      "definition": "实验胚胎学（experimental embryology）: 对胚胎或体外培养的胚胎组织给予化学或物理因素刺激，或施加显微手术，如胚胎切割、细胞移植、体外培养等，观察其对胚胎发育的影响，旨在研究胚胎发育的内在规律和机制。",
       "structure": "应按时间顺序定位受精、卵裂、植入、胚层形成、胚体折叠、胎膜和胎盘等阶段。",
       "location": "应按时间顺序定位受精、卵裂、植入、胚层形成、胚体折叠、胎膜和胎盘等阶段。",
       "function": "功能意义在于解释成熟组织器官来源、体腔和轴向建立，以及先天异常发生的时间窗。",
@@ -85796,7 +85796,7 @@ window.MED_GLOSSARY_COURSES["histology-embryology"] = {
           "pdfPage": 223,
           "chapter": "第20章 胚胎学绪论",
           "part": "胚胎学",
-          "text": "（3）实验胚胎学（experimental embryology）: 对胚胎或体外培养的胚胎组织给予化学或物理因素刺激，或施加显微手术，如胚胎切割、细胞移植、体外培养等，观察其对胚胎发育的影响，旨在研究胚胎发育的内在规律和机制。"
+          "text": "实验胚胎学（experimental embryology）: 对胚胎或体外培养的胚胎组织给予化学或物理因素刺激，或施加显微手术，如胚胎切割、细胞移植、体外培养等，观察其对胚胎发育的影响，旨在研究胚胎发育的内在规律和机制。"
         }
       ],
       "occurrences": 2,
@@ -85860,7 +85860,7 @@ window.MED_GLOSSARY_COURSES["histology-embryology"] = {
       ],
       "firstPage": 200,
       "firstPdfPage": 223,
-      "definition": "（1）描述胚胎学（descriptive embryology）: 主要应用组织学和解剖学的方法（如光镜、电镜技术）观察胚胎发育的形态演变过程，包括外形的演变、从原始器官到永久性器官的演变、系统的形成、细胞的增殖、迁移和凋亡等，是胚胎学的基础内容。",
+      "definition": "描述胚胎学（descriptive embryology）: 主要应用组织学和解剖学的方法（如光镜、电镜技术）观察胚胎发育的形态演变过程，包括外形的演变、从原始器官到永久性器官的演变、系统的形成、细胞的增殖、迁移和凋亡等，是胚胎学的基础内容。",
       "structure": "应按时间顺序定位受精、卵裂、植入、胚层形成、胚体折叠、胎膜和胎盘等阶段。",
       "location": "应按时间顺序定位受精、卵裂、植入、胚层形成、胚体折叠、胎膜和胎盘等阶段。",
       "function": "功能意义在于解释成熟组织器官来源、体腔和轴向建立，以及先天异常发生的时间窗。",
@@ -85876,7 +85876,7 @@ window.MED_GLOSSARY_COURSES["histology-embryology"] = {
           "pdfPage": 223,
           "chapter": "第20章 胚胎学绪论",
           "part": "胚胎学",
-          "text": "（1）描述胚胎学（descriptive embryology）: 主要应用组织学和解剖学的方法（如光镜、电镜技术）观察胚胎发育的形态演变过程，包括外形的演变、从原始器官到永久性器官的演变、系统的形成、细胞的增殖、迁移和凋亡等，是胚胎学的基础内容。"
+          "text": "描述胚胎学（descriptive embryology）: 主要应用组织学和解剖学的方法（如光镜、电镜技术）观察胚胎发育的形态演变过程，包括外形的演变、从原始器官到永久性器官的演变、系统的形成、细胞的增殖、迁移和凋亡等，是胚胎学的基础内容。"
         }
       ],
       "occurrences": 2,
@@ -85940,7 +85940,7 @@ window.MED_GLOSSARY_COURSES["histology-embryology"] = {
       ],
       "firstPage": 200,
       "firstPdfPage": 223,
-      "definition": "（2）比较胚胎学（comparative embryology）: 以比较不同种系动物（包括人类）的胚胎发育为研究内容，为探讨生物进化过程及其内在联系提供依据，并有助于更深刻地理解人胚的发育。",
+      "definition": "比较胚胎学（comparative embryology）: 以比较不同种系动物（包括人类）的胚胎发育为研究内容，为探讨生物进化过程及其内在联系提供依据，并有助于更深刻地理解人胚的发育。",
       "structure": "应按时间顺序定位受精、卵裂、植入、胚层形成、胚体折叠、胎膜和胎盘等阶段。",
       "location": "应按时间顺序定位受精、卵裂、植入、胚层形成、胚体折叠、胎膜和胎盘等阶段。",
       "function": "功能意义在于解释成熟组织器官来源、体腔和轴向建立，以及先天异常发生的时间窗。",
@@ -85956,7 +85956,7 @@ window.MED_GLOSSARY_COURSES["histology-embryology"] = {
           "pdfPage": 223,
           "chapter": "第20章 胚胎学绪论",
           "part": "胚胎学",
-          "text": "（2）比较胚胎学（comparative embryology）: 以比较不同种系动物（包括人类）的胚胎发育为研究内容，为探讨生物进化过程及其内在联系提供依据，并有助于更深刻地理解人胚的发育。"
+          "text": "比较胚胎学（comparative embryology）: 以比较不同种系动物（包括人类）的胚胎发育为研究内容，为探讨生物进化过程及其内在联系提供依据，并有助于更深刻地理解人胚的发育。"
         }
       ],
       "occurrences": 2,
@@ -86020,7 +86020,7 @@ window.MED_GLOSSARY_COURSES["histology-embryology"] = {
       ],
       "firstPage": 200,
       "firstPdfPage": 223,
-      "definition": "（6）生殖工程（reproductive engineering）: 通过人工介入早期生殖过程，以获得人们期望的新生个体。",
+      "definition": "生殖工程（reproductive engineering）: 通过人工介入早期生殖过程，以获得人们期望的新生个体。",
       "structure": "应按时间顺序定位受精、卵裂、植入、胚层形成、胚体折叠、胎膜和胎盘等阶段。",
       "location": "应按时间顺序定位受精、卵裂、植入、胚层形成、胚体折叠、胎膜和胎盘等阶段。",
       "function": "功能意义在于解释成熟组织器官来源、体腔和轴向建立，以及先天异常发生的时间窗。",
@@ -86036,7 +86036,7 @@ window.MED_GLOSSARY_COURSES["histology-embryology"] = {
           "pdfPage": 223,
           "chapter": "第20章 胚胎学绪论",
           "part": "胚胎学",
-          "text": "（6）生殖工程（reproductive engineering）: 通过人工介入早期生殖过程，以获得人们期望的新生个体。"
+          "text": "生殖工程（reproductive engineering）: 通过人工介入早期生殖过程，以获得人们期望的新生个体。"
         }
       ],
       "occurrences": 2,
@@ -105414,8 +105414,8 @@ window.MED_GLOSSARY_COURSES["histology-embryology"] = {
       ],
       "firstPage": 257,
       "firstPdfPage": 280,
-      "definition": "（3）法洛四联症（tetralogy of Fallot）: 主要原因是主动脉肺动脉隔偏于肺动脉一侧，导致4种畸形并存：（1）肺动脉狭窄；（2）主动脉骑跨，粗大的主动脉骑跨在室间隔膜部；（3）室间隔缺损；（4）右心室肥大，由于肺动脉狭窄，右心室排血阻力增大，致使右心室壁逐渐肥厚（图25-1 8）。",
-      "structure": "（3）法洛四联症（tetralogy of Fallot）: 主要原因是主动脉肺动脉隔偏于肺动脉一侧，导致4种畸形并存：（1）肺动脉狭窄；",
+      "definition": "法洛四联症（tetralogy of Fallot）: 主要原因是主动脉肺动脉隔偏于肺动脉一侧，导致4种畸形并存：（1）肺动脉狭窄；（2）主动脉骑跨，粗大的主动脉骑跨在室间隔膜部；（3）室间隔缺损；（4）右心室肥大，由于肺动脉狭窄，右心室排血阻力增大，致使右心室壁逐渐肥厚（图25-1 8）。",
+      "structure": "法洛四联症（tetralogy of Fallot）: 主要原因是主动脉肺动脉隔偏于肺动脉一侧，导致4种畸形并存：（1）肺动脉狭窄；",
       "location": "",
       "function": "功能意义在于把成体解剖结构与发育来源相连，解释常见先天畸形和异常通道。",
       "studyNote": "",
@@ -105436,7 +105436,7 @@ window.MED_GLOSSARY_COURSES["histology-embryology"] = {
           "pdfPage": 280,
           "chapter": "第25章 心血管系统的发生",
           "part": "胚胎学",
-          "text": "（3）法洛四联症（tetralogy of Fallot）: 主要原因是主动脉肺动脉隔偏于肺动脉一侧，导致4种畸形并存：（1）肺动脉狭窄；（2）主动脉骑跨，粗大的主动脉骑跨在室间隔膜部；（3）室间隔缺损；（4）右心室肥大，由于肺动脉狭窄，右心室排血阻力增大，致使右心室壁逐渐肥厚（图25-1 8）。"
+          "text": "法洛四联症（tetralogy of Fallot）: 主要原因是主动脉肺动脉隔偏于肺动脉一侧，导致4种畸形并存：（1）肺动脉狭窄；（2）主动脉骑跨，粗大的主动脉骑跨在室间隔膜部；（3）室间隔缺损；（4）右心室肥大，由于肺动脉狭窄，右心室排血阻力增大，致使右心室壁逐渐肥厚（图25-1 8）。"
         }
       ],
       "occurrences": 3,

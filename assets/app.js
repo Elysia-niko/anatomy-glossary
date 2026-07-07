@@ -1222,7 +1222,7 @@ function grayCardHtml(card, term) {
 function grayLabelHtml(label, options = {}) {
   const target = termsByEnglish.get(englishKey(label.en));
   const isCurrent = target?.id && target.id === options.currentId;
-  const text = formatTermPair(label.zh, label.en);
+  const text = `${label.number ? `${label.number}. ` : ""}${formatTermPair(label.zh, label.en)}`;
   const className = `gray-label ${options.mode === "match" ? "match" : ""}`.trim();
 
   if (target && !isCurrent) {

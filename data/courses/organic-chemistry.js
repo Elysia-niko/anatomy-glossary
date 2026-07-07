@@ -1209,7 +1209,7 @@ window.MED_GLOSSARY_COURSES["organic-chemistry"] = {
           "chapter": "第一章 绪论",
           "bookPage": 14,
           "pdfPage": 36,
-          "text": "（3） CH COOH （4） CH CN 3 3"
+          "text": "CH COOH （4） CH CN 3 3"
         }
       ],
       "sources": [
@@ -4709,7 +4709,7 @@ window.MED_GLOSSARY_COURSES["organic-chemistry"] = {
           "chapter": "第七章 芳香烃",
           "bookPage": 98,
           "pdfPage": 120,
-          "text": "（1） （2） （3） （4） （5） （6）"
+          "text": ""
         }
       ],
       "sources": [
@@ -10807,7 +10807,7 @@ window.MED_GLOSSARY_COURSES["organic-chemistry"] = {
           "chapter": "第十七章 糖类",
           "bookPage": 228,
           "pdfPage": 250,
-          "text": "（2） （3） （4） （5）"
+          "text": ""
         },
         {
           "part": "重要的生物有机化合物",

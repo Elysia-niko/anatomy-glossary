@@ -10,7 +10,7 @@ COURSES_DIR = DATA_DIR / "courses"
 GLOSSARY_JSON = DATA_DIR / "glossary.json"
 TOPICS_JS = DATA_DIR / "topics.js"
 REPORT_JSON = DATA_DIR / "term_label_cleanup_report.json"
-DATA_VERSION = "termformat-20260707"
+DATA_VERSION = "termfix-20260708"
 
 CN = r"\u3400-\u4dbf\u4e00-\u9fff"
 CN_RE = re.compile(f"[{CN}]")
@@ -79,6 +79,7 @@ def strip_number_noise(text, term_zh=""):
     # Remove leading page/order numbers and common textbook heading debris.
     for _ in range(4):
         before = value
+        value = re.sub(r"^(?:[\(\uff08]\s*\d+\s*[\)\uff09]|\d+\s*[\)\uff09])\s*", "", value)
         value = re.sub(r"^\d+\s+(?=(?:本章|绪论|第[一二三四五六七八九十0-9]+章|[一二三四五六七八九十]+、|（\d+）))", "", value)
         value = re.sub(r"^\d+\s+\d+\s*\)\s*", "", value)
         value = re.sub(r"^(?:\d+\s+){2,}(?=[" + CN + r"（(])", "", value)
@@ -180,6 +181,7 @@ def write_split_files(data):
 def count_remaining(data):
     counts = Counter()
     leading_number = re.compile(r"^\s*(?:\d+\s+|\d+\.\s*)")
+    leading_enumerator = re.compile(r"^\s*(?:[\(\uff08]\s*\d+\s*[\)\uff09]|\d+\s*[\)\uff09])")
     exercise = re.compile(r"\b\d+-\d+\s*(?:试解释|根据|分析|判断|写出|指出|按|将|用)")
     unwrapped = 0
     pairs = build_term_pairs(data)
@@ -190,6 +192,8 @@ def count_remaining(data):
             return
         if leading_number.search(value):
             counts["leadingNumber"] += 1
+        if leading_enumerator.search(value):
+            counts["leadingEnumerator"] += 1
         if exercise.search(value):
             counts["exercisePrompt"] += 1
         if has_cn(value):
@@ -219,7 +223,7 @@ def main():
     data = json.loads(GLOSSARY_JSON.read_text(encoding="utf-8"))
     pairs = build_term_pairs(data)
     report = {
-        "generatedAt": "2026-07-07",
+        "generatedAt": "2026-07-08",
         "dataVersion": DATA_VERSION,
         "termPairs": len(pairs),
         "changedFields": 0,
@@ -229,11 +233,12 @@ def main():
     for course in data.get("courses", []):
         for term in course.get("terms", []):
             clean_term(course["id"], term, pairs, report)
-    data.setdefault("meta", {})["termLabelCleanupGeneratedAt"] = "2026-07-07"
+    data.setdefault("meta", {})["termLabelCleanupGeneratedAt"] = "2026-07-08"
     data["meta"]["termLabelCleanupVersion"] = DATA_VERSION
     data["meta"]["termLabelCleanupRules"] = [
         "wrap known Chinese term + English term pairs as Chinese（English）",
         "strip leading OCR page/order numbers from term explanations",
+        "strip leading parenthesized enumerators from prose explanations while preserving Gray figure label numbers",
         "remove exercise prompt fragments pulled into contexts",
     ]
     report["byField"] = dict(report["byField"])
